@@ -1,0 +1,4460 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sentiment Analysis in R</title>
+  <meta name="description" content="A review of some available methods">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://m-reynol.com/blog/2021/04/stansent">
+  <link rel="alternate" type="application/rss+xml" title="Montaque Reynolds" href="http://m-reynol.com/feed.xml" />
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+
+  
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Montaque Reynolds</a>
+
+
+    <nav class="site-nav">
+
+      <a href="#" class="menu-icon menu.open">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>  
+
+    <div class="trigger"><h1>Main Navigation</h1>
+
+ <ul class="menu">
+
+    
+    
+     <li><a href="/about/" class="page-link">About</a>
+    
+    </li>
+    
+    
+     <li><a href="/blog/" class="page-link">Blog</a>
+    
+    </li>
+    
+    
+     <li><a href="/cv/" class="page-link">CV</a>
+    
+    </li>
+    
+    
+     <li><a href="/miscellany/" class="page-link">Research</a>
+    
+    </li>
+    
+    </ul>
+
+
+<!-- <ul class="menu">
+        <li> <a class="page-link" href="/about">About</a></li>
+        <li> <a class="page-link"  href="/blog">Blog</a>
+        <li> <a class="page-link" href="/blog">CV</a>
+        <li> <a class="page-link" href="/blog">For Students</a></li>
+        <li> <a class="page-link"  href="/blog">Research</a></a>
+        <li> <a class="page-link" href="/blog">Teaching</a>
+<ul class="sub-menu">
+	<li><a href="http://svmiller.com/teaching/posc-1020-introduction-to-international-relations/">POSC 1020 – Introduction to International Relations</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3410-quantitative-methods-in-political-science/">POSC 3410 – Quantitative Methods in Political Science</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3610-international-politics-in-crisis/">POSC 3610 – International Politics in Crisis</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3630-united-states-foreign-policy/">POSC 3630 – United States Foreign Policy</a></li>
+</ul></li>
+        <li> <a class="page-link" href="/blog">Miscellany</a>
+<ul class="sub-menu">
+	<li><a href="http://svmiller.com/teaching/posc-1020-introduction-to-international-relations/">Clean USAID Greenbook Data</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3410-quantitative-methods-in-political-science/">Journal of Peace Research *.bst File</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3610-international-politics-in-crisis/">My Custom Beamer Style</a></li>
+</ul> 
+
+</li>
+</ul> -->
+
+     </div>  
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Sentiment Analysis in R</h1>
+    <p class="post-meta">Posted on April 19, 2021 by  Monty  
+
+  in
+  
+  <a href="/categories/#results" title="results">results</a>&nbsp;
+  
+
+
+</p>
+  </header>
+
+  <article class="post-content">
+    <p>First we are using Tyler Rinker’s
+<a href="https://github.com/trinker/sentimentr">sentimentr</a>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">sentimentr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">crayon</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">displacyr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">spacyr</span><span class="p">)</span><span class="w">
+</span><span class="n">spacy_initialize</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Found 'spacy_condaenv'. spacyr will use this environment
+
+## Warning in reticulate::use_condaenv(settings$val, required = TRUE): multiple Conda environments found; the first-listed will be chosen.
+##              name
+## 5  spacy_condaenv
+## 11 spacy_condaenv
+##                                                                         python
+## 5  /home/redapemusic35/.local/share/r-miniconda/envs/spacy_condaenv/bin/python
+## 11               /home/redapemusic35/miniconda3/envs/spacy_condaenv/bin/python
+
+## Warning: Python '/home/redapemusic35/.local/share/r-miniconda/envs/
+## spacy_condaenv/bin/python' was requested but '/home/redapemusic35/
+## miniconda3/bin/python3' was loaded instead (see reticulate::py_config()
+## for more information)
+
+## successfully initialized (spaCy Version: 3.0.6, language model: en_core_web_sm)
+
+## (python options: type = "condaenv", value = "spacy_condaenv")
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">syuzhet</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 
+## Attaching package: 'syuzhet'
+
+## The following object is masked from 'package:spacyr':
+## 
+##     get_tokens
+
+## The following object is masked from 'package:sentimentr':
+## 
+##     get_sentences
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">coreNLP</span><span class="p">)</span><span class="w">
+</span><span class="n">initCoreNLP</span><span class="p">(</span><span class="n">mem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"4g"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">stan_more</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'I can\'t wait to show you where I grew up.
+Walk you ’round the foothills of my town.
+Probably feel like you\'ve been there before,
+After hearing all the stories; I\'ve been telling you
+For six months now.
+
+We\'ll probably have to sleep in separate bedrooms.
+Pack a shirt for church because we’ll go.
+I\'m not trying to scare you off. 
+But I just thought that we should talk; a few things out,
+Before we hit the road.
+
+If I bring you home to Mama,
+I guess I better warn ya,
+She falls in love a little faster than I do.
+And my dad will check your tires.
+Pour you whiskey over ice.
+And take you fishing but pretend that he don’t like you.
+If we break up, I\'ll be fine.
+But you\'ll be breaking more hearts than mine.
+
+My sister\'s gonna ask a million questions.
+Say anything she can to turn you red.
+And when you meet my high school friends;
+They\'ll buy you drinks and fill you in;
+On all the crazy nights I can\'t outlive.
+
+If I bring you home to Mama,
+I guess I better warn ya,
+She falls in love a little faster than I do.
+And my dad will check your tires.
+Pour you whiskey over ice.
+And take you fishing but pretend that he don\'t like you.
+If we break up, I\'ll be fine.
+But you\'ll be breaking more hearts than mine.
+
+If I bring you home to Mama;
+I guess I better warn ya;
+She feels every heartache I go through.
+And if my dad sees me crying;
+He\'ll pour some whiskey over ice;
+And tell a lie and say he never really liked you.
+If we break up, I\'ll be fine;
+But you\'ll be breaking more hearts than mine.
+You\'ll be breaking more hearts than mine.'</span><span class="p">)</span><span class="w">
+
+</span><span class="n">out1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">get_sentences</span><span class="p">(</span><span class="n">stan_more</span><span class="p">)</span><span class="w">
+</span><span class="n">out2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sentiment</span><span class="p">(</span><span class="n">out1</span><span class="p">)</span><span class="w"> 
+</span><span class="n">out2</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##     element_id sentence_id word_count   sentiment
+##  1:          1           1         10  0.07905694
+##  2:          2           1          8  0.00000000
+##  3:          3           1         20  0.11180340
+##  4:          4           1          8  0.08838835
+##  5:          5           1          8  0.03535534
+##  6:          6           1          7  0.28347335
+##  7:          7           1         17  0.03638034
+##  8:          8           1         23  0.01459601
+##  9:          9           1          7  0.00000000
+## 10:         10           1          5  0.00000000
+## 11:         11           1         11 -0.84800066
+## 12:         12           1          7 -0.28347335
+## 13:         13           1          8 -0.64700270
+## 14:         14           1          7  0.00000000
+## 15:         15           1          8  0.00000000
+## 16:         16           1         24 -0.10206207
+## 17:         17           1         23  0.01459601
+## 18:         18           1          7  0.00000000
+## 19:         19           1          5  0.00000000
+## 20:         20           1         11 -0.84800066
+## 21:         21           1          7 -0.28347335
+## 22:         22           1          8 -0.64700270
+## 23:         23           1         20 -0.21242646
+## 24:         24           1         24 -0.22453656
+## 25:         25           1         15 -0.66615314
+## 26:         26           1          7 -0.40820163
+##     element_id sentence_id word_count   sentiment
+</code></pre></div></div>
+
+<p>Now we will use <a href="https://github.com/statsmaths/coreNLP">Taylor Arnold’s coreNLP Stanford
+wrapper</a>.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">out3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">annotateString</span><span class="p">(</span><span class="n">stan_more</span><span class="p">)</span><span class="w">
+</span><span class="n">out4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getSentiment</span><span class="p">(</span><span class="n">out3</span><span class="p">)</span><span class="w">
+</span><span class="n">out4</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    id sentimentValue sentiment
+## 1   1              1  Negative
+## 2   2              3  Positive
+## 3   3              1  Negative
+## 4   4              1  Negative
+## 5   5              1  Negative
+## 6   6              1  Negative
+## 7   7              3  Positive
+## 8   8              1  Negative
+## 9   9              1  Negative
+## 10 10              2   Neutral
+## 11 11              1  Negative
+## 12 12              3  Positive
+## 13 13              3  Positive
+## 14 14              2   Neutral
+## 15 15              3  Positive
+## 16 16              1  Negative
+## 17 17              1  Negative
+## 18 18              1  Negative
+## 19 19              2   Neutral
+## 20 20              1  Negative
+## 21 21              3  Positive
+## 22 22              3  Positive
+## 23 23              1  Negative
+## 24 24              1  Negative
+## 25 25              3  Positive
+## 26 26              2   Neutral
+</code></pre></div></div>
+
+<p>As you might be able to tell visually, sentimentr is more accurate than
+the stanford wrapper. But according to <a href="https://github.com/trinker/sentimentr">Rinker’s own
+admission</a>:</p>
+
+<blockquote>
+  <p>He also utilizes a wrapper for the Stanford coreNLP which uses much
+more sophisticated analysis. Jocker’s dictionary methods are fast but
+are more prone to error in the case of valence shifters. Jocker’s
+addressed these critiques explaining that the method is good with
+regard to analyzing general sentiment in a piece of literature. He
+points to the accuracy of the Stanford detection as well. In my own
+work I need better accuracy than a simple dictionary lookup; something
+that considers valence shifters yet optimizes speed which the
+Stanford’s parser does not. This leads to a trade off of speed
+vs. accuracy. Simply, sentimentr attempts to balance accuracy and
+speed.</p>
+</blockquote>
+
+<p>This should not be.</p>
+
+<p>As such, we are getting some kind of error. One thing that I could do,
+is use Stanford’s Java which in the past has given me fairly accurate
+results. Here they are now:</p>
+
+<p>Document: ID=More-Hearts-1.txt (20 sentences, 370 tokens)</p>
+
+<p>Sentence #1 (12 tokens, sentiment: Negative): I can’t wait to show you
+where I grew up.</p>
+
+<p>Tokens: [Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=ca CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=MD
+Lemma=can NamedEntityTag=O SentimentClass=Neutral] [Text=n’t
+CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=not
+NamedEntityTag=O SentimentClass=Neutral] [Text=wait
+CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VB Lemma=wait
+NamedEntityTag=O SentimentClass=Neutral] [Text=to
+CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to
+NamedEntityTag=O SentimentClass=Neutral] [Text=show
+CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=show
+NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=you
+NamedEntityTag=O SentimentClass=Neutral] [Text=where
+CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=WRB
+Lemma=where NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=grew
+CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBD
+Lemma=grow NamedEntityTag=O SentimentClass=Neutral] [Text=up
+CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=RP Lemma=up
+NamedEntityTag=O SentimentClass=Neutral] [Text=.
+CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (NP (PRP I)) (VP (MD ca) (RB n’t) (VP (VB
+wait) (S (VP (TO to) (VP (VB show) (NP (PRP you)) (SBAR (WHADVP (WRB
+where)) (S (NP (PRP I)) (VP (VBD grew) (PRT (RP up)))))))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.550</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.588</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.528 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.987</td>
+    </tr>
+    <tr>
+      <td>(MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ca) (RB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 n’t))</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.348 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.967 wait)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.798 (TO</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 to)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.769 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.957</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 show) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you))</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.903 (WHADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 where)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.885 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.973 (VBD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 grew)</td>
+    </tr>
+    <tr>
+      <td>(PRT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 up)))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, wait-4)
+nsubj(wait-4, I-1) nsubj:xsubj(show-6, I-1) aux(wait-4, ca-2)
+neg(wait-4, n’t-3) mark(show-6, to-5) xcomp(wait-4, show-6) dobj(show-6,
+you-7) advmod(grew-10, where-8) nsubj(grew-10, I-9) advcl(show-6,
+grew-10) compound:prt(grew-10, up-11) punct(wait-4, .-12)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #2 (10 tokens, sentiment: Positive): Walk you ’round the
+foothills of my town.</p>
+
+<p>Tokens: [Text=Walk CharacterOffsetBegin=42 CharacterOffsetEnd=46
+PartOfSpeech=VB Lemma=walk NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=47 CharacterOffsetEnd=50
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=’’
+Lemma=’ NamedEntityTag=O SentimentClass=Neutral] [Text=round
+CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=VBP
+Lemma=round NamedEntityTag=O SentimentClass=Neutral] [Text=the
+CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the
+NamedEntityTag=O SentimentClass=Neutral] [Text=foothills
+CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NNS
+Lemma=foothill NamedEntityTag=O SentimentClass=Neutral] [Text=of
+CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of
+NamedEntityTag=O SentimentClass=Neutral] [Text=my
+CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=my
+NamedEntityTag=O SentimentClass=Neutral] [Text=town
+CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=town
+NamedEntityTag=O SentimentClass=Positive] [Text=.
+CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (VP (VB Walk) (NP (PRP you) (’’ ’))))
+(VP (VBP round) (NP (NP (DT the) (NNS foothills)) (PP (IN of) (NP (PRP$
+my) (NN town))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=3</td>
+      <td>prob=0.698</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.583 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.841 Walk)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.950 (PRP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)</td>
+    </tr>
+    <tr>
+      <td>(’‘</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998’))) (@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.656</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.819 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.957 round)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.440 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.846</td>
+    </tr>
+    <tr>
+      <td>(DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 the) (NNS</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 foothills))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.520 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 of)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.925 (PRP$</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 my)</td>
+    </tr>
+    <tr>
+      <td>(NN</td>
+      <td>sentiment=3</td>
+      <td>prob=0.879 town))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+round-4) csubj(round-4, Walk-1) dobj(Walk-1, you-2) punct(you-2, ’-3)
+det(foothills-6, the-5) dobj(round-4, foothills-6) case(town-9, of-7)
+nmod:poss(town-9, my-8) nmod:of(foothills-6, town-9) punct(round-4,
+.-10)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #3 (25 tokens, sentiment: Negative): Probably feel like you’ve
+been there before, After hearing all the stories; I’ve been telling you
+For six months now.</p>
+
+<p>Tokens: [Text=Probably CharacterOffsetBegin=84 CharacterOffsetEnd=92
+PartOfSpeech=RB Lemma=probably NamedEntityTag=O SentimentClass=Neutral]
+[Text=feel CharacterOffsetBegin=93 CharacterOffsetEnd=97
+PartOfSpeech=VB Lemma=feel NamedEntityTag=O SentimentClass=Neutral]
+[Text=like CharacterOffsetBegin=98 CharacterOffsetEnd=102
+PartOfSpeech=IN Lemma=like NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=103 CharacterOffsetEnd=106
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ve CharacterOffsetBegin=106 CharacterOffsetEnd=109
+PartOfSpeech=VBP Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=been CharacterOffsetBegin=110 CharacterOffsetEnd=114
+PartOfSpeech=VBN Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=there CharacterOffsetBegin=115 CharacterOffsetEnd=120
+PartOfSpeech=RB Lemma=there NamedEntityTag=O SentimentClass=Neutral]
+[Text=before CharacterOffsetBegin=121 CharacterOffsetEnd=127
+PartOfSpeech=RB Lemma=before NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=,
+Lemma=, NamedEntityTag=O SentimentClass=Neutral] [Text=After
+CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=IN
+Lemma=after NamedEntityTag=O SentimentClass=Neutral] [Text=hearing
+CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=VBG
+Lemma=hear NamedEntityTag=O SentimentClass=Neutral] [Text=all
+CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=PDT
+Lemma=all NamedEntityTag=O SentimentClass=Neutral] [Text=the
+CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT
+Lemma=the NamedEntityTag=O SentimentClass=Neutral] [Text=stories
+CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=NNS
+Lemma=story NamedEntityTag=O SentimentClass=Neutral] [Text=;
+CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=: Lemma=;
+NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=’ve
+CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=VBP
+Lemma=have NamedEntityTag=O SentimentClass=Neutral] [Text=been
+CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=VBN
+Lemma=be NamedEntityTag=O SentimentClass=Neutral] [Text=telling
+CharacterOffsetBegin=170 CharacterOffsetEnd=177 PartOfSpeech=VBG
+Lemma=tell NamedEntityTag=O SentimentClass=Positive] [Text=you
+CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=For
+CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=IN
+Lemma=for NamedEntityTag=O SentimentClass=Neutral] [Text=six
+CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=CD
+Lemma=six NamedEntityTag=DURATION NormalizedNamedEntityTag=P6M
+Timex=<TIMEX3 tid="t1" type="DURATION" value="P6M">six months</TIMEX3>
+SentimentClass=Neutral] [Text=months CharacterOffsetBegin=190
+CharacterOffsetEnd=196 PartOfSpeech=NNS Lemma=month
+NamedEntityTag=DURATION NormalizedNamedEntityTag=P6M
+Timex=<TIMEX3 tid="t1" type="DURATION" value="P6M">six months</TIMEX3>
+SentimentClass=Neutral] [Text=now CharacterOffsetBegin=197
+CharacterOffsetEnd=200 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE
+NormalizedNamedEntityTag=PRESENT_REF
+Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>
+SentimentClass=Neutral] [Text=. CharacterOffsetBegin=200
+CharacterOffsetEnd=201 PartOfSpeech=. Lemma=. NamedEntityTag=O
+SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (ADVP (RB Probably)) (VP (VB feel) (SBAR
+(IN like) (S (NP (PRP you)) (VP (VBP ’ve) (VP (VBN been) (ADVP (RB
+there)) (ADVP (RB before)))) (, ,) (PP (IN After) (S (VP (VBG hearing)
+(NP (PDT all) (DT the) (NNS stories))))))))) (: ;) (S (NP (PRP I)) (VP
+(VBP ’ve) (VP (VBN been) (VP (VBG telling) (S (NP (PRP you)) (PP (IN
+For) (NP (CD six) (NNS months)))) (ADVP (RB now)))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.510</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.538 (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.488</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.447 (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.864 Probably)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.488 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 feel)</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=1</td>
+      <td>prob=0.527 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 like)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.400 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.395 (@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.548</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.792 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 ’ve)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.893 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.961</td>
+    </tr>
+    <tr>
+      <td>(VBN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 been) (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 there))</td>
+    </tr>
+    <tr>
+      <td>(ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 before))) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.672 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 After)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.536 (VBG</td>
+      <td>sentiment=2</td>
+      <td>prob=0.884 hearing)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.920 (PDT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 all)</td>
+    </tr>
+    <tr>
+      <td>(@NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.961 (DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 the)</td>
+    </tr>
+    <tr>
+      <td>(NNS</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 stories)))))))))) (:</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997</td>
+    </tr>
+    <tr>
+      <td>;)) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.852 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.958 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 ’ve)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.917 (VBN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 been)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.965 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.921</td>
+    </tr>
+    <tr>
+      <td>(VBG</td>
+      <td>sentiment=3</td>
+      <td>prob=0.945 telling) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.937</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you) (PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.957</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 For) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.956</td>
+    </tr>
+    <tr>
+      <td>(CD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.969 six) (NNS</td>
+      <td>sentiment=2</td>
+      <td>prob=0.980 months)))))</td>
+    </tr>
+    <tr>
+      <td>(ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 now)))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, feel-2)
+advmod(feel-2, Probably-1) mark(been-6, like-3) nsubj(been-6, you-4)
+aux(been-6, ’ve-5) advcl:like(feel-2, been-6) advmod(been-6, there-7)
+advmod(been-6, before-8) punct(been-6, ,-9) mark(hearing-11, After-10)
+advcl:after(been-6, hearing-11) det:predet(stories-14, all-12)
+det(stories-14, the-13) dobj(hearing-11, stories-14) punct(feel-2, ;-15)
+nsubj(telling-19, I-16) aux(telling-19, ’ve-17) aux(telling-19, been-18)
+parataxis(feel-2, telling-19) xcomp(telling-19, you-20) case(months-23,
+For-21) nummod(months-23, six-22) dep(you-20, months-23)
+advmod(telling-19, now-24) punct(feel-2, .-25)</p>
+
+<p>Extracted the following NER entity mentions: six months DURATION now
+DATE</p>
+
+<p>Sentence #4 (10 tokens, sentiment: Negative): We’ll probably have to
+sleep in separate bedrooms.</p>
+
+<p>Tokens: [Text=We CharacterOffsetBegin=203 CharacterOffsetEnd=205
+PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=205 CharacterOffsetEnd=208
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=probably CharacterOffsetBegin=209 CharacterOffsetEnd=217
+PartOfSpeech=RB Lemma=probably NamedEntityTag=O SentimentClass=Neutral]
+[Text=have CharacterOffsetBegin=218 CharacterOffsetEnd=222
+PartOfSpeech=VB Lemma=have NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=223 CharacterOffsetEnd=225
+PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=sleep CharacterOffsetBegin=226 CharacterOffsetEnd=231
+PartOfSpeech=VB Lemma=sleep NamedEntityTag=O SentimentClass=Negative]
+[Text=in CharacterOffsetBegin=232 CharacterOffsetEnd=234
+PartOfSpeech=IN Lemma=in NamedEntityTag=O SentimentClass=Neutral]
+[Text=separate CharacterOffsetBegin=235 CharacterOffsetEnd=243
+PartOfSpeech=JJ Lemma=separate NamedEntityTag=O SentimentClass=Neutral]
+[Text=bedrooms CharacterOffsetBegin=244 CharacterOffsetEnd=252
+PartOfSpeech=NNS Lemma=bedroom NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=.
+Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (NP (PRP We)) (VP (MD ’ll) (ADVP (RB
+probably)) (VP (VB have) (S (VP (TO to) (VP (VB sleep) (PP (IN in) (NP
+(JJ separate) (NNS bedrooms)))))))) (. .)))</p>
+
+<p>Sentiment-annotated binary tree: (ROOT|sentiment=1|prob=0.708
+(NP|sentiment=2|prob=0.992 We) (@S|sentiment=1|prob=0.484
+(VP|sentiment=2|prob=0.488 (@VP|sentiment=2|prob=0.685
+(MD|sentiment=2|prob=0.998 ’ll) (ADVP|sentiment=2|prob=0.994 probably))
+(VP|sentiment=2|prob=0.637 (VB|sentiment=2|prob=0.991 have)
+(S|sentiment=2|prob=0.677 (TO|sentiment=2|prob=0.990 to)
+(VP|sentiment=2|prob=0.680 (VB|sentiment=1|prob=0.788 sleep)
+(PP|sentiment=2|prob=0.923 (IN|sentiment=2|prob=0.993 in)
+(NP|sentiment=2|prob=0.871 (JJ|sentiment=2|prob=0.955 separate)
+(NNS|sentiment=2|prob=0.631 bedrooms))))))) (.|sentiment=2|prob=0.997
+.)))</p>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, have-4)
+nsubj(have-4, We-1) nsubj:xsubj(sleep-6, We-1) aux(have-4, ’ll-2)
+advmod(have-4, probably-3) mark(sleep-6, to-5) xcomp(have-4, sleep-6)
+case(bedrooms-9, in-7) amod(bedrooms-9, separate-8) nmod:in(sleep-6,
+bedrooms-9) punct(have-4, .-10)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #5 (10 tokens, sentiment: Negative): Pack a shirt for church
+because we’ll go.</p>
+
+<p>Tokens: [Text=Pack CharacterOffsetBegin=254 CharacterOffsetEnd=258
+PartOfSpeech=VB Lemma=pack NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=DT
+Lemma=a NamedEntityTag=O SentimentClass=Neutral] [Text=shirt
+CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NN
+Lemma=shirt NamedEntityTag=O SentimentClass=Neutral] [Text=for
+CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=IN
+Lemma=for NamedEntityTag=O SentimentClass=Neutral] [Text=church
+CharacterOffsetBegin=271 CharacterOffsetEnd=277 PartOfSpeech=NN
+Lemma=church NamedEntityTag=O SentimentClass=Neutral] [Text=because
+CharacterOffsetBegin=278 CharacterOffsetEnd=285 PartOfSpeech=IN
+Lemma=because NamedEntityTag=O SentimentClass=Neutral] [Text=we
+CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=PRP
+Lemma=we NamedEntityTag=O SentimentClass=Neutral] [Text=’ll
+CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=MD
+Lemma=will NamedEntityTag=O SentimentClass=Neutral] [Text=go
+CharacterOffsetBegin=292 CharacterOffsetEnd=294 PartOfSpeech=VB Lemma=go
+NamedEntityTag=O SentimentClass=Neutral] [Text=.
+CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (VP (VB Pack) (NP (NP (DT a) (NN shirt))
+(PP (IN for) (NP (NN church)))) (SBAR (IN because) (S (NP (PRP we)) (VP
+(MD ’ll) (VP (VB go)))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.647</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.625 (@VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.455</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 Pack) (NP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.434</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.560 (DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 a)</td>
+    </tr>
+    <tr>
+      <td>(NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.816 shirt)) (PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.830</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 for) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.936 church))))</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.870 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 because)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.839 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 we)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.976 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 go))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, Pack-1)
+det(shirt-3, a-2) dobj(Pack-1, shirt-3) case(church-5, for-4)
+nmod:for(shirt-3, church-5) mark(go-9, because-6) nsubj(go-9, we-7)
+aux(go-9, ’ll-8) advcl:because(Pack-1, go-9) punct(Pack-1, .-10)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #6 (9 tokens, sentiment: Negative): I’m not trying to scare
+you off.</p>
+
+<p>Tokens: [Text=I CharacterOffsetBegin=296 CharacterOffsetEnd=297
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=’m CharacterOffsetBegin=297 CharacterOffsetEnd=299
+PartOfSpeech=VBP Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=not CharacterOffsetBegin=300 CharacterOffsetEnd=303
+PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Negative]
+[Text=trying CharacterOffsetBegin=304 CharacterOffsetEnd=310
+PartOfSpeech=VBG Lemma=try NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=311 CharacterOffsetEnd=313
+PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=scare CharacterOffsetBegin=314 CharacterOffsetEnd=319
+PartOfSpeech=VB Lemma=scare NamedEntityTag=O SentimentClass=Negative]
+[Text=you CharacterOffsetBegin=320 CharacterOffsetEnd=323
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=off CharacterOffsetBegin=324 CharacterOffsetEnd=327
+PartOfSpeech=RP Lemma=off NamedEntityTag=O SentimentClass=Negative]
+[Text=. CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=.
+Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (NP (PRP I)) (VP (VBP ’m) (RB not) (VP (VBG
+trying) (S (VP (TO to) (VP (VB scare) (NP (PRP you)) (PRT (RP off)))))))
+(. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.648</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.609</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.519 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.554</td>
+    </tr>
+    <tr>
+      <td>(VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.934 ’m) (RB</td>
+      <td>sentiment=1</td>
+      <td>prob=0.974 not))</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.668 (VBG</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 trying)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.353 (TO</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 to)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.306 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.493</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=1</td>
+      <td>prob=0.422 scare) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you))</td>
+    </tr>
+    <tr>
+      <td>(PRT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.950 off))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+trying-4) nsubj(trying-4, I-1) nsubj:xsubj(scare-6, I-1) aux(trying-4,
+’m-2) neg(trying-4, not-3) mark(scare-6, to-5) xcomp(trying-4,
+scare-6) dobj(scare-6, you-7) compound:prt(scare-6, off-8)
+punct(trying-4, .-9)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #7 (19 tokens, sentiment: Positive): But I just thought that
+we should talk; a few things out Before we hit the road.</p>
+
+<p>Tokens: [Text=But CharacterOffsetBegin=330 CharacterOffsetEnd=333
+PartOfSpeech=CC Lemma=but NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=334 CharacterOffsetEnd=335
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=just CharacterOffsetBegin=336 CharacterOffsetEnd=340
+PartOfSpeech=RB Lemma=just NamedEntityTag=O SentimentClass=Neutral]
+[Text=thought CharacterOffsetBegin=341 CharacterOffsetEnd=348
+PartOfSpeech=VBD Lemma=think NamedEntityTag=O SentimentClass=Neutral]
+[Text=that CharacterOffsetBegin=349 CharacterOffsetEnd=353
+PartOfSpeech=IN Lemma=that NamedEntityTag=O SentimentClass=Neutral]
+[Text=we CharacterOffsetBegin=354 CharacterOffsetEnd=356
+PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=should CharacterOffsetBegin=357 CharacterOffsetEnd=363
+PartOfSpeech=MD Lemma=should NamedEntityTag=O SentimentClass=Neutral]
+[Text=talk CharacterOffsetBegin=364 CharacterOffsetEnd=368
+PartOfSpeech=VB Lemma=talk NamedEntityTag=O SentimentClass=Neutral]
+[Text=; CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=:
+Lemma=; NamedEntityTag=O SentimentClass=Neutral] [Text=a
+CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=DT Lemma=a
+NamedEntityTag=O SentimentClass=Neutral] [Text=few
+CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=JJ
+Lemma=few NamedEntityTag=O SentimentClass=Neutral] [Text=things
+CharacterOffsetBegin=376 CharacterOffsetEnd=382 PartOfSpeech=NNS
+Lemma=thing NamedEntityTag=O SentimentClass=Neutral] [Text=out
+CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=RP
+Lemma=out NamedEntityTag=O SentimentClass=Negative] [Text=Before
+CharacterOffsetBegin=387 CharacterOffsetEnd=393 PartOfSpeech=IN
+Lemma=before NamedEntityTag=O SentimentClass=Neutral] [Text=we
+CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=PRP
+Lemma=we NamedEntityTag=O SentimentClass=Neutral] [Text=hit
+CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=VBD
+Lemma=hit NamedEntityTag=O SentimentClass=Positive] [Text=the
+CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=DT
+Lemma=the NamedEntityTag=O SentimentClass=Neutral] [Text=road
+CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=NN
+Lemma=road NamedEntityTag=O SentimentClass=Negative] [Text=.
+CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (CC But) (NP (PRP I)) (ADVP (RB just)) (VP
+(VBD thought) (SBAR (IN that) (S (NP (PRP we)) (VP (MD should) (VP (VB
+talk))) (: ;) (SBAR (NP (NP (DT a) (JJ few) (NNS things)) (ADVP (RP
+out))) (IN Before) (S (NP (PRP we)) (VP (VBD hit) (NP (DT the) (NN
+road)))))))) (. .)))</p>
+
+<p>Sentiment-annotated binary tree: (ROOT|sentiment=3|prob=0.420
+(CC|sentiment=2|prob=0.999 But) (@S|sentiment=3|prob=0.400
+(NP|sentiment=2|prob=0.996 I) (@S|sentiment=3|prob=0.400
+(ADVP|sentiment=2|prob=0.996 just) (@S|sentiment=3|prob=0.473
+(VP|sentiment=2|prob=0.483 (VBD|sentiment=2|prob=0.997 thought)
+(SBAR|sentiment=2|prob=0.504 (IN|sentiment=2|prob=0.991 that)
+(S|sentiment=2|prob=0.486 (NP|sentiment=2|prob=0.996 we)
+(@S|sentiment=2|prob=0.421 (@S|sentiment=2|prob=0.708
+(VP|sentiment=2|prob=0.926 (MD|sentiment=2|prob=0.998 should)
+(VP|sentiment=2|prob=0.984 talk)) (:|sentiment=2|prob=0.997 ;))
+(SBAR|sentiment=2|prob=0.502 (NP|sentiment=2|prob=0.911
+(NP|sentiment=2|prob=0.951 (DT|sentiment=2|prob=0.990 a)
+(@NP|sentiment=2|prob=0.928 (JJ|sentiment=2|prob=0.994 few)
+(NNS|sentiment=2|prob=0.992 things))) (ADVP|sentiment=1|prob=0.945 out))
+(@SBAR|sentiment=2|prob=0.840 (IN|sentiment=2|prob=0.988 Before)
+(S|sentiment=2|prob=0.741 (NP|sentiment=2|prob=0.996 we)
+(VP|sentiment=2|prob=0.828 (VBD|sentiment=3|prob=0.909 hit)
+(NP|sentiment=2|prob=0.977 (DT|sentiment=2|prob=0.994 the)
+(NN|sentiment=1|prob=0.857 road)))))))))) (.|sentiment=2|prob=0.997
+.)))))</p>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+thought-4) cc(thought-4, But-1) nsubj(thought-4, I-2) advmod(thought-4,
+just-3) mark(talk-8, that-5) nsubj(talk-8, we-6) aux(talk-8, should-7)
+ccomp(thought-4, talk-8) punct(talk-8, ;-9) det(things-12, a-10)
+amod(things-12, few-11) dep(hit-16, things-12) advmod(things-12, out-13)
+mark(hit-16, Before-14) nsubj(hit-16, we-15) parataxis(talk-8, hit-16)
+det(road-18, the-17) dobj(hit-16, road-18) punct(thought-4, .-19)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #8 (26 tokens, sentiment: Negative): If I bring you home to
+Mama, I guess I better warn ya, She falls in love a little faster than I
+do.</p>
+
+<p>Tokens: [Text=If CharacterOffsetBegin=412 CharacterOffsetEnd=414
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=415 CharacterOffsetEnd=416
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=bring CharacterOffsetBegin=417 CharacterOffsetEnd=422
+PartOfSpeech=VBP Lemma=bring NamedEntityTag=O SentimentClass=Positive]
+[Text=you CharacterOffsetBegin=423 CharacterOffsetEnd=426
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=home CharacterOffsetBegin=427 CharacterOffsetEnd=431
+PartOfSpeech=NN Lemma=home NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=432 CharacterOffsetEnd=434
+PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=Mama CharacterOffsetBegin=435 CharacterOffsetEnd=439
+PartOfSpeech=NN Lemma=mama NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech=,
+Lemma=, NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=441 CharacterOffsetEnd=442 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=guess
+CharacterOffsetBegin=443 CharacterOffsetEnd=448 PartOfSpeech=VBP
+Lemma=guess NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=449 CharacterOffsetEnd=450 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=better
+CharacterOffsetBegin=451 CharacterOffsetEnd=457 PartOfSpeech=RB
+Lemma=better NamedEntityTag=O SentimentClass=Very positive] [Text=warn
+CharacterOffsetBegin=458 CharacterOffsetEnd=462 PartOfSpeech=VBP
+Lemma=warn NamedEntityTag=O SentimentClass=Negative] [Text=ya
+CharacterOffsetBegin=463 CharacterOffsetEnd=465 PartOfSpeech=PRP
+Lemma=ya NamedEntityTag=O SentimentClass=Neutral] [Text=,
+CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=, Lemma=,
+NamedEntityTag=O SentimentClass=Neutral] [Text=She
+CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=PRP
+Lemma=she NamedEntityTag=O SentimentClass=Neutral] [Text=falls
+CharacterOffsetBegin=471 CharacterOffsetEnd=476 PartOfSpeech=VBZ
+Lemma=fall NamedEntityTag=O SentimentClass=Negative] [Text=in
+CharacterOffsetBegin=477 CharacterOffsetEnd=479 PartOfSpeech=IN Lemma=in
+NamedEntityTag=O SentimentClass=Neutral] [Text=love
+CharacterOffsetBegin=480 CharacterOffsetEnd=484 PartOfSpeech=NN
+Lemma=love NamedEntityTag=O SentimentClass=Very positive] [Text=a
+CharacterOffsetBegin=485 CharacterOffsetEnd=486 PartOfSpeech=DT Lemma=a
+NamedEntityTag=O SentimentClass=Neutral] [Text=little
+CharacterOffsetBegin=487 CharacterOffsetEnd=493 PartOfSpeech=JJ
+Lemma=little NamedEntityTag=O SentimentClass=Neutral] [Text=faster
+CharacterOffsetBegin=494 CharacterOffsetEnd=500 PartOfSpeech=JJR
+Lemma=faster NamedEntityTag=O SentimentClass=Neutral] [Text=than
+CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=IN
+Lemma=than NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=506 CharacterOffsetEnd=507 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=do
+CharacterOffsetBegin=508 CharacterOffsetEnd=510 PartOfSpeech=VBP
+Lemma=do NamedEntityTag=O SentimentClass=Neutral] [Text=.
+CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (SBAR (IN If) (S (NP (PRP I)) (VP (VBP
+bring) (NP (PRP you)) (ADVP (NN home) (TO to) (NN Mama))))) (, ,) (NP
+(PRP I)) (VP (VBP guess) (SBAR (S (NP (PRP I)) (ADVP (RB better)) (VP
+(VBP warn) (NP (PRP ya))))))) (, ,) (NP (PRP She)) (VP (VBZ falls) (PP
+(IN in) (NP (NP (NN love)) (ADJP (NP (DT a) (JJ little)) (JJR faster))))
+(SBAR (IN than) (S (NP (PRP I)) (VP (VBP do))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.514</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.721 (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.596</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 If) (S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.540</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.531</td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.770 (VBP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.927 bring)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)) (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.979</td>
+    </tr>
+    <tr>
+      <td>(NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 home) (@ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.987</td>
+    </tr>
+    <tr>
+      <td>(TO</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 to) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 Mama))))))</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.619 (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.631 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.542 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.980 guess)</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.547 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.662 (ADVP</td>
+      <td>sentiment=4</td>
+      <td>prob=0.768 better)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.696 (VBP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.567 warn)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.945 ya)))))))) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.542</td>
+    </tr>
+    <tr>
+      <td>(,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.459</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 She) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.755</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.846 (@VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.764</td>
+    </tr>
+    <tr>
+      <td>(VBZ</td>
+      <td>sentiment=1</td>
+      <td>prob=0.925 falls) (PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.678</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 in) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.601</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=4</td>
+      <td>prob=0.895 love) (ADJP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.888</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.978 (DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 a)</td>
+    </tr>
+    <tr>
+      <td>(JJ</td>
+      <td>sentiment=2</td>
+      <td>prob=0.985 little)) (JJR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990</td>
+    </tr>
+    <tr>
+      <td>faster))))) (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.956 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998</td>
+    </tr>
+    <tr>
+      <td>than) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.960 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 do)))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+falls-17) mark(bring-3, If-1) nsubj(bring-3, I-2) advcl:if(guess-10,
+bring-3) dobj(bring-3, you-4) dep(Mama-7, home-5) dep(Mama-7, to-6)
+advmod(bring-3, Mama-7) punct(guess-10, ,-8) nsubj(guess-10, I-9)
+ccomp(falls-17, guess-10) nsubj(warn-13, I-11) advmod(warn-13,
+better-12) ccomp(guess-10, warn-13) dobj(warn-13, ya-14) punct(falls-17,
+,-15) nsubj(falls-17, She-16) case(love-19, in-18) nmod:in(falls-17,
+love-19) det(little-21, a-20) nmod:npmod(faster-22, little-21)
+amod(love-19, faster-22) mark(do-25, than-23) nsubj(do-25, I-24)
+advcl:than(falls-17, do-25) punct(falls-17, .-26)</p>
+
+<p>Extracted the following NER entity mentions: She PERSON</p>
+
+<p>Sentence #9 (27 tokens, sentiment: Negative): And my dad will check
+your tires, Pour you whiskey over ice, And take you fishing but pretend
+that he don’t like you.</p>
+
+<p>Tokens: [Text=And CharacterOffsetBegin=512 CharacterOffsetEnd=515
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=my CharacterOffsetBegin=516 CharacterOffsetEnd=518
+PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O SentimentClass=Neutral]
+[Text=dad CharacterOffsetBegin=519 CharacterOffsetEnd=522
+PartOfSpeech=NN Lemma=dad NamedEntityTag=O SentimentClass=Neutral]
+[Text=will CharacterOffsetBegin=523 CharacterOffsetEnd=527
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=check CharacterOffsetBegin=528 CharacterOffsetEnd=533
+PartOfSpeech=VB Lemma=check NamedEntityTag=O SentimentClass=Positive]
+[Text=your CharacterOffsetBegin=534 CharacterOffsetEnd=538
+PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=tires CharacterOffsetBegin=539 CharacterOffsetEnd=544
+PartOfSpeech=NNS Lemma=tire NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=544 CharacterOffsetEnd=545 PartOfSpeech=,
+Lemma=, NamedEntityTag=O SentimentClass=Neutral] [Text=Pour
+CharacterOffsetBegin=546 CharacterOffsetEnd=550 PartOfSpeech=NNP
+Lemma=Pour NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=551 CharacterOffsetEnd=554 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=whiskey
+CharacterOffsetBegin=555 CharacterOffsetEnd=562 PartOfSpeech=NN
+Lemma=whiskey NamedEntityTag=O SentimentClass=Neutral] [Text=over
+CharacterOffsetBegin=563 CharacterOffsetEnd=567 PartOfSpeech=IN
+Lemma=over NamedEntityTag=O SentimentClass=Neutral] [Text=ice
+CharacterOffsetBegin=568 CharacterOffsetEnd=571 PartOfSpeech=NN
+Lemma=ice NamedEntityTag=O SentimentClass=Neutral] [Text=,
+CharacterOffsetBegin=571 CharacterOffsetEnd=572 PartOfSpeech=, Lemma=,
+NamedEntityTag=O SentimentClass=Neutral] [Text=And
+CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=CC
+Lemma=and NamedEntityTag=O SentimentClass=Neutral] [Text=take
+CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=VB
+Lemma=take NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=582 CharacterOffsetEnd=585 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=fishing
+CharacterOffsetBegin=586 CharacterOffsetEnd=593 PartOfSpeech=NN
+Lemma=fishing NamedEntityTag=O SentimentClass=Neutral] [Text=but
+CharacterOffsetBegin=594 CharacterOffsetEnd=597 PartOfSpeech=CC
+Lemma=but NamedEntityTag=O SentimentClass=Neutral] [Text=pretend
+CharacterOffsetBegin=598 CharacterOffsetEnd=605 PartOfSpeech=VBP
+Lemma=pretend NamedEntityTag=O SentimentClass=Neutral] [Text=that
+CharacterOffsetBegin=606 CharacterOffsetEnd=610 PartOfSpeech=IN
+Lemma=that NamedEntityTag=O SentimentClass=Neutral] [Text=he
+CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=PRP
+Lemma=he NamedEntityTag=O SentimentClass=Neutral] [Text=do
+CharacterOffsetBegin=614 CharacterOffsetEnd=616 PartOfSpeech=VBP
+Lemma=do NamedEntityTag=O SentimentClass=Neutral] [Text=n’t
+CharacterOffsetBegin=616 CharacterOffsetEnd=619 PartOfSpeech=RB
+Lemma=not NamedEntityTag=O SentimentClass=Neutral] [Text=like
+CharacterOffsetBegin=620 CharacterOffsetEnd=624 PartOfSpeech=VB
+Lemma=like NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=625 CharacterOffsetEnd=628 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=.
+CharacterOffsetBegin=628 CharacterOffsetEnd=629 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (CC And) (S (S (NP (PRP$ my) (NN dad)) (VP
+(MD will) (VP (VB check) (NP (PRP$ your) (NNS tires))))) (, ,) (S (NP
+(NNP Pour) (PRP you)) (NP (NP (NN whiskey)) (PP (IN over) (NP (NN
+ice)))))) (, ,) (CC And) (SINV (VP (VB take) (NP (PRP you))) (NP (NP (NN
+fishing)) (SBAR (CC but) (S (VP (VBP pretend) (SBAR (IN that) (S (NP
+(PRP he)) (VP (VBP do) (RB n’t) (VP (VB like) (NP (PRP you))))))))))) (.
+.)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.535</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 And) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.454</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.442 (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.650</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.493 (S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.472</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.408 (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.393</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.920</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(PRP(</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 my) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.963 dad))  (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.425 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 will)  (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.427 (VB</td>
+      <td>sentiment=3</td>
+      <td>prob=0.749 check)  (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.917 (PRP)</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998</td>
+    </tr>
+    <tr>
+      <td>your) (NNS</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 tires))))) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>,)) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.348 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.632</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NNP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 Pour) (PRP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you))</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.557 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 whiskey)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.986 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 over)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 ice))))) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,))</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 And)) (SINV</td>
+      <td>sentiment=1</td>
+      <td>prob=0.480</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.927 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 take)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)) (NP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.495</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.671 fishing) (SBAR</td>
+      <td>sentiment=1</td>
+      <td>prob=0.522</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 but) (S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.484</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.766 pretend) (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.550</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 that) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.532</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 he) (VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.441</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.963 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 do)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(RB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 n’t)) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.841</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 like) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>you)))))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+check-5) cc(check-5, And-1) nmod:poss(dad-3, my-2) nsubj(check-5, dad-3)
+aux(check-5, will-4) nmod:poss(tires-7, your-6) dobj(check-5, tires-7)
+punct(check-5, ,-8) dep(whiskey-11, Pour-9) dep(Pour-9, you-10)
+parataxis(check-5, whiskey-11) case(ice-13, over-12)
+nmod:over(whiskey-11, ice-13) punct(check-5, ,-14) cc(check-5, And-15)
+conj:and(check-5, take-16) dobj(take-16, you-17) nsubj(take-16,
+fishing-18) cc(pretend-20, but-19) dep(fishing-18, pretend-20)
+mark(like-25, that-21) nsubj(like-25, he-22) aux(like-25, do-23)
+neg(like-25, n’t-24) ccomp(pretend-20, like-25) dobj(like-25, you-26)
+punct(check-5, .-27)</p>
+
+<p>Extracted the following NER entity mentions: he PERSON</p>
+
+<p>Sentence #10 (20 tokens, sentiment: Positive): If we break up, I’ll be
+fine; But you’ll be breaking more hearts than mine.</p>
+
+<p>Tokens: [Text=If CharacterOffsetBegin=630 CharacterOffsetEnd=632
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=we CharacterOffsetBegin=633 CharacterOffsetEnd=635
+PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=break CharacterOffsetBegin=636 CharacterOffsetEnd=641
+PartOfSpeech=VBP Lemma=break NamedEntityTag=O SentimentClass=Neutral]
+[Text=up CharacterOffsetBegin=642 CharacterOffsetEnd=644
+PartOfSpeech=RP Lemma=up NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=644 CharacterOffsetEnd=645 PartOfSpeech=,
+Lemma=, NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=646 CharacterOffsetEnd=647 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=’ll
+CharacterOffsetBegin=647 CharacterOffsetEnd=650 PartOfSpeech=MD
+Lemma=will NamedEntityTag=O SentimentClass=Neutral] [Text=be
+CharacterOffsetBegin=651 CharacterOffsetEnd=653 PartOfSpeech=VB Lemma=be
+NamedEntityTag=O SentimentClass=Neutral] [Text=fine
+CharacterOffsetBegin=654 CharacterOffsetEnd=658 PartOfSpeech=JJ
+Lemma=fine NamedEntityTag=O SentimentClass=Positive] [Text=;
+CharacterOffsetBegin=658 CharacterOffsetEnd=659 PartOfSpeech=: Lemma=;
+NamedEntityTag=O SentimentClass=Neutral] [Text=But
+CharacterOffsetBegin=660 CharacterOffsetEnd=663 PartOfSpeech=CC
+Lemma=but NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=664 CharacterOffsetEnd=667 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=’ll
+CharacterOffsetBegin=667 CharacterOffsetEnd=670 PartOfSpeech=MD
+Lemma=will NamedEntityTag=O SentimentClass=Neutral] [Text=be
+CharacterOffsetBegin=671 CharacterOffsetEnd=673 PartOfSpeech=VB Lemma=be
+NamedEntityTag=O SentimentClass=Neutral] [Text=breaking
+CharacterOffsetBegin=674 CharacterOffsetEnd=682 PartOfSpeech=VBG
+Lemma=break NamedEntityTag=O SentimentClass=Neutral] [Text=more
+CharacterOffsetBegin=683 CharacterOffsetEnd=687 PartOfSpeech=JJR
+Lemma=more NamedEntityTag=O SentimentClass=Neutral] [Text=hearts
+CharacterOffsetBegin=688 CharacterOffsetEnd=694 PartOfSpeech=NNS
+Lemma=heart NamedEntityTag=O SentimentClass=Positive] [Text=than
+CharacterOffsetBegin=695 CharacterOffsetEnd=699 PartOfSpeech=IN
+Lemma=than NamedEntityTag=O SentimentClass=Neutral] [Text=mine
+CharacterOffsetBegin=700 CharacterOffsetEnd=704 PartOfSpeech=NN
+Lemma=mine NamedEntityTag=O SentimentClass=Neutral] [Text=.
+CharacterOffsetBegin=704 CharacterOffsetEnd=705 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (SBAR (IN If) (S (NP (PRP we)) (VP (VBP
+break) (PRT (RP up))))) (, ,) (NP (PRP I)) (VP (MD ’ll) (VP (VB be)
+(ADJP (JJ fine))))) (: ;) (CC But) (S (NP (PRP you)) (VP (MD ’ll) (VP
+(VB be) (VP (VBG breaking) (NP (JJR more) (NNS hearts)) (PP (IN than)
+(NP (NN mine))))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=3</td>
+      <td>prob=0.774</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.711 (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.746</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.683 (S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.720</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.908 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 If)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.853 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 we)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.853 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.984 break)</td>
+    </tr>
+    <tr>
+      <td>(PRT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 up)))) (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.610</td>
+    </tr>
+    <tr>
+      <td>(,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,) (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.716</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.615</td>
+    </tr>
+    <tr>
+      <td>(MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.609</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be) (ADJP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.894 fine))))))</td>
+    </tr>
+    <tr>
+      <td>(:</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ;)) (CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 But))</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.412 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.552 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.583 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.463 (@VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.456</td>
+    </tr>
+    <tr>
+      <td>(VBG</td>
+      <td>sentiment=2</td>
+      <td>prob=0.962 breaking) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.866</td>
+    </tr>
+    <tr>
+      <td>(JJR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 more) (NNS</td>
+      <td>sentiment=3</td>
+      <td>prob=0.921 hearts)))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 than)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.941 mine))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, fine-9)
+mark(break-3, If-1) nsubj(break-3, we-2) advcl:if(fine-9, break-3)
+compound:prt(break-3, up-4) punct(fine-9, ,-5) nsubj(fine-9, I-6)
+aux(fine-9, ’ll-7) cop(fine-9, be-8) punct(fine-9, ;-10) cc(fine-9,
+But-11) nsubj(breaking-15, you-12) aux(breaking-15, ’ll-13)
+aux(breaking-15, be-14) conj:but(fine-9, breaking-15) amod(hearts-17,
+more-16) dobj(breaking-15, hearts-17) case(mine-19, than-18)
+nmod:than(breaking-15, mine-19) punct(fine-9, .-20)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #11 (10 tokens, sentiment: Neutral): My sister’s gonna ask a
+million questions.</p>
+
+<p>Tokens: [Text=My CharacterOffsetBegin=707 CharacterOffsetEnd=709
+PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O SentimentClass=Neutral]
+[Text=sister CharacterOffsetBegin=710 CharacterOffsetEnd=716
+PartOfSpeech=NN Lemma=sister NamedEntityTag=O SentimentClass=Neutral]
+[Text=’s CharacterOffsetBegin=716 CharacterOffsetEnd=718
+PartOfSpeech=POS Lemma=’s NamedEntityTag=O SentimentClass=Neutral]
+[Text=gon CharacterOffsetBegin=719 CharacterOffsetEnd=722
+PartOfSpeech=VBG Lemma=gon NamedEntityTag=O SentimentClass=Neutral]
+[Text=na CharacterOffsetBegin=722 CharacterOffsetEnd=724
+PartOfSpeech=TO Lemma=na NamedEntityTag=O SentimentClass=Neutral]
+[Text=ask CharacterOffsetBegin=725 CharacterOffsetEnd=728
+PartOfSpeech=VB Lemma=ask NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=729 CharacterOffsetEnd=730 PartOfSpeech=DT
+Lemma=a NamedEntityTag=O SentimentClass=Neutral] [Text=million
+CharacterOffsetBegin=731 CharacterOffsetEnd=738 PartOfSpeech=CD
+Lemma=million NamedEntityTag=NUMBER NormalizedNamedEntityTag=1000000.0
+SentimentClass=Neutral] [Text=questions CharacterOffsetBegin=739
+CharacterOffsetEnd=748 PartOfSpeech=NNS Lemma=question NamedEntityTag=O
+SentimentClass=Neutral] [Text=. CharacterOffsetBegin=748
+CharacterOffsetEnd=749 PartOfSpeech=. Lemma=. NamedEntityTag=O
+SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (NP (NP (NP (PRP$ My)) (NP (NN sister) (POS
+’s))) (VP (VBG gon) (S (VP (TO na) (VP (VB ask) (NP (QP (DT a) (CD
+million)) (NNS questions)))))) (. .)))</p>
+
+<p>Sentiment-annotated binary tree: (ROOT|sentiment=2|prob=0.703
+(@NP|sentiment=2|prob=0.772 (NP|sentiment=2|prob=0.992
+(NP|sentiment=2|prob=0.997 My) (NP|sentiment=2|prob=0.978
+(NN|sentiment=2|prob=0.989 sister) (POS|sentiment=2|prob=0.994 ’s)))
+(VP|sentiment=2|prob=0.633 (VBG|sentiment=2|prob=0.631 gon)
+(S|sentiment=2|prob=0.707 (TO|sentiment=2|prob=0.784 na)
+(VP|sentiment=2|prob=0.908 (VB|sentiment=2|prob=0.974 ask)
+(NP|sentiment=2|prob=0.923 (QP|sentiment=2|prob=0.982
+(DT|sentiment=2|prob=0.990 a) (CD|sentiment=2|prob=0.973 million))
+(NNS|sentiment=2|prob=0.993 questions)))))) (.|sentiment=2|prob=0.997
+.))</p>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, My-1)
+nmod:poss(My-1, sister-2) case(sister-2, ’s-3) acl(My-1, gon-4)
+mark(ask-6, na-5) xcomp(gon-4, ask-6) advmod(million-8, a-7)
+nummod(questions-9, million-8) dobj(ask-6, questions-9) punct(My-1,
+.-10)</p>
+
+<p>Extracted the following NER entity mentions: million NUMBER</p>
+
+<p>Sentence #12 (9 tokens, sentiment: Positive): Say anything she can to
+turn you red.</p>
+
+<p>Tokens: [Text=Say CharacterOffsetBegin=750 CharacterOffsetEnd=753
+PartOfSpeech=VB Lemma=say NamedEntityTag=O SentimentClass=Neutral]
+[Text=anything CharacterOffsetBegin=754 CharacterOffsetEnd=762
+PartOfSpeech=NN Lemma=anything NamedEntityTag=O SentimentClass=Neutral]
+[Text=she CharacterOffsetBegin=763 CharacterOffsetEnd=766
+PartOfSpeech=PRP Lemma=she NamedEntityTag=O SentimentClass=Neutral]
+[Text=can CharacterOffsetBegin=767 CharacterOffsetEnd=770
+PartOfSpeech=MD Lemma=can NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=771 CharacterOffsetEnd=773
+PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=turn CharacterOffsetBegin=774 CharacterOffsetEnd=778
+PartOfSpeech=VB Lemma=turn NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=779 CharacterOffsetEnd=782
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=red CharacterOffsetBegin=783 CharacterOffsetEnd=786
+PartOfSpeech=JJ Lemma=red NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=786 CharacterOffsetEnd=787 PartOfSpeech=.
+Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (VP (VB Say) (NP (NN anything)) (SBAR (S
+(NP (PRP she)) (VP (MD can) (S (VP (TO to) (VP (VB turn) (S (NP (PRP
+you)) (ADJP (JJ red)))))))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=3</td>
+      <td>prob=0.364</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.424 (@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.783</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.764 Say) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 anything))</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.700 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 she)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.835 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 can)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.916 (TO</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 to)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.929 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 turn)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.926 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)</td>
+    </tr>
+    <tr>
+      <td>(ADJP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.986 red))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, Say-1)
+dobj(Say-1, anything-2) nsubj(can-4, she-3) nsubj:xsubj(turn-6, she-3)
+dep(Say-1, can-4) mark(turn-6, to-5) xcomp(can-4, turn-6) nsubj(red-8,
+you-7) xcomp(turn-6, red-8) punct(Say-1, .-9)</p>
+
+<p>Extracted the following NER entity mentions: she PERSON</p>
+
+<p>Sentence #13 (29 tokens, sentiment: Negative): And when you meet my
+high school friends; They’ll buy you drinks and fill you in; On all the
+crazy nights I can’t outlive.</p>
+
+<p>Tokens: [Text=And CharacterOffsetBegin=788 CharacterOffsetEnd=791
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=when CharacterOffsetBegin=792 CharacterOffsetEnd=796
+PartOfSpeech=WRB Lemma=when NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=797 CharacterOffsetEnd=800
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=meet CharacterOffsetBegin=801 CharacterOffsetEnd=805
+PartOfSpeech=VBP Lemma=meet NamedEntityTag=O SentimentClass=Neutral]
+[Text=my CharacterOffsetBegin=806 CharacterOffsetEnd=808
+PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O SentimentClass=Neutral]
+[Text=high CharacterOffsetBegin=809 CharacterOffsetEnd=813
+PartOfSpeech=JJ Lemma=high NamedEntityTag=O SentimentClass=Positive]
+[Text=school CharacterOffsetBegin=814 CharacterOffsetEnd=820
+PartOfSpeech=NN Lemma=school NamedEntityTag=O SentimentClass=Neutral]
+[Text=friends CharacterOffsetBegin=821 CharacterOffsetEnd=828
+PartOfSpeech=NNS Lemma=friend NamedEntityTag=O SentimentClass=Positive]
+[Text=; CharacterOffsetBegin=828 CharacterOffsetEnd=829 PartOfSpeech=:
+Lemma=; NamedEntityTag=O SentimentClass=Neutral] [Text=They
+CharacterOffsetBegin=830 CharacterOffsetEnd=834 PartOfSpeech=PRP
+Lemma=they NamedEntityTag=O SentimentClass=Neutral] [Text=’ll
+CharacterOffsetBegin=834 CharacterOffsetEnd=837 PartOfSpeech=MD
+Lemma=will NamedEntityTag=O SentimentClass=Neutral] [Text=buy
+CharacterOffsetBegin=838 CharacterOffsetEnd=841 PartOfSpeech=VB
+Lemma=buy NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=842 CharacterOffsetEnd=845 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=drinks
+CharacterOffsetBegin=846 CharacterOffsetEnd=852 PartOfSpeech=NNS
+Lemma=drink NamedEntityTag=O SentimentClass=Neutral] [Text=and
+CharacterOffsetBegin=853 CharacterOffsetEnd=856 PartOfSpeech=CC
+Lemma=and NamedEntityTag=O SentimentClass=Neutral] [Text=fill
+CharacterOffsetBegin=857 CharacterOffsetEnd=861 PartOfSpeech=VB
+Lemma=fill NamedEntityTag=O SentimentClass=Neutral] [Text=you
+CharacterOffsetBegin=862 CharacterOffsetEnd=865 PartOfSpeech=PRP
+Lemma=you NamedEntityTag=O SentimentClass=Neutral] [Text=in
+CharacterOffsetBegin=866 CharacterOffsetEnd=868 PartOfSpeech=IN Lemma=in
+NamedEntityTag=O SentimentClass=Neutral] [Text=;
+CharacterOffsetBegin=868 CharacterOffsetEnd=869 PartOfSpeech=: Lemma=;
+NamedEntityTag=O SentimentClass=Neutral] [Text=On
+CharacterOffsetBegin=870 CharacterOffsetEnd=872 PartOfSpeech=IN Lemma=on
+NamedEntityTag=O SentimentClass=Neutral] [Text=all
+CharacterOffsetBegin=873 CharacterOffsetEnd=876 PartOfSpeech=PDT
+Lemma=all NamedEntityTag=O SentimentClass=Neutral] [Text=the
+CharacterOffsetBegin=877 CharacterOffsetEnd=880 PartOfSpeech=DT
+Lemma=the NamedEntityTag=O SentimentClass=Neutral] [Text=crazy
+CharacterOffsetBegin=881 CharacterOffsetEnd=886 PartOfSpeech=JJ
+Lemma=crazy NamedEntityTag=O SentimentClass=Neutral] [Text=nights
+CharacterOffsetBegin=887 CharacterOffsetEnd=893 PartOfSpeech=NNS
+Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI
+Timex=<TIMEX3 tid="t3" type="TIME" value="TNI">nights</TIMEX3>
+SentimentClass=Neutral] [Text=I CharacterOffsetBegin=894
+CharacterOffsetEnd=895 PartOfSpeech=PRP Lemma=I NamedEntityTag=O
+SentimentClass=Neutral] [Text=ca CharacterOffsetBegin=896
+CharacterOffsetEnd=898 PartOfSpeech=MD Lemma=can NamedEntityTag=O
+SentimentClass=Neutral] [Text=n’t CharacterOffsetBegin=898
+CharacterOffsetEnd=901 PartOfSpeech=RB Lemma=not NamedEntityTag=O
+SentimentClass=Neutral] [Text=outlive CharacterOffsetBegin=902
+CharacterOffsetEnd=909 PartOfSpeech=VB Lemma=outlive NamedEntityTag=O
+SentimentClass=Neutral] [Text=. CharacterOffsetBegin=909
+CharacterOffsetEnd=910 PartOfSpeech=. Lemma=. NamedEntityTag=O
+SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (CC And) (SBAR (WHADVP (WRB when)) (S (NP
+(PRP you)) (VP (VBP meet) (NP (PRP$ my) (JJ high) (NN school) (NNS
+friends))))) (: ;) (NP (PRP They)) (VP (MD ’ll) (VP (VP (VB buy) (S (NP
+(PRP you)) (NP (NNS drinks)))) (CC and) (VP (VB fill) (NP (PRP you))
+(SBAR (IN in) (S (: ;) (PP (IN On) (NP (PDT all) (DT the) (JJ crazy)
+(NNS nights))) (NP (PRP I)) (VP (MD ca) (RB n’t) (VP (VB outlive))))))))
+(. .)))</p>
+
+<p>Sentiment-annotated binary tree: (ROOT|sentiment=1|prob=0.713
+(CC|sentiment=2|prob=0.999 And) (@S|sentiment=1|prob=0.635
+(SBAR|sentiment=2|prob=0.928 (WHADVP|sentiment=2|prob=0.993 when)
+(S|sentiment=2|prob=0.857 (NP|sentiment=2|prob=0.995 you)
+(VP|sentiment=2|prob=0.945 (VBP|sentiment=2|prob=0.957 meet)
+(NP|sentiment=2|prob=0.822 (PRP$|sentiment=2|prob=0.998 my)
+(@NP|sentiment=2|prob=0.709 (JJ|sentiment=3|prob=0.955 high)
+(@NP|sentiment=2|prob=0.798 (NN|sentiment=2|prob=0.979 school)
+(NNS|sentiment=3|prob=0.756 friends))))))) (@S|sentiment=1|prob=0.546
+(:|sentiment=2|prob=0.997 ;) (@S|sentiment=1|prob=0.638
+(NP|sentiment=2|prob=0.993 They) (@S|sentiment=1|prob=0.488
+(VP|sentiment=1|prob=0.495 (MD|sentiment=2|prob=0.998 ’ll)
+(VP|sentiment=1|prob=0.529 (@VP|sentiment=2|prob=0.687
+(VP|sentiment=2|prob=0.659 (VB|sentiment=2|prob=0.972 buy)
+(S|sentiment=2|prob=0.740 (NP|sentiment=2|prob=0.995 you)
+(NP|sentiment=2|prob=0.631 drinks))) (CC|sentiment=2|prob=0.996 and))
+(VP|sentiment=2|prob=0.453 (@VP|sentiment=2|prob=0.927
+(VB|sentiment=2|prob=0.974 fill) (NP|sentiment=2|prob=0.995 you))
+(SBAR|sentiment=2|prob=0.474 (IN|sentiment=2|prob=0.993 in)
+(S|sentiment=2|prob=0.476 (:|sentiment=2|prob=0.997 ;)
+(@S|sentiment=1|prob=0.387 (PP|sentiment=2|prob=0.947
+(IN|sentiment=2|prob=0.997 On) (NP|sentiment=2|prob=0.937
+(PDT|sentiment=2|prob=0.995 all) (@NP|sentiment=2|prob=0.966
+(DT|sentiment=2|prob=0.994 the) (@NP|sentiment=2|prob=0.880
+(JJ|sentiment=2|prob=0.987 crazy) (NNS|sentiment=2|prob=0.963
+nights))))) (@S|sentiment=2|prob=0.533 (NP|sentiment=2|prob=0.996 I)
+(VP|sentiment=2|prob=0.648 (@VP|sentiment=2|prob=0.987
+(MD|sentiment=2|prob=0.998 ca) (RB|sentiment=2|prob=0.994 n’t))
+(VP|sentiment=2|prob=0.631 outlive))))))))) (.|sentiment=2|prob=0.997
+.))))))</p>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, buy-12)
+cc(buy-12, And-1) advmod(meet-4, when-2) nsubj(meet-4, you-3)
+advcl(buy-12, meet-4) nmod:poss(friends-8, my-5) amod(friends-8, high-6)
+compound(friends-8, school-7) dobj(meet-4, friends-8) punct(buy-12, ;-9)
+nsubj(buy-12, They-10) nsubj(fill-16, They-10) aux(buy-12, ’ll-11)
+nsubj(drinks-14, you-13) xcomp(buy-12, drinks-14) cc(buy-12, and-15)
+conj:and(buy-12, fill-16) dobj(fill-16, you-17) mark(outlive-28, in-18)
+punct(outlive-28, ;-19) case(nights-24, On-20) det:predet(nights-24,
+all-21) det(nights-24, the-22) amod(nights-24, crazy-23)
+nmod:on(outlive-28, nights-24) nsubj(outlive-28, I-25) aux(outlive-28,
+ca-26) neg(outlive-28, n’t-27) advcl:in(fill-16, outlive-28)
+punct(buy-12, .-29)</p>
+
+<p>Extracted the following NER entity mentions: nights TIME</p>
+
+<p>Sentence #14 (26 tokens, sentiment: Negative): If I bring you home to
+Mama, I guess I better warn ya, She falls in love a little faster than I
+do.</p>
+
+<p>Tokens: [Text=If CharacterOffsetBegin=912 CharacterOffsetEnd=914
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=915 CharacterOffsetEnd=916
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=bring CharacterOffsetBegin=917 CharacterOffsetEnd=922
+PartOfSpeech=VBP Lemma=bring NamedEntityTag=O SentimentClass=Positive]
+[Text=you CharacterOffsetBegin=923 CharacterOffsetEnd=926
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=home CharacterOffsetBegin=927 CharacterOffsetEnd=931
+PartOfSpeech=NN Lemma=home NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=932 CharacterOffsetEnd=934
+PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=Mama CharacterOffsetBegin=935 CharacterOffsetEnd=939
+PartOfSpeech=NN Lemma=mama NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=939 CharacterOffsetEnd=940 PartOfSpeech=,
+Lemma=, NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=941 CharacterOffsetEnd=942 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=guess
+CharacterOffsetBegin=943 CharacterOffsetEnd=948 PartOfSpeech=VBP
+Lemma=guess NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=949 CharacterOffsetEnd=950 PartOfSpeech=PRP Lemma=I
+NamedEntityTag=O SentimentClass=Neutral] [Text=better
+CharacterOffsetBegin=951 CharacterOffsetEnd=957 PartOfSpeech=RB
+Lemma=better NamedEntityTag=O SentimentClass=Very positive] [Text=warn
+CharacterOffsetBegin=958 CharacterOffsetEnd=962 PartOfSpeech=VBP
+Lemma=warn NamedEntityTag=O SentimentClass=Negative] [Text=ya
+CharacterOffsetBegin=963 CharacterOffsetEnd=965 PartOfSpeech=PRP
+Lemma=ya NamedEntityTag=O SentimentClass=Neutral] [Text=,
+CharacterOffsetBegin=965 CharacterOffsetEnd=966 PartOfSpeech=, Lemma=,
+NamedEntityTag=O SentimentClass=Neutral] [Text=She
+CharacterOffsetBegin=967 CharacterOffsetEnd=970 PartOfSpeech=PRP
+Lemma=she NamedEntityTag=O SentimentClass=Neutral] [Text=falls
+CharacterOffsetBegin=971 CharacterOffsetEnd=976 PartOfSpeech=VBZ
+Lemma=fall NamedEntityTag=O SentimentClass=Negative] [Text=in
+CharacterOffsetBegin=977 CharacterOffsetEnd=979 PartOfSpeech=IN Lemma=in
+NamedEntityTag=O SentimentClass=Neutral] [Text=love
+CharacterOffsetBegin=980 CharacterOffsetEnd=984 PartOfSpeech=NN
+Lemma=love NamedEntityTag=O SentimentClass=Very positive] [Text=a
+CharacterOffsetBegin=985 CharacterOffsetEnd=986 PartOfSpeech=DT Lemma=a
+NamedEntityTag=O SentimentClass=Neutral] [Text=little
+CharacterOffsetBegin=987 CharacterOffsetEnd=993 PartOfSpeech=JJ
+Lemma=little NamedEntityTag=O SentimentClass=Neutral] [Text=faster
+CharacterOffsetBegin=994 CharacterOffsetEnd=1000 PartOfSpeech=JJR
+Lemma=faster NamedEntityTag=O SentimentClass=Neutral] [Text=than
+CharacterOffsetBegin=1001 CharacterOffsetEnd=1005 PartOfSpeech=IN
+Lemma=than NamedEntityTag=O SentimentClass=Neutral] [Text=I
+CharacterOffsetBegin=1006 CharacterOffsetEnd=1007 PartOfSpeech=PRP
+Lemma=I NamedEntityTag=O SentimentClass=Neutral] [Text=do
+CharacterOffsetBegin=1008 CharacterOffsetEnd=1010 PartOfSpeech=VBP
+Lemma=do NamedEntityTag=O SentimentClass=Neutral] [Text=.
+CharacterOffsetBegin=1010 CharacterOffsetEnd=1011 PartOfSpeech=. Lemma=.
+NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (SBAR (IN If) (S (NP (PRP I)) (VP (VBP
+bring) (NP (PRP you)) (ADVP (NN home) (TO to) (NN Mama))))) (, ,) (NP
+(PRP I)) (VP (VBP guess) (SBAR (S (NP (PRP I)) (ADVP (RB better)) (VP
+(VBP warn) (NP (PRP ya))))))) (, ,) (NP (PRP She)) (VP (VBZ falls) (PP
+(IN in) (NP (NP (NN love)) (ADJP (NP (DT a) (JJ little)) (JJR faster))))
+(SBAR (IN than) (S (NP (PRP I)) (VP (VBP do))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.514</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.721 (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.596</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 If) (S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.540</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.531</td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.770 (VBP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.927 bring)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)) (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.979</td>
+    </tr>
+    <tr>
+      <td>(NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 home) (@ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.987</td>
+    </tr>
+    <tr>
+      <td>(TO</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 to) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 Mama))))))</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.619 (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.631 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.542 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.980 guess)</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.547 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.662 (ADVP</td>
+      <td>sentiment=4</td>
+      <td>prob=0.768 better)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.696 (VBP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.567 warn)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.945 ya)))))))) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.542</td>
+    </tr>
+    <tr>
+      <td>(,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.459</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 She) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.755</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.846 (@VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.764</td>
+    </tr>
+    <tr>
+      <td>(VBZ</td>
+      <td>sentiment=1</td>
+      <td>prob=0.925 falls) (PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.678</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 in) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.601</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=4</td>
+      <td>prob=0.895 love) (ADJP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.888</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.978 (DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 a)</td>
+    </tr>
+    <tr>
+      <td>(JJ</td>
+      <td>sentiment=2</td>
+      <td>prob=0.985 little)) (JJR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990</td>
+    </tr>
+    <tr>
+      <td>faster))))) (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.956 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998</td>
+    </tr>
+    <tr>
+      <td>than) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.960 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 do)))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+falls-17) mark(bring-3, If-1) nsubj(bring-3, I-2) advcl:if(guess-10,
+bring-3) dobj(bring-3, you-4) dep(Mama-7, home-5) dep(Mama-7, to-6)
+advmod(bring-3, Mama-7) punct(guess-10, ,-8) nsubj(guess-10, I-9)
+ccomp(falls-17, guess-10) nsubj(warn-13, I-11) advmod(warn-13,
+better-12) ccomp(guess-10, warn-13) dobj(warn-13, ya-14) punct(falls-17,
+,-15) nsubj(falls-17, She-16) case(love-19, in-18) nmod:in(falls-17,
+love-19) det(little-21, a-20) nmod:npmod(faster-22, little-21)
+amod(love-19, faster-22) mark(do-25, than-23) nsubj(do-25, I-24)
+advcl:than(falls-17, do-25) punct(falls-17, .-26)</p>
+
+<p>Extracted the following NER entity mentions: She PERSON</p>
+
+<p>Sentence #15 (27 tokens, sentiment: Negative): And my dad will check
+your tires, Pour you whiskey over ice, And take you fishing but pretend
+that he don’t like you.</p>
+
+<p>Tokens: [Text=And CharacterOffsetBegin=1012 CharacterOffsetEnd=1015
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=my CharacterOffsetBegin=1016 CharacterOffsetEnd=1018
+PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O SentimentClass=Neutral]
+[Text=dad CharacterOffsetBegin=1019 CharacterOffsetEnd=1022
+PartOfSpeech=NN Lemma=dad NamedEntityTag=O SentimentClass=Neutral]
+[Text=will CharacterOffsetBegin=1023 CharacterOffsetEnd=1027
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=check CharacterOffsetBegin=1028 CharacterOffsetEnd=1033
+PartOfSpeech=VB Lemma=check NamedEntityTag=O SentimentClass=Positive]
+[Text=your CharacterOffsetBegin=1034 CharacterOffsetEnd=1038
+PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=tires CharacterOffsetBegin=1039 CharacterOffsetEnd=1044
+PartOfSpeech=NNS Lemma=tire NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1044 CharacterOffsetEnd=1045
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=Pour CharacterOffsetBegin=1046 CharacterOffsetEnd=1050
+PartOfSpeech=NNP Lemma=Pour NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=1051 CharacterOffsetEnd=1054
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=whiskey CharacterOffsetBegin=1055 CharacterOffsetEnd=1062
+PartOfSpeech=NN Lemma=whiskey NamedEntityTag=O SentimentClass=Neutral]
+[Text=over CharacterOffsetBegin=1063 CharacterOffsetEnd=1067
+PartOfSpeech=IN Lemma=over NamedEntityTag=O SentimentClass=Neutral]
+[Text=ice CharacterOffsetBegin=1068 CharacterOffsetEnd=1071
+PartOfSpeech=NN Lemma=ice NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1071 CharacterOffsetEnd=1072
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=And CharacterOffsetBegin=1073 CharacterOffsetEnd=1076
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=take CharacterOffsetBegin=1077 CharacterOffsetEnd=1081
+PartOfSpeech=VB Lemma=take NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=1082 CharacterOffsetEnd=1085
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=fishing CharacterOffsetBegin=1086 CharacterOffsetEnd=1093
+PartOfSpeech=NN Lemma=fishing NamedEntityTag=O SentimentClass=Neutral]
+[Text=but CharacterOffsetBegin=1094 CharacterOffsetEnd=1097
+PartOfSpeech=CC Lemma=but NamedEntityTag=O SentimentClass=Neutral]
+[Text=pretend CharacterOffsetBegin=1098 CharacterOffsetEnd=1105
+PartOfSpeech=VBP Lemma=pretend NamedEntityTag=O SentimentClass=Neutral]
+[Text=that CharacterOffsetBegin=1106 CharacterOffsetEnd=1110
+PartOfSpeech=IN Lemma=that NamedEntityTag=O SentimentClass=Neutral]
+[Text=he CharacterOffsetBegin=1111 CharacterOffsetEnd=1113
+PartOfSpeech=PRP Lemma=he NamedEntityTag=O SentimentClass=Neutral]
+[Text=do CharacterOffsetBegin=1114 CharacterOffsetEnd=1116
+PartOfSpeech=VBP Lemma=do NamedEntityTag=O SentimentClass=Neutral]
+[Text=n’t CharacterOffsetBegin=1116 CharacterOffsetEnd=1119
+PartOfSpeech=RB Lemma=not NamedEntityTag=O SentimentClass=Neutral]
+[Text=like CharacterOffsetBegin=1120 CharacterOffsetEnd=1124
+PartOfSpeech=VB Lemma=like NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=1125 CharacterOffsetEnd=1128
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=1128 CharacterOffsetEnd=1129
+PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (CC And) (S (S (NP (PRP$ my) (NN dad)) (VP
+(MD will) (VP (VB check) (NP (PRP$ your) (NNS tires))))) (, ,) (S (NP
+(NNP Pour) (PRP you)) (NP (NP (NN whiskey)) (PP (IN over) (NP (NN
+ice)))))) (, ,) (CC And) (SINV (VP (VB take) (NP (PRP you))) (NP (NP (NN
+fishing)) (SBAR (CC but) (S (VP (VBP pretend) (SBAR (IN that) (S (NP
+(PRP he)) (VP (VBP do) (RB n’t) (VP (VB like) (NP (PRP you))))))))))) (.
+.)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.535</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 And) (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.454</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.442 (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.650</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.493 (S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.472</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.408 (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.393</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.920</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(PRP(</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 my) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.963 dad))  (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.425 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 will)  (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.427 (VB</td>
+      <td>sentiment=3</td>
+      <td>prob=0.749 check)  (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.917 (PRP)</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998</td>
+    </tr>
+    <tr>
+      <td>your) (NNS</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 tires))))) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>,)) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.348 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.632</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NNP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 Pour) (PRP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you))</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.557 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 whiskey)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.986 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 over)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 ice))))) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,))</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 And)) (SINV</td>
+      <td>sentiment=1</td>
+      <td>prob=0.480</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.927 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 take)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)) (NP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.495</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.671 fishing) (SBAR</td>
+      <td>sentiment=1</td>
+      <td>prob=0.522</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 but) (S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.484</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.766 pretend) (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.550</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 that) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.532</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 he) (VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.441</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.963 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 do)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(RB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 n’t)) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.841</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 like) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>you)))))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+check-5) cc(check-5, And-1) nmod:poss(dad-3, my-2) nsubj(check-5, dad-3)
+aux(check-5, will-4) nmod:poss(tires-7, your-6) dobj(check-5, tires-7)
+punct(check-5, ,-8) dep(whiskey-11, Pour-9) dep(Pour-9, you-10)
+parataxis(check-5, whiskey-11) case(ice-13, over-12)
+nmod:over(whiskey-11, ice-13) punct(check-5, ,-14) cc(check-5, And-15)
+conj:and(check-5, take-16) dobj(take-16, you-17) nsubj(take-16,
+fishing-18) cc(pretend-20, but-19) dep(fishing-18, pretend-20)
+mark(like-25, that-21) nsubj(like-25, he-22) aux(like-25, do-23)
+neg(like-25, n’t-24) ccomp(pretend-20, like-25) dobj(like-25, you-26)
+punct(check-5, .-27)</p>
+
+<p>Extracted the following NER entity mentions: he PERSON</p>
+
+<p>Sentence #16 (20 tokens, sentiment: Positive): If we break up, I’ll be
+fine; But you’ll be breaking more hearts than mine.</p>
+
+<p>Tokens: [Text=If CharacterOffsetBegin=1130 CharacterOffsetEnd=1132
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=we CharacterOffsetBegin=1133 CharacterOffsetEnd=1135
+PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=break CharacterOffsetBegin=1136 CharacterOffsetEnd=1141
+PartOfSpeech=VBP Lemma=break NamedEntityTag=O SentimentClass=Neutral]
+[Text=up CharacterOffsetBegin=1142 CharacterOffsetEnd=1144
+PartOfSpeech=RP Lemma=up NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1144 CharacterOffsetEnd=1145
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=1146 CharacterOffsetEnd=1147
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=1147 CharacterOffsetEnd=1150
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=1151 CharacterOffsetEnd=1153
+PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=fine CharacterOffsetBegin=1154 CharacterOffsetEnd=1158
+PartOfSpeech=JJ Lemma=fine NamedEntityTag=O SentimentClass=Positive]
+[Text=; CharacterOffsetBegin=1158 CharacterOffsetEnd=1159
+PartOfSpeech=: Lemma=; NamedEntityTag=O SentimentClass=Neutral]
+[Text=But CharacterOffsetBegin=1160 CharacterOffsetEnd=1163
+PartOfSpeech=CC Lemma=but NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=1164 CharacterOffsetEnd=1167
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=1167 CharacterOffsetEnd=1170
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=1171 CharacterOffsetEnd=1173
+PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=breaking CharacterOffsetBegin=1174 CharacterOffsetEnd=1182
+PartOfSpeech=VBG Lemma=break NamedEntityTag=O SentimentClass=Neutral]
+[Text=more CharacterOffsetBegin=1183 CharacterOffsetEnd=1187
+PartOfSpeech=JJR Lemma=more NamedEntityTag=O SentimentClass=Neutral]
+[Text=hearts CharacterOffsetBegin=1188 CharacterOffsetEnd=1194
+PartOfSpeech=NNS Lemma=heart NamedEntityTag=O SentimentClass=Positive]
+[Text=than CharacterOffsetBegin=1195 CharacterOffsetEnd=1199
+PartOfSpeech=IN Lemma=than NamedEntityTag=O SentimentClass=Neutral]
+[Text=mine CharacterOffsetBegin=1200 CharacterOffsetEnd=1204
+PartOfSpeech=NN Lemma=mine NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=1204 CharacterOffsetEnd=1205
+PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (SBAR (IN If) (S (NP (PRP we)) (VP (VBP
+break) (PRT (RP up))))) (, ,) (NP (PRP I)) (VP (MD ’ll) (VP (VB be)
+(ADJP (JJ fine))))) (: ;) (CC But) (S (NP (PRP you)) (VP (MD ’ll) (VP
+(VB be) (VP (VBG breaking) (NP (JJR more) (NNS hearts)) (PP (IN than)
+(NP (NN mine))))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=3</td>
+      <td>prob=0.774</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.711 (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.746</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.683 (S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.720</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.908 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 If)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.853 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 we)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.853 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.984 break)</td>
+    </tr>
+    <tr>
+      <td>(PRT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 up)))) (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.610</td>
+    </tr>
+    <tr>
+      <td>(,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,) (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.716</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.615</td>
+    </tr>
+    <tr>
+      <td>(MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.609</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be) (ADJP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.894 fine))))))</td>
+    </tr>
+    <tr>
+      <td>(:</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ;)) (CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 But))</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.412 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.552 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.583 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.463 (@VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.456</td>
+    </tr>
+    <tr>
+      <td>(VBG</td>
+      <td>sentiment=2</td>
+      <td>prob=0.962 breaking) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.866</td>
+    </tr>
+    <tr>
+      <td>(JJR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 more) (NNS</td>
+      <td>sentiment=3</td>
+      <td>prob=0.921 hearts)))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 than)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.941 mine))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, fine-9)
+mark(break-3, If-1) nsubj(break-3, we-2) advcl:if(fine-9, break-3)
+compound:prt(break-3, up-4) punct(fine-9, ,-5) nsubj(fine-9, I-6)
+aux(fine-9, ’ll-7) cop(fine-9, be-8) punct(fine-9, ;-10) cc(fine-9,
+But-11) nsubj(breaking-15, you-12) aux(breaking-15, ’ll-13)
+aux(breaking-15, be-14) conj:but(fine-9, breaking-15) amod(hearts-17,
+more-16) dobj(breaking-15, hearts-17) case(mine-19, than-18)
+nmod:than(breaking-15, mine-19) punct(fine-9, .-20)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #17 (23 tokens, sentiment: Negative): If I bring you home to
+Mama, I guess I better warn ya; She feels every heartache I go through.</p>
+
+<p>Tokens: [Text=If CharacterOffsetBegin=1207 CharacterOffsetEnd=1209
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=1210 CharacterOffsetEnd=1211
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=bring CharacterOffsetBegin=1212 CharacterOffsetEnd=1217
+PartOfSpeech=VBP Lemma=bring NamedEntityTag=O SentimentClass=Positive]
+[Text=you CharacterOffsetBegin=1218 CharacterOffsetEnd=1221
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=home CharacterOffsetBegin=1222 CharacterOffsetEnd=1226
+PartOfSpeech=NN Lemma=home NamedEntityTag=O SentimentClass=Neutral]
+[Text=to CharacterOffsetBegin=1227 CharacterOffsetEnd=1229
+PartOfSpeech=TO Lemma=to NamedEntityTag=O SentimentClass=Neutral]
+[Text=Mama CharacterOffsetBegin=1230 CharacterOffsetEnd=1234
+PartOfSpeech=NN Lemma=mama NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1234 CharacterOffsetEnd=1235
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=1236 CharacterOffsetEnd=1237
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=guess CharacterOffsetBegin=1238 CharacterOffsetEnd=1243
+PartOfSpeech=VBP Lemma=guess NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=1244 CharacterOffsetEnd=1245
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=better CharacterOffsetBegin=1246 CharacterOffsetEnd=1252
+PartOfSpeech=RB Lemma=better NamedEntityTag=O SentimentClass=Very
+positive] [Text=warn CharacterOffsetBegin=1253 CharacterOffsetEnd=1257
+PartOfSpeech=VBP Lemma=warn NamedEntityTag=O SentimentClass=Negative]
+[Text=ya CharacterOffsetBegin=1258 CharacterOffsetEnd=1260
+PartOfSpeech=PRP Lemma=ya NamedEntityTag=O SentimentClass=Neutral]
+[Text=; CharacterOffsetBegin=1260 CharacterOffsetEnd=1261
+PartOfSpeech=: Lemma=; NamedEntityTag=O SentimentClass=Neutral]
+[Text=She CharacterOffsetBegin=1262 CharacterOffsetEnd=1265
+PartOfSpeech=PRP Lemma=she NamedEntityTag=O SentimentClass=Neutral]
+[Text=feels CharacterOffsetBegin=1266 CharacterOffsetEnd=1271
+PartOfSpeech=VBZ Lemma=feel NamedEntityTag=O SentimentClass=Neutral]
+[Text=every CharacterOffsetBegin=1272 CharacterOffsetEnd=1277
+PartOfSpeech=DT Lemma=every NamedEntityTag=O SentimentClass=Neutral]
+[Text=heartache CharacterOffsetBegin=1278 CharacterOffsetEnd=1287
+PartOfSpeech=NN Lemma=heartache NamedEntityTag=O
+SentimentClass=Neutral] [Text=I CharacterOffsetBegin=1288
+CharacterOffsetEnd=1289 PartOfSpeech=PRP Lemma=I NamedEntityTag=O
+SentimentClass=Neutral] [Text=go CharacterOffsetBegin=1290
+CharacterOffsetEnd=1292 PartOfSpeech=VBP Lemma=go NamedEntityTag=O
+SentimentClass=Neutral] [Text=through CharacterOffsetBegin=1293
+CharacterOffsetEnd=1300 PartOfSpeech=IN Lemma=through NamedEntityTag=O
+SentimentClass=Neutral] [Text=. CharacterOffsetBegin=1300
+CharacterOffsetEnd=1301 PartOfSpeech=. Lemma=. NamedEntityTag=O
+SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (SBAR (IN If) (S (NP (PRP I)) (VP (VBP
+bring) (NP (PRP you)) (ADVP (NN home) (TO to) (NN Mama))))) (, ,) (NP
+(PRP I)) (VP (VBP guess) (SBAR (S (NP (PRP I)) (ADVP (RB better)) (VP
+(VBP warn) (NP (PRP ya))))))) (: ;) (S (NP (PRP She)) (VP (VBZ feels)
+(NP (NP (DT every) (NN heartache)) (SBAR (S (NP (PRP I)) (VP (VBP go)
+(PP (IN through)))))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.555</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.527 (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.566</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.721 (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.596</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 If) (S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.540</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.531</td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.770 (VBP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.927 bring)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)) (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.979</td>
+    </tr>
+    <tr>
+      <td>(NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 home) (@ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.987</td>
+    </tr>
+    <tr>
+      <td>(TO</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 to) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 Mama))))))</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.619 (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.631 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.542 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.980 guess)</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.547 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.662 (ADVP</td>
+      <td>sentiment=4</td>
+      <td>prob=0.768 better)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.696 (VBP</td>
+      <td>sentiment=1</td>
+      <td>prob=0.567 warn)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.945 ya)))))))) (:</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ;))</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.620 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 She)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.541 (VBZ</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 feels)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.816 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.957</td>
+    </tr>
+    <tr>
+      <td>(DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 every) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.922 heartache))</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.840 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.951 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 go)</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 through))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+guess-10) mark(bring-3, If-1) nsubj(bring-3, I-2) advcl:if(guess-10,
+bring-3) dobj(bring-3, you-4) dep(Mama-7, home-5) dep(Mama-7, to-6)
+advmod(bring-3, Mama-7) punct(guess-10, ,-8) nsubj(guess-10, I-9)
+nsubj(warn-13, I-11) advmod(warn-13, better-12) ccomp(guess-10, warn-13)
+dobj(warn-13, ya-14) punct(guess-10, ;-15) nsubj(feels-17, She-16)
+parataxis(guess-10, feels-17) det(heartache-19, every-18) dobj(feels-17,
+heartache-19) nsubj(go-21, I-20) acl:relcl(heartache-19, go-21)
+nmod(go-21, through-22) punct(guess-10, .-23)</p>
+
+<p>Extracted the following NER entity mentions: She PERSON</p>
+
+<p>Sentence #18 (29 tokens, sentiment: Negative): And if my dad sees me
+crying, He’ll pour some whiskey over ice, And, tell a lie and say he
+never really liked you.</p>
+
+<p>Tokens: [Text=And CharacterOffsetBegin=1302 CharacterOffsetEnd=1305
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=if CharacterOffsetBegin=1306 CharacterOffsetEnd=1308
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=my CharacterOffsetBegin=1309 CharacterOffsetEnd=1311
+PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O SentimentClass=Neutral]
+[Text=dad CharacterOffsetBegin=1312 CharacterOffsetEnd=1315
+PartOfSpeech=NN Lemma=dad NamedEntityTag=O SentimentClass=Neutral]
+[Text=sees CharacterOffsetBegin=1316 CharacterOffsetEnd=1320
+PartOfSpeech=VBZ Lemma=see NamedEntityTag=O SentimentClass=Neutral]
+[Text=me CharacterOffsetBegin=1321 CharacterOffsetEnd=1323
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Positive]
+[Text=crying CharacterOffsetBegin=1324 CharacterOffsetEnd=1330
+PartOfSpeech=VBG Lemma=cry NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1330 CharacterOffsetEnd=1331
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=He CharacterOffsetBegin=1332 CharacterOffsetEnd=1334
+PartOfSpeech=PRP Lemma=he NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=1334 CharacterOffsetEnd=1337
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=pour CharacterOffsetBegin=1338 CharacterOffsetEnd=1342
+PartOfSpeech=VB Lemma=pour NamedEntityTag=O SentimentClass=Neutral]
+[Text=some CharacterOffsetBegin=1343 CharacterOffsetEnd=1347
+PartOfSpeech=DT Lemma=some NamedEntityTag=O SentimentClass=Neutral]
+[Text=whiskey CharacterOffsetBegin=1348 CharacterOffsetEnd=1355
+PartOfSpeech=NN Lemma=whiskey NamedEntityTag=O SentimentClass=Neutral]
+[Text=over CharacterOffsetBegin=1356 CharacterOffsetEnd=1360
+PartOfSpeech=IN Lemma=over NamedEntityTag=O SentimentClass=Neutral]
+[Text=ice CharacterOffsetBegin=1361 CharacterOffsetEnd=1364
+PartOfSpeech=NN Lemma=ice NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1364 CharacterOffsetEnd=1365
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=And CharacterOffsetBegin=1366 CharacterOffsetEnd=1369
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1369 CharacterOffsetEnd=1370
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=tell CharacterOffsetBegin=1371 CharacterOffsetEnd=1375
+PartOfSpeech=VB Lemma=tell NamedEntityTag=O SentimentClass=Neutral]
+[Text=a CharacterOffsetBegin=1376 CharacterOffsetEnd=1377
+PartOfSpeech=DT Lemma=a NamedEntityTag=O SentimentClass=Neutral]
+[Text=lie CharacterOffsetBegin=1378 CharacterOffsetEnd=1381
+PartOfSpeech=NN Lemma=lie NamedEntityTag=O SentimentClass=Negative]
+[Text=and CharacterOffsetBegin=1382 CharacterOffsetEnd=1385
+PartOfSpeech=CC Lemma=and NamedEntityTag=O SentimentClass=Neutral]
+[Text=say CharacterOffsetBegin=1386 CharacterOffsetEnd=1389
+PartOfSpeech=VB Lemma=say NamedEntityTag=O SentimentClass=Neutral]
+[Text=he CharacterOffsetBegin=1390 CharacterOffsetEnd=1392
+PartOfSpeech=PRP Lemma=he NamedEntityTag=O SentimentClass=Neutral]
+[Text=never CharacterOffsetBegin=1393 CharacterOffsetEnd=1398
+PartOfSpeech=RB Lemma=never NamedEntityTag=O SentimentClass=Neutral]
+[Text=really CharacterOffsetBegin=1399 CharacterOffsetEnd=1405
+PartOfSpeech=RB Lemma=really NamedEntityTag=O SentimentClass=Neutral]
+[Text=liked CharacterOffsetBegin=1406 CharacterOffsetEnd=1411
+PartOfSpeech=VBD Lemma=like NamedEntityTag=O SentimentClass=Positive]
+[Text=you CharacterOffsetBegin=1412 CharacterOffsetEnd=1415
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=1415 CharacterOffsetEnd=1416
+PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (CC And) (SBAR (IN if) (S (NP (PRP$ my)
+(NN dad)) (VP (VBZ sees) (S (NP (PRP me)) (VP (VBG crying)))))) (, ,)
+(NP (PRP He)) (VP (MD ’ll) (VP (VB pour) (NP (NP (DT some) (NN whiskey))
+(PP (IN over) (NP (NN ice))))))) (, ,) (CC And) (, ,) (S (S (VP (VP (VB
+tell) (NP (DT a) (NN lie))) (CC and) (VP (VB say) (NP (PRP he)) (ADVP
+(RB never))))) (ADVP (RB really)) (VP (VBD liked) (NP (PRP you)))) (.
+.)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=1</td>
+      <td>prob=0.450</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.352 (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.603</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.710 (@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.542</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.594 (CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 And)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=1</td>
+      <td>prob=0.517 (SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.761</td>
+    </tr>
+    <tr>
+      <td>(IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.986 if) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.700</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.920 (PRP$</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 my)</td>
+    </tr>
+    <tr>
+      <td>(NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.963 dad)) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.827</td>
+    </tr>
+    <tr>
+      <td>(VBZ</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 sees) (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.544</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.946 me) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 crying)))))</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.667 (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,)</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.482 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 He)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.897 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.774 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.917 pour)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.595 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.739</td>
+    </tr>
+    <tr>
+      <td>(DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 some) (NN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.631 whiskey))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.986 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 over)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 ice))))))))) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,))</td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 And)) (,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,))</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.557 (S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.748</td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.829 (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.747</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 tell) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.725</td>
+    </tr>
+    <tr>
+      <td>(DT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 a) (NN</td>
+      <td>sentiment=1</td>
+      <td>prob=0.870 lie)))</td>
+    </tr>
+    <tr>
+      <td>(CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 and)) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.947</td>
+    </tr>
+    <tr>
+      <td>(@VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.932 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.991 say)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.993 he)) (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.990 never)))</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.710 (ADVP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 really)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.769 (VBD</td>
+      <td>sentiment=3</td>
+      <td>prob=0.893 liked)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+pour-11) cc(pour-11, And-1) mark(sees-5, if-2) nmod:poss(dad-4, my-3)
+nsubj(sees-5, dad-4) advcl:if(pour-11, sees-5) nsubj(crying-7, me-6)
+dep(sees-5, crying-7) punct(pour-11, ,-8) nsubj(pour-11, He-9)
+aux(pour-11, ’ll-10) det(whiskey-13, some-12) dobj(pour-11, whiskey-13)
+case(ice-15, over-14) nmod:over(whiskey-13, ice-15) punct(pour-11, ,-16)
+cc(pour-11, And-17) punct(pour-11, ,-18) csubj(liked-27, tell-19)
+det(lie-21, a-20) dobj(tell-19, lie-21) cc(tell-19, and-22)
+conj:and(tell-19, say-23) csubj(liked-27, say-23) dobj(say-23, he-24)
+neg(say-23, never-25) advmod(liked-27, really-26) conj:and(pour-11,
+liked-27) dobj(liked-27, you-28) punct(pour-11, .-29)</p>
+
+<p>Extracted the following NER entity mentions: He PERSON he PERSON</p>
+
+<p>Sentence #19 (20 tokens, sentiment: Positive): If we break up, I’ll be
+fine; But you’ll be breaking more hearts than mine.</p>
+
+<p>Tokens: [Text=If CharacterOffsetBegin=1417 CharacterOffsetEnd=1419
+PartOfSpeech=IN Lemma=if NamedEntityTag=O SentimentClass=Neutral]
+[Text=we CharacterOffsetBegin=1420 CharacterOffsetEnd=1422
+PartOfSpeech=PRP Lemma=we NamedEntityTag=O SentimentClass=Neutral]
+[Text=break CharacterOffsetBegin=1423 CharacterOffsetEnd=1428
+PartOfSpeech=VBP Lemma=break NamedEntityTag=O SentimentClass=Neutral]
+[Text=up CharacterOffsetBegin=1429 CharacterOffsetEnd=1431
+PartOfSpeech=RP Lemma=up NamedEntityTag=O SentimentClass=Neutral]
+[Text=, CharacterOffsetBegin=1431 CharacterOffsetEnd=1432
+PartOfSpeech=, Lemma=, NamedEntityTag=O SentimentClass=Neutral]
+[Text=I CharacterOffsetBegin=1433 CharacterOffsetEnd=1434
+PartOfSpeech=PRP Lemma=I NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=1434 CharacterOffsetEnd=1437
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=1438 CharacterOffsetEnd=1440
+PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=fine CharacterOffsetBegin=1441 CharacterOffsetEnd=1445
+PartOfSpeech=JJ Lemma=fine NamedEntityTag=O SentimentClass=Positive]
+[Text=; CharacterOffsetBegin=1445 CharacterOffsetEnd=1446
+PartOfSpeech=: Lemma=; NamedEntityTag=O SentimentClass=Neutral]
+[Text=But CharacterOffsetBegin=1447 CharacterOffsetEnd=1450
+PartOfSpeech=CC Lemma=but NamedEntityTag=O SentimentClass=Neutral]
+[Text=you CharacterOffsetBegin=1451 CharacterOffsetEnd=1454
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=1454 CharacterOffsetEnd=1457
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=1458 CharacterOffsetEnd=1460
+PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=breaking CharacterOffsetBegin=1461 CharacterOffsetEnd=1469
+PartOfSpeech=VBG Lemma=break NamedEntityTag=O SentimentClass=Neutral]
+[Text=more CharacterOffsetBegin=1470 CharacterOffsetEnd=1474
+PartOfSpeech=JJR Lemma=more NamedEntityTag=O SentimentClass=Neutral]
+[Text=hearts CharacterOffsetBegin=1475 CharacterOffsetEnd=1481
+PartOfSpeech=NNS Lemma=heart NamedEntityTag=O SentimentClass=Positive]
+[Text=than CharacterOffsetBegin=1482 CharacterOffsetEnd=1486
+PartOfSpeech=IN Lemma=than NamedEntityTag=O SentimentClass=Neutral]
+[Text=mine CharacterOffsetBegin=1487 CharacterOffsetEnd=1491
+PartOfSpeech=NN Lemma=mine NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=1491 CharacterOffsetEnd=1492
+PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (S (SBAR (IN If) (S (NP (PRP we)) (VP (VBP
+break) (PRT (RP up))))) (, ,) (NP (PRP I)) (VP (MD ’ll) (VP (VB be)
+(ADJP (JJ fine))))) (: ;) (CC But) (S (NP (PRP you)) (VP (MD ’ll) (VP
+(VB be) (VP (VBG breaking) (NP (JJR more) (NNS hearts)) (PP (IN than)
+(NP (NN mine))))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=3</td>
+      <td>prob=0.774</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.711 (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.746</td>
+    </tr>
+    <tr>
+      <td>(@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.683 (S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.720</td>
+    </tr>
+    <tr>
+      <td>(SBAR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.908 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 If)</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.853 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 we)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.853 (VBP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.984 break)</td>
+    </tr>
+    <tr>
+      <td>(PRT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 up)))) (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.610</td>
+    </tr>
+    <tr>
+      <td>(,</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ,) (@S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.716</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 I) (VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.615</td>
+    </tr>
+    <tr>
+      <td>(MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll) (VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.609</td>
+    </tr>
+    <tr>
+      <td>(VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be) (ADJP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.894 fine))))))</td>
+    </tr>
+    <tr>
+      <td>(:</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 ;)) (CC</td>
+      <td>sentiment=2</td>
+      <td>prob=0.999 But))</td>
+    </tr>
+    <tr>
+      <td>(S</td>
+      <td>sentiment=3</td>
+      <td>prob=0.412 (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.995 you)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.552 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.583 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.463 (@VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.456</td>
+    </tr>
+    <tr>
+      <td>(VBG</td>
+      <td>sentiment=2</td>
+      <td>prob=0.962 breaking) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.866</td>
+    </tr>
+    <tr>
+      <td>(JJR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 more) (NNS</td>
+      <td>sentiment=3</td>
+      <td>prob=0.921 hearts)))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 than)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.941 mine))))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0, fine-9)
+mark(break-3, If-1) nsubj(break-3, we-2) advcl:if(fine-9, break-3)
+compound:prt(break-3, up-4) punct(fine-9, ,-5) nsubj(fine-9, I-6)
+aux(fine-9, ’ll-7) cop(fine-9, be-8) punct(fine-9, ;-10) cc(fine-9,
+But-11) nsubj(breaking-15, you-12) aux(breaking-15, ’ll-13)
+aux(breaking-15, be-14) conj:but(fine-9, breaking-15) amod(hearts-17,
+more-16) dobj(breaking-15, hearts-17) case(mine-19, than-18)
+nmod:than(breaking-15, mine-19) punct(fine-9, .-20)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>Sentence #20 (9 tokens, sentiment: Neutral): You’ll be breaking more
+hearts than mine.</p>
+
+<p>Tokens: [Text=You CharacterOffsetBegin=1493 CharacterOffsetEnd=1496
+PartOfSpeech=PRP Lemma=you NamedEntityTag=O SentimentClass=Neutral]
+[Text=’ll CharacterOffsetBegin=1496 CharacterOffsetEnd=1499
+PartOfSpeech=MD Lemma=will NamedEntityTag=O SentimentClass=Neutral]
+[Text=be CharacterOffsetBegin=1500 CharacterOffsetEnd=1502
+PartOfSpeech=VB Lemma=be NamedEntityTag=O SentimentClass=Neutral]
+[Text=breaking CharacterOffsetBegin=1503 CharacterOffsetEnd=1511
+PartOfSpeech=VBG Lemma=break NamedEntityTag=O SentimentClass=Neutral]
+[Text=more CharacterOffsetBegin=1512 CharacterOffsetEnd=1516
+PartOfSpeech=JJR Lemma=more NamedEntityTag=O SentimentClass=Neutral]
+[Text=hearts CharacterOffsetBegin=1517 CharacterOffsetEnd=1523
+PartOfSpeech=NNS Lemma=heart NamedEntityTag=O SentimentClass=Positive]
+[Text=than CharacterOffsetBegin=1524 CharacterOffsetEnd=1528
+PartOfSpeech=IN Lemma=than NamedEntityTag=O SentimentClass=Neutral]
+[Text=mine CharacterOffsetBegin=1529 CharacterOffsetEnd=1533
+PartOfSpeech=NN Lemma=mine NamedEntityTag=O SentimentClass=Neutral]
+[Text=. CharacterOffsetBegin=1533 CharacterOffsetEnd=1534
+PartOfSpeech=. Lemma=. NamedEntityTag=O SentimentClass=Neutral]</p>
+
+<p>Constituency parse: (ROOT (S (NP (PRP You)) (VP (MD ’ll) (VP (VB be) (VP
+(VBG breaking) (NP (JJR more) (NNS hearts)) (PP (IN than) (NP (NN
+mine)))))) (. .)))</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentiment-annotated binary tree: (ROOT</td>
+      <td>sentiment=2</td>
+      <td>prob=0.446</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.996 You) (@S</td>
+      <td>sentiment=2</td>
+      <td>prob=0.426</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.552 (MD</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 ’ll)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.583 (VB</td>
+      <td>sentiment=2</td>
+      <td>prob=0.994 be)</td>
+    </tr>
+    <tr>
+      <td>(VP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.463 (@VP</td>
+      <td>sentiment=3</td>
+      <td>prob=0.456</td>
+    </tr>
+    <tr>
+      <td>(VBG</td>
+      <td>sentiment=2</td>
+      <td>prob=0.962 breaking) (NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.866</td>
+    </tr>
+    <tr>
+      <td>(JJR</td>
+      <td>sentiment=2</td>
+      <td>prob=0.992 more) (NNS</td>
+      <td>sentiment=3</td>
+      <td>prob=0.921 hearts)))</td>
+    </tr>
+    <tr>
+      <td>(PP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.982 (IN</td>
+      <td>sentiment=2</td>
+      <td>prob=0.998 than)</td>
+    </tr>
+    <tr>
+      <td>(NP</td>
+      <td>sentiment=2</td>
+      <td>prob=0.941 mine))))) (.</td>
+      <td>sentiment=2</td>
+      <td>prob=0.997 .)))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dependency Parse (enhanced plus plus dependencies): root(ROOT-0,
+breaking-4) nsubj(breaking-4, You-1) aux(breaking-4, ’ll-2)
+aux(breaking-4, be-3) amod(hearts-6, more-5) dobj(breaking-4, hearts-6)
+case(mine-8, than-7) nmod:than(breaking-4, mine-8) punct(breaking-4,
+.-9)</p>
+
+<p>Extracted the following NER entity mentions:</p>
+
+<p>But as you can probably tell, the wrapper seems to have been spot on in
+regards to its accuracy against Sentimentr. It don’t make no sense I
+tell ya.</p>
+
+<p>How you read this, is by first concentrating on the lines which start
+with <code class="language-plaintext highlighter-rouge">Sentence #1 (12 tokens, sentiment: Negative): I can’t wait to show
+you where I grew up.</code>. Telling from the “Document ID”, there should be
+20 of these: <code class="language-plaintext highlighter-rouge">Document: ID=More-Hearts-1.txt (20 sentences, 370
+tokens)</code>. Accordingly, you’ve seen <code class="language-plaintext highlighter-rouge">Sentence #1</code> as I have just shown
+you; following are: sentence #2 <code class="language-plaintext highlighter-rouge">Sentence #2 (10 tokens, sentiment:
+Positive): Walk you ’round the foothills of my town.</code> and sentence #3
+<code class="language-plaintext highlighter-rouge">Sentence #3 (25 tokens, sentiment: Negative): Probably feel like you’ve
+been there before, After hearing all the stories; I’ve been telling you
+For six months now.</code> etc.</p>
+
+<p>Each word in a sentence is a token. The blocks of text following the
+sentence ID’s <code class="language-plaintext highlighter-rouge">Sentence #1...</code> etc, are showing the dependency relations
+among the tokens in each sentence.[1]</p>
+
+<p>For instance, consider the following:</p>
+
+<div class="figure">
+
+<img src="./../images/more-hearts.jpg" alt="Dependencies" width="200%" />
+
+<p class="caption">
+
+Dependencies
+
+</p>
+
+</div>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="andr19"><i>More Hearts Than Mine by Ingrid Andress | Billboard The Hot 100 Chart</i>. (2019). /charts/hot-100/2020-03-14</span></li>
+<li><span id="sliw12">Sliwa, P. (2012). In Defense of Moral Testimony. <i>Philosophical Studies</i>, <i>158</i>(2), 175–195. https://doi.org/10.1007/s11098-012-9887-6</span></li>
+<li><span id="kiri00">Kiritchenko, S., &amp; Mohammad, S. M. <i>Happy Accident: A Sentiment Composition Lexicon for Opposing Polarity Phrases</i>. 8.</span></li>
+<li><span id="kiri14">Kiritchenko, S., Zhu, X., &amp; Mohammad, S. M. (2014). Sentiment Analysis of Short Informal Texts. <i>Journal of Artificial Intelligence Research (JAIR)</i>, <i>50</i>, 723–762.</span></li>
+<li><span id="kiri14a">Kiritchenko, S., Zhu, X., &amp; Mohammad, S. M. (2014). Sentiment Analysis of Short Informal Texts. <i>Journal of Artificial Intelligence Research</i>, <i>50</i>, 723–762. https://doi.org/10.1613/jair.4272</span></li>
+<li><span id="kiri16">Kiritchenko, S., &amp; Mohammad, S. (2016). The Effect of Negators, Modals, and Degree Adverbs on Sentiment Composition. <i>Proceedings of the 7th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis</i>, 43–52. https://doi.org/10.18653/v1/W16-0410</span></li>
+<li><span id="kiri16a">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Capturing Reliable Fine-Grained Sentiment Associations by Crowdsourcing and Best–Worst Scaling. <i>Proceedings of the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL)</i>.</span></li>
+<li><span id="kiri16b">Kiritchenko, S., &amp; Mohammad, S. M. (2016). The Effect of Negators, Modals, and Degree Adverbs on Sentiment Composition. <i>Proceedings of the Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis (WASSA)</i>.</span></li>
+<li><span id="kiri16c">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Capturing Reliable Fine-Grained Sentiment Associations by Crowdsourcing and Best–Worst Scaling. <i>Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</i>, 811–817. https://doi.org/10.18653/v1/N16-1095</span></li>
+<li><span id="kiri16d">Kiritchenko, S., Mohammad, S. M., &amp; Salameh, M. (2016, June). Semeval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the International Workshop on Semantic Evaluation</i>.</span></li>
+<li><span id="kiri16e">Kiritchenko, S., Mohammad, S., &amp; Salameh, M. (2016). SemEval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016)</i>, 42–51. https://doi.org/10.18653/v1/S16-1004</span></li>
+<li><span id="kiri16f">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Sentiment Composition of Words with Opposing Polarities. <i>Proceedings of the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL), San Diego, California</i>.</span></li>
+<li><span id="kiri16g">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Sentiment Composition of Words with Opposing Polarities. <i>Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</i>, 1102–1108. https://doi.org/10.18653/v1/N16-1128</span></li>
+<li><span id="kiri16h">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Happy Accident: A Sentiment Composition Lexicon for Opposing Polarity Phrases. <i>Proceedings of 10th Edition of the the Language Resources and Evaluation Conference (LREC)</i>.</span></li>
+<li><span id="kiri16i">Kiritchenko, S., Mohammad, S. M., &amp; Salameh, M. (2016, June). Semeval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the International Workshop on Semantic Evaluation</i>.</span></li>
+<li><span id="kiri16j">Kiritchenko, S., Mohammad, S., &amp; Salameh, M. (2016). SemEval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016)</i>, 42–51. https://doi.org/10.18653/v1/S16-1004</span></li>
+<li><span id="moha00">Mohammad, S. M., &amp; Turney, P. D. <i>Emotions Evoked by Common Words and Phrases: Using Mechanical Turk to Create an Emotion Lexicon</i>. 9.</span></li>
+<li><span id="moha13">Mohammad, S. M., &amp; Turney, P. D. (2013). Crowdsourcing a Word-Emotion Association Lexicon. <i>Computational Intelligence</i>, <i>29</i>(3), 436–465.</span></li>
+<li><span id="moha18">Mohammad, S. M. (2018). Word Affect Intensities. <i>Proceedings of the 11th Edition of the Language Resources and Evaluation Conference (LREC-2018)</i>.</span></li>
+<li><span id="moha18a">Mohammad, S. (2018). Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words. <i>Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</i>, 174–184. https://doi.org/10.18653/v1/P18-1017</span></li>
+<li><span id="moha18b">Mohammad, S. M. (2018). Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words. <i>Proceedings of the Annual Conference of the Association for Computational Linguistics (ACL)</i>.</span></li>
+<li><span id="moha21">Mohammad, S. M. (2021). <i>Sentiment Analysis: Automatically Detecting Valence, Emotions, and Other Affectual States from Text</i>. http://arxiv.org/abs/2005.11882</span></li>
+<li><span id="rink19">Rinker, T., Dame, U. of N., Technologies, D. of K., Unicode, Inc, Higgins, J., Ward, G., Possel, H., Mechura, M. B., Liu, B., Hu, M., Mohammad, S. M., Turney, P., Cambria, E., Poria, S., Bajpai, R., Schuller, B., SentiWordNet, Wu, L., … Malaescu, I. (2019). <i>Lexicon: Lexicons for Text Analysis</i> (Version 1.2.1). https://CRAN.R-project.org/package=lexicon</span></li>
+<li><span id="rose00">Rosenthal, S., Nakov, P., Kiritchenko, S., Mohammad, S. M., Ritter, A., &amp; Stoyanov, V. <i>SemEval-2015 Task 10: Sentiment Analysis in Twitter</i>. 13.</span></li>
+<li><span id="rose15">Rosenthal, S., Nakov, P., Kiritchenko, S., Mohammad, S., Ritter, A., &amp; Stoyanov, V. (2015). SemEval-2015 Task 10: Sentiment Analysis in Twitter. <i>Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval 2015)</i>, 451–463. http://www.aclweb.org/anthology/S15-2078</span></li>
+<li><span id="hopp21">Hopp, F. R., Fisher, J. T., Cornell, D., Huskey, R., &amp; Weber, R. (2021). The Extended Moral Foundations Dictionary (eMFD): Development and Applications of a Crowd-Sourced Approach to Extracting Moral Intuitions from Text. <i>Behavior Research Methods</i>, <i>53</i>(1), 232–246. https://doi.org/10.3758/s13428-020-01433-0</span></li>
+<li><span id="grah11">Graham, J., Nosek, B. A., Haidt, J., Iyer, R., Koleva, S., &amp; Ditto, P. H. (2011). Mapping the Moral Domain. <i>Journal of Personality and Social Psychology</i>, <i>101</i>(2), 366–385. https://doi.org/10.1037/a0021847</span></li></ol>
+
+<ol>
+  <li>An excellent wrapper for this bit is
+<a href="https://github.com/quanteda/spacyr">spacyr</a>. What it does it parse
+out each of these relations in an easier to read manner.</li>
+</ol>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+<!--     <h2 class="footer-heading">Montaque Reynolds</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li><strong>Montaque Reynolds</strong></li>
+
+          <li><a href="mailto:monty@m-reynol.com">monty@m-reynol.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/jekyll">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyll</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyllrb</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+         <p class="text">
+I am a PhD. student in the department of philosophy at Saint Louis University. My interests lie at the intersection between moral agency and popular culture, specifically the narrative arts (literature, lyrical music).
+ 
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>
+<!-- d.s.m.s.050600.062508.030515.080516.030818 | "Baby, I'm Yours" -->

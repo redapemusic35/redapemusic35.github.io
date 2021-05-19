@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Extra Moral Foundations Dictionary</title>
+  <meta name="description" content="A crowd based approach to extracting moral intuitions from text.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://m-reynol.com/blog/2021/05/emfd-1">
+  <link rel="alternate" type="application/rss+xml" title="Montaque Reynolds" href="http://m-reynol.com/feed.xml" />
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+
+  
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Montaque Reynolds</a>
+
+
+    <nav class="site-nav">
+
+      <a href="#" class="menu-icon menu.open">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>  
+
+    <div class="trigger"><h1>Main Navigation</h1>
+
+ <ul class="menu">
+
+    
+    
+     <li><a href="/about/" class="page-link">About</a>
+    
+    </li>
+    
+    
+     <li><a href="/blog/" class="page-link">Blog</a>
+    
+    </li>
+    
+    
+     <li><a href="/cv/" class="page-link">CV</a>
+    
+    </li>
+    
+    
+     <li><a href="/miscellany/" class="page-link">Research</a>
+    
+    </li>
+    
+    </ul>
+
+
+<!-- <ul class="menu">
+        <li> <a class="page-link" href="/about">About</a></li>
+        <li> <a class="page-link"  href="/blog">Blog</a>
+        <li> <a class="page-link" href="/blog">CV</a>
+        <li> <a class="page-link" href="/blog">For Students</a></li>
+        <li> <a class="page-link"  href="/blog">Research</a></a>
+        <li> <a class="page-link" href="/blog">Teaching</a>
+<ul class="sub-menu">
+	<li><a href="http://svmiller.com/teaching/posc-1020-introduction-to-international-relations/">POSC 1020 – Introduction to International Relations</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3410-quantitative-methods-in-political-science/">POSC 3410 – Quantitative Methods in Political Science</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3610-international-politics-in-crisis/">POSC 3610 – International Politics in Crisis</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3630-united-states-foreign-policy/">POSC 3630 – United States Foreign Policy</a></li>
+</ul></li>
+        <li> <a class="page-link" href="/blog">Miscellany</a>
+<ul class="sub-menu">
+	<li><a href="http://svmiller.com/teaching/posc-1020-introduction-to-international-relations/">Clean USAID Greenbook Data</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3410-quantitative-methods-in-political-science/">Journal of Peace Research *.bst File</a></li>
+	<li><a href="http://svmiller.com/teaching/posc-3610-international-politics-in-crisis/">My Custom Beamer Style</a></li>
+</ul> 
+
+</li>
+</ul> -->
+
+     </div>  
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Extra Moral Foundations Dictionary</h1>
+    <p class="post-meta">Posted on May 3, 2021 by  Monty  
+
+  in
+  
+  <a href="/categories/#results" title="results">results</a>&nbsp;
+  
+
+
+</p>
+  </header>
+
+  <article class="post-content">
+    <p>Last week as I attended the Feminist X-Phi workshop out of Cuny, during
+a lecture, <a href="https://www.jordancwylie.com/">Jordan Wylie</a> mentioned this
+project called eMFD. eMFD stands for extra moral foundations dictionary
+and what it is is a “crowd based approach to extracting moral intuitions
+from texts” (see <a class="citation" href="#hopp21">(Hopp et al., 2021)</a>). What Hopp <em>et al</em> have done, is
+created a moral intuitions dictionary where words in a given document
+are compared to words in a dictionary. The words in the dictionary have
+been given a score where the score is the probability that that word
+corresponds to each of five moral foundations and each of five sentiment
+scores. This results in a 10 item vector for each word where each of the
+ten vectors is an average of all of the individual word scores per moral
+foundation and sentiment score for each occurrence of that word. The
+moral foundations and sentiments are: care/harm, fairness/cheating,
+loyalty/betrayal, authority/subversion and sanctity/degradation (missing reference).</p>
+
+<p>This might be the one. Thus far, I have been looking to determine the
+moral content algorithmically by comparing the sentiments expressed in a
+given song as understood according to various sentiment analysis
+software with the contents in those songs. For instance, the song
+“Ballin” (missing reference) expresses “joy” in the following sentences:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "Now a nigga cannot answer calls because I am making lots of money."
+## [2] "Because I am getting money now, I know you heard that."            
+## [3] "Young nigga on the corner, bitch, I had to serve crack."           
+## [4] "We came up on dirty money, I gave it a birdbath."                  
+## [5] "Now a nigga cannot answer calls because I am making lots of money."
+## [6] "I been waking up to get the money, woah, woah."                    
+## [7] "Grab my baby mama that new Bentayga."                              
+## [8] "Now a nigga cannot answer calls because I am making lots of money."
+## [9] "I have been making lots of money, little nigga."
+</code></pre></div></div>
+
+<p>Which I then thought about comparing the ways in which the sentiments
+where expressed with other genres, for instance country music. Here is
+the sentiment “joy” as it is expressed in the song “More Hearts Than
+Mine” <a class="citation" href="#andr19">(<i>More Hearts Than Mine by Ingrid Andress | Billboard The Hot 100 Chart</i>, 2019)</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "Pack a shirt for church because we will go." 
+## [2] "She falls in love a little faster than."     
+## [3] "She falls in love a little faster than I do."
+</code></pre></div></div>
+
+<p>This is controversial, but my question had to do with whether we might
+think the expression of “joy” in the first example is synonymous with
+virtue, a virtuous life, a good life, well-being, etc. What about in
+comparison with the second example? Does one express virtue to a greater
+extent than the other?</p>
+
+<p>We might think that in line with materialism, that yes, maybe the
+expressions of joy in the first example are expressions of joy which we
+might think unproblematic. But what about from other kinds of ethical
+frameworks? For instance, according to an ethic of care, would the
+expression of “joy” in the above contexts be synonymous with virtue, a
+virtuous life?</p>
+
+<p>While I think that this approach might be useful for discovering whether
+popular music encourages virtuous or vicious behavior, it is not clear
+whether we might truly understand the contexts for the expression of joy
+here. For instance, according to a care ethic, we might associate virtue
+with behaviors and practices that facilitate loving relationships (missing reference). Does the first line in the first example express the
+belief that earning income is more important than maintaining
+relationships with others? It is not clear that it does. What about the
+lines in the second example?</p>
+
+<h3 id="emfd">eMFD</h3>
+
+<p>According to Jonathan Haidt and others, there are five moral foundations
+(E.g. (missing reference)). What if we could measure texts according to
+whether they correspond with these five moral foundations? There have
+been a few attempts in this direction (see <a class="citation" href="#grah11">(Graham et al., 2011)</a>), but there
+have also been problems with these attempts (see <a class="citation" href="#hopp21">(Hopp et al., 2021)</a>).</p>
+
+<p>According to the authors, eMFD is said to improve on previous attempts
+at measuring texts according to moral foundations theory in a number of
+ways. First, rather than relying on moral words selection by experts,
+eMFD uses crowd sourced annotation. 854 annotators where drawn from the
+general American population using the crowd sourcing platform <a href="https://www.prolific.co/">Prolific
+Academic</a>.</p>
+
+<p>First data frame will utilize emfd dictionary with the “all” probability
+mapping, “box of words” scoring method and sentiment out metrics.
+Sentiment metrics are the average sentiment score for each moral
+foundation (virtue): care, fairness, loyalty, authority, sanctity; and
+for (vice) harm, cheating, betrayal, subversion, and degradation.</p>
+
+<p>From <a href="https://github.com/medianeuroscience/emfdscore/blob/master/eMFDscore_Tutorial.ipynb">the
+tutorial</a>:</p>
+
+<blockquote>
+  <p>Sentiment Scores: Each word is assigned 5 sentiment scores that denote
+the average sentiment of the foundation context in which this word
+appeared. For example, the word “kill” has an average “care_sent” of
+-0.69, meaning that all “care-harm” highlights in which “kill”
+appeared had an average, negative sentiment of -0.69.</p>
+</blockquote>
+
+<p>There are two ways in which we can assign sentiment probability:</p>
+
+<ol>
+  <li>
+    <p>use all probabilities assuming that each word matched with the
+dictionary is used as an indicator of multiple foundations with the
+probabilities as weights.</p>
+  </li>
+  <li>
+    <p>Assign a single probability to each word in the dictionary according
+to the foundation with the highest probability.</p>
+  </li>
+</ol>
+
+<p>I compare the songs “Life is Good,” “Ballin,” “More Hearts than Mine,”
+and “Bones.”</p>
+
+<p>The data frame below <code class="language-plaintext highlighter-rouge">df</code> utilizes the first method while <code class="language-plaintext highlighter-rouge">df4</code> the
+second.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="c1"># import seaborn as sns
+# from matplotlib import pyplot as plt
+</span><span class="kn">from</span> <span class="nn">emfdscore.scoring</span> <span class="kn">import</span> <span class="n">score_docs</span>
+
+<span class="n">template_input</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'/home/redapemusic35/VimWiki2/Learning/Research/Sentiment-Topic-Modeling/lyrics/comp.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">template_input</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##                                                    0
+## 0  'I can''t wait to show you where I grew up Wal...
+## 1  'I don''t really wanna go. I don''t really wan...
+## 2                                                  '
+## 3  'Dancing in the kitchen. You singing my favori...
+## 4  'Workin'' on the weekend like usual. Way off i...
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_input</span><span class="p">)</span>
+
+<span class="n">DICT_TYPE</span> <span class="o">=</span> <span class="s">'emfd'</span>
+<span class="n">PROB_MAP</span> <span class="o">=</span> <span class="s">'all'</span>
+<span class="n">SCORE_METHOD</span> <span class="o">=</span> <span class="s">'bow'</span>
+<span class="n">OUT_METRICS</span> <span class="o">=</span> <span class="s">'sentiment'</span>
+<span class="n">OUT_CSV_PATH</span> <span class="o">=</span> <span class="s">'emfd-all-bow-sent.csv'</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">score_docs</span><span class="p">(</span><span class="n">template_input</span><span class="p">,</span><span class="n">DICT_TYPE</span><span class="p">,</span><span class="n">PROB_MAP</span><span class="p">,</span><span class="n">SCORE_METHOD</span><span class="p">,</span><span class="n">OUT_METRICS</span><span class="p">,</span><span class="n">num_docs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Processed: 0 N/A% |                | Elapsed Time: 0:00:00 ETA:  --:--:--
+## Processed: 1  20% |❤❤❤             | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 4  80% |❤❤❤❤❤❤❤❤❤❤❤❤    | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 5 100% |❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤| Elapsed Time: 0:00:00 Time:  0:00:00
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">OUT_CSV_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">col_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"care_p"</span><span class="p">,</span> <span class="s">"fairness_p"</span><span class="p">,</span> <span class="s">"loyalty_p"</span><span class="p">,</span> <span class="s">"authority_p"</span><span class="p">,</span> <span class="s">"sanctity_p"</span><span class="p">,</span> <span class="s">"care_sent"</span><span class="p">,</span> <span class="s">"fairness_sent"</span><span class="p">,</span> <span class="s">"loyalty_sent"</span><span class="p">,</span> <span class="s">"authority_sent"</span><span class="p">,</span> <span class="s">"sanctity_sent"</span><span class="p">,</span> <span class="s">"moral_nonmoral_ratio"</span><span class="p">,</span> <span class="s">"f_var"</span><span class="p">,</span> <span class="s">"sent_var"</span><span class="p">]</span>
+<span class="n">df_csv1</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"emfd-all-bow-sent.csv"</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">col_list</span><span class="p">)</span>
+<span class="n">pd</span><span class="p">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">"display.max_columns"</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="n">df_csv1</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##      care_p  fairness_p  loyalty_p  authority_p  sanctity_p  care_sent  \
+## 0  0.106867    0.087836   0.096660     0.084637    0.094600  -0.084095   
+## 1  0.095360    0.082747   0.084345     0.085235    0.090488  -0.091297   
+## 2  0.000000    0.000000   0.000000     0.000000    0.000000   0.000000   
+## 3  0.099883    0.090181   0.095119     0.078157    0.091662  -0.073710   
+## 4  0.112436    0.090973   0.089485     0.091214    0.084529  -0.084626   
+## 
+##    fairness_sent  loyalty_sent  authority_sent  sanctity_sent  \
+## 0      -0.022420      0.036468        0.047830      -0.017547   
+## 1      -0.025913      0.013727       -0.062388      -0.045111   
+## 2       0.000000      0.000000        0.000000       0.000000   
+## 3      -0.027324     -0.008354        0.011478      -0.029747   
+## 4      -0.021881      0.015219       -0.013411      -0.011573   
+## 
+##    moral_nonmoral_ratio     f_var  sent_var  
+## 0              0.700000  0.000075  0.002796  
+## 1              0.525773  0.000027  0.001555  
+## 2              0.000000  0.000000  0.000000  
+## 3              0.661972  0.000065  0.001002  
+## 4              0.435484  0.000117  0.001370
+</code></pre></div></div>
+
+<p>What I currently like about eMFD, is that from it, users can use its
+scores to “assess whether an entity primarily engages in actions that
+uphold or violate certain moral conduct and, likewise, whether an entity
+is the target of primarily moral or immoral actions” <a class="citation" href="#hopp21">(Hopp et al., 2021, p. 10)</a>. Exactly how we might assess these scores in the way mentioned by
+Hopp <em>et al</em> is not yet clear to me.</p>
+
+<p>Second data frame <code class="language-plaintext highlighter-rouge">df1</code> will use emfd dictionary type, <code class="language-plaintext highlighter-rouge">all</code> probability
+mapping, named entity recognition <code class="language-plaintext highlighter-rouge">pat</code> scoring method and sentiment
+OUT_METRICS.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="c1"># import seaborn as sns
+# from matplotlib import pyplot as plt
+</span><span class="kn">from</span> <span class="nn">emfdscore.scoring</span> <span class="kn">import</span> <span class="n">score_docs</span>
+
+<span class="n">template_input</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'/home/redapemusic35/VimWiki2/Learning/Research/Sentiment-Topic-Modeling/lyrics/comp.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">template_input</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##                                                    0
+## 0  'I can''t wait to show you where I grew up Wal...
+## 1  'I don''t really wanna go. I don''t really wan...
+## 2                                                  '
+## 3  'Dancing in the kitchen. You singing my favori...
+## 4  'Workin'' on the weekend like usual. Way off i...
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_input</span><span class="p">)</span>
+
+<span class="n">DICT_TYPE</span> <span class="o">=</span> <span class="s">'emfd'</span>
+<span class="n">PROB_MAP</span> <span class="o">=</span> <span class="s">'all'</span>
+<span class="n">SCORE_METHOD</span> <span class="o">=</span> <span class="s">'bow'</span>
+<span class="n">OUT_METRICS</span> <span class="o">=</span> <span class="s">'vice-virtue'</span>
+<span class="n">OUT_CSV_PATH</span> <span class="o">=</span> <span class="s">'emfd-all-bow-vv.csv'</span>
+
+<span class="n">df1</span> <span class="o">=</span> <span class="n">score_docs</span><span class="p">(</span><span class="n">template_input</span><span class="p">,</span><span class="n">DICT_TYPE</span><span class="p">,</span><span class="n">PROB_MAP</span><span class="p">,</span><span class="n">SCORE_METHOD</span><span class="p">,</span><span class="n">OUT_METRICS</span><span class="p">,</span><span class="n">num_docs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Processed: 0 N/A% |                | Elapsed Time: 0:00:00 ETA:  --:--:--
+## Processed: 3  60% |❤❤❤❤❤❤❤❤❤       | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 4  80% |❤❤❤❤❤❤❤❤❤❤❤❤    | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 5 100% |❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤| Elapsed Time: 0:00:00 Time:  0:00:00
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">OUT_CSV_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">col_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"care.virtue"</span><span class="p">,</span> <span class="s">"fairness.virtue"</span><span class="p">,</span> <span class="s">"loyalty.virtue"</span><span class="p">,</span> <span class="s">"authority.virtue"</span><span class="p">,</span> <span class="s">"sanctity.virtue"</span><span class="p">,</span> <span class="s">"care.vice"</span><span class="p">,</span> <span class="s">"fairness.vice"</span><span class="p">,</span> <span class="s">"loyalty.vice"</span><span class="p">,</span> <span class="s">"authority.vice"</span><span class="p">,</span> <span class="s">"sanctity.vice"</span><span class="p">,</span> <span class="s">"moral_nonmoral_ratio"</span><span class="p">,</span> <span class="s">"f_var"</span><span class="p">]</span>
+<span class="n">df_csv1</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"emfd-all-bow-vv.csv"</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">col_list</span><span class="p">)</span>
+<span class="n">pd</span><span class="p">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">"display.max_columns"</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="n">df_csv1</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    care.virtue  fairness.virtue  loyalty.virtue  authority.virtue  \
+## 0     0.037599         0.035883        0.054402          0.031528   
+## 1     0.029243         0.034106        0.054111          0.027794   
+## 2     0.000000         0.000000        0.000000          0.000000   
+## 3     0.025817         0.029216        0.031973          0.038363   
+## 4     0.032688         0.028323        0.047205          0.038865   
+## 
+##    sanctity.virtue  care.vice  fairness.vice  loyalty.vice  authority.vice  \
+## 0         0.031907   0.069268       0.051953      0.042258        0.053108   
+## 1         0.033932   0.065505       0.047217      0.030234        0.056288   
+## 2         0.000000   0.000000       0.000000      0.000000        0.000000   
+## 3         0.057681   0.074067       0.057183      0.063146        0.039794   
+## 4         0.037552   0.079748       0.061117      0.042280        0.051771   
+## 
+##    sanctity.vice  moral_nonmoral_ratio     f_var  
+## 0       0.061719              0.700000  0.000170  
+## 1       0.056250              0.525773  0.000194  
+## 2       0.000000              0.000000  0.000000  
+## 3       0.033981              0.661972  0.000274  
+## 4       0.045817              0.435484  0.000225
+</code></pre></div></div>
+
+<p>Third data frame <code class="language-plaintext highlighter-rouge">df2</code> will use emfd dictionary type, <code class="language-plaintext highlighter-rouge">all</code> probability
+mapping, <code class="language-plaintext highlighter-rouge">bow</code> scoring, and <code class="language-plaintext highlighter-rouge">virtue-vice</code> OUT_METRICS.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="c1"># import seaborn as sns
+# from matplotlib import pyplot as plt
+</span><span class="kn">from</span> <span class="nn">emfdscore.scoring</span> <span class="kn">import</span> <span class="n">score_docs</span>
+
+<span class="n">template_input</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'/home/redapemusic35/VimWiki2/Learning/Research/Sentiment-Topic-Modeling/lyrics/comp.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">template_input</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##                                                    0
+## 0  'I can''t wait to show you where I grew up Wal...
+## 1  'I don''t really wanna go. I don''t really wan...
+## 2                                                  '
+## 3  'Dancing in the kitchen. You singing my favori...
+## 4  'Workin'' on the weekend like usual. Way off i...
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_input</span><span class="p">)</span>
+
+<span class="n">DICT_TYPE</span> <span class="o">=</span> <span class="s">'emfd'</span>
+<span class="n">PROB_MAP</span> <span class="o">=</span> <span class="s">'all'</span>
+<span class="n">SCORE_METHOD</span> <span class="o">=</span> <span class="s">'bow'</span>
+<span class="n">OUT_METRICS</span> <span class="o">=</span> <span class="s">'vice-virtue'</span>
+<span class="n">OUT_CSV_PATH</span> <span class="o">=</span> <span class="s">'all-pat-vir-vice.csv'</span>
+
+<span class="n">df2</span> <span class="o">=</span> <span class="n">score_docs</span><span class="p">(</span><span class="n">template_input</span><span class="p">,</span><span class="n">DICT_TYPE</span><span class="p">,</span><span class="n">PROB_MAP</span><span class="p">,</span><span class="n">SCORE_METHOD</span><span class="p">,</span><span class="n">OUT_METRICS</span><span class="p">,</span><span class="n">num_docs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Processed: 0 N/A% |                | Elapsed Time: 0:00:00 ETA:  --:--:--
+## Processed: 3  60% |❤❤❤❤❤❤❤❤❤       | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 4  80% |❤❤❤❤❤❤❤❤❤❤❤❤    | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 5 100% |❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤| Elapsed Time: 0:00:00 Time:  0:00:00
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df2</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">OUT_CSV_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This is a copy of the first data frame with weighted averages according
+to the foundation with highest probability:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="c1"># import seaborn as sns
+# from matplotlib import pyplot as plt
+</span><span class="kn">from</span> <span class="nn">emfdscore.scoring</span> <span class="kn">import</span> <span class="n">score_docs</span>
+
+<span class="n">template_input</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'/home/redapemusic35/VimWiki2/Learning/Research/Sentiment-Topic-Modeling/lyrics/comp.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">template_input</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##                                                    0
+## 0  'I can''t wait to show you where I grew up Wal...
+## 1  'I don''t really wanna go. I don''t really wan...
+## 2                                                  '
+## 3  'Dancing in the kitchen. You singing my favori...
+## 4  'Workin'' on the weekend like usual. Way off i...
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_input</span><span class="p">)</span>
+
+<span class="n">DICT_TYPE</span> <span class="o">=</span> <span class="s">'emfd'</span>
+<span class="n">PROB_MAP</span> <span class="o">=</span> <span class="s">'single'</span>
+<span class="n">SCORE_METHOD</span> <span class="o">=</span> <span class="s">'bow'</span>
+<span class="n">OUT_METRICS</span> <span class="o">=</span> <span class="s">'sentiment'</span>
+<span class="n">OUT_CSV_PATH</span> <span class="o">=</span> <span class="s">'emfd-single-bow-sent.csv'</span>
+
+<span class="n">df4</span> <span class="o">=</span> <span class="n">score_docs</span><span class="p">(</span><span class="n">template_input</span><span class="p">,</span><span class="n">DICT_TYPE</span><span class="p">,</span><span class="n">PROB_MAP</span><span class="p">,</span><span class="n">SCORE_METHOD</span><span class="p">,</span><span class="n">OUT_METRICS</span><span class="p">,</span><span class="n">num_docs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Processed: 0 N/A% |                | Elapsed Time: 0:00:00 ETA:  --:--:--
+## Processed: 2  40% |❤❤❤❤❤❤          | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 4  80% |❤❤❤❤❤❤❤❤❤❤❤❤    | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 5 100% |❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤| Elapsed Time: 0:00:00 Time:  0:00:00
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df4</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">OUT_CSV_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">col_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"care_p"</span><span class="p">,</span> <span class="s">"fairness_p"</span><span class="p">,</span> <span class="s">"loyalty_p"</span><span class="p">,</span> <span class="s">"authority_p"</span><span class="p">,</span> <span class="s">"sanctity_p"</span><span class="p">,</span> <span class="s">"care_sent"</span><span class="p">,</span> <span class="s">"fairness_sent"</span><span class="p">,</span> <span class="s">"loyalty_sent"</span><span class="p">,</span> <span class="s">"authority_sent"</span><span class="p">,</span> <span class="s">"sanctity_sent"</span><span class="p">,</span> <span class="s">"moral_nonmoral_ratio"</span><span class="p">,</span> <span class="s">"f_var"</span><span class="p">,</span> <span class="s">"sent_var"</span><span class="p">]</span>
+<span class="n">df_csv1</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"emfd-single-bow-sent.csv"</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">col_list</span><span class="p">)</span>
+<span class="n">pd</span><span class="p">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">"display.max_columns"</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="n">df_csv1</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##      care_p  fairness_p  loyalty_p  authority_p  sanctity_p  care_sent  \
+## 0  0.044354    0.024016   0.028571     0.010511    0.034242  -0.027560   
+## 1  0.039825    0.021815   0.027860     0.022583    0.020579  -0.047014   
+## 2  0.000000    0.000000   0.000000     0.000000    0.000000   0.000000   
+## 3  0.049724    0.018616   0.020174     0.001620    0.043426  -0.030096   
+## 4  0.064743    0.024445   0.017069     0.022588    0.007375  -0.068176   
+## 
+##    fairness_sent  loyalty_sent  authority_sent  sanctity_sent  \
+## 0      -0.004559      0.028911       -0.002667      -0.014070   
+## 1      -0.013808      0.028244       -0.010553      -0.027475   
+## 2       0.000000      0.000000        0.000000       0.000000   
+## 3       0.004943      0.030486       -0.001227      -0.019184   
+## 4      -0.008798      0.024374        0.000978       0.008186   
+## 
+##    moral_nonmoral_ratio     f_var  sent_var  
+## 0              0.700000  0.000157  0.000435  
+## 1              0.525773  0.000063  0.000767  
+## 2              0.000000  0.000000  0.000000  
+## 3              0.661972  0.000387  0.000546  
+## 4              0.435484  0.000484  0.001253
+</code></pre></div></div>
+
+<p>And with virtue-vice metrics:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="c1"># import seaborn as sns
+# from matplotlib import pyplot as plt
+</span><span class="kn">from</span> <span class="nn">emfdscore.scoring</span> <span class="kn">import</span> <span class="n">score_docs</span>
+
+<span class="n">template_input</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'/home/redapemusic35/VimWiki2/Learning/Research/Sentiment-Topic-Modeling/lyrics/comp.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">template_input</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##                                                    0
+## 0  'I can''t wait to show you where I grew up Wal...
+## 1  'I don''t really wanna go. I don''t really wan...
+## 2                                                  '
+## 3  'Dancing in the kitchen. You singing my favori...
+## 4  'Workin'' on the weekend like usual. Way off i...
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_input</span><span class="p">)</span>
+
+<span class="n">DICT_TYPE</span> <span class="o">=</span> <span class="s">'emfd'</span>
+<span class="n">PROB_MAP</span> <span class="o">=</span> <span class="s">'all'</span>
+<span class="n">SCORE_METHOD</span> <span class="o">=</span> <span class="s">'bow'</span>
+<span class="n">OUT_METRICS</span> <span class="o">=</span> <span class="s">'vice-virtue'</span>
+<span class="n">OUT_CSV_PATH</span> <span class="o">=</span> <span class="s">'emfd-all-bow-vv.csv'</span>
+
+<span class="n">df5</span> <span class="o">=</span> <span class="n">score_docs</span><span class="p">(</span><span class="n">template_input</span><span class="p">,</span><span class="n">DICT_TYPE</span><span class="p">,</span><span class="n">PROB_MAP</span><span class="p">,</span><span class="n">SCORE_METHOD</span><span class="p">,</span><span class="n">OUT_METRICS</span><span class="p">,</span><span class="n">num_docs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Processed: 0 N/A% |                | Elapsed Time: 0:00:00 ETA:  --:--:--
+## Processed: 3  60% |❤❤❤❤❤❤❤❤❤       | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 4  80% |❤❤❤❤❤❤❤❤❤❤❤❤    | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 5 100% |❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤| Elapsed Time: 0:00:00 Time:  0:00:00
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df5</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">OUT_CSV_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">col_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"care.virtue"</span><span class="p">,</span> <span class="s">"fairness.virtue"</span><span class="p">,</span> <span class="s">"loyalty.virtue"</span><span class="p">,</span> <span class="s">"authority.virtue"</span><span class="p">,</span> <span class="s">"sanctity.virtue"</span><span class="p">,</span> <span class="s">"care.vice"</span><span class="p">,</span> <span class="s">"fairness.vice"</span><span class="p">,</span> <span class="s">"loyalty.vice"</span><span class="p">,</span> <span class="s">"authority.vice"</span><span class="p">,</span> <span class="s">"sanctity.vice"</span><span class="p">,</span> <span class="s">"moral_nonmoral_ratio"</span><span class="p">,</span> <span class="s">"f_var"</span><span class="p">]</span>
+<span class="n">df_csv3</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"emfd-all-bow-vv.csv"</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">col_list</span><span class="p">)</span>
+<span class="n">pd</span><span class="p">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">"display.max_columns"</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="n">df_csv3</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    care.virtue  fairness.virtue  loyalty.virtue  authority.virtue  \
+## 0     0.037599         0.035883        0.054402          0.031528   
+## 1     0.029243         0.034106        0.054111          0.027794   
+## 2     0.000000         0.000000        0.000000          0.000000   
+## 3     0.025817         0.029216        0.031973          0.038363   
+## 4     0.032688         0.028323        0.047205          0.038865   
+## 
+##    sanctity.virtue  care.vice  fairness.vice  loyalty.vice  authority.vice  \
+## 0         0.031907   0.069268       0.051953      0.042258        0.053108   
+## 1         0.033932   0.065505       0.047217      0.030234        0.056288   
+## 2         0.000000   0.000000       0.000000      0.000000        0.000000   
+## 3         0.057681   0.074067       0.057183      0.063146        0.039794   
+## 4         0.037552   0.079748       0.061117      0.042280        0.051771   
+## 
+##    sanctity.vice  moral_nonmoral_ratio     f_var  
+## 0       0.061719              0.700000  0.000170  
+## 1       0.056250              0.525773  0.000194  
+## 2       0.000000              0.000000  0.000000  
+## 3       0.033981              0.661972  0.000274  
+## 4       0.045817              0.435484  0.000225
+</code></pre></div></div>
+
+<p>Virtue-Vice with single PROB_MAP.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="c1"># import seaborn as sns
+# from matplotlib import pyplot as plt
+</span><span class="kn">from</span> <span class="nn">emfdscore.scoring</span> <span class="kn">import</span> <span class="n">score_docs</span>
+
+<span class="n">template_input</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'/home/redapemusic35/VimWiki2/Learning/Research/Sentiment-Topic-Modeling/lyrics/comp.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">template_input</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##                                                    0
+## 0  'I can''t wait to show you where I grew up Wal...
+## 1  'I don''t really wanna go. I don''t really wan...
+## 2                                                  '
+## 3  'Dancing in the kitchen. You singing my favori...
+## 4  'Workin'' on the weekend like usual. Way off i...
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_docs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">template_input</span><span class="p">)</span>
+
+<span class="n">DICT_TYPE</span> <span class="o">=</span> <span class="s">'emfd'</span>
+<span class="n">PROB_MAP</span> <span class="o">=</span> <span class="s">'single'</span>
+<span class="n">SCORE_METHOD</span> <span class="o">=</span> <span class="s">'bow'</span>
+<span class="n">OUT_METRICS</span> <span class="o">=</span> <span class="s">'vice-virtue'</span>
+<span class="n">OUT_CSV_PATH</span> <span class="o">=</span> <span class="s">'emfd-single-bow-vv.csv'</span>
+
+<span class="n">df6</span> <span class="o">=</span> <span class="n">score_docs</span><span class="p">(</span><span class="n">template_input</span><span class="p">,</span><span class="n">DICT_TYPE</span><span class="p">,</span><span class="n">PROB_MAP</span><span class="p">,</span><span class="n">SCORE_METHOD</span><span class="p">,</span><span class="n">OUT_METRICS</span><span class="p">,</span><span class="n">num_docs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Processed: 0 N/A% |                | Elapsed Time: 0:00:00 ETA:  --:--:--
+## Processed: 3  60% |❤❤❤❤❤❤❤❤❤       | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 4  80% |❤❤❤❤❤❤❤❤❤❤❤❤    | Elapsed Time: 0:00:00 ETA:   0:00:00
+## Processed: 5 100% |❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤| Elapsed Time: 0:00:00 Time:  0:00:00
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df6</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">OUT_CSV_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">col_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"care.virtue"</span><span class="p">,</span> <span class="s">"fairness.virtue"</span><span class="p">,</span> <span class="s">"loyalty.virtue"</span><span class="p">,</span> <span class="s">"authority.virtue"</span><span class="p">,</span> <span class="s">"sanctity.virtue"</span><span class="p">,</span> <span class="s">"care.vice"</span><span class="p">,</span> <span class="s">"fairness.vice"</span><span class="p">,</span> <span class="s">"loyalty.vice"</span><span class="p">,</span> <span class="s">"authority.vice"</span><span class="p">,</span> <span class="s">"sanctity.vice"</span><span class="p">,</span> <span class="s">"moral_nonmoral_ratio"</span><span class="p">,</span> <span class="s">"f_var"</span><span class="p">]</span>
+<span class="n">df_csv4</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"emfd-single-bow-vv.csv"</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">col_list</span><span class="p">)</span>
+<span class="n">pd</span><span class="p">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">"display.max_columns"</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<span class="n">df_csv4</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##    care.virtue  fairness.virtue  loyalty.virtue  authority.virtue  \
+## 0     0.018672         0.004774        0.015820          0.002336   
+## 1     0.015829         0.003833        0.019765          0.006664   
+## 2     0.000000         0.000000        0.000000          0.000000   
+## 3     0.004741         0.003152        0.013682          0.000000   
+## 4     0.012133         0.007430        0.007145          0.016696   
+## 
+##    sanctity.virtue  care.vice  fairness.vice  loyalty.vice  authority.vice  \
+## 0         0.013799   0.025682       0.019243      0.012750        0.008175   
+## 1         0.002877   0.023995       0.017982      0.008095        0.015919   
+## 2         0.000000   0.000000       0.000000      0.000000        0.000000   
+## 3         0.028080   0.044983       0.015464      0.006491        0.001620   
+## 4         0.006217   0.052610       0.017015      0.009924        0.005892   
+## 
+##    sanctity.vice  moral_nonmoral_ratio     f_var  
+## 0       0.020443              0.700000  0.000054  
+## 1       0.017701              0.525773  0.000053  
+## 2       0.000000              0.000000  0.000000  
+## 3       0.015346              0.661972  0.000196  
+## 4       0.001157              0.435484  0.000212
+</code></pre></div></div>
+
+<h1 id="works-cited">Works Cited</h1>
+
+<ol class="bibliography"><li><span id="andr19"><i>More Hearts Than Mine by Ingrid Andress | Billboard The Hot 100 Chart</i>. (2019). /charts/hot-100/2020-03-14</span></li>
+<li><span id="sliw12">Sliwa, P. (2012). In Defense of Moral Testimony. <i>Philosophical Studies</i>, <i>158</i>(2), 175–195. https://doi.org/10.1007/s11098-012-9887-6</span></li>
+<li><span id="kiri00">Kiritchenko, S., &amp; Mohammad, S. M. <i>Happy Accident: A Sentiment Composition Lexicon for Opposing Polarity Phrases</i>. 8.</span></li>
+<li><span id="kiri14">Kiritchenko, S., Zhu, X., &amp; Mohammad, S. M. (2014). Sentiment Analysis of Short Informal Texts. <i>Journal of Artificial Intelligence Research (JAIR)</i>, <i>50</i>, 723–762.</span></li>
+<li><span id="kiri14a">Kiritchenko, S., Zhu, X., &amp; Mohammad, S. M. (2014). Sentiment Analysis of Short Informal Texts. <i>Journal of Artificial Intelligence Research</i>, <i>50</i>, 723–762. https://doi.org/10.1613/jair.4272</span></li>
+<li><span id="kiri16">Kiritchenko, S., &amp; Mohammad, S. (2016). The Effect of Negators, Modals, and Degree Adverbs on Sentiment Composition. <i>Proceedings of the 7th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis</i>, 43–52. https://doi.org/10.18653/v1/W16-0410</span></li>
+<li><span id="kiri16a">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Capturing Reliable Fine-Grained Sentiment Associations by Crowdsourcing and Best–Worst Scaling. <i>Proceedings of the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL)</i>.</span></li>
+<li><span id="kiri16b">Kiritchenko, S., &amp; Mohammad, S. M. (2016). The Effect of Negators, Modals, and Degree Adverbs on Sentiment Composition. <i>Proceedings of the Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis (WASSA)</i>.</span></li>
+<li><span id="kiri16c">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Capturing Reliable Fine-Grained Sentiment Associations by Crowdsourcing and Best–Worst Scaling. <i>Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</i>, 811–817. https://doi.org/10.18653/v1/N16-1095</span></li>
+<li><span id="kiri16d">Kiritchenko, S., Mohammad, S. M., &amp; Salameh, M. (2016, June). Semeval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the International Workshop on Semantic Evaluation</i>.</span></li>
+<li><span id="kiri16e">Kiritchenko, S., Mohammad, S., &amp; Salameh, M. (2016). SemEval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016)</i>, 42–51. https://doi.org/10.18653/v1/S16-1004</span></li>
+<li><span id="kiri16f">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Sentiment Composition of Words with Opposing Polarities. <i>Proceedings of the 15th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL), San Diego, California</i>.</span></li>
+<li><span id="kiri16g">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Sentiment Composition of Words with Opposing Polarities. <i>Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</i>, 1102–1108. https://doi.org/10.18653/v1/N16-1128</span></li>
+<li><span id="kiri16h">Kiritchenko, S., &amp; Mohammad, S. M. (2016). Happy Accident: A Sentiment Composition Lexicon for Opposing Polarity Phrases. <i>Proceedings of 10th Edition of the the Language Resources and Evaluation Conference (LREC)</i>.</span></li>
+<li><span id="kiri16i">Kiritchenko, S., Mohammad, S. M., &amp; Salameh, M. (2016, June). Semeval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the International Workshop on Semantic Evaluation</i>.</span></li>
+<li><span id="kiri16j">Kiritchenko, S., Mohammad, S., &amp; Salameh, M. (2016). SemEval-2016 Task 7: Determining Sentiment Intensity of English and Arabic Phrases. <i>Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016)</i>, 42–51. https://doi.org/10.18653/v1/S16-1004</span></li>
+<li><span id="moha00">Mohammad, S. M., &amp; Turney, P. D. <i>Emotions Evoked by Common Words and Phrases: Using Mechanical Turk to Create an Emotion Lexicon</i>. 9.</span></li>
+<li><span id="moha13">Mohammad, S. M., &amp; Turney, P. D. (2013). Crowdsourcing a Word-Emotion Association Lexicon. <i>Computational Intelligence</i>, <i>29</i>(3), 436–465.</span></li>
+<li><span id="moha18">Mohammad, S. M. (2018). Word Affect Intensities. <i>Proceedings of the 11th Edition of the Language Resources and Evaluation Conference (LREC-2018)</i>.</span></li>
+<li><span id="moha18a">Mohammad, S. (2018). Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words. <i>Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</i>, 174–184. https://doi.org/10.18653/v1/P18-1017</span></li>
+<li><span id="moha18b">Mohammad, S. M. (2018). Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words. <i>Proceedings of the Annual Conference of the Association for Computational Linguistics (ACL)</i>.</span></li>
+<li><span id="moha21">Mohammad, S. M. (2021). <i>Sentiment Analysis: Automatically Detecting Valence, Emotions, and Other Affectual States from Text</i>. http://arxiv.org/abs/2005.11882</span></li>
+<li><span id="rink19">Rinker, T., Dame, U. of N., Technologies, D. of K., Unicode, Inc, Higgins, J., Ward, G., Possel, H., Mechura, M. B., Liu, B., Hu, M., Mohammad, S. M., Turney, P., Cambria, E., Poria, S., Bajpai, R., Schuller, B., SentiWordNet, Wu, L., … Malaescu, I. (2019). <i>Lexicon: Lexicons for Text Analysis</i> (Version 1.2.1). https://CRAN.R-project.org/package=lexicon</span></li>
+<li><span id="rose00">Rosenthal, S., Nakov, P., Kiritchenko, S., Mohammad, S. M., Ritter, A., &amp; Stoyanov, V. <i>SemEval-2015 Task 10: Sentiment Analysis in Twitter</i>. 13.</span></li>
+<li><span id="rose15">Rosenthal, S., Nakov, P., Kiritchenko, S., Mohammad, S., Ritter, A., &amp; Stoyanov, V. (2015). SemEval-2015 Task 10: Sentiment Analysis in Twitter. <i>Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval 2015)</i>, 451–463. http://www.aclweb.org/anthology/S15-2078</span></li>
+<li><span id="hopp21">Hopp, F. R., Fisher, J. T., Cornell, D., Huskey, R., &amp; Weber, R. (2021). The Extended Moral Foundations Dictionary (eMFD): Development and Applications of a Crowd-Sourced Approach to Extracting Moral Intuitions from Text. <i>Behavior Research Methods</i>, <i>53</i>(1), 232–246. https://doi.org/10.3758/s13428-020-01433-0</span></li>
+<li><span id="grah11">Graham, J., Nosek, B. A., Haidt, J., Iyer, R., Koleva, S., &amp; Ditto, P. H. (2011). Mapping the Moral Domain. <i>Journal of Personality and Social Psychology</i>, <i>101</i>(2), 366–385. https://doi.org/10.1037/a0021847</span></li></ol>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+<!--     <h2 class="footer-heading">Montaque Reynolds</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li><strong>Montaque Reynolds</strong></li>
+
+          <li><a href="mailto:monty@m-reynol.com">monty@m-reynol.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/jekyll">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyll</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyllrb</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+         <p class="text">
+I am a PhD. student in the department of philosophy at Saint Louis University. My interests lie at the intersection between moral agency and popular culture, specifically the narrative arts (literature, lyrical music).
+ 
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>
+<!-- d.s.m.s.050600.062508.030515.080516.030818 | "Baby, I'm Yours" -->
