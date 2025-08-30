@@ -1,18 +1,18 @@
 project:
   type: "website"
-  title: "MY_COURSE_NAME 2022/23"
+  title: "Philosophy of Law 2026"
   output-dir: _output
   render:
     - "index.qmd"
-    - "2023/*.qmd"
-    - "2023/weeks/week01/*.qmd"
+    - "2026/*.qmd"
+    - "2026/weeks/week01/*.qmd"
 
 website:
-  title: "MY_COURSE_NAME 2022/23"
+  title: "PHIL 284 2026"
   page-navigation: true
   reader-mode: true
   open-graph: true
-  twitter-card: 
+  twitter-card:
     creator: "@<twitter-handle>"
     site: "\\@<twitter-handle>"
   favicon: "figures/icons/course_favicon.png"
@@ -22,7 +22,7 @@ website:
   sidebar:
     style: docked
     contents:
-      - href: 2023/index.qmd
+      - href: 2026/index.qmd
         text: "🏠 Home"
       # - href: 2023/syllabus.qmd
       #   text: "📓 Syllabus"
@@ -39,10 +39,10 @@ website:
       #       text: "👥 Group Project"
       - section: "🗓️ Weeks"
         contents:
-         - href: 2023/weeks/week01/page.qmd
+         - href: 2026/weeks/week01/page.qmd
            text: Week 01
            contents:
-             - href: 2023/weeks/week01/page.qmd
+             - href: 2026/weeks/week01/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
@@ -53,7 +53,7 @@ website:
     background: primary
   page-footer:
     background: light
-    left: "Copyright 2023, MY INSTITUTION" 
+    left: "Copyright 2023, MY INSTITUTION"
 
 
 
@@ -63,9 +63,9 @@ csl: references/chicago-author-date.csl
 
 format:
   html:
-    author: Dr. [MY NAME](#)
-    author-meta: Dr. MY NAME
-    date-format: "DD MMMM YYYY"
+    author: Dr. [Reynolds](#)
+    author-meta: Dr. Monty Reynolds
+    date-format: "12 JAN 2026"
 
     email-obfuscation: javascript
     link-external-newwindow: true
@@ -73,10 +73,10 @@ format:
     link-external-filter: ^(?:http:|https:)\/\/(?:lse-dsi\.github\.io\/|localhost)
 
     theme:
-      light: 
+      light:
         - journal
         - css/custom.scss # I use this just to change the default colour
-    css: 
+    css:
       - css/custom_style.css
       - css/syllabus.css
     toc: true
