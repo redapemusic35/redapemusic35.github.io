@@ -1,6 +1,6 @@
 ---
 subtitle: "PHIL104Q -- Introduction to Logic"
-title: "<font style='font-size:1em;'>🗓️ Week 01<br/> Introduction</font>"
+title: "<font style='font-size:1em;'>🗓️ Week 03<br/> Introduction</font>"
 author: Prof. [Reynolds](#)
 institute: '[Stetson University](#)'
 date: 02 September 2026

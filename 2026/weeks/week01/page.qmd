@@ -1,5 +1,5 @@
 ---
-title: "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules"
+title: "🗓️ Week 02 - Chapter 1"
 ---
 
 In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.

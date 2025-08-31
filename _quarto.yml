@@ -5,7 +5,7 @@ project:
   render:
     - "index.qmd"
     - "2026/*.qmd"
-    - "2026/weeks/week01/*.qmd"
+    - "2026/weeks/week0*/*.qmd"
 
 website:
   title: "PHIL 284 2026"
@@ -24,25 +24,21 @@ website:
     contents:
       - href: 2026/index.qmd
         text: "🏠 Home"
-      # - href: 2023/syllabus.qmd
-      #   text: "📓 Syllabus"
-      # - href: 2023/communication.qmd
-      #   text: "📟 Communication"
-      # - href: 2023/assignments.qmd
-      #   text: "✍️ Assignments"
-      #   contents:
-      #     - href: 2023/assignments/assignment01.qmd
-      #       text: "📝 Assignment 01"
-      #     - href: 2023/assignments/assignment02.qmd
-      #       text: "📝 Assignment 02"
-      #     - href: 2023/assignments/group_project.qmd
-      #       text: "👥 Group Project"
       - section: "🗓️ Weeks"
         contents:
          - href: 2026/weeks/week01/page.qmd
            text: Week 01
            contents:
              - href: 2026/weeks/week01/page.qmd
+               text: 👨‍🏫 Lecture Material
+            #  - href: 2023/weeks/week01/lab.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2026/weeks/week02/page.qmd
+           text: Week 02
+           contents:
+             - href: 2026/weeks/week02/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap

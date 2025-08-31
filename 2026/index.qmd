@@ -1,6 +1,6 @@
 ---
 title: "PHIL284 - Philosophy of Law"
-subtitle: "Academic Year: 2026"
+subtitle: "Academic Year: 2025/26"
 format: html
 ---
 
@@ -9,7 +9,7 @@ format: html
 
 (01/16/2026)
 
-- [🗓️ Week 01 lecture material](https://redapemusic35.github.io/2026/weeks/week01/page.html) is now available!
+- [🗓️ Week 01 lecture material](/2023/weeks/week01/page.qmd) is now available!
 
 :::
 

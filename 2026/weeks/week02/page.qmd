@@ -26,4 +26,4 @@ Use your keypad to navigate the slides.
 
 ## 📟 Communication
 
-- If you feel like it, introduce yourself in the `#introductions` channel on Slack
+- If you feel like it, introduce your 'selves' in the `#introductions` channel in [Discussions](https://stetson.instructure.com/courses/38093/discussion_topics/162462)
