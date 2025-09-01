@@ -26,6 +26,9 @@ format:
 **Select Academic Year/Term:**
 
 <a href="2026/index.qmd">
-    <button class="button-61">2026</button>
+    <button class="button-61">Logic, Fall 2026</button>
 </a>
 
+<a href="aesthetics-2026/index.qmd">
+    <button class="button-61">Aesthetics, Fall 2026</button>
+</a>
