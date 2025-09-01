@@ -770,11 +770,46 @@
     "text": "Remember?\nReplace the claims with sentence letters and ignore the connectives for now.\n\nLook only for true or false statements.\n\n\nIf the fetus is a person, then abortion is murder.\nThe fetus is a person.\n\n\\(\\therefore\\)\n\nAbortion is murder."
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#falacious-argument-forms",
-    "href": "2025-logic/weeks/week02/slides.html#falacious-argument-forms",
+    "objectID": "2025-logic/weeks/week02/slides.html#valid-and-falacious-argument-forms",
+    "href": "2025-logic/weeks/week02/slides.html#valid-and-falacious-argument-forms",
     "title": "🗓️ Week 03 Introduction",
-    "section": "Falacious Argument Forms",
-    "text": "Falacious Argument Forms\n\nModus Ponens\nAffirming the Consequent"
+    "section": "Valid and Falacious Argument Forms",
+    "text": "Valid and Falacious Argument Forms\n\nModus Ponens\nAffirming the Consequent"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument",
+    "href": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Let’s identify the main components of this argument",
+    "text": "Let’s identify the main components of this argument\n\nIn Bernard Suits’ The Grasshopper and Return of the Grasshopper, game-play is claimed to be the ‘ideal of existence’ and the only activity that could sustain us through the ‘endless and endlessly boring summer’ of utopia. Christopher Yorke has challenged these claims by way of a constructive dilemma. If these games are sufficiently akin to the games we play, then they are not adequate to the task of rendering immortality tolerable. If these games are importantly different than the games we play, then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration. Against Yorke’s skepticism, I argue that the games that constitute the ideal of existence are intelligible to us because we already play what the Grasshopper calls ‘open games’. Steffen Borge concedes that utopian games are intelligible, but argues that such games would fail to ‘grab our minds and imagination’. In the second half of the paper, I contend, against Borge, that such open games are adequate to the task of sustaining the interest of an immortal community."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#but-this-looks-weird-and-not-helpful.",
+    "href": "2025-logic/weeks/week02/slides.html#but-this-looks-weird-and-not-helpful.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "But this looks weird and not helpful.",
+    "text": "But this looks weird and not helpful.\n\nP \\(\\rightarrow\\) Q\n\n\nJust like above, we replace the propositions with sentence letters."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#but-.-.-.",
+    "href": "2025-logic/weeks/week02/slides.html#but-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "But . . .,",
+    "text": "But . . .,\n\nIf these games are importantly different than the games we play, then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration.\n\n\nNo answers yet."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
+    "href": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "A new logical operator",
+    "text": "A new logical operator"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#either-what",
+    "href": "2025-logic/weeks/week02/slides.html#either-what",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Either What?",
+    "text": "Either What?\n\nP \\(\\rightarrow\\) Q\nR \\(\\rightarrow\\) S"
   },
   {
     "objectID": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument.",
