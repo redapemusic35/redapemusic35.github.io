@@ -1,5 +1,5 @@
 ---
-title: "PHIL284 - Philosophy of Law"
+title: "PHIL343A - Aesthetics"
 subtitle: "Academic Year: 2025/26"
 format: html
 ---
@@ -9,7 +9,7 @@ format: html
 
 (01/16/2026)
 
-- [🗓️ Week 01 lecture material](/2023/weeks/week01/page.qmd) is now available!
+- [🗓️ Week 02 lecture material](/2025-aesthetics/weeks/week02/page.qmd) is now available!
 
 :::
 
@@ -34,10 +34,10 @@ Office Hours:
 
 ## Teaching Staff
 
-![](/figures/people/ta_octopunian.png){fig-align="left" fig-alt="Photo of Grey Smith" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}
-**[Grey Smith](#)** <br/>
+![](/figures/people/ta_octopunian.png){fig-align="left" fig-alt="NA" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}
+**[NA](#)** <br/>
 Student Peer Instructor<br>
-📧 [asmith112@stetson.edu](mailto:)
+📧 [NA](mailto:)
 
 ~~[](/figures/people/ta_octopunian2.png){fig-align="left" fig-alt="Photo of TA_NAME" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}~~
 ~~**[TA_NAME](#)** <br/>~~

@@ -1,5 +1,5 @@
 ---
-title: "PHIL284 - Philosophy of Law"
+title: "Fall 2025 Courses"
 format:
   html:
     include-before-body: helpers/remove-nav.html
@@ -25,10 +25,10 @@ format:
 
 **Select Academic Year/Term:**
 
-<a href="2026/index.qmd">
+<a href="2025-logic/index.qmd">
     <button class="button-61">Logic, Fall 2026</button>
 </a>
 
-<a href="aesthetics-2026/index.qmd">
+<a href="2025-aesthetics/index.qmd">
     <button class="button-61">Aesthetics, Fall 2026</button>
 </a>

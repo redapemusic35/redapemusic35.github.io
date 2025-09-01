@@ -1,12 +1,11 @@
 project:
   type: "website"
-  title: "Philosophy of Law 2026"
+  title: "Fall 2025 Courses"
   output-dir: _output
   render:
     - "index.qmd"
-    - "2026/*.qmd"
-    - "2026/weeks/week0*/*.qmd"
-    - "aesthetics-2026/*"
+    - "2025-logic/*"
+    - "2025-aesthetics"
 
 website:
   title: "Fall 2026"
@@ -23,32 +22,32 @@ website:
   sidebar:
     style: docked
     contents:
-      - href: 2026/index.qmd
+      - href: ./index.qmd
         text: "🏠 Home"
       - section: "🗓️ Weeks"
         contents:
-         - href: 2026/weeks/week01/page.qmd
+         - href: 2025-logic/weeks/week01/page.qmd
            text: Week 01
            contents:
-             - href: 2026/weeks/week01/page.qmd
+             - href: 2025-logic/weeks/week01/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2026/weeks/week02/page.qmd
+         - href: 2025-logic/weeks/week02/page.qmd
            text: Week 02
            contents:
-             - href: 2026/weeks/week02/page.qmd
+             - href: 2025-logic/weeks/week02/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2026/weeks/week02/page.qmd
+         - href: 2025-aesthetics/weeks/week02/page.qmd
            text: Week 02
            contents:
-             - href: aesthetics-2026/weeks/week02/page.qmd
+             - href: 2025-aesthetics/weeks/week02/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
