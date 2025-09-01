@@ -17,6 +17,7 @@ format:
     fig-responsive: true
     slide-number: true
     incremental: true
+    scrollable: true
     mouse-wheel: false
     preview-links: auto
     logo: /figures/icons/course_favicon.png
@@ -137,7 +138,7 @@ $\therefore$
 
 2. She won't get the raise.
 
-$\thefore$
+$\therefore$
 
 3. She'll quit.
 
@@ -151,11 +152,261 @@ $\therefore$
 
 3. She'll quit.
 
-## Falacious Argument Forms
+## Valid and Falacious Argument Forms
 
 * Modus Ponens
 
 * Affirming the Consequent
+
+## Let's identify the main components of this argument
+
+>  In Bernard Suits’ The Grasshopper and Return of the Grasshopper, game-play is
+claimed to be the ‘ideal of existence’ and the only activity that could sustain us
+through the ‘endless and endlessly boring summer’ of utopia. Christopher
+Yorke has challenged these claims by way of a constructive dilemma. If these
+games are sufficiently akin to the games we play, then they are not adequate to
+the task of rendering immortality tolerable. If these games are importantly
+different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+Against Yorke’s skepticism, I argue that the games that constitute the ideal of
+existence are intelligible to us because we already play what the Grasshopper
+calls ‘open games’. Steffen Borge concedes that utopian games are intelligible,
+but argues that such games would fail to ‘grab our minds and imagination’. In
+the second half of the paper, I contend, against Borge, that such open games
+are adequate to the task of sustaining the interest of an immortal community.
+
+---
+
+* In Bernard Suits’ The Grasshopper and Return of the Grasshopper, game-play is
+claimed to be the ‘ideal of existence’ and the only activity that could sustain us
+through the ‘endless and endlessly boring summer’ of utopia.
+
+::: {.notes}
+
+* How many propositions can you identify?
+
+* How many true or false statements?
+
+But let's imagine, for instance, that one part is true and the other false.
+
+:::
+
+---
+
+* In Bernard Suits’ *The Grasshopper* and *Return of the Grasshopper*,
+
+1. game-play is claimed to be the ‘ideal of existence’
+
+and
+
+2. the only activity that could sustain us through the ‘endless and endlessly boring summer’ of utopia.
+
+::: {.notes}
+
+Perhaps a brief aside on the use of scope in logical operators. What does the attributions of true or false cover?
+
+Another aside, and something we will return to, so remember this, but let's imagine that 1) is true, but 2) is false.
+
+:::
+
+---
+
+3. game-play is claimed to be the ‘ideal of existence’ ***$\land$*** the only activity that could sustain us through the ‘endless and endlessly boring summer’ of utopia.
+
+::: {.notes}
+
+Hopefully, you can see the conditional operator there.
+
+:::
+
+---
+
+> Christopher Yorke has challenged these claims by way of a constructive dilemma. If these
+games are sufficiently akin to the games we play, then they are not adequate to
+the task of rendering immortality tolerable. If these games are importantly
+different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+
+---
+
+Here, we have more conditional statements.
+
+* If these games are sufficiently akin to the games we play, then they are not adequate to the task of rendering immortality tolerable.
+
+* If, . . . then
+
+* $\rightarrow$
+
+1. Antecedent: These games are sufficiently akin to the games we play.
+
+2. Consequent: They are not adequate to the task of rendering immortality tolerable.
+
+---
+
+
+3. These games are sufficiently akin to the games we play. $\rightarrow$ They are not adequate to the task of rendering immortality tolerable.
+
+::: {.notes}
+
+They cannot aliviate us of our boredom.
+
+Why are they inadequate for alliviating our boredom?
+
+They consequent then, becomes the conclusion of another argument. What is the argument?
+
+:::
+
+---
+
+## But this looks weird and not helpful.
+
+3. P $\rightarrow$ Q
+
+::: {.notes}
+
+Just like above, we replace the propositions with sentence letters.
+
+:::
+
+---
+
+> If these games are importantly different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+
+::: {.notes}
+
+Look at this second conditional. First, let's split it into its antecendent and consequent parts.
+
+:::
+
+---
+
+## But . . .,
+
+> If these games are importantly different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+
+::: {.notes}
+
+No answers yet.
+
+:::
+
+---
+
+## A new logical operator
+
+---
+
+> Christopher Yorke has challenged these claims by way of a constructive dilemma. If these
+games are sufficiently akin to the games we play, then they are not adequate to
+the task of rendering immortality tolerable. If these games are importantly
+different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+
+---
+
+* Christopher Yorke has challenged these claims by way of a constructive dilemma.
+
+* Either, or
+
+::: {.notes}
+
+What is a constructive dilemma?
+
+* What is a dilemma?
+
+:::
+
+## Either What?
+
+1. P $\rightarrow$ Q
+
+2. R $\rightarrow$ S
+
+---
+
+> If these games are sufficiently akin to the games we play, then they are not adequate to
+the task of rendering immortality tolerable. If these games are importantly
+different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+
+---
+
+Either,
+
+1. If these games are sufficiently akin to the games we play, then they are not adequate to
+the task of rendering immortality tolerable.
+
+Or,
+
+2. If these games are importantly different than the games we play, then, in being ‘unknown and unknowable’,
+they would characterize a form of life that is importantly different from our own
+and, so, would be inappropriate objects of social and political aspiration.
+
+---
+
+These games are sufficiently akin to the games we play $\lor$ These games are importantly different than the games we play
+
+---
+
+* Antecedent:
+
+::: {.notes}
+
+If these games are importantly different than the games we play,
+
+:::
+
+---
+
+* Consequent:
+
+::: {.notes}
+
+then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration.
+
+:::
+
+---
+
+### We can further break down the consequent.
+
+::: {.notes}
+
+What might this look like? How might we further break it down?
+
+:::
+
+---
+
+* then,
+
+* in being ‘unknown and unknowable’,
+
+* they would characterize a form of life that is importantly different from our own
+
+* and
+
+* so, would be inappropriate objects of social and political aspiration.
+
+::: {.notes}
+
+There is something important regarding 'and so' here. Before when we've seen *and*, we said that was a logical operator connecting two propositions. But 'so' seems to change the use of *and* here. What do you think?
+
+:::
+
+---
+
+* and so,
+
+* would be inappropriate objects of social and political aspiration.
 
 ## Let's identify the main components of this argument.
 
