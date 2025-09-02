@@ -5,7 +5,7 @@ author: Prof. [Reynolds](#)
 institute: '[Stetson University](#)'
 date: 02 September 2026
 date-meta: 14 March 2023
-date-format: "DD MMM YYYY"
+date-format: "MMM DD YYYY"
 toc: false
 toc-depth: 1
 toc-title: "Argument Forms, Formalization, Formation Rules:"

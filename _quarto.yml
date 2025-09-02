@@ -3,12 +3,12 @@ project:
   title: "Fall 2025 Courses"
   output-dir: _output
   render:
-    - "index.qmd"
+    - "./index.qmd"
     - "2025-logic/*"
     - "2025-aesthetics"
 
 website:
-  title: "Fall 2026"
+  title: "Fall 2025"
   page-navigation: true
   reader-mode: true
   open-graph: true
@@ -58,7 +58,7 @@ website:
     background: primary
   page-footer:
     background: light
-    left: "Copyright 2023, MY INSTITUTION"
+    left: "Copyright 2025, Stetson University"
 
 
 
@@ -70,7 +70,7 @@ format:
   html:
     author: Dr. [Reynolds](#)
     author-meta: Dr. Monty Reynolds
-    date-format: "12 JAN 2026"
+    date-format: "MMM DD, YYYY"
 
     email-obfuscation: javascript
     link-external-newwindow: true
@@ -86,6 +86,5 @@ format:
       - css/syllabus.css
     toc: true
 
-#margin-header: |
-# ![](/figures/logos/MY_INSTITUTION.png)
-
+margin-header: |
+ ![](/figures/logos/logo-x2.png)

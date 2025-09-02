@@ -1,5 +1,5 @@
 ---
-title: "PHIL284 - Philosophy of Law"
+title: "PHIL104Q - Introduction to Logic"
 subtitle: "Academic Year: 2025/26"
 format: html
 ---
