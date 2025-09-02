@@ -5,7 +5,7 @@ project:
   render:
     - "./index.qmd"
     - "2025-logic/*"
-    - "2025-aesthetics"
+    - "2025-aesthetics/*"
 
 website:
   title: "Fall 2025"
@@ -24,7 +24,7 @@ website:
     contents:
       - href: ./index.qmd
         text: "🏠 Home"
-      - section: "🗓️ Weeks"
+      - section: "🗓️ Logic"
         contents:
          - href: 2025-logic/weeks/week01/page.qmd
            text: Week 01
@@ -44,6 +44,8 @@ website:
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
+      - section: "🗓️ Aesthetics"
+        contents:
          - href: 2025-aesthetics/weeks/week02/page.qmd
            text: Week 02
            contents:
