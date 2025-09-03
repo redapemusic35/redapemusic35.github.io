@@ -13,7 +13,7 @@ Use your keypad to navigate the slides.
 <iframe src="slides.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
 </div>
 
-🎥 Looking for lecture recordings? You can only find those on Moodle.
+🎥 Looking for lecture recordings? You can find them on Canvas.
 
 ## ✍️ Coursework
 
