@@ -254,7 +254,7 @@ They cannot aliviate us of our boredom.
 
 Why are they inadequate for alliviating our boredom?
 
-They consequent then, becomes the conclusion of another argument. What is the argument?
+The consequent then, becomes the conclusion of another argument. What is the argument?
 
 :::
 
@@ -300,6 +300,14 @@ No answers yet.
 
 ## A new logical operator
 
+|Logical Operator|Alternative Symbol|
+|---|---|
+|It is not the case that|$\neg$|
+|and (conjunctive)|$\land$|
+|or (disjunctive)|$\lor$|
+|If . . . then . . .|$\rightarrow$|
+|If and only if, 'IFF'|'$\Leftrightarrow$' or $\equiv$|
+
 ---
 
 > Christopher Yorke has challenged these claims by way of a constructive dilemma. If these
@@ -323,11 +331,41 @@ What is a constructive dilemma?
 
 :::
 
+## First,
+
+* P = These games are like the ones we play.
+
+* Q = These games make immortality tolerable.
+
+* R = Characterize a form of life that is different from our own.
+
 ## Either What?
 
-1. P $\rightarrow$ Q
+1. P $\rightarrow$ $\neg$ Q
 
-2. R $\rightarrow$ S
+2. $\neg$ P $\rightarrow$ ($\neg$ P $\rightarrow$ $\neg$ R)
+
+## Your standard ***Modus Ponens***
+
+The long way,
+
+2. $\neg$ P $\rightarrow$ ($\neg$ P $\rightarrow$ $\neg$ R)
+
+Because we want to simplify premise 2,
+
+## Consider the sequent:
+
+> To save space, we often write an entire form on one line. [p. 23]
+
+3. $\neg$ P $\rightarrow$ $\neg$ R
+
+4. $\neg$ P
+
+$\therefore$ $\neg$ R
+
+Becomes,
+
+* $\neg$ P $\rightarrow$ $\neg$ R, $\neg$ P $\vdash$ $\neg$ R
 
 ---
 
@@ -408,13 +446,41 @@ There is something important regarding 'and so' here. Before when we've seen *an
 
 * would be inappropriate objects of social and political aspiration.
 
-## Let's identify the main components of this argument.
+## The Ontological Argument
+
+Let's identify the main components of this argument.
 
 > So, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist.
 
 ---
 
-### We are going to be looking for:
+## Saint Anselm of Cantebury
+
+::: columns
+
+::: {.column style="display:inline-block;width:40%;height:60%;border-radius:1em;margin:1%;padding:1.5%;background-color:#f5f5f5"}
+<figure>
+    <img src="./../../Untitled.jpg" alt="Photo of Professor Octopian" role="presentation" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;font-size:1em;" class="img-responsive atto_image_button_text-bottom">.
+    <figcaption>
+    </figcaption>
+</figure>
+:::
+
+::: {.column style="width:50%;font-size:0.85em;margin-left:3%;"}
+* Italian Monk.
+
+* lived from 1033 AD to 1109 AD.
+
+* Was exiled from both England and Rome for advocating Church independence from secular authorities.
+
+* Most notable for his Ontological Argument.
+:::
+
+:::
+
+## Formation Rules
+
+We are going to be looking for:
 
 * ***Propositions*** (Sentences/tf Statements)
 
@@ -422,9 +488,61 @@ There is something important regarding 'and so' here. Before when we've seen *an
 
 * ***Scope*** (Which logical operators apply to which propositions)
 
+::: {.notes}
+
+> The formulas of propositional logic have a grammar, and that grammar (or syntax) may be
+precisely articulated as formation rules. Formation rules define what counts as a formula by giving
+general directions for assembling formulas out of simple symbols, or characters. They are the rules
+of grammar for a formal language. In order to state the formation rules for propositional logic, we
+need first to define the character set for propositional logic—that is, the alphabet and punctuation
+marks from which the formulas of its language are constructed. We stipulate that a character for the
+language of propositional logic is anything belonging to one of the following four sets:
+
+:::
+
 ---
 
-What might we do next?
+|||
+| ---               | ---                                                   |
+| Sentence Letters  | Capital Letters from the English alphabet             |
+| Numerals          | 0 1 2 3 4 5 6 7 8 9                                   |
+| Logical Operators | $\neg$ $\land$ $\lor$ $\rightarrow$ $\Leftrightarrow$ |
+| Brackets          | ( )                                                   |
+
+---
+
+| Formation Rules for Propositional Logic |                                                                                                                                                                |
+|-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1                                       | Any sentence letter, with or without a sequence of numerals as a subscript is a formula                                                                        |
+| 2                                       | If $\phi$ is a formula, then so is $\neg$ $\phi$                                                                                                               |
+| 3                                       | If $\phi$ and $\psi$ are formulas, then so are ($\phi$ & $\psi$), ($\phi$ $\lor$ $\psi$), ( $\phi$ $\rightarrow$ $\psi$) and ($\phi$ $\Leftrightarrow$ $\psi$) |
+
+::: {.notes}
+
+> Anything that is not a formula by finitely many applications of these rules is not a formula.
+Notice that in stating the formation rules, we use Greek letters (which belong to the metalanguage
+(see Section 1.5), not to the language of propositional logic). They are variables that stand for
+formulas of propositional logic. The Greek indicates generality. For example,  and  in rule 3 stand
+for any formulas, no matter how simple or complex. When they are combined with operators and
+brackets into a complex expression, this expression stands for any formula obtainable by replacing
+the Greek letters with formulas. Thus, for example, the expression '( & )' stands for '(P & Q)',
+'(R & S)', '((P  R) & (Q  S))', etc. Use of English letters here would be inappropriate, since they
+would too easily be confused with individual expressions of the object language.7 In contrast to such
+expressions as '(P & Q)', expressions containing Greek letters, such as '( & )', are not formulas.
+Rather, they are metalinguistic devices used for referring to whole classes of formulas.
+Repeated (recursive) application of the formation rules enables us to construct a great variety
+of formulas. So, for example, 'P' and 'Q' are formulas by rule 1. Hence by rule 3, '(P  Q)' is a
+formula. Now by rule 1 again 'R' is a formula, from which it follows by rule 2 that 'R' is a formula and
+again by rule 2 that 'R' is a formula. Hence, since both '(P  Q)' and 'R' are formulas, by rule 3
+'((P  Q)  R)' is a formula. And since this is a formula, by rule 2 again, '((P  Q)  R)' is also
+a formula. And so on! In this way we can build up formulas as complex as we like.
+Notice that the only formation rule that introduces brackets is rule 3. This means that the only
+legitimate function of a pair of brackets is to delineate the scope of some binary operator. In
+particular, brackets are not used to indicate the scopes of either sentence letters or the negation
+operator. Thus, for example, none of the following expressions count as formulas: [p. 29]
+:::
+
+## So what might we do next?
 
 * What should we identify first?
 
