@@ -7,6 +7,20 @@
     "text": "The Artisans and the Poets\n\nWhat virtues belong to each class?\nWhat is the first class that Plato discusses?\n\n\nOddly enough, in Bk III, Plato leaves off any discussion of what he calls poetry, because even though he is convinced that poetry disrupts the training of the just sole, he cannot say how it does so until he has defined justice. This part of the project takes from Bk III to Bk IVX to do. While his conclusion is that art can disrupt this ideal ordering of the tripartite self, it is not until we get to Bk X to see how this is possible.\n\n\nArtists, most notably the poets, are often cited as teachers of virtue. Yet, the most they are capable of is imitation. This brings us to the primary argument in Bk X of the Republic. What is this class of thing which poetry belongs to?"
   },
   {
+    "objectID": "2025-aesthetics/weeks/week02/slides.html#what-about-.-.-.",
+    "href": "2025-aesthetics/weeks/week02/slides.html#what-about-.-.-.",
+    "title": "🗓️ Week 03 On Mimesis",
+    "section": "What about . . .",
+    "text": "What about . . .\nThese?\n\nImportantly however, Plato’s main target is not the imitation of objects, beds, tables, chairs, etc. Rather, Plato’s primary target is the representation of virtue and other abstract constructs. Socrates and his student Plato, grew up on the narratives provided them by the Greek tragedians, poets, and other literary figures of their day. As pointed out by Martha (nuss86i?), Greek tragedy of the sort that concerns Plato:\nWhat about the Sydney Opera House, paintings by Jason Pollack, or images created by game developers?\n\n\nTragedy does\n\nshows good people being ruined because of things that just happen to them, things that they do not control. … and ordinary fact of human life.\n\n\nWhile Plato’s concern is the existence of human virtue here, the above preoccupation does not express Plato’s criticism fully. People do not typically loose their virtue because of some environmental catastrophe. The environment might obscure some important fact that contributed to the person’s decision for instance, meaning the person involved might be excused in part because of ignorance. Additional, we often see great acts of courage, beneficence, selflessness in response to environment catastrophes. But, Greek tragedy did something else as well:\n\n\nBut . . .\n\nTragedy also … shows good people doing bad things, things otherwise repugnant to their ethical character and commitments, because of circumstances whose origin does not lie with them.\n\n\nThese lie beyond simple ignorance. Here, the person is fully knowledgeable about what they are doing. They are not being physically or psychologically coerced. Rather, tragedy presents a character as being able to make one of two equally bad choices. The outcome of such stories, is for their audiences to question the nature of human goodness. What can possibly count as human virtue, virtue that is attributable to the person and not the environment?\n\n\nThe skill of the poet and the skill of the moral educator:\n\nThe reason is this: We hear some people say that poets know all crafts, all human affairs concerned with virtue and vice, and all about the gods as well. They say that if a good poet produces find poetry, he must have knowledge of the things he writes about, or else he wouldn’t be able to produce it at all. [BK X, 598e]\n\n\n\nBoth the teacher of virtue and poet are skilled to some extent. To be skilled, you must first have certain abilities and knowledge. The question which remains is whether what one needs to know in order to be a good teacher of virtue is the same as what one needs to know to be a good poet.\n\nPlato argues these are not analogous. What say you?\n\n\nPlato argues these are not analogous.\n\n\nWhat say you?"
+  },
+  {
+    "objectID": "2025-aesthetics/weeks/week02/slides.html#what-say-you",
+    "href": "2025-aesthetics/weeks/week02/slides.html#what-say-you",
+    "title": "🗓️ Week 03 On Mimesis",
+    "section": "What say you?",
+    "text": "What say you?"
+  },
+  {
     "objectID": "2025-aesthetics/weeks/week01/slides.html#syntax",
     "href": "2025-aesthetics/weeks/week01/slides.html#syntax",
     "title": "🗓️ Week 01/02 Introduction",
@@ -649,21 +663,63 @@
     "href": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
     "title": "🗓️ Week 03 Introduction",
     "section": "A new logical operator",
-    "text": "A new logical operator"
+    "text": "A new logical operator\n\n\n\nLogical Operator\nAlternative Symbol\n\n\n\n\nIt is not the case that\n\\(\\neg\\)\n\n\nand (conjunctive)\n\\(\\land\\)\n\n\nor (disjunctive)\n\\(\\lor\\)\n\n\nIf . . . then . . .\n\\(\\rightarrow\\)\n\n\nIf and only if, ‘IFF’\n‘\\(\\Leftrightarrow\\)’ or \\(\\equiv\\)"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#first",
+    "href": "2025-logic/weeks/week02/slides.html#first",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "First,",
+    "text": "First,\n\nP = These games are like the ones we play.\nQ = These games make immortality tolerable.\nR = Characterize a form of life that is different from our own."
   },
   {
     "objectID": "2025-logic/weeks/week02/slides.html#either-what",
     "href": "2025-logic/weeks/week02/slides.html#either-what",
     "title": "🗓️ Week 03 Introduction",
     "section": "Either What?",
-    "text": "Either What?\n\nP \\(\\rightarrow\\) Q\nR \\(\\rightarrow\\) S"
+    "text": "Either What?\n\nP \\(\\rightarrow\\) \\(\\neg\\) Q\n\\(\\neg\\) P \\(\\rightarrow\\) (\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R)"
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument.",
-    "href": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument.",
+    "objectID": "2025-logic/weeks/week02/slides.html#your-standard-modus-ponens",
+    "href": "2025-logic/weeks/week02/slides.html#your-standard-modus-ponens",
     "title": "🗓️ Week 03 Introduction",
-    "section": "Let’s identify the main components of this argument.",
-    "text": "Let’s identify the main components of this argument.\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
+    "section": "Your standard Modus Ponens",
+    "text": "Your standard Modus Ponens\nThe long way,\n\n\\(\\neg\\) P \\(\\rightarrow\\) (\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R)\n\nBecause we want to simplify premise 2,"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#consider-the-sequent",
+    "href": "2025-logic/weeks/week02/slides.html#consider-the-sequent",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Consider the sequent:",
+    "text": "Consider the sequent:\n\nTo save space, we often write an entire form on one line. [p. 23]\n\n\n\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R\n\\(\\neg\\) P\n\n\\(\\therefore\\) \\(\\neg\\) R\nBecomes,\n\n\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R, \\(\\neg\\) P \\(\\vdash\\) \\(\\neg\\) R"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#the-ontological-argument",
+    "href": "2025-logic/weeks/week02/slides.html#the-ontological-argument",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "The Ontological Argument",
+    "text": "The Ontological Argument\nLet’s identify the main components of this argument.\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#saint-anselm-of-cantebury",
+    "href": "2025-logic/weeks/week02/slides.html#saint-anselm-of-cantebury",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Saint Anselm of Cantebury",
+    "text": "Saint Anselm of Cantebury\n\n\n\n.\n\n\n\n\n\nItalian Monk.\nlived from 1033 AD to 1109 AD.\nWas exiled from both England and Rome for advocating Church independence from secular authorities.\nMost notable for his Ontological Argument."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#formation-rules",
+    "href": "2025-logic/weeks/week02/slides.html#formation-rules",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Formation Rules",
+    "text": "Formation Rules\nWe are going to be looking for:\n\nPropositions (Sentences/tf Statements)\nLogical Operators (Connect Propositions)\nScope (Which logical operators apply to which propositions)\n\n\n\nThe formulas of propositional logic have a grammar, and that grammar (or syntax) may be precisely articulated as formation rules. Formation rules define what counts as a formula by giving general directions for assembling formulas out of simple symbols, or characters. They are the rules of grammar for a formal language. In order to state the formation rules for propositional logic, we need first to define the character set for propositional logic—that is, the alphabet and punctuation marks from which the formulas of its language are constructed. We stipulate that a character for the language of propositional logic is anything belonging to one of the following four sets:"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#so-what-might-we-do-next",
+    "href": "2025-logic/weeks/week02/slides.html#so-what-might-we-do-next",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "So what might we do next?",
+    "text": "So what might we do next?\n\nWhat should we identify first?\n\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
   },
   {
     "objectID": "2025-aesthetics/weeks/week01/page.html",
@@ -716,7 +772,7 @@
     "href": "2025-aesthetics/weeks/week02/page.html#lecture-slides",
     "title": "🗓️ Week 02 - Mimesis",
     "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can find them on Canvas.",
     "crumbs": [
       "🗓️ Aesthetics",
       "Week 02"
