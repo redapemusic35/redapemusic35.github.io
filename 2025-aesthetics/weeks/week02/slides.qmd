@@ -85,53 +85,6 @@ Walton will go on to argue that the kinds of objects that we refer to as mimetic
 
 These?
 
-:::: {.columns}
-
-::: {.column width="40%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/sydney-opera-house.jpg')
-```
-
-:::
-
-::: {.column width="60%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/pollack-untitled.jpg')
-```
-
-:::
-
-::::
-:::
-
-
-::: {.incremental}
-
-Or?
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/reflection.jpg')
-```
-
-:::
-
-::: {.column width="60%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/background.jfif')
-```
-
-:::
-
-::::
-:::
-
 ::: {.notes}
 
 Importantly however, Plato's main target is not the imitation of objects, beds, tables, chairs, etc. Rather, Plato's primary target is the representation of virtue and other abstract constructs. Socrates and his student Plato, grew up on the narratives provided them by the Greek tragedians, poets, and other literary figures of their day. As pointed out by Martha @nuss86i, Greek tragedy of the sort that concerns Plato:
