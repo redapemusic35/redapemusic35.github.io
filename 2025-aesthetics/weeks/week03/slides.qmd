@@ -1,0 +1,89 @@
+---
+subtitle: "PHIL343A -- Aesthetics"
+title: "<font style='font-size:1em;'>🗓️ Week 03<br/> On Mimesis</font>"
+author: Prof. [Reynolds](#)
+institute: '[Stetson University](#)'
+date: 02 September 2026
+date-meta: 14 March 2023
+date-format: "DD MMM YYYY"
+toc: false
+toc-depth: 1
+toc-title: "Argument Forms, Formalization, Formation Rules:"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs:
+    theme: moon
+    fig-responsive: true
+    slide-number: true
+    incremental: true
+    mouse-wheel: false
+    preview-links: auto
+    logo: /figures/icons/course_favicon.png
+    css: /css/styles_slides.css
+    footer: 'PHIL104Q -- Introduction to Logic'
+---
+
+# The Symposium
+
+## Useful In Plato's Kallopolis:
+
+Lyre:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/baRvVPg6G1Y?si=RO3NZJhX1vdSCFEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+Cithara:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YzLv-8ne88k?si=Vc6SvntZloarCZso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+Not Useful:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6zVgCvTWVBY?si=hS_pJODwD47Ob3Yu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Mixo-lydian
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cok_vd48cA4?si=IX-t6gcSBkwkuMbq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+![Another](https://www.youtube.com/watch?time_continue=693&v=YYmzVHRAo94&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY)
+
+---
+
+Perhaps one of the best examples of the use of the Ionian mode:
+
+Tuesday's Gone by Lynard Skynard:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lSk9Ri1z1S8?si=CVeqDn4OBHyzzL-t&amp;start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Dorian Mode:
+
+> Just leave me the mode that would suitably imitate the tone and rhythm of a courageious person who is active in battle or doing other violent deeds, or who is failing and facing wounds, death, or some other misfortune, and who, in all these circumstances, is fighting off his fate steadily and with self-control.
+
+---
+
+Leave me also another mode, that of someone engaged in a peaceful, unforced, voluntary action, persuading someone or asking a favor of a god in prayer or of a human being through teaching and exhortation, or, on the other hand, of someone submitting to the supplications of another who is teaching him and trying to get him to change his mind, and who, in all these circumstances, is acting in moderation and self-control, not with arrogance but with understanding, and is content with the outcome. [399b]
+
+## Like This:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tsb0oibEEqE?si=ATrdg7Kk-LnuW7Z7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## As seen in Jazz and Funk:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/khSrFHbP0DA?si=V9eCTXtJR3hIdkoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## A favorite artist of mine,
+
+Glad to see Plato would approve:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ylXk1LBvIqU?si=htU4ABYVF_sTHXX6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## And this:
+
+Scarborough Fair
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RuqeA6nD0fI?si=TQFXFoe_GMfuZ6hn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

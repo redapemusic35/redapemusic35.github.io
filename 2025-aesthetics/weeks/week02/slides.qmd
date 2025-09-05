@@ -90,7 +90,7 @@ These?
 ::: {.column width="40%"}
 
 ```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/sydney-opera-house.jpg')
+knitr::include_graphics('./sydney-opera-house.jpg')
 ```
 
 :::
