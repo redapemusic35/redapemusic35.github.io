@@ -79,58 +79,7 @@ Kendall @walt90 in his book *Mimesis as Make-Believe*, defines the question nice
 Walton will go on to argue that the kinds of objects that we refer to as mimetic, are best understood as props in games of make believe.
 :::
 
-## What about . . .
-
-::: {.incremental}
-
-These?
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-```{r}
-knitr::include_graphics('./sydney-opera-house.jpg')
-```
-
-:::
-
-::: {.column width="60%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/pollack-untitled.jpg')
-```
-
-:::
-
-::::
-:::
-
-
-::: {.incremental}
-
-Or?
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/reflection.jpg')
-```
-
-:::
-
-::: {.column width="60%"}
-
-```{r}
-knitr::include_graphics('/home/redapemusic35/courses/SCHF-new-repo/stetson/Stetson-Materials/phil-law/figures/aesthetics-course/background.jfif')
-```
-
-:::
-
-::::
-:::
+---
 
 ::: {.notes}
 
