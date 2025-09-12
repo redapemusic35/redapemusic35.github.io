@@ -19,7 +19,6 @@ format: html
 ::: {.panel-tabset}
 ## Course Convenor
 
-
 ![](/figures/people/professor_octopus.png){fig-align="left" fig-alt="Photo of Dr. Reynolds" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}
 **[Reynolds](#)** <br/>
  Dr. Monty Reynolds<br/>
@@ -30,7 +29,7 @@ Office Hours:
 
 - When: TTH 1-2pm or by appointment
 - Where: Elizabeth Hall 104
-- How to book: Drop in, email, or book via [Calendly](https://calendly.com/montaque-reynolds/30min)
+- How to book: Drop in, email, or book via [Microsoft Bookings](https://outlook.office.com/bookwithme/user/59570715559b43fdabc651a89a3ed839@stetson.edu?anonymous&ismsaljsauthenabled&ep=plink)
 
 ## Teaching Staff
 
@@ -47,28 +46,25 @@ Student Peer Instructor<br>
 
 :::
 
+### Learning Outcomes
+
+Through this course students will:
+
+1. Learn basic logical concepts and principles of good reasoning.
+
+2. Understand logical form and truth functional logic.
+
+3. Learn techniques for translating sentences into logical notion and determining the validity of arguments.
+
+4. Learn truth tables and other means of determining the validity of arguments stated in sentential logical notation.
+
 # 📍 Lecture
 
 See Class Times Below
 
-# 💻 Class Groups
+# 💻 Class Meeting Times
 
-::: {style="display:inline-block;width: 28.5%;border-style: dotted;border-width: 1px;border-color: &quot;#fefefe&quot;; margin:1%;padding:1.5%;background-color:#fafafa"}
-**Introduction to Logic 104Q 01**
+**Aesthetics 343A**
 
-- 📆 Mondays and Wednesdays
-- ⌚ 12:00pm - 01:15pm
-- 📍
-- 🧑‍🏫 Grey Smith
-:::
-
-::: {style="display:inline-block;width: 28.5%;border-style: dotted;border-width: 1px;border-color: &quot;#fefefe&quot;; margin:1%;padding:1.5%;background-color:#fafafa"}
-**Introduction to Logic 104Q 02**
-
-
-- 📆 Tuesdays and Thursdays
-- ⌚ 11:30am - 12:45pm
-- 📍
-- 🧑‍🏫 Grey Smith
-
-:::
+- 📆 Mondays and Wednesdays 
+- ⌚ 10:30am - 12:45pm

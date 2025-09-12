@@ -6,29 +6,40 @@ format:
     include-after-body: helpers/remove-title.html
 ---
 
-# 📑 Course Brief
+::::::{.columns}
 
-**Focus:** the focus of this course is to learn stuff
+:::::{.column width="50%"}
 
-**How:** hands-on learning
-
-# 🎯 Learning Objectives
-
-- You will discover how to do X
-- Distinguish X from **X**
-- Practice how to put things _in italic_
-- Discover how to highlight `code` inline
-- Proceed to learn stuff
-
-
------------------
-
-**Select Academic Year/Term:**
+# 📑 Introduction to Logic
 
 <a href="2025-logic/index.qmd">
-    <button class="button-61">Logic, Fall 2026</button>
+    <button class="button-61">Logic, Fall 2025</button>
 </a>
 
+:::{style="text-align: center"}
+
+This course will begins with an informal system of logic and proceeds to classical propositional logic syntax, semantics and inference. It will then cover predicate logic semantics and inference.
+
+:::
+:::::
+
+:::::{.column width=50%}
+
+# 📑 Aesthetics
+
 <a href="2025-aesthetics/index.qmd">
-    <button class="button-61">Aesthetics, Fall 2026</button>
+    <button class="button-61">Aesthetics, Fall 2025</button>
 </a>
+
+:::{style="text-align: center"}
+
+Following Kendall Walton's point of observations, this course will look at cultural artifacts broadly construed as representational art. Expanding on Walton's investigations, the second half of the semester looks at more contempoary cultural artifacts such video games. Along the way, we discuss personalized artistic experiences made possible through complex algorithms, individual vs. communal experiences in art and other emerging phenomena related to the art world.
+
+:::
+:::::
+
+!['Holmes wears a top hat'](./2025-logic/holmes.jpg)
+
+::::::
+
+-----------------

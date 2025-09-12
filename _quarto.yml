@@ -23,7 +23,7 @@ website:
     style: docked
     contents:
       - href: ./index.qmd
-        text: "🏠 Home"
+        text: "🏠 Lecture Notes and Slides"
       - section: "🗓️ Logic"
         contents:
          - href: 2025-logic/weeks/week01/page.qmd
@@ -75,20 +75,31 @@ website:
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-aesthetics/weeks/week04/page.qmd
-           text: Week 03
+           text: Week 04
            contents:
-             - href: 2025-aesthetics/weeks/week03/page.qmd
+             - href: 2025-aesthetics/weeks/week04/page.qmd
+               text: 👨‍🏫 Lecture Material
+            #  - href: 2023/weeks/week01/lab.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-aesthetics/weeks/week05/page.qmd
+           text: Week 04
+           contents:
+             - href: 2025-aesthetics/weeks/week05/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
 
+
+
   navbar:
     background: primary
   page-footer:
     background: light
-    left: "Copyright 2025, Stetson University"
+    left: "Copyright 2025, Montaque Reynolds"
 
 
 
