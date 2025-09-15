@@ -25,10 +25,10 @@ format:
     footer: 'PHIL104Q -- Aesthetics Aristotle'
 ---
 
-* Earliest surviving work dedicated to the imitative arts in the Western canon.
+* Earliest surviving work dedicated to art in the Western canon.
 
 * Rediscovered by sixteenth-century Italian theorists.
-  
+
   * Notable since other works of Aristotle were discovered first by Islamic philosophers during the early medieval ages.
 
 * Originally written as a set of teaching notes and lecture materials for use in his academy.
@@ -45,23 +45,23 @@ format:
 
   * Political
 
-* first a member of Plato's academy, then founded his own: the Lyceum (335-23)
+* First a member of Plato's academy, then founded his own: the Lyceum (335-23)
 
 * The Peotics reflect a comprehensive, systematic, and analytic attempt to scrutinize in what would come to be known, Aristotelian, manner [Hallifex, 6].
 
-* This manner begins with a definition of key terms, a large number of cross references which seek to make connections between the various tenets found in his texts. 
+* This manner begins with a definition of key terms, a large number of cross references which seek to make connections between the various tenets found in his texts.
 
 * According to Steven hallifex, there are three essential elements to understanding Greek poetry.
- 
+
   1. Defining poetry as a general category of representational arts, or mimesis. This category includes visual arts, poetry, music, and dancing.
 
-  2. The second recognition by Aristotle, is that Poetry has a history. 
-    * A part of that history includes literary criticism, and literary history for instance. 
+  2. The second recognition by Aristotle, is that Poetry has a history.
+    * A part of that history includes literary criticism, and literary history for instance.
     * He views this history in the contexts of other cultural evolutionary markers such as the cultural evolution of tragedy and comedy.
 
 * Mimesis, is an approach to art criticism which did not begin with Aristotle.
 
-3. The third element of this work includes the establishment and employment of genre. 
+3. The third element of this work includes the establishment and employment of genre.
 
   * For Aristotle, genre is a scheme of enquiry that seeks to provide conditions through which mimetic concepts such as media, mimetic objects, and modes are delimited. In other words, he:
 
@@ -69,7 +69,7 @@ format:
 
 * Although we might call this approach 'formalist', a question arises about the necessity of genre concepts inferred in a particular mimetic example.
 
-  * For instance, he references Plato's analysis of mimetic modes in Ch. III of this work. 
+  * For instance, he references Plato's analysis of mimetic modes in Ch. III of this work.
 
   * However, for Aristotle, mimesis is an attempt to understand the broader world, by reference to the human propensity to represent human experiences fictive representation, and imaginative reinactment.
 
