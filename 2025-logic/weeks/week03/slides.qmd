@@ -65,11 +65,9 @@ What are truth conditions? The meaning of a term. Conditions on which a proposit
 
 > The truth value of a conjunction is T in a given situation iff the truth value of each of its conjuncts is T in that situation.
 
-and 
+and
 
 > The truth value of a conjunction is F in a given situation iff one or both of its conjuncts does not have the value T in that situation.
-
-:::
 
 ---
 
@@ -109,7 +107,7 @@ We use ***Interpretations*** to associate sentence letters with statements of na
 
 > The truth value of a conjunction is T in a given situation iff the truth value of each of its conjuncts is T in that situation.
 
-and 
+and
 
 > The truth value of a conjunction is F in a given situation iff one or both of its conjuncts does not have the value T in that situation.
 
@@ -198,7 +196,7 @@ As we have seen, a ***valuation*** is a pattern of truth values.
 
 > The truth value of a conjunction is T $\underline{\text{on a given valuation}}$ iff the truth value of each of its conjuncts is T in that situation.
 
-and 
+and
 
 > The truth value of a conjunction is F $\underline{\text{on a given valuation}}$ iff one or both of its conjuncts does not have the value T in that situation.
 
@@ -305,7 +303,7 @@ Exclusive
 
 ::: {.notes}
 
-Four is both even and square, so 
+Four is both even and square, so
 
 Four is either an even number or a square number, or both.
 
