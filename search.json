@@ -739,7 +739,7 @@
     "href": "2025-logic/weeks/week03/slides.html#truth-conditions",
     "title": "🗓️ Week 03 Introduction",
     "section": "Truth Conditions",
-    "text": "Truth Conditions\n\nThe truth value of a conjunction is T in a given situation iff the truth value of each of its conjuncts is T in that situation.\n\nand\n\nThe truth value of a conjunction is F in a given situation iff one or both of its conjuncts does not have the value T in that situation."
+    "text": "Truth Conditions\n\nThe truth value of a conjunction is T in a given situation iff the truth value of each of its conjuncts is T in that situation.\n\nand\n\nThe truth value of a conjunction is F in a given situation iff one or both of its conjuncts does not have the value T in that situation.\n\n:::"
   },
   {
     "objectID": "2025-logic/weeks/week03/slides.html#how-do-the-truth-values-of-sentences-containing-a-given-logical-operator-depend-on-the-truth-values-of-their-components.",
