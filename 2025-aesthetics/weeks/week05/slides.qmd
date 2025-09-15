@@ -22,7 +22,7 @@ format:
     preview-links: auto
     logo: /figures/icons/course_favicon.png
     css: /css/styles_slides.css
-    footer: 'PHIL104Q -- Aesthetics Aristotle'
+    footer: 'PHIL343A -- Aesthetics Aristotle'
 ---
 
 * Earliest surviving work dedicated to art in the Western canon.
@@ -35,6 +35,8 @@ format:
 
 * What is he doing in the Poetics and what is his motivation behind it?
 
+---
+
 * What is Aristotle's response to Plato's various critiques?
 
   * Religious
@@ -45,33 +47,55 @@ format:
 
   * Political
 
+---
+
 * First a member of Plato's academy, then founded his own: the Lyceum (335-23)
 
-* The Peotics reflect a comprehensive, systematic, and analytic attempt to scrutinize in what would come to be known, Aristotelian, manner [Hallifex, 6].
+* The Poetics reflect a comprehensive, systematic, and analytic attempt to scrutinize in what would come to be known, Aristotelian, manner [Hallifex, 6].
 
 * This manner begins with a definition of key terms, a large number of cross references which seek to make connections between the various tenets found in his texts.
 
+---
+
 * According to Steven hallifex, there are three essential elements to understanding Greek poetry.
 
-  1. Defining poetry as a general category of representational arts, or mimesis. This category includes visual arts, poetry, music, and dancing.
+## 1. Definitions
 
-  2. The second recognition by Aristotle, is that Poetry has a history.
-    * A part of that history includes literary criticism, and literary history for instance.
-    * He views this history in the contexts of other cultural evolutionary markers such as the cultural evolution of tragedy and comedy.
+Defining poetry as a general category of representational arts, or mimesis. This category includes visual arts, poetry, music, and dancing.
+
+## 2. Historical Precedent
+
+The second recognition by Aristotle, is that Poetry has a history.
+
+* A part of that history includes literary criticism, and literary history for instance.
+
+* He views this history in the contexts of other cultural evolutionary markers such as the cultural evolution of tragedy and comedy.
 
 * Mimesis, is an approach to art criticism which did not begin with Aristotle.
 
-3. The third element of this work includes the establishment and employment of genre.
+## 3. Establishing Genre Boundaries
 
-  * For Aristotle, genre is a scheme of enquiry that seeks to provide conditions through which mimetic concepts such as media, mimetic objects, and modes are delimited. In other words, he:
+The third element of this work includes the establishment and employment of genre.
+
+* For Aristotle, genre is a scheme of enquiry that seeks to provide conditions through which mimetic concepts such as media, mimetic objects, and modes are delimited. In other words, he:
+
+* Conditions
+
+* Concepts
+
+* Modes
+
+---
 
 > asserts the significance of formal design and unity for both the composition and the appreciation of literary works, and to offer a conception of artistic form which relates it to the organic forms crucial to his understanding of nature. [@hall95, 10; 50b34-51a6]
+
+---
 
 * Although we might call this approach 'formalist', a question arises about the necessity of genre concepts inferred in a particular mimetic example.
 
   * For instance, he references Plato's analysis of mimetic modes in Ch. III of this work.
 
-  * However, for Aristotle, mimesis is an attempt to understand the broader world, by reference to the human propensity to represent human experiences fictive representation, and imaginative reinactment.
+  * However, for Aristotle, mimesis is an attempt to understand the broader world, by reference to the human propensity to represent human experiences through fictive representation, and imaginative reenactment.
 
   * In this way, Aristotle likely hopes to connect art to human nature as a capacity for human desire to understand universal concepts whether moral, religious, ethical, or relational.
 
@@ -79,15 +103,33 @@ format:
 
 # Mimesis, imitation
 
+::: {.notes}
+
+The way we begin to look at Aristotle's project, is by first understanding who his audience is and what they know.
+
+There are several points here. First, his audience will likely be familiar with Plato. They will know something about his forms, his disdain for the artists, etc.
+
+Next, they will likely be familiar with the artistic examples that Plato condemns. Perhaps however, they, much like us may have questions as to what his critique of these art forms actually were.
+
+And as such, this is where we begin.
+
+:::
+
 ## Poetry as a subject
 
 Epic, Tragedy, Comedy, Dithyrambic, flute and lyre playing
 
+Ilyliad, Odyssey, Metamorphosis, apparently "the mime of Sophron or Xenarchus". The works of Homer, Aeschylus, Sophocles, Empedocles. They would also have been familiar with Plato's works such as the *Phaedrus* and the *Symposium* for instance.
+
 ### First difference: Rhythm, language, harmony.
+
+::: {.notes}
 
 Harmony and rhythm by themselves correlate with flute and lyre playing. But imagine the lyre or flute without harmony or rhythm, e.g., imitative piping. It would seem that here, there is a difference in the object of representation, the object that is being represented. The way in which the object is represented, and the means through which it is represented.
 
 There are three different possibilities with respect to imitation.
+
+:::
 
 # Means, Manner, and Object
 
@@ -119,13 +161,13 @@ This leads to the second difference . . .
 
 :::
 
-### Actions with respect to characters, good or bad.
+## Actions with respect to characters, good or bad.
 
 1448a, What are the appropriate objects of representation, and what are the appropriate ways we should represent these objects? Good and bad men.
 
 the character of the agent gives meaning to the action whether good or bad.
 
-### The manner in which it is represented.
+## The manner in which it is represented.
 
 Narrative vs character, choose one, or represent dramatically.
 
@@ -138,3 +180,35 @@ Narrative vs character, choose one, or represent dramatically.
 He also delights in works of imitation.
 
 * realistic representations, even if they go against our desires.
+
+# Types
+
+Epic poetry, tragedy, comedy, dithyrambic poetry, flute playing, lyre playing = modes of imitation
+
+## The three main differences
+
+Each type of poetry (art) differ from the other in three ways
+
+1. Means of imitation
+
+2. Objects of representation
+
+3. Manner of their imitations
+
+Is epic poetry denoted by 1, and 2, but not 3?
+
+---
+
+### A brief
+
+> A combination of harmony and rhythm alone is the means in flute-playing and lyre-playing, and any other arts there may be of the same description, e.g. imitative piping. Rhythm alone, without harmony, is the means in the dancer's imitations; for even he, by the rhythms of his attitudes, may represent men's characters, as well as what they do and suffer.
+
+## Species of Imitation
+
+| | | Harmony | Rhythm | Language |
+|---|---|---|---|---|
+|  |  | Imitative Piping | Dance | Speech, Rhetoric |
+| Harmony| Imitative Piping |  | flute-playing | |
+| Rhythm | Dance | | | |
+| Language | Speech, Rhetoric |  | | |
+

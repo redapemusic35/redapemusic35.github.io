@@ -30,7 +30,7 @@ What are our own encounters with works of art and creativity? What counts as rep
 
 Office Hours:
 
-- When: TTH 1-2pm or by appointment
+- When: TTH 1:00-4:00pm or by appointment
 - Where: Elizabeth Hall 104
 - How to book: Drop in, email, or book via [Microsoft Bookings](https://outlook.office.com/bookwithme/user/59570715559b43fdabc651a89a3ed839@stetson.edu?anonymous&ismsaljsauthenabled&ep=plink)
 
@@ -84,65 +84,64 @@ Success: Active participation, timely submissions, and attendance are key.
 
 Students will be evaluated based on a total of 640 points, with the final grade determined by the percentage of points earned. The components are as follows:
 
-### Weekly Reflections:
+### Weekly Reflections (5% of final grade, 32 points total):
 
-* (5% of final grade, 32 points total):
+* Eight short reflections submitted via Canvas, due on the following dates: September 22, September 29, October 13, October 20, October 27, November 3, November 10, and November 17, 2025.
 
-* Eight short reflections submitted via Canvas, due @ 9:30 AM on the following dates: September 22, September 29, October 13, October 20, October 27, November 3, November 10, and November 17, 2025.
+* Format: Summarize an argument from the week's reading (3 short sentences) and provide a reflection (2 sentences).
 
-***Format:*** Summarize an argument from the week's reading (3 short sentences) and provide a reflection (2 sentences).
+* Grading: Each reflection is scored holistically out of 4 points based on the rubric criteria (considering thesis, premises, support, and student response). Excellent (4 points), Good (3 points), Needs Improvement (2 points), Unacceptable (1 point).
 
-***Grading:*** Each reflection is scored holistically out of 32 points based on the rubric criteria (considering thesis, premises, support, and student response). Excellent (32 points), Good (24 points), Needs Improvement (16 points), unacceptable (8 point).
+* The total for all reflections is 32 points.
 
-### Critical Reflection 1:
+### Quiz 1  (25% of final grade, 160 points):
 
-* (25% of final grade, 160 points):
 
-***Format:*** A ~1,200-word essay analyzing one argument from the material up to this point in the course (Aesthetics: A Comprehensive Anthology), due October 8, 2025.
+* A ~1,200-word comprehensive essay covering all course material, due Oct 8, 2025.
 
-***Grading:*** Evaluated using the rubric with 4 categories (thesis, premises, support, student response), each scored 10–40 points (max 160). See rubrics.
+* Grading: Evaluated using the rubric with 4 categories, each scored 5–20 points (max 80). See rubric below.
+
+### Critical Reflection 1 (12.5% of final grade, 80 points):
+
+* A ~1,500-word essay covering material up to this point, due November 8, 2025.
+
+* Grading: Evaluated using the rubric with 4 categories, each scored 5–20 points (max 80). See rubric below.
+
+* Excel Formula: =SUM(category scores); scaled to 12.5% of final grade.
 
 ### Presentation (15% of final grade, 96 points):
 
-***Format:*** A ~5-minute elevator pitch summarizing your 2nd Reflective Analysis, presented on November 19 or 24, 2025.
+* A ~5-minute elevator pitch on what you will argue in your 2nd Reflective Analysis, presented on November 19 or 24, 2025.
 
-***Scheduling:*** Signup sheet provided in class; sessions on November 19 and 24.
+* Requirements: Summarize an argument (3 sentences) and reflect (2 sentences) on a work of art from the readings.
+* Scheduling: Signup sheet provided in class; sessions on November 19 and 24.
+* Grading: Evaluated using the rubric with 4 categories, each scored 6–24 points (max 96). See rubric below.
 
-***Grading:*** Evaluated using the rubric with 4 categories, each scored 6–24 points (max 96). See rubrics.
+### Critical Reflection 2 (25% of final grade, 160 points):
 
-### Critical Refleciton 2
+* A ~1,200-word essay analyzing Grant Tavinor's The Art of Videogames, due December 3, 2025.
 
-* (25% of final grade, 160 points):
+* Grading: Evaluated using the rubric with 4 categories, each scored 10–40 points (max 160). See rubric below.
 
-***Format:*** A ~1,200-word essay analyzing Grant Tavinor's The Art of Videogames, due December 3, 2025.
+### Quiz 2 (12.5% of final grade, 80 points):
 
-***Grading:*** Evaluated using the rubric with 4 categories, each scored 10–40 points (max 160). See rubric below.
+* A ~1,500-word comprehensive essay covering all course material, due December 9, 2025.
 
-### Quiz 2
+* Grading: Evaluated using the rubric with 4 categories, each scored 5–20 points (max 80). See rubric below.
 
-* (12.5% of final grade, 80 points):
+### Attendance (5% of final grade, 32 points):
 
-***Format:*** A ~750-1000-word (in-class) comprehensive essay covering all course material, due December 9, 2025.
+* Based on unexcused absences throughout the semester.
 
-***Grading:*** Evaluated using the rubric with 4 categories, each scored 5–20 points (max 80). See rubrics.
+Grading Scale (equal increments of 8 points):
 
-### Attendance
-
-* (5% of final grade, 32 points):
-
-***Based on unexcused absences throughout the semester.***
-
-***Format:*** Grading Scale (equal increments of 8 points):
-
-0–1 unexcused absences: 32 points
-
-2 unexcused absences: 24 points
-
-3–4 unexcused absences: 16 points
-
-5–6 unexcused absences: 8 points
-
-6< unexcused absences: 0 points
+||||
+|---|---|---|
+| 0–1 | unexcused absences: | 32 points |
+| 2 | unexcused absences: | 24 points |
+| 3–4 | unexcused absences: | 16 points |
+| 5–6 | unexcused absences: | 8 points |
+| 6 | unexcused absences: | 0 points |
 
 ## Rubrics
 
