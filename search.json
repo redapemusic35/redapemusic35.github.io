@@ -488,6 +488,61 @@
     ]
   },
   {
+    "objectID": "2025-logic/weeks/week04/page.html",
+    "href": "2025-logic/weeks/week04/page.html",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "",
+    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 04"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/page.html#lecture-slides",
+    "href": "2025-logic/weeks/week04/page.html#lecture-slides",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 04"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/page.html#coursework",
+    "href": "2025-logic/weeks/week04/page.html#coursework",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 04"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/page.html#recommended-reading",
+    "href": "2025-logic/weeks/week04/page.html#recommended-reading",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📚 Recommended Reading",
+    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 04"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/page.html#communication",
+    "href": "2025-logic/weeks/week04/page.html#communication",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📟 Communication",
+    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 04"
+    ]
+  },
+  {
     "objectID": "2025-logic/weeks/week01/page.html",
     "href": "2025-logic/weeks/week01/page.html",
     "title": "🗓️ Introduction to Logic, Week 01",
@@ -775,6 +830,104 @@
     "title": "🗓️ Week 01/02 Introduction",
     "section": "Syncategorematic terms",
     "text": "Syncategorematic terms\n\nAll courses numbered less than 400 are undergraduate courses.\nNo undergraduate course can be taken for graduate credit.\n\n\\(\\therefore\\)\n\nNo course numbered less than 400 can be taken for graduate credit."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#semantics",
+    "href": "2025-logic/weeks/week04/slides.html#semantics",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Semantics",
+    "text": "Semantics\n\nSemantics is the Study of Meaning\n\n\n\nHow do you define meaning?\nHow does the book define meaning?\n\n\nThe logical meaning of an expression is usually understood as its contribution to the truth or falsity of sentences in which it occurs. [31]\n\n\nMeaning is a characterization of the meaning of the use of logical operators within a given sentence.\n\nWhat this correlates to, I think, is a question about how a logical operator attirbutes truth or falsehood to a sentence.\nFor instance, in what situations would the sentence “James knows that God exists” be true?\nHow might we imagine various sentences that confirm the truth of P?\n\nOne day, I asked James ‘do you know who God is?’ He said yes and then pointed down at a rock. I then asked James ‘does God exist?’ Again he pointed down at the rock and said yes, ‘God exists’.\n\nIs the sentence ‘James knows God exists’, true in this situation?\nIn otherwords, the meaning of a term is its ‘truth conditions’\nWhat are truth conditions? The meaning of a term. Conditions on which a proposition is true or false.\n\nThe truth conditions for a term are rules which specify the possible situations in which sentences containing that term are true and the possible situations in which sentences containing that term are false.\n\n\nIn this section, we will give the truth-conditional semantics for the five logical operators introduced in the previous section."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#truth-conditions",
+    "href": "2025-logic/weeks/week04/slides.html#truth-conditions",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Truth Conditions",
+    "text": "Truth Conditions\n\nThe truth value of a conjunction is T in a given situation iff the truth value of each of its conjuncts is T in that situation.\n\nand\n\nThe truth value of a conjunction is F in a given situation iff one or both of its conjuncts does not have the value T in that situation."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#how-do-the-truth-values-of-sentences-containing-a-given-logical-operator-depend-on-the-truth-values-of-their-components.",
+    "href": "2025-logic/weeks/week04/slides.html#how-do-the-truth-values-of-sentences-containing-a-given-logical-operator-depend-on-the-truth-values-of-their-components.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "How do the truth values of sentences containing a given logical operator depend on the truth values of their components.",
+    "text": "How do the truth values of sentences containing a given logical operator depend on the truth values of their components.\n\nAs we have seen, a valuation is a pattern of truth values."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#weve-seen-this-before",
+    "href": "2025-logic/weeks/week04/slides.html#weve-seen-this-before",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "We’ve seen this before:",
+    "text": "We’ve seen this before:\n\nThe truth value of a conjunction is T \\(\\underline{\\text{on a given valuation}}\\) iff the truth value of each of its conjuncts is T in that situation.\n\nand\n\nThe truth value of a conjunction is F \\(\\underline{\\text{on a given valuation}}\\) iff one or both of its conjuncts does not have the value T in that situation."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#valuation-rules",
+    "href": "2025-logic/weeks/week04/slides.html#valuation-rules",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Valuation Rules",
+    "text": "Valuation Rules\n\nBecause these more abstract truth conditions are stated in terms of valuations, they are often referred to as valuation rules."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#as-weve-seen",
+    "href": "2025-logic/weeks/week04/slides.html#as-weve-seen",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "As we’ve seen,",
+    "text": "As we’ve seen,\n\n\\(\\upsilon\\) stands for valuation\n\nand\n\nGreek letters stand for formulas"
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#so-instead-of-writing",
+    "href": "2025-logic/weeks/week04/slides.html#so-instead-of-writing",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "So instead of writing,",
+    "text": "So instead of writing,\n\nThe truth value of a conjunction is T \\(\\underline{\\text{on a given valuation}}\\) iff the truth value of each of its conjuncts is T on that valuation.\n\n\nor\n\n\nThe truth value of a disjunction is T \\(\\underline{\\text{on a given valuation}}\\) iff the truth value of at least one of its disjuncts is T on that valuation."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#where",
+    "href": "2025-logic/weeks/week04/slides.html#where",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Where",
+    "text": "Where\n\n\\(\\upsilon\\)(\\(\\phi\\)) = T\n\n\nand\n\n\n\\(\\upsilon\\)(\\(\\psi\\)) = T"
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#and",
+    "href": "2025-logic/weeks/week04/slides.html#and",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "and",
+    "text": "and\n\\(\\upsilon\\)(\\(\\phi\\) \\(\\&\\) \\(\\psi\\)) = F iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) = F or \\(\\upsilon\\)(\\(\\psi\\)) = F, or both.\nor\n\\(\\upsilon\\)(\\(\\phi\\) \\(\\&\\) \\(\\psi\\)) = F iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) \\(\\neq\\) T or \\(\\upsilon\\)(\\(\\psi\\)) \\(\\neq\\) T, or both.\n\n\nIf you read the footnote, you’d realize I did it the other way.\n\n\\(\\upsilon\\)(\\(\\phi\\) \\(\\&\\) \\(\\psi\\)) = F iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) \\(\\neq\\) T or \\(\\upsilon\\)(\\(\\psi\\)) \\(\\neq\\) T, or both."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#finally-truth-tables",
+    "href": "2025-logic/weeks/week04/slides.html#finally-truth-tables",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Finally, Truth Tables",
+    "text": "Finally, Truth Tables\nIn tabular form, the previous rules can be expressed in the following way:\n\n\n\n\\(\\phi\\)\n\\(\\psi\\)\n(\\(\\phi\\)\n\\(\\&\\)\n\\(\\psi\\))\n\n\n\n\nT\nT\n\nT\n\n\n\nT\nF\n\nF\n\n\n\nF\nT\n\nF\n\n\n\nF\nF\n\nF"
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#truth-conditions-for-the-negation-operator",
+    "href": "2025-logic/weeks/week04/slides.html#truth-conditions-for-the-negation-operator",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Truth Conditions for the Negation Operator",
+    "text": "Truth Conditions for the Negation Operator\n\\(\\upsilon\\)(\\(\\neg\\phi\\)) = T iff \\(\\upsilon\\)(\\(\\phi\\)) \\(\\neq\\) T.\n\\(\\upsilon\\)(\\(\\neg\\phi\\)) = F iff \\(\\upsilon\\)(\\(\\phi\\)) = T.\n\n\n\n\\(\\phi\\)\n\\(\\neg\\phi\\)\n\n\n\n\n\n\n\n\nT\nF\n\n\n\n\n\n\nF\nT"
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#disjunction-or",
+    "href": "2025-logic/weeks/week04/slides.html#disjunction-or",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Disjunction, ‘Or’",
+    "text": "Disjunction, ‘Or’\nInclusive\n\nEither . . . or . . ., possibly both\n\nExclusive\n\nEither . . . or . . ., not both\n\n\nFour is both even and square, so\nFour is either an even number or a square number, or both.\nSo you can mark it both wrong and right."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#upsilonphi-lor-psi-t-iff-underlinetexteither-upsilonphi-t-or-upsilonpsi-t-or-both.",
+    "href": "2025-logic/weeks/week04/slides.html#upsilonphi-lor-psi-t-iff-underlinetexteither-upsilonphi-t-or-upsilonpsi-t-or-both.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "\\(\\upsilon\\)(\\(\\phi\\) \\(\\lor\\) \\(\\psi\\)) = T iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) = T or \\(\\upsilon\\)(\\(\\psi\\)) = T, or both.",
+    "text": "\\(\\upsilon\\)(\\(\\phi\\) \\(\\lor\\) \\(\\psi\\)) = T iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) = T or \\(\\upsilon\\)(\\(\\psi\\)) = T, or both."
+  },
+  {
+    "objectID": "2025-logic/weeks/week04/slides.html#upsilonphi-lor-psi-neq-t-iff-underlinetexteither-upsilonphi-neq-t-or-upsilonpsi-neq-t-or-both.",
+    "href": "2025-logic/weeks/week04/slides.html#upsilonphi-lor-psi-neq-t-iff-underlinetexteither-upsilonphi-neq-t-or-upsilonpsi-neq-t-or-both.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "\\(\\upsilon\\)(\\(\\phi\\) \\(\\lor\\) \\(\\psi\\)) \\(\\neq\\) T iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) \\(\\neq\\) T or \\(\\upsilon\\)(\\(\\psi\\)) \\(\\neq\\) T, or both.",
+    "text": "\\(\\upsilon\\)(\\(\\phi\\) \\(\\lor\\) \\(\\psi\\)) \\(\\neq\\) T iff \\(\\underline{\\text{either}}\\) \\(\\upsilon\\)(\\(\\phi\\)) \\(\\neq\\) T or \\(\\upsilon\\)(\\(\\psi\\)) \\(\\neq\\) T, or both."
   },
   {
     "objectID": "2025-logic/weeks/week03/slides.html#semantics",
