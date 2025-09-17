@@ -25,17 +25,21 @@ format:
     footer: 'PHIL343A -- Aesthetics Aristotle'
 ---
 
-* Earliest surviving work dedicated to art in the Western canon.
-
-* Rediscovered by sixteenth-century Italian theorists.
-
-  * Notable since other works of Aristotle were discovered first by Islamic philosophers during the early medieval ages.
-
-* Originally written as a set of teaching notes and lecture materials for use in his academy.
-
-* What is he doing in the Poetics and what is his motivation behind it?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7Kt_Ym-SEF8?si=uI93aQ9QcrSymejy&amp;start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q3d7cKCyssA?si=lbvffxYTwdi5ayYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pPd_VpXzfeQ?si=cpboQ6IbOXa-Dkh5&amp;start=34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ov5NCSzG1Tw?si=mcaBhLn2SQKuyQre&amp;start=203" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Art Criticism
 
 * What is Aristotle's response to Plato's various critiques?
 
@@ -47,21 +51,57 @@ format:
 
   * Political
 
----
+# Understanding Greek Poetry
 
-* First a member of Plato's academy, then founded his own: the Lyceum (335-23)
+## Understanding Art
 
-* The Poetics reflect a comprehensive, systematic, and analytic attempt to scrutinize in what would come to be known, Aristotelian, manner [Hallifex, 6].
+::: {.smaller}
 
-* This manner begins with a definition of key terms, a large number of cross references which seek to make connections between the various tenets found in his texts.
+::: {.nonincremental}
 
----
+:::: {.columns}
 
-* According to Steven hallifex, there are three essential elements to understanding Greek poetry.
+::: {.column width="50%" font-size=".5em"}
+
+* Observing paintings, novels, plays, stories, films, etc.
+
+* What are they made of,
+
+* how do they work
+
+* what purposes do they serve
+
+* what are the means by which they serve these purposes
+
+:::
+
+::: {.column width="50%" font-size=".5em"}
+
+* how do peple understand and appreciate them
+
+* What roles do they play in our collective historical and collective histories?
+
+* Through a technical analysis, we see other questions begin to emerge.
+
+* Their metaphysical constituents, theories of language, and knowledge.
+
+:::
+
+::::
+
+:::
+
+:::
 
 ## 1. Definitions
 
 Defining poetry as a general category of representational arts, or mimesis. This category includes visual arts, poetry, music, and dancing.
+
+::: {.notes}
+
+We begin with three categories of inquiry.
+
+:::
 
 ## 2. Historical Precedent
 
@@ -77,13 +117,13 @@ The second recognition by Aristotle, is that Poetry has a history.
 
 The third element of this work includes the establishment and employment of genre.
 
-* For Aristotle, genre is a scheme of enquiry that seeks to provide conditions through which mimetic concepts such as media, mimetic objects, and modes are delimited. In other words, he:
+* For Aristotle, genre is a scheme of enquiry that seeks to provide conditions through which mimetic concepts such as media, mimetic objects, and modes are delimited. In other words, he develops:
 
-* Conditions
+* Conditions for categorizing this class of object
 
-* Concepts
+* Concepts that relate to this class of object
 
-* Modes
+* Modes of inquiry in which to explore items in this class of object
 
 ---
 
@@ -135,17 +175,11 @@ There are three different possibilities with respect to imitation.
 
 ## Means of Imitation
 
+Consider some categories:
+
 Rhythm but without harmony, drum and dance for instance.
 
 Language without rhythm or harmony, speech and rhetoric. Or language with rhythm but not harmony.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7Kt_Ym-SEF8?si=uI93aQ9QcrSymejy&amp;start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
----
-
-#### Imitative Piping
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q3d7cKCyssA?si=lbvffxYTwdi5ayYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ::: {.notes}
 
@@ -163,15 +197,28 @@ This leads to the second difference . . .
 
 ## Actions with respect to characters, good or bad.
 
-1448a, What are the appropriate objects of representation, and what are the appropriate ways we should represent these objects? Good and bad men.
+> The objects the imitator represents are
+actions, with agents who are necessarily either
+good men or bad – the diversities of human char
+acter being nearly always derivative from this
+primary distinction, since the line between virtue
+and vice is one dividing the whole of mankind. (1448a)
 
-the character of the agent gives meaning to the action whether good or bad.
+---
+
+* What are the appropriate objects of representation
+
+* Appropriate ways we should represent these objects?
+
+* The actions of good and bad men
+
+* Attributing character to the actions of men
 
 ## The manner in which it is represented.
 
 Narrative vs character, choose one, or represent dramatically.
 
-### The three differences are means, objects, and manner.
+## The three differences are means, objects, and manner.
 
 ## Imitation as Telos
 
@@ -212,3 +259,37 @@ Is epic poetry denoted by 1, and 2, but not 3?
 | Rhythm | Dance | | | |
 | Language | Speech, Rhetoric |  | | |
 
+# Purpose and Telos as a Mimetic Object
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gSaH5vJKook?si=lbE3yTO4UHpiWnWV&amp;start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Delight
+
+Mental image of beauty
+
+e.g., grandfather, and memory of grandfather
+
+Is one more valuable than the other?
+
+## Mental and physical pleasure
+
+* Mental pleasure, e.g., memory of grandfather
+
+* Physical pleasure, e.g., sight of grandfather
+
+## Learning
+
+Learning through pleasure
+
+Why?
+
+Intimacy between our souls and our flesh
+
+## Classification of Pleasure
+
+| | Mental | Physical |
+|---|---|---|
+| Object of higher pleasure | Memory of grandfather |  |
+| Object of lower pleasure |  | Sight of grandfather |
+
+## But this doesn't seem right!
