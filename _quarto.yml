@@ -62,6 +62,15 @@ website:
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week05/page.qmd
+           text: Week 04
+           contents:
+             - href: 2025-logic/weeks/week05/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+            #  - href: 2023/weeks/week01/lab.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
 
       - section: "🗓️ Aesthetics"
         contents:
