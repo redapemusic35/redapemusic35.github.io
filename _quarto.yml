@@ -49,7 +49,7 @@ website:
            contents:
              - href: 2025-logic/weeks/week03/page.qmd
                text: 👨‍🏫 Lecture Material
-            #  - href: 2023/weeks/week01/lab.qmd
+            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
@@ -58,7 +58,7 @@ website:
            contents:
              - href: 2025-logic/weeks/week04/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-            #  - href: 2023/weeks/week01/lab.qmd
+            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
@@ -67,7 +67,7 @@ website:
            contents:
              - href: 2025-logic/weeks/week05/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-            #  - href: 2023/weeks/week01/lab.qmd
+            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
@@ -75,43 +75,43 @@ website:
       - section: "🗓️ Aesthetics"
         contents:
          - href: 2025-aesthetics/weeks/week02/page.qmd
-           text: Week 02
+           text: Discussion 01
            contents:
              - href: 2025-aesthetics/weeks/week02/page.qmd
                text: 👨‍🏫 Lecture Material
-            #  - href: 2023/weeks/week01/lab.qmd
-            #    text: 💻 Lab Roadmap
+            #  - href: 2025-aesthetics/weeks/week02/summary.qmd
+            #    text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-aesthetics/weeks/week03/page.qmd
-           text: Week 03
+           text: Discussion 02
            contents:
              - href: 2025-aesthetics/weeks/week03/page.qmd
                text: 👨‍🏫 Lecture Material
-            #  - href: 2023/weeks/week01/lab.qmd
-            #    text: 💻 Lab Roadmap
+            #  - href: 2025-aesthetics/weeks/week03/summary.qmd
+            #    text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-aesthetics/weeks/week04/page.qmd
-           text: Week 04
+           text: Discussion 03
            contents:
              - href: 2025-aesthetics/weeks/week04/page.qmd
                text: 👨‍🏫 Lecture Material
-            #  - href: 2023/weeks/week01/lab.qmd
-            #    text: 💻 Lab Roadmap
+            #  - href: 2025-aesthetics/weeks/week04/summary.qmd
+            #    text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-aesthetics/weeks/week05/page.qmd
-           text: Week 04
+           text: Discussion 04
            contents:
              - href: 2025-aesthetics/weeks/week05/page.qmd
                text: 👨‍🏫 Lecture Material
-            #  - href: 2023/weeks/week01/lab.qmd
-            #    text: 💻 Lab Roadmap
+             - href: 2025-aesthetics/weeks/week05/summary.qmd
+               text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-aesthetics/weeks/week06/page.qmd
-           text: Week 04
+           text: Discussion 05
            contents:
              - href: 2025-aesthetics/weeks/week06/page.qmd
                text: 👨‍🏫 Lecture Material
