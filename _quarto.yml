@@ -110,6 +110,15 @@ website:
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
+         - href: 2025-aesthetics/weeks/week06/page.qmd
+           text: Week 04
+           contents:
+             - href: 2025-aesthetics/weeks/week06/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week06/summary.qmd
+               text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
 
 
 
