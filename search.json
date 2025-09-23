@@ -563,6 +563,61 @@
     ]
   },
   {
+    "objectID": "2025-logic/weeks/week06/page.html",
+    "href": "2025-logic/weeks/week06/page.html",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "",
+    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 06"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/page.html#lecture-slides",
+    "href": "2025-logic/weeks/week06/page.html#lecture-slides",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 06"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/page.html#coursework",
+    "href": "2025-logic/weeks/week06/page.html#coursework",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 06"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/page.html#recommended-reading",
+    "href": "2025-logic/weeks/week06/page.html#recommended-reading",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📚 Recommended Reading",
+    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 06"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/page.html#communication",
+    "href": "2025-logic/weeks/week06/page.html#communication",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📟 Communication",
+    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 06"
+    ]
+  },
+  {
     "objectID": "2025-logic/weeks/week01/page.html",
     "href": "2025-logic/weeks/week01/page.html",
     "title": "🗓️ Introduction to Logic, Week 01",
@@ -625,7 +680,7 @@
     "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
     "crumbs": [
       "🗓️ Logic",
-      "Week 04"
+      "Week 05"
     ]
   },
   {
@@ -636,7 +691,7 @@
     "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
     "crumbs": [
       "🗓️ Logic",
-      "Week 04"
+      "Week 05"
     ]
   },
   {
@@ -647,7 +702,7 @@
     "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
     "crumbs": [
       "🗓️ Logic",
-      "Week 04"
+      "Week 05"
     ]
   },
   {
@@ -658,7 +713,7 @@
     "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
     "crumbs": [
       "🗓️ Logic",
-      "Week 04"
+      "Week 05"
     ]
   },
   {
@@ -669,7 +724,7 @@
     "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
     "crumbs": [
       "🗓️ Logic",
-      "Week 04"
+      "Week 05"
     ]
   },
   {
@@ -940,6 +995,139 @@
     "title": "🗓️ Week 01/02 Introduction",
     "section": "Syncategorematic terms",
     "text": "Syncategorematic terms\n\nAll courses numbered less than 400 are undergraduate courses.\nNo undergraduate course can be taken for graduate credit.\n\n\\(\\therefore\\)\n\nNo course numbered less than 400 can be taken for graduate credit."
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#valuation-rules",
+    "href": "2025-logic/weeks/week06/slides.html#valuation-rules",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Valuation Rules",
+    "text": "Valuation Rules\n\nValuation Rules"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#valuation-rules-easy-chart",
+    "href": "2025-logic/weeks/week06/slides.html#valuation-rules-easy-chart",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Valuation Rules Easy Chart",
+    "text": "Valuation Rules Easy Chart\na"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#whats-the-point-in-all-of-this",
+    "href": "2025-logic/weeks/week06/slides.html#whats-the-point-in-all-of-this",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "What’s the point in all of this?",
+    "text": "What’s the point in all of this?\nConsider the following proposition:"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#we-have",
+    "href": "2025-logic/weeks/week06/slides.html#we-have",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "We have",
+    "text": "We have\nA number of formulas that together form the proposition below. (Formula is a fancy way of saying ‘claim’)\nClaim / Formula: P \\(\\rightarrow\\) (Q & (R \\(\\lor\\) S))"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#this-claim-formula-is-made-up-of-the-following-claims-formulas",
+    "href": "2025-logic/weeks/week06/slides.html#this-claim-formula-is-made-up-of-the-following-claims-formulas",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "This claim / formula is made up of the following claims / formulas:",
+    "text": "This claim / formula is made up of the following claims / formulas:\n\nThe claim that: ‘Jim stole the cookie’; ‘P’\nThe claim that: ‘Jim is guilty’; ‘Q’\nThe claim that: ‘Jim deserves life in prison’; ‘R’\nThe claim that: ‘Jim deserves death’; ‘S’"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#any-one-of-these-can-be-true",
+    "href": "2025-logic/weeks/week06/slides.html#any-one-of-these-can-be-true",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Any one of these can be true,",
+    "text": "Any one of these can be true,\nOr . . . they can all be true. What we ultimately want to know, is whether together, they make a true proposition, that if:\n\nJim stole the cookie,\n\nThen\n\nJim is guilty,\n\nand"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#he-either",
+    "href": "2025-logic/weeks/week06/slides.html#he-either",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "He either",
+    "text": "He either\n\ndeserves life in prison,"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#but-there-are-many-other-claims-as-well-.-.-.",
+    "href": "2025-logic/weeks/week06/slides.html#but-there-are-many-other-claims-as-well-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "But there are many other claims as well . . .",
+    "text": "But there are many other claims as well . . .\n\nIf Jim stole the cookie, then he is guilty.\n\nThis claim is an independent one.\n\nJim is guilty and deserves either life in prison, or death\nHe deserves life in prison or he deserves death\n\nThese are all independent claims"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#semantic-properties-we-can-test-for",
+    "href": "2025-logic/weeks/week06/slides.html#semantic-properties-we-can-test-for",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "4 Semantic properties we can test for",
+    "text": "4 Semantic properties we can test for\n\nSemantic Properties"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#this-is-an-argument",
+    "href": "2025-logic/weeks/week06/slides.html#this-is-an-argument",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "This is an argument",
+    "text": "This is an argument"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#jim-is-guilty-and-deserves-life-in-prison-or-death",
+    "href": "2025-logic/weeks/week06/slides.html#jim-is-guilty-and-deserves-life-in-prison-or-death",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Jim is guilty and deserves life in prison or death",
+    "text": "Jim is guilty and deserves life in prison or death\nIf Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.\nJim did steal the cookie.\nTherefore, Jim is guilty and either he deserves life in prison or he deserves death."
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.",
+    "href": "2025-logic/weeks/week06/slides.html#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "However, we are only looking at a formula, a single claim. Not an argument.",
+    "text": "However, we are only looking at a formula, a single claim. Not an argument.\n\nAn argument has a premise\nAnd an argument has a conclusion\nOurs is a single claim"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#is-it-possible-for-.-.-.",
+    "href": "2025-logic/weeks/week06/slides.html#is-it-possible-for-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Is it possible for . . .",
+    "text": "Is it possible for . . .\n\nThe claim that: ‘Jim stole the cookie’; ‘P’\nThe claim that: ‘Jim is guilty’; ‘Q’\nThe claim that: ‘Jim deserves life in prison’; ‘R’\nThe claim that: ‘Jim deserves death’; ‘S’\n\nTo all be true at the same time?"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#will-our-paths-close-like-this",
+    "href": "2025-logic/weeks/week06/slides.html#will-our-paths-close-like-this",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Will our paths close like this?",
+    "text": "Will our paths close like this?"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#then-look-at-the-main-operator-.-.-.",
+    "href": "2025-logic/weeks/week06/slides.html#then-look-at-the-main-operator-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Then look at the main operator . . .",
+    "text": "Then look at the main operator . . .\nP \\(\\rightarrow\\) (Q & (R \\(\\lor\\) S))"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#this-is-what-we-are-paying-attention-to-.-.-.",
+    "href": "2025-logic/weeks/week06/slides.html#this-is-what-we-are-paying-attention-to-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "This is what we are paying attention to . . .",
+    "text": "This is what we are paying attention to . . ."
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#in-other-words-.-.-.",
+    "href": "2025-logic/weeks/week06/slides.html#in-other-words-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "In other words . . .",
+    "text": "In other words . . ."
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#this-means-that",
+    "href": "2025-logic/weeks/week06/slides.html#this-means-that",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "This means that",
+    "text": "This means that\n\n\n\n~ P\nQ\nR\nS\n\n\n\n\nT\nT\nT\nT\n\n\n\nor\n\n\n\nP\nQ\nR\nS\n\n\n\n\nF\nT\nT\nT"
+  },
+  {
+    "objectID": "2025-logic/weeks/week06/slides.html#or",
+    "href": "2025-logic/weeks/week06/slides.html#or",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Or",
+    "text": "Or"
   },
   {
     "objectID": "2025-logic/weeks/week04/slides.html#semantics",
