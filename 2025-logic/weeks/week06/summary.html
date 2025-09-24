@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Monty Reynolds">
 
-<title>🗓️ Week 02 - Argument Forms, Formalization, Formation Rules – Fall 2025</title>
+<title>summary – Fall 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../2025-logic/weeks/week04/page.html" rel="next">
-<link href="../../../2025-logic/weeks/week02/page.html" rel="prev">
+<link href="../../../2025-aesthetics/weeks/week02/page.html" rel="next">
+<link href="../../../2025-logic/weeks/week06/page.html" rel="prev">
 <link href="../../../figures/icons/course_favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -72,17 +72,52 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../css/custom_style.css">
 <link rel="stylesheet" href="../../../css/syllabus.css">
-<meta property="og:title" content="🗓️ Week 02 - Argument Forms, Formalization, Formation Rules – Fall 2025">
+<meta property="og:title" content="Fall 2025">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://redapemusic35.github.io/figures/logic/v-rules-1.png">
 <meta property="og:site_name" content="Fall 2025">
-<meta name="twitter:title" content="🗓️ Week 02 - Argument Forms, Formalization, Formation Rules – Fall 2025">
+<meta property="og:image:height" content="1738">
+<meta property="og:image:width" content="1142">
+<meta name="twitter:title" content="Fall 2025">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://redapemusic35.github.io/figures/logic/v-rules-1.png">
 <meta name="twitter:creator" content="@<twitter-handle>">
 <meta name="twitter:site" content="\@<twitter-handle>">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="1738">
+<meta name="twitter:image-width" content="1142">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -113,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week03/page.html">Week 03</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week06/page.html">Week 06</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week06/summary.html">💻 Notes and Summary</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -180,16 +215,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../2025-logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../2025-logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 03</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../2025-logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../2025-logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material</span></a>
   </div>
 </li>
@@ -233,11 +268,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../2025-logic/weeks/week06/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 06</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../2025-logic/weeks/week06/page.html" class="sidebar-item-text sidebar-link">
@@ -246,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../2025-logic/weeks/week06/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2025-logic/weeks/week06/summary.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -374,19 +409,73 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link active" data-scroll-target="#lecture-slides">👨‍🏫 Lecture Slides</a></li>
-  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">✍️ Coursework</a></li>
-  <li><a href="#recommended-reading" id="toc-recommended-reading" class="nav-link" data-scroll-target="#recommended-reading">📚 Recommended Reading</a></li>
-  <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication">📟 Communication</a></li>
+  <li><a href="#classical-propositional-logic" id="toc-classical-propositional-logic" class="nav-link active" data-scroll-target="#classical-propositional-logic">Classical Propositional Logic</a>
+  <ul class="collapse">
+  <li><a href="#valuation-rules-hard" id="toc-valuation-rules-hard" class="nav-link" data-scroll-target="#valuation-rules-hard">Valuation Rules Hard</a></li>
+  <li><a href="#valuation-rules-easy" id="toc-valuation-rules-easy" class="nav-link" data-scroll-target="#valuation-rules-easy">Valuation Rules Easy</a></li>
+  <li><a href="#whats-the-point-in-all-of-this" id="toc-whats-the-point-in-all-of-this" class="nav-link" data-scroll-target="#whats-the-point-in-all-of-this">What’s the point in all of this?</a></li>
+  </ul></li>
+  <li><a href="#p-rightarrow-q-r-lor-s" id="toc-p-rightarrow-q-r-lor-s" class="nav-link" data-scroll-target="#p-rightarrow-q-r-lor-s">P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</a>
+  <ul class="collapse">
+  <li><a href="#we-have" id="toc-we-have" class="nav-link" data-scroll-target="#we-have">We have</a></li>
+  <li><a href="#this-claim-formula-is-made-up-of-the-following-claims-formulas" id="toc-this-claim-formula-is-made-up-of-the-following-claims-formulas" class="nav-link" data-scroll-target="#this-claim-formula-is-made-up-of-the-following-claims-formulas">This claim / formula is made up of the following claims / formulas:</a></li>
+  <li><a href="#any-one-of-these-can-be-true" id="toc-any-one-of-these-can-be-true" class="nav-link" data-scroll-target="#any-one-of-these-can-be-true">Any one of these can be true,</a></li>
+  <li><a href="#he-either" id="toc-he-either" class="nav-link" data-scroll-target="#he-either">He either</a></li>
+  </ul></li>
+  <li><a href="#or-he-deserves-death" id="toc-or-he-deserves-death" class="nav-link" data-scroll-target="#or-he-deserves-death">Or He Deserves Death</a>
+  <ul class="collapse">
+  <li><a href="#but-there-are-many-other-claims-as-well-.-.-." id="toc-but-there-are-many-other-claims-as-well-.-.-." class="nav-link" data-scroll-target="#but-there-are-many-other-claims-as-well-.-.-.">But there are many other claims as well . . .</a></li>
+  </ul></li>
+  <li><a href="#some-possible-formulas" id="toc-some-possible-formulas" class="nav-link" data-scroll-target="#some-possible-formulas">Some possible formulas</a></li>
+  <li><a href="#lets-do-some-more" id="toc-lets-do-some-more" class="nav-link" data-scroll-target="#lets-do-some-more">Lets do some more</a>
+  <ul class="collapse">
+  <li><a href="#semantic-properties-we-can-test-for" id="toc-semantic-properties-we-can-test-for" class="nav-link" data-scroll-target="#semantic-properties-we-can-test-for">4 Semantic properties we can test for</a></li>
+  </ul></li>
+  <li><a href="#this-does-not-apply-here.-here-is-why-.-.-." id="toc-this-does-not-apply-here.-here-is-why-.-.-." class="nav-link" data-scroll-target="#this-does-not-apply-here.-here-is-why-.-.-.">This does not apply here. Here is why . . .</a>
+  <ul class="collapse">
+  <li><a href="#this-is-an-argument" id="toc-this-is-an-argument" class="nav-link" data-scroll-target="#this-is-an-argument">This is an argument</a></li>
+  <li><a href="#jim-is-guilty-and-deserves-life-in-prison-or-death" id="toc-jim-is-guilty-and-deserves-life-in-prison-or-death" class="nav-link" data-scroll-target="#jim-is-guilty-and-deserves-life-in-prison-or-death">Jim is guilty and deserves life in prison or death</a></li>
+  <li><a href="#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." id="toc-however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." class="nav-link" data-scroll-target="#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.">However, we are only looking at a formula, a single claim. Not an argument.</a></li>
+  </ul></li>
+  <li><a href="#second-test" id="toc-second-test" class="nav-link" data-scroll-target="#second-test">Second test</a></li>
+  <li><a href="#in-other-words" id="toc-in-other-words" class="nav-link" data-scroll-target="#in-other-words">In other words</a></li>
+  <li><a href="#consistency" id="toc-consistency" class="nav-link" data-scroll-target="#consistency">Consistency</a>
+  <ul class="collapse">
+  <li><a href="#is-it-possible-for-.-.-." id="toc-is-it-possible-for-.-.-." class="nav-link" data-scroll-target="#is-it-possible-for-.-.-.">Is it possible for . . .</a></li>
+  </ul></li>
+  <li><a href="#this-depends-on-the-logical-operators-.-.-." id="toc-this-depends-on-the-logical-operators-.-.-." class="nav-link" data-scroll-target="#this-depends-on-the-logical-operators-.-.-.">This depends on the logical operators . . .</a>
+  <ul class="collapse">
+  <li><a href="#will-our-paths-close-like-this" id="toc-will-our-paths-close-like-this" class="nav-link" data-scroll-target="#will-our-paths-close-like-this">Will our paths close like this?</a></li>
+  </ul></li>
+  <li><a href="#first-we-start-with-the-formula" id="toc-first-we-start-with-the-formula" class="nav-link" data-scroll-target="#first-we-start-with-the-formula">First we start with the formula</a>
+  <ul class="collapse">
+  <li><a href="#then-look-at-the-main-operator-.-.-." id="toc-then-look-at-the-main-operator-.-.-." class="nav-link" data-scroll-target="#then-look-at-the-main-operator-.-.-.">Then look at the main operator . . .</a></li>
+  </ul></li>
+  <li><a href="#what-does-the-valuation-rule-for-rightarrow-say" id="toc-what-does-the-valuation-rule-for-rightarrow-say" class="nav-link" data-scroll-target="#what-does-the-valuation-rule-for-rightarrow-say">What does the valuation rule for ‘<span class="math inline">\(\rightarrow\)</span>’ say?</a>
+  <ul class="collapse">
+  <li><a href="#this-is-what-we-are-paying-attention-to-.-.-." id="toc-this-is-what-we-are-paying-attention-to-.-.-." class="nav-link" data-scroll-target="#this-is-what-we-are-paying-attention-to-.-.-.">This is what we are paying attention to . . .</a></li>
+  <li><a href="#in-other-words-.-.-." id="toc-in-other-words-.-.-." class="nav-link" data-scroll-target="#in-other-words-.-.-.">In other words . . .</a></li>
+  </ul></li>
+  <li><a href="#so-step-1-.-.-." id="toc-so-step-1-.-.-." class="nav-link" data-scroll-target="#so-step-1-.-.-.">So step 1 . . .</a></li>
+  <li><a href="#step-2-.-.-." id="toc-step-2-.-.-." class="nav-link" data-scroll-target="#step-2-.-.-.">Step 2 . . .</a></li>
+  <li><a href="#see-all-the-open-paths" id="toc-see-all-the-open-paths" class="nav-link" data-scroll-target="#see-all-the-open-paths">See all the open paths?</a>
+  <ul class="collapse">
+  <li><a href="#this-means-that" id="toc-this-means-that" class="nav-link" data-scroll-target="#this-means-that">This means that</a></li>
+  </ul></li>
+  <li><a href="#or-.-.-." id="toc-or-.-.-." class="nav-link" data-scroll-target="#or-.-.-.">Or . . .</a></li>
+  <li><a href="#is-true-if" id="toc-is-true-if" class="nav-link" data-scroll-target="#is-true-if">Is true if:</a>
+  <ul class="collapse">
+  <li><a href="#or" id="toc-or" class="nav-link" data-scroll-target="#or">Or</a></li>
+  </ul></li>
+  <li><a href="#death" id="toc-death" class="nav-link" data-scroll-target="#death">Death</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week03/page.html">Week 03</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week06/page.html">Week 06</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week06/summary.html">💻 Notes and Summary</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">🗓️ Week 02 - Argument Forms, Formalization, Formation Rules</h1>
 </div>
 
 
@@ -409,31 +498,435 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.</p>
-<section id="lecture-slides" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
-<p>Either click on the slide area below or click <a href="../../../2025-logic/weeks/week03/slides.html">here</a> to view it in fullscreen. Use your keypad to navigate the slides.</p>
-<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
-<iframe src="slides.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;">
+<section id="classical-propositional-logic" class="level1">
+<h1>Classical Propositional Logic</h1>
+<section id="valuation-rules-hard" class="level2">
+<h2 class="anchored" data-anchor-id="valuation-rules-hard">Valuation Rules Hard</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/v-rules-1.png" class="img-fluid figure-img"></p>
+<figcaption>See? Hard</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/v-rules-2.png" class="img-fluid figure-img"></p>
+<figcaption>See? Easy</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="valuation-rules-easy" class="level2">
+<h2 class="anchored" data-anchor-id="valuation-rules-easy">Valuation Rules Easy</h2>
+<div class="columns">
+<div class="column" style="width:40%;height:100%">
+<p><img src="./../../../figures/logic/truth-chart.png"></p>
+</div><div class="column" style="width:40%;font-size:0.85em;margin-left:3%;">
+<p><span class="tag" style="background-color:var(--quarto-hl-st-color)">negation</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated negation</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">conjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated conjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">disjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated disjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">conditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated conditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">biconditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated bi-conditional</span></p>
+</div>
+</div>
+</section>
+<section id="whats-the-point-in-all-of-this" class="level2">
+<h2 class="anchored" data-anchor-id="whats-the-point-in-all-of-this">What’s the point in all of this?</h2>
+<p>Consider the following proposition:</p>
+</section>
+</section>
+<section id="p-rightarrow-q-r-lor-s" class="level1 center middle">
+<h1 class="center middle">P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</h1>
+<p>If Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.</p>
+<section id="we-have" class="level2">
+<h2 class="anchored" data-anchor-id="we-have">We have</h2>
+<p>A number of formulas that together form the proposition below. (Formula is a fancy way of saying ‘claim’)</p>
+<p>Claim / Formula: P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+</section>
+<section id="this-claim-formula-is-made-up-of-the-following-claims-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="this-claim-formula-is-made-up-of-the-following-claims-formulas">This claim / formula is made up of the following claims / formulas:</h2>
+<ul>
+<li><p>The claim that: ‘Jim stole the cookie’; ‘P’</p></li>
+<li><p>The claim that: ‘Jim is guilty’; ‘Q’</p></li>
+<li><p>The claim that: ‘Jim deserves life in prison’; ‘R’</p></li>
+<li><p>The claim that: ‘Jim deserves death’; ‘S’</p></li>
+</ul>
+</section>
+<section id="any-one-of-these-can-be-true" class="level2">
+<h2 class="anchored" data-anchor-id="any-one-of-these-can-be-true">Any one of these can be true,</h2>
+<p>Or . . . they can all be true. What we ultimately want to know, is whether together, they make a true proposition, that if:</p>
+<ul>
+<li>Jim stole the cookie,</li>
+</ul>
+<p>Then</p>
+<ul>
+<li>Jim is guilty,</li>
+</ul>
+<p>and</p>
+</section>
+<section id="he-either" class="level2">
+<h2 class="anchored" data-anchor-id="he-either">He either</h2>
+<ul>
+<li>deserves life in prison,</li>
+</ul>
+</section>
+</section>
+<section id="or-he-deserves-death" class="level1 center middle">
+<h1 class="center middle">Or He Deserves Death</h1>
+<div style="width:360px;max-width:100%;">
+<div style="height:0;padding-bottom:56.11%;position:relative;">
+<iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" src="https://imgflip.com/embed/a6yfpe">
 </iframe>
 </div>
-<p>🎥 Looking for lecture recordings? You can only find those on Moodle.</p>
-</section>
-<section id="coursework" class="level2">
-<h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
-<p>🚧 Come back after the lecture to read the coursework instructions for the week 🚧</p>
-</section>
-<section id="recommended-reading" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-reading">📚 Recommended Reading</h2>
+<p>
+<a href="https://imgflip.com/gif/a6yfpe">via Imgflip</a>
+</p>
+</div>
+<section id="but-there-are-many-other-claims-as-well-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="but-there-are-many-other-claims-as-well-.-.-.">But there are many other claims as well . . .</h2>
 <ul>
-<li>Check the end of slides for the list of references cited in the lecture.</li>
+<li>If Jim stole the cookie, then he is guilty.</li>
+</ul>
+<p>This claim is an independent one.</p>
+<ul>
+<li><p>Jim is guilty and deserves either life in prison, or death</p></li>
+<li><p>He deserves life in prison or he deserves death</p></li>
+</ul>
+<p>These are all independent claims</p>
+<hr>
+<p>What we want to know, is whether any of them acts as a logical contradiction, or fail in some other way when combined with the others. Consider the two claims below:</p>
+<ul>
+<li><p>‘The boy is tall’</p></li>
+<li><p>‘The boy is not tall’</p></li>
 </ul>
 </section>
-<section id="communication" class="level2">
-<h2 class="anchored" data-anchor-id="communication">📟 Communication</h2>
+</section>
+<section id="some-possible-formulas" class="level1">
+<h1>Some possible formulas</h1>
+<p>Together we have:</p>
 <ul>
-<li>If you feel like it, introduce your ‘selves’ in the <code>#introductions</code> channel in <a href="https://stetson.instructure.com/courses/38093/discussion_topics/162462">Discussions</a></li>
+<li>‘The boy is tall and the boy is not tall’</li>
 </ul>
+<p>A contradiction</p>
+<p>Or</p>
+<ul>
+<li>‘The boy is tall or the boy is not tall’</li>
+</ul>
+<p>Not a contradiction</p>
+</section>
+<section id="lets-do-some-more" class="level1">
+<h1>Lets do some more</h1>
+<ul>
+<li><p>‘If the boy is tall, then the boy is not tall’</p></li>
+<li><p>‘The boy is tall if and only if he is not tall’</p></li>
+<li><p>‘It is not the case that the boy is tall’ (‘The boy is not tall’)</p></li>
+</ul>
+<section id="semantic-properties-we-can-test-for" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-properties-we-can-test-for">4 Semantic properties we can test for</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/4-semantic-properties.png" class="img-fluid figure-img"></p>
+<figcaption>Semantic Properties</figcaption>
+</figure>
+</div>
+<hr>
+<ol type="1">
+<li><p>Valid: The formula or sequent (argument), is true on all valuations. No counter examples (open paths)</p></li>
+<li><p>Contingent: True on at least one, but not all valuations. (At least one open path, but not all)</p></li>
+<li><p>Inconsistent: True on no valuations. All paths are closed.</p></li>
+<li><p>Consistent: At least one valuation where all formulas are true. (Open paths show valuations that make the formula or set of formulas true)</p></li>
+</ol>
+<hr>
+<div style="font-size: 70%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of Formula</th>
+<th>Definition</th>
+<th>Truth Tree Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Valid Sequent</td>
+<td>There are no counter examples</td>
+<td>No Open Paths</td>
+</tr>
+<tr class="even">
+<td>Invalid Sequent</td>
+<td>There is at least one valuation where the sequent is not true</td>
+<td>At least one open path</td>
+</tr>
+<tr class="odd">
+<td>Valid Formula</td>
+<td>The formula is true on all its valuations (T under main operator)</td>
+<td>All the paths are closed</td>
+</tr>
+<tr class="even">
+<td>Invalid</td>
+<td>There is at least one valuation on which the formula is False</td>
+<td>Open paths display valuations on which formula is false</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<div style="font-size: 70%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of Formula</th>
+<th>Definition</th>
+<th>Truth Tree Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contingent</td>
+<td>True on at least one, but not all valuations</td>
+<td>At least one open path, but not all</td>
+</tr>
+<tr class="even">
+<td>Inconsistent</td>
+<td>Not true on any valuations</td>
+<td>All paths are closed</td>
+</tr>
+<tr class="odd">
+<td>Consistent</td>
+<td>At least one valuation where all formulas are true</td>
+<td>Open paths show valuations that make the formula or set of formulas true</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="this-does-not-apply-here.-here-is-why-.-.-." class="level1">
+<h1>This does not apply here. Here is why . . .</h1>
+<section id="this-is-an-argument" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-an-argument">This is an argument</h2>
+</section>
+<section id="jim-is-guilty-and-deserves-life-in-prison-or-death" class="level2">
+<h2 class="anchored" data-anchor-id="jim-is-guilty-and-deserves-life-in-prison-or-death">Jim is guilty and deserves life in prison or death</h2>
+<p>If Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.</p>
+<p>Jim did steal the cookie.</p>
+<p>Therefore, Jim is guilty and either he deserves life in prison or he deserves death.</p>
+<hr>
+<p>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+<p>P</p>
+<p>Therefore,</p>
+<p>(Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+</section>
+<section id="however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." class="level2">
+<h2 class="anchored" data-anchor-id="however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.">However, we are only looking at a formula, a single claim. Not an argument.</h2>
+<ul>
+<li><p>An argument has a premise</p></li>
+<li><p>And an argument has a conclusion</p></li>
+<li><p>Ours is a single claim</p></li>
+</ul>
+</section>
+</section>
+<section id="second-test" class="level1">
+<h1>Second test</h1>
+<ol start="2" type="1">
+<li>Determine whether a formula (not an argument/sequent), is consistent.</li>
+</ol>
+<hr>
+<p><strong><em>Brief Foray into Consistency . . .</em></strong></p>
+<p><img src="./../../../figures/logic/consistency.png" class="img-fluid"></p>
+<ul>
+<li>In everyday language, consistency means reliable.
+<ul>
+<li>An athlete who is consistent, is one who performs consistently well.</li>
+<li>An inconsistent athlete is one who performs well sometimes.</li>
+</ul></li>
+<li>In logic, a formula is consistent if it is logically possible for it to be true under all its formulations.
+<ul>
+<li>It does not entail a logical contradiction.</li>
+<li>‘The boy is tall’ and ‘the boy is short’ would entail a logical contradiction. (T &amp; ~T)</li>
+</ul></li>
+</ul>
+</section>
+<section id="in-other-words" class="level1">
+<h1>In other words</h1>
+<p>Since we have a formula only, not an argument, we want to know three things.</p>
+<ol type="1">
+<li><p>Is it consistent?</p></li>
+<li><p>Is it valid?</p></li>
+<li><p>Is it contingent?</p></li>
+</ol>
+</section>
+<section id="consistency" class="level1">
+<h1>Consistency</h1>
+<p>Construct a truth tree starting with the formula. If all the paths close, then the formula is inconsistent.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/consistency.png" class="img-fluid figure-img"></p>
+<figcaption>Inconsistent Formula</figcaption>
+</figure>
+</div>
+<section id="is-it-possible-for-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="is-it-possible-for-.-.-.">Is it possible for . . .</h2>
+<ul>
+<li><p>The claim that: ‘Jim stole the cookie’; ‘P’</p></li>
+<li><p>The claim that: ‘Jim is guilty’; ‘Q’</p></li>
+<li><p>The claim that: ‘Jim deserves life in prison’; ‘R’</p></li>
+<li><p>The claim that: ‘Jim deserves death’; ‘S’</p></li>
+</ul>
+<p>To all be true at the same time?</p>
+</section>
+</section>
+<section id="this-depends-on-the-logical-operators-.-.-." class="level1">
+<h1>This depends on the logical operators . . .</h1>
+<ul>
+<li><p>If Jim stole the cookie(?)</p></li>
+<li><p>Then is he guilty?</p></li>
+<li><p>And . . .(?)</p></li>
+</ul>
+<hr>
+<section id="will-our-paths-close-like-this" class="level2">
+<h2 class="anchored" data-anchor-id="will-our-paths-close-like-this">Will our paths close like this?</h2>
+<p><img src="./../../../figures/logic/closed-paths.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="first-we-start-with-the-formula" class="level1">
+<h1>First we start with the formula</h1>
+<p><img src="./../../../figures/logic/jim-claim.png" class="img-fluid"></p>
+<section id="then-look-at-the-main-operator-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="then-look-at-the-main-operator-.-.-.">Then look at the main operator . . .</h2>
+<p>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+</section>
+</section>
+<section id="what-does-the-valuation-rule-for-rightarrow-say" class="level1">
+<h1>What does the valuation rule for ‘<span class="math inline">\(\rightarrow\)</span>’ say?</h1>
+<p><img src="./../../../figures/logic/v-for-arrow.png" class="img-fluid"></p>
+<section id="this-is-what-we-are-paying-attention-to-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="this-is-what-we-are-paying-attention-to-.-.-.">This is what we are paying attention to . . .</h2>
+<p><img src="./../../../figures/logic/v-rules-important.png" class="img-fluid"></p>
+</section>
+<section id="in-other-words-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="in-other-words-.-.-.">In other words . . .</h2>
+<p><img src="./../../../figures/logic/v-arrow-picture.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="so-step-1-.-.-." class="level1">
+<h1>So step 1 . . .</h1>
+<p><img src="./../../../figures/logic/using-v-rule-arrow.png" class="img-fluid"></p>
+</section>
+<section id="step-2-.-.-." class="level1">
+<h1>Step 2 . . .</h1>
+<p><img src="./../../../figures/logic/using-conj-v.png" class="img-fluid"></p>
+</section>
+<section id="see-all-the-open-paths" class="level1">
+<h1>See all the open paths?</h1>
+<p><img src="./../../../figures/logic/open-paths.png" class="img-fluid"></p>
+<section id="this-means-that" class="level2">
+<h2 class="anchored" data-anchor-id="this-means-that">This means that</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>~ P</th>
+<th>Q</th>
+<th>R</th>
+<th>S</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<p>or</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>P</th>
+<th>Q</th>
+<th>R</th>
+<th>S</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="or-.-.-." class="level1">
+<h1>Or . . .</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>~P</th>
+<th><span class="math inline">\(\rightarrow\)</span></th>
+<th>(</th>
+<th>Q</th>
+<th>&amp;</th>
+<th>( R</th>
+<th><span class="math inline">\(\lor\)</span></th>
+<th>S )</th>
+<th>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>T</td>
+<td></td>
+<td></td>
+<td>T</td>
+<td></td>
+<td>T</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, the claim:</p>
+<ul>
+<li>If Jim stole the cookie then he is guilty and deserves life in prison or death</li>
+</ul>
+</section>
+<section id="is-true-if" class="level1">
+<h1>Is true if:</h1>
+<ul>
+<li><p>it is true that because Jim stole the cookie</p></li>
+<li><p>that he deserves either</p>
+<ul>
+<li>life in prison</li>
+</ul></li>
+</ul>
+<section id="or" class="level2">
+<h2 class="anchored" data-anchor-id="or">Or</h2>
+</section>
+</section>
+<section id="death" class="level1">
+<h1>Death</h1>
+<div style="width:360px;max-width:100%;">
+<div style="height:0;padding-bottom:56.11%;position:relative;">
+<iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" src="https://imgflip.com/embed/a6yfpe">
+</iframe>
+</div>
+<p>
+<a href="https://imgflip.com/gif/a6yfpe">via Imgflip</a>
+</p>
+</div>
 
 
 </section>
@@ -848,13 +1341,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../2025-logic/weeks/week02/page.html" class="pagination-link" aria-label="Week 02">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 02</span>
+      <a href="../../../2025-logic/weeks/week06/page.html" class="pagination-link" aria-label="Week 06">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 06</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../2025-logic/weeks/week04/page.html" class="pagination-link" aria-label="Week 04">
-        <span class="nav-page-text">Week 04</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../2025-aesthetics/weeks/week02/page.html" class="pagination-link" aria-label="Discussion 01">
+        <span class="nav-page-text">Discussion 01</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
