@@ -1,42 +1,16 @@
----
-subtitle: "PHIL104Q -- Classical Propositional Logic, (Semantics)"
-title: "<font style='font-size:1em;'>🗓️ Week 03<br/> Introduction</font>"
-author: Prof. [Reynolds](#)
-institute: '[Stetson University](#)'
-date: 02 September 2026
-date-meta: 14 March 2023
-date-format: "MMM DD YYYY"
-toc: false
-toc-depth: 1
-toc-title: "Argument Forms, Formalization, Formation Rules:"
-center-title-slide: false
-from: markdown+emoji
-format:
-  revealjs:
-    theme: moon
-    fig-responsive: true
-    slide-number: true
-    incremental: true
-    scrollable: true
-    mouse-wheel: false
-    preview-links: auto
-    logo: /figures/icons/course_favicon.png
-    css: /css/styles_slides.css
-    footer: 'PHIL104Q -- Introduction to Logic'
----
-
 # Classical Propositional Logic
 
-## Valuation Rules
+## Valuation Rules Hard
 
-![Valuation Rules](./../../../figures/logic/v-rules-1.png)
-
----
-
-![Valuation Rules](./../../../figures/logic/v-rules-2.png)
+![See? Hard](./../../../figures/logic/v-rules-1.png)
 
 ---
 
+![See? Easy](./../../../figures/logic/v-rules-2.png)
+
+---
+
+## Valuation Rules Easy
 
 :::: {.columns}
 ::: {.column style="width:40%;height:100%"}
