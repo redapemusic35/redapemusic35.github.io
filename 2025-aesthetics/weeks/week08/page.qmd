@@ -1,16 +1,13 @@
 ---
-title: "🗓️ Week 02 - Mimesis"
+title: "🗓️ Week 08 - Bonaventure"
 ---
 
-Saint Thomas Aquinas is often referred to as "Aristotle baptised". Much of his inspiration comes from the Greek philosopher. Each time that you read "the philosopher" in the Summa, substitute it with Aristotle. For instance, in objection 3 or Article five of Question 5, Aquinas says:
+Saint Bonaventure was born in 1221 and he died on July 15 1274 (53 years old). He was a Fransiscan and was a master of theology and philosophy having studied theology at the University of Paris. He was also a *Minister General*, some kind of *high ranking official*. He is best known for his *The Journey of the Mind into God*.
 
-> Further, happiness is a 'perfect operation' according to the philosopher. 
+As the following quote shows, Bonaventure was not only committed to theology, but philosophy which according to him, was a method of better understanding the beliefs he held. It is important to note that this practice was important even for what he considered matters of faith, suppositions held when the facts supporting those are not fully grasped.
 
-Just like 'the philosopher' refers to the person, luckily for us, the work written by the philosopher is cited for us. This reference cites Aristotle's *Nicomachean Ethics*, bk vii, chapter 13. In this chapter, Aristotle defends his view that happiness is *the* Supreme Good. The supreme good means the end of every human activity, the aim of all action is to pursue happiness.
+> And so, if the writings of the philosophers are sometimes of much value in understanding truth and refuting errors, we are not departing from the purity of faith if we at times study them, especially since there are many questions of faith which cannot be settled without recourse to them. (trans. Monti 1994: 53)
 
-In question 5, Aquinas confront the question about whether happiness can be achieved by us. As you probably know by now, whatever Aquinas' position on a subject is, is first preceded by  three opposing views, and then these are disputed, with an explanation following this dispute followed up by 3 responses to the three opposing views. While this form appears simple, there is a lot of nuance that occurs. Additionally, it would help to know more intimately, the material Aquinas is working against, for instance the *Nicomachean Ethics*.
-
-We've seen other treatises on happiness, for instance it was covered by Augustine. 
 
 ## 👨‍🏫 Lecture Slides
 
