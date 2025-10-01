@@ -155,6 +155,16 @@ website:
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix href: 2025-aesthetics/weeks/week08/page.qmd
+         - href: 2025-aesthetics/weeks/week10/page.qmd
+           text: Discussion 10 
+           contents:
+             - href: 2025-aesthetics/weeks/week10/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week10/summary.qmd
+               text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix href: 2025-aesthetics/weeks/week08/page.qmd
+
 
 
   navbar:
