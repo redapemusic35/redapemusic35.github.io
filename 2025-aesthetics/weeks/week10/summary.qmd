@@ -1,5 +1,7 @@
 # Summa Theologiae (Theologica)
 
+[A very Helpful Summary of Aquinas' views on happiness can be found here](https://philolibrary.crc.nd.edu/article/key-to-happiness/)
+
 * 4 *Parts*: include Prima Pars (First Part), Prima Secundae Partis (First part of the second), Secundae Secundae Partis (Second Part of the Second), Tertiae Partis (Third Part).
 
 * Each part is divided into *Questions* which are further divided into *Articles*.
