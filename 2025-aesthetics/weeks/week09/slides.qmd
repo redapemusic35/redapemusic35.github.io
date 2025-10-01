@@ -161,3 +161,21 @@ In like manner neither can anything belonging to it, whether power, habit, or ac
 ## Article 8
 
 It is impossible for any created good to constitute man’s happiness. For happiness is the perfect good, which lulls the appetite altogether; else it would not be the last end, if something yet remained to be desired. Now the object of the will, i.e., of man’s appetite, is the universal good; just as the object of the intellect is the universal true. Hence it is evident that naught can lull man’s will save the universal good. This is to be found, not in any creature, but in God alone, because every creature has goodness by participation. Wherefore God alone can satisfy the will of man, according to the words of Psalm 102: “Who satisfieth thy desire with good things.” Therefore, God alone constitutes man’s happiness.
+
+# Summary of Happiness
+
+God Alone Can Make Us Happy
+
+## Aquinas’s argument in this passage can be formulated as follows:
+
+Premise 1: Happiness fully satisfies our desires.
+
+Premise 2: Our intellect and will are naturally aimed at unlimited (“universal”) truth and goodness.
+
+Premise 3: So, we desire unlimited truth and goodness.
+
+Premise 4: So, only unlimited truth and goodness can bring us happiness.
+
+Premise 5: God alone is unlimited truth and goodness.
+
+Conclusion: Therefore, God alone can bring us happiness.
