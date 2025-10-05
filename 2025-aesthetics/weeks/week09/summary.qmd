@@ -1,120 +1,154 @@
-# Purpose and Telos as a Mimetic Object
+# Summa Theologiae (Theologica)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gSaH5vJKook?si=lbE3yTO4UHpiWnWV&amp;start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* 4 *Parts*: include Prima Pars (First Part), Prima Secundae Partis (First part of the second), Secundae Secundae Partis (Second Part of the Second), Tertiae Partis (Third Part).
 
-## Delight
+* Each part is divided into *Questions* which are further divided into *Articles*.
 
-Mental image of beauty
+* Articles are divided into *Objections*, *On the Contrary*, *I answer that*, and *Replies to Objections (Responses)*.
 
-e.g., grandfather, and memory of grandfather
+# Happiness 1st part, question 5
 
-Is one more valuable than the other?
+## The Key Concepts here Include: {.smaller}
 
-## Mental and physical pleasure
+***Man's Final End*** – The ultimate goal of all human life. All of our other goals are chosen for the sake of this final end.
 
-* Mental pleasure, e.g., memory of grandfather
+***Highest Good*** – The greatest good for a human being.
 
-* Physical pleasure, e.g., sight of grandfather
+***Happiness*** – The final end and highest good of human life. The perfect good that objectively fulfills human nature and subjectively satisfies desire.
 
-## Learning
+***Object of Happiness*** – The thing in which happiness essentially consists, the attainment of which will make us truly happy.
 
-Learning through pleasure
+***Happiness Criteria*** – The conditions that the true object of happiness must satisfy. They are: finality, intrinsic value, purity, internality, authenticity, stability, self-sufficiency, completeness.a
 
-Why?
+## Articles
 
-Intimacy between our souls and our flesh
+1. Can man attain happiness?
 
-## Classification of Pleasure
+2. Can one man be happier than another?
 
-| | Mental | Physical |
-|---|---|---|
-| Object of higher pleasure | Memory of grandfather |  |
-| Object of lower pleasure |  | Sight of grandfather |
+3. Can man be happy in this life?
 
-## But this doesn't seem right!
+4. Can happiness be lost once it is attained?
 
-# Augustine on Music
+5. Can happiness be attained through our own abilities?
 
-![Painting by Carpaccio of Augustine in his study being visited by Saint Jerome](../../../figures/aesthetics-course/augustine-in-study-2.jpeg)
+6. Does man attain happiness through the actions of a higher creature?
 
-## Who was Saint Augustine?
+7. Does man need to perform certain actions to attain happiness from God?
 
-::: {.notes}
+8. Does every man desire happiness?
 
-Saint Augustine was born in North Africa in 354 CE. Most notably, he is known for both his *City of God, (De Civite Dei)* and his *Confessions, (Augustini Confessiones)*. Famously, Augustine's mother, Saint Monica, was a devout Christian while his father was a Roman official. Being a Roman official in 354 CE, also meant that his father was a pagan a fact often reflected on by Augustine in his Confessions especailly Famously, Augustine's mother, Saint Monica, was a devout Christian while his father was a Roman official. Being a Roman official in 354 CE, also meant that his father was a pagan a fact often reflected on with some expressions of regret by Augustine in his *Confessions* especailly.
+To understand Aquinas' position on happiness, it first will help to understand his views on human nature.
 
-Augustine is often known for his reflections on his youth and his conversion to Christianity. More importantly, much of his mature and independent philosophical work (not necessitated by duties of his office for instance) focuses on his theological reflections and philosophical claims regarding his ability to know about abstract concepts such as God, the soul, and the afterlife.
+Following Aristotle, Aquinas' view is teleological. This means that everything in nature has a purpose or end (telos) that it is directed towards.
 
-:::
+This include:
 
-## De Musica
+* ends
 
->  We must not hate what is below us, but rather
-with God’s help put it in its right place, setting in
-right order what is below us, ourselves, and what
-is above us, and not being offended by the lower,
-but delighting only in the higher.
+* goals
+
+* and purposes
 
 ::: {.notes}
 
-
-De Musica is one of Augustine's lesser known treatises. More central to scholarly focus on his writings, are typically his theological claims, epistemology, what can be known and how, and his philosophy of mind, his theses of concepualizing the difference between soul and body. However, De Musica provides a unique insight into Augustine's reflections on the role of music in his own conversion and other spiritual experiences. He begines with what might be called a commandment, or psychological admonition.
+But what are these and do we necessarily have access to them? The person who intends to rob a bank because it is enjoyable, is that person really pursuing the goal of robbery? Or is the goal something else? Is the goal of robbery really enjoyment? If so, then what is the goal of enjoyment? Is it pleasure? If so, then what is the goal of pleasure? Is it happiness? If so, then what is the goal of happiness?
 
 :::
 
 ---
 
-* Perception of the beautiful
-* and its constrast against perception of evil
-* How to do it?
+* What is their end?
+
+* What is their purpose?
 
 ::: {.notes}
-
-
-This is an important claim. Consider two kinds of non-profit organizations. One is defined by all the things it is against, e.g., anti-war, anti-poverty, anti-racism, etc. The other defines itself by all the things that it is for, to promote peace, love, unity, etc.
-
-But from his claims about perception, are those about what improves perception in such a way that it contributes to memory. Namely, we have first two kinds of event. Augustine admonishes us to focus on beautiful events and not ugly ones. But what are some practical ways in which we can focus on the one and not the other? While perception through experience enables one kind of reflection, there are other kinds of reflection that we are capable of, even if we have not had the experience.
-
-Also as important, one aspect of what enables the right kind and object of perception, has to do with reflection. Is reflection merely a kind of perception where there is some object that once was external but now is internalized? For instance, consider what his says about the differences between his knowledge of his father and grandfather.
+It would seem that what this example shows is that we can be mistaken about our ends, goals, and purposes.
 
 :::
 
 ---
 
-::: {.incremental}
+# Wealth
 
->  I think differently about my father whom I have seen and
-about my grandfather whom I have never seen.
-My thought of my father comes from memory,
-but my thought of my grandfather comes from
-mental movements arising out of other mental
-movements which are contained in memory.
+The first candidate for the object of happiness that Aquinas considers is wealth – money and possessions.
 
-:::
+## Article 1
 
-::: {.notes}
+> I answer that, It is impossible for man’s happiness to consist in wealth. For wealth is twofold, as the Philosopher [Aristotle] says (Polit. i, 3), viz., natural and artificial. Natural wealth is that which serves man as a remedy for his natural wants, such as food, drink, clothing, carriages, dwellings, and such like; while artificial wealth is that which is not a direct help to nature, as money, but is invented by the art of man, for the convenience of exchange, and as a measure of things salable.
 
-When considering what kinds of reflections we are capable of, the next question is how do we improve our ability to reflect on the beautiful and not the ugly? For Augustine, this is the place of music and why God has given us the capacity for music. But in order to understand why music, we have to first think about what music is.
+> Now it is evident that man’s happiness cannot consist in natural wealth. For wealth of this kind is sought for the sake of something else, viz., as a support of human nature. Consequently, it cannot be man’s last end, rather is it ordained to man as to its end. Wherefore in the order of nature, all such things are below man and made for him, according to Psalm 8: “Thou hast subjected all things under his feet.”
 
-:::
+> And as to artificial wealth, it is not sought save for the sake of natural wealth, since man would not seek it except because, by its means, he procures for himself the necessaries of life. Consequently, much less can it be considered in the light of the last end. Therefore, it is impossible for happiness, which is the last end of man, to consist in wealth.
 
----
+# Power
 
-> Our rhythmic or metric art, which is used by
-makers of verses, comprises certain rhythmical
-measurements according to which they make the
-verses.
+## Article 4
 
----
+> On the contrary, Happiness is the perfect good. But power is most imperfect. For as Boethius says (De Consol. iii), “the power of man cannot relieve the gnawings of care, nor can it avoid the thorny path of anxiety.” And further on: “Think you a man is powerful who is surrounded by attendants, whom he inspires with fear indeed, but whom he fears still more?” Therefore, happiness does not consist in power.
 
-![Measurement of wave, distance traveled over period of time](../../../figures/aesthetics-course/Wave.png)
+> I answer that, It is impossible for happiness to consist in power; and this for two reasons. First because power has the nature of principle, as is stated in [Aristotle’s] Metaph. v, 12, whereas happiness has the nature of last end. Second, because power has relation to good and evil, whereas happiness is man’s proper and perfect good. Wherefore some happiness might consist in the good use of power, which is by virtue, rather than in power itself.
 
-::: {.notes}
+# Honor, Fame, and Glory
 
-For Augustine, there is an important relationship between random sounds, and time. What is the difference between a musical note, say 'A' as produced by the strike of a hammer on a piano string, and a child striking a mallet on a taut piece of wire? It helps to understand something about the metaphysics of music here. For instance, we might know that what we experience as sound, is a collection of vibrations either through the air, or another medium such as a piece of wood or metal. We typically measure these vibrations in the form of Hertz. The measurement, if I am not mistaken, is taken in a similar fashion to how we measure other waves such as radio, ocean, etc. I will not begin to make any further claims about the physics of sound, except to draw attention to rhythm as a measurement of time, and music as a measurement of sound in relationship to time. Therefore, if we hit a medium such as a piano string with a mallet or hammer, and it so happens to be taut enough such that upon being hit, it will vibrate in such a way that it produces a succession of waves that can be measured at 440 Hz, meaning 440 waves per whatever unit of time is selected as standard, then we will hear the note 'A'.
+## Article 2
 
-:::
+> On the contrary, Happiness is in the happy. But honor is not in the honored, but rather in him who honors, and who offers deference to the person honored, as the Philosopher says (Ethic. i, 5). Therefore, happiness does not consist in honor.
 
----
+> I answer that, It is impossible for happiness to consist in honor. For honor is given to a man on account of some excellence in him; and consequently, it is a sign and attestation of the excellence that is in the person honored. Now a man’s excellence is in proportion, especially, to his happiness, which is man’s perfect good; and to its parts, i.e., those goods by which he has a certain share of happiness. And therefore honor can result from happiness, but happiness cannot principally consist therein.
 
-Additionally, what we experience as different sounds, are the different frequencies at which these vibrations occur. In western music, most instruments are tuned to a standard frequency of 440 Hz.
+## Article 3
+
+> On the contrary, Happiness is man’s true good. But it happens that fame or glory is false: for as Boethius says (De Consol. iii), “many owe their renown to the lying reports spread among the people. Can anything be more shameful? For those who receive false fame, must needs blush at their own praise.” Therefore, man’s happiness does not consist in fame or glory. […]
+
+> Reply to Objection 3: Fame has no stability; in fact, it is easily ruined by false report. And if sometimes it endures, this is by accident. But happiness endures of itself, and forever.
+
+# Pleasure
+
+In the second half of Question 2, Aquinas turns to internal goods, starting with pleasure or delight: pleasant experience, enjoyment, and having fun. Pleasure can take the form of either a bodily sensation (such as the taste of ice cream) or a mental attitude of taking pleasure in something (such as a job well done).
+
+
+
+## Article 6
+
+I answer that, […] in every thing, that which pertains to its essence is distinct from its proper accident: thus in man it is one thing that he is a mortal rational animal, and another that he is a risible animal. We must therefore consider that every delight is a proper accident resulting from happiness, or from some part of happiness; since the reason that a man is delighted is that he has some fitting good, either in reality, or in hope, or at least in memory […] Therefore, it is evident that neither is delight, which results from the perfect good, the very essence of happiness, but something resulting therefrom as its proper accident.
+
+# Goods of the Body
+
+## Article 5
+
+I answer that, It is impossible for man’s happiness to consist in the goods of the body, and this for two reasons. First, because if a thing be ordained to another as to its end, its last end cannot consist in the preservation of its being. Hence a captain does not intend as a last end the preservation of the ship entrusted to him, since a ship is ordained to something else as its end, viz., to navigation. Now just as the ship is entrusted to the captain that he may steer its course, so man is given over to his will and reason, according to Ecclus. 15:14: “God made man from the beginning and left him in the hand of his own counsel.” Now it is evident that man is ordained to something as his end, since man is not the supreme good. Therefore, the last end of man’s reason and will cannot be the preservation of man’s being.
+
+Second, because, granted [for the sake of argument] that the end of man’s will and reason be the preservation of man’s being, it could not be said that the end of man is some good of the body. For man’s being consists in soul and body; and though the being of the body depends on the soul, yet the being of the human soul depends not on the body, as shown above [ST I, q. 75, a. 2]; and the very body is for the soul, as matter for its form, and the instruments for the man that puts them into motion, that by their means he may do his work. Wherefore all goods of the body are ordained to the goods of the soul, as to their end. Consequently, happiness, which is man’s last end, cannot consist in goods of the body.
+
+# Goods of the Soul
+
+## Article 7
+
+I answer that, As stated above [ST I-II, q. 1, a. 8], the end is twofold: namely, the thing itself, which we desire to attain, and the use, namely, the attainment or possession of that thing. If, then, we speak of man’s last end as to the thing itself which we desire as last end, it is impossible for man’s last end to be the soul itself or something belonging to it. Because the soul, considered in itself, is as something existing in potentiality: for it becomes knowing actually from being potentially knowing, and actually virtuous from being potentially virtuous. Now since potentiality is for the sake of actuality as for its fulfillment, that which in itself is in potentiality cannot be the last end. Therefore, the soul itself cannot be its own last end.
+
+In like manner neither can anything belonging to it, whether power, habit, or act. For that good which is the last end is the perfect good fulfilling the desire. Now man’s appetite, otherwise [known as] the will, is for the universal good. And any good inherent to the soul is a participated good, and consequently a portioned good. Therefore, none of them can be man’s last end.
+
+# Any Created Good
+
+## Article 8
+
+It is impossible for any created good to constitute man’s happiness. For happiness is the perfect good, which lulls the appetite altogether; else it would not be the last end, if something yet remained to be desired. Now the object of the will, i.e., of man’s appetite, is the universal good; just as the object of the intellect is the universal true. Hence it is evident that naught can lull man’s will save the universal good. This is to be found, not in any creature, but in God alone, because every creature has goodness by participation. Wherefore God alone can satisfy the will of man, according to the words of Psalm 102: “Who satisfieth thy desire with good things.” Therefore, God alone constitutes man’s happiness.
+
+# Summary of Happiness
+
+God Alone Can Make Us Happy
+
+## Aquinas’s argument in this passage can be formulated as follows:
+
+Premise 1: Happiness fully satisfies our desires.
+
+Premise 2: Our intellect and will are naturally aimed at unlimited (“universal”) truth and goodness.
+
+Premise 3: So, we desire unlimited truth and goodness.
+
+Premise 4: So, only unlimited truth and goodness can bring us happiness.
+
+Premise 5: God alone is unlimited truth and goodness.
+
+Conclusion: Therefore, God alone can bring us happiness.
