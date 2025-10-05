@@ -34,13 +34,22 @@ Artists, most notably the poets, are often cited as teachers of virtue. Yet, the
 
 ::: {.notes}
 
-Unlike other craftsmen, say a carpenter, the artist merely imitate what the craftsman makes. including virtue, as their *mere* opinions would lead them to believe of its nature. Imitation involves the mere imitation of craftmenship. First, there is the nature of a bed as created by say a god (X, 597b). In exercising their craft, the carpenter makes a bed, which is based on the original form of a bed. Though the craftman makes a bed, the ideal form of the bed is made by a god. A painter, finally then, exercises a different craft, and their resulting product, likewise differs from the god and the carpenter. Importantly here, while the god makes the form of the bed, and the carpenter makes an idealization fo this form, the painter, and other artists including poets, only imitate what the craftsmen makes. As such, the products of the artists are at a *third remove from the truth* (597e).
+Unlike other craftsmen, say a carpenter, the artist merely imitates what the craftsman makes, including virtue. But this is only as their *mere* opinions would lead them to believe of its nature. Imitation involves the mere imitation of craftsmanship. 
+
+First, there is the nature of a bed as created by say a god (X, 597b). In exercising their craft, the carpenter makes a bed, which is based on the original form of a bed. Though the craftsman makes a bed, the ideal form of the bed is made by a god. A painter, finally then, exercises a different craft, and their resulting product, likewise differs from the god and the carpenter. 
+
+Importantly here, while the god makes the form of the bed, and the carpenter makes an idealization of this form, the painter, and other artists including poets, only imitate what the craftsmen makes. As such, the products of the artists are at a *third remove from the truth* (597e).
 
 :::
 
 ---
 
-What are the targets of artistic imitation?
+### What are the targets of artistic imitation?
+
+* Classes of Objects
+* What are their purposes?
+* What are they made of?
+* How do we understand them?
 
 ::: {.notes}
 
@@ -53,7 +62,10 @@ Kendall @walt90 in his book *Mimesis as Make-Believe*, defines the question nice
 Walton will go on to argue that the kinds of objects that we refer to as mimetic, are best understood as props in games of make believe.
 :::
 
----
+### Representing Virtue and other uniquely human attributes
+
+* Abstract Concepts
+* What does Tragedy Represent?
 
 ::: {.notes}
 
@@ -65,9 +77,9 @@ What about the Sydney Opera House, paintings by Jason Pollack, or images created
 
 ---
 
-Tragedy does
+### Tragedy Shows
 
-> shows good people being ruined because of things that just happen to them, things that they do not control. ... and ordinary fact of human life.
+> good people being ruined because of things that just happen to them, things that they do not control. ... and ordinary fact of human life. [@nuss86i]
 
 ::: {.notes}
 
@@ -78,6 +90,9 @@ While Plato's concern is the existence of human virtue here, the above preoccupa
 ---
 
 But . . .
+
+* What is Vice?
+* Vicious Action done in ignorance or something else?
 
 ::: {.incremental}
 
@@ -90,9 +105,10 @@ These lie beyond simple ignorance. Here, the person is fully knowledgeable about
 
 :::
 
----
+## The skill of the poet and the skill of the moral educator
 
-The skill of the poet and the skill of the moral educator:
+* If I lack, say the virtue of courage, but possess, say the virtue of painting, could I paint an accurate portrait of said virtue?
+* If I possess, say the virtue of courage, but not the virtue of painting, could I paint an accurate portrait of said virtue?
 
 > The reason is this: We hear some people say that poets know all crafts, all human affairs concerned with virtue and vice, and all about the gods as well. They say that if a good poet produces find poetry, he must have knowledge of the things he writes about, or else he wouldn't be able to produce it at all. [BK X, 598e]
 

@@ -1,8 +1,12 @@
 ---
-title: "🗓️ Week 02 - Chapter 1"
+title: "🗓️ Week 01 - The Republic"
 ---
 
-In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.
+* Justice in the ideal city and in the ideal soul
+* The tripartite nature of the city and the soul
+* What virtues belong to each class?
+* What is the first class that Plato discusses?
+* Abstract Concepts and Art
 
 ## 👨‍🏫 Lecture Slides
 
@@ -12,8 +16,6 @@ Use your keypad to navigate the slides.
 <div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
 <iframe src="slides.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
 </div>
-
-🎥 Looking for lecture recordings? You can only find those on Moodle.
 
 ## ✍️ Coursework
 
