@@ -65,13 +65,20 @@ De Musica is one of Augustine's lesser known treatises. More central to scholarl
 ---
 
 * Perception of the beautiful
-* and its constrast against perception of evil
+* and its contrast against perception of evil
 * How to do it?
 
 ::: {.notes}
 
-
 This is an important claim. Consider two kinds of non-profit organizations. One is defined by all the things it is against, e.g., anti-war, anti-poverty, anti-racism, etc. The other defines itself by all the things that it is for, to promote peace, love, unity, etc.
+:::
+
+## Two Questions about Perception
+
+1. Can we improve the way we perceive the world around us?
+2. How does education foster better perception of the world around us?
+
+::: {.notes}
 
 But from his claims about perception, are those about what improves perception in such a way that it contributes to memory. Namely, we have first two kinds of event. Augustine admonishes us to focus on beautiful events and not ugly ones. But what are some practical ways in which we can focus on the one and not the other? While perception through experience enables one kind of reflection, there are other kinds of reflection that we are capable of, even if we have not had the experience.
 
