@@ -171,17 +171,6 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week10/summary.qmd
                text: 💻 Notes and Summary
-            #  - href: 2023/weeks/week01/appendix.qmd
-            #    text: 🔖 Appendix href: 2025-aesthetics/weeks/week08/page.qmd
-            #- href: exams/index.qmd
-            # text: Midterm Study Guide
-            # contents:
-            # - href: exams/_manuscript/index.docx
-            #  text: 👨‍🏫 Downloadable Study Guide
-            # - href: 2025-aesthetics/weeks/week10/summary.qmd
-            #   text: 💻 Notes and Summary
-            #  - href: 2023/weeks/week01/appendix.qmd
-            #    text: 🔖 Appendix href: 2025-aesthetics/weeks/week08/page.qmd
          - href: 2025-aesthetics/weeks/week11/page.qmd
            text: Discussion 11
            contents:
@@ -196,19 +185,19 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week12/summary.qmd
                text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week12/page.qmd
-           text: Discussion 12 
-           contents:
-             - href: 2025-aesthetics/weeks/week12/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week12/summary.qmd
-               text: 💻 Notes and Summary
          - href: 2025-aesthetics/weeks/week13/page.qmd
-           text: Discussion 13
+           text: Discussion 13 
            contents:
              - href: 2025-aesthetics/weeks/week13/page.qmd
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week13/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week14/page.qmd
+           text: Discussion 14
+           contents:
+             - href: 2025-aesthetics/weeks/week14/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week14/summary.qmd
                text: 💻 Notes and Summary
 
 
