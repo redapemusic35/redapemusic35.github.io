@@ -1,6 +1,6 @@
 ---
 subtitle: "PHIL343A -- Aesthetics"
-title: "<font style='font-size:1em;'>🗓️ Week 11<br/>The Moralists, Third Earl of Shaftsbury</font>"
+title: "<font style='font-size:1em;'>🗓️ Week 13<br/>Kant on the Critique of Judgment</font>"
 author: Prof. [Reynolds](#)
 institute: '[Stetson University](#)'
 date: 02 September 2026
