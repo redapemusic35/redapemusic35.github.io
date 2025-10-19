@@ -1,16 +1,3 @@
----
-title: Study Guide for Logics
-authors:
-  - name: Montaque Reynolds
-    affiliation: Stetson University
-    roles: writing
-    corresponding: true
-format:
-  pdf:
-    documentclass: scrartcl
-    papersize: letter
----
-
 # Classical Propositional Logic
 
 ## Syntax {.smaller}

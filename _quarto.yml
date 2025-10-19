@@ -58,7 +58,7 @@ website:
            contents:
              - href: 2025-logic/weeks/week04/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-             - href: 2025-logic/weeks/week04/study-guide.qmd
+             - href: 2025-logic/weeks/week04/summary.qmd
                text: 💻 Study Guide
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
