@@ -196,19 +196,19 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week12/summary.qmd
                text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week12/page.qmd
-           text: Discussion 12 
-           contents:
-             - href: 2025-aesthetics/weeks/week12/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week12/summary.qmd
-               text: 💻 Notes and Summary
          - href: 2025-aesthetics/weeks/week13/page.qmd
-           text: Discussion 13
+           text: Discussion 13 
            contents:
              - href: 2025-aesthetics/weeks/week13/page.qmd
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week13/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week14/page.qmd
+           text: Discussion 14
+           contents:
+             - href: 2025-aesthetics/weeks/week14/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week14/summary.qmd
                text: 💻 Notes and Summary
 
 
