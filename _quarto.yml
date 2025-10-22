@@ -214,7 +214,7 @@ website:
 
 
 
-bibliography: references/Un-Duplicates.bib
+bibliography: ./Un-Duplicates.bib
 csl: references/chicago-author-date.csl
 
 
