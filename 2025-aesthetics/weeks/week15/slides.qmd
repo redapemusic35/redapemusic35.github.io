@@ -1,6 +1,6 @@
 ---
 subtitle: "PHIL343A -- Hegel"
-title: "<font style='font-size:1em;'>🗓️ Week 11<br/>Kant Part II</font>"
+title: "<font style='font-size:1em;'>🗓️ Week 11<br/>Hegel - Art is Done</font>"
 author: Prof. [Reynolds](#)
 institute: '[Stetson University](#)'
 date: 02 September 2026
@@ -25,7 +25,32 @@ format:
     footer: 'PHIL343A -- Aesthetics Hegel'
 ---
 
-# Art and its cognitive value
+# What is Aesthetics?
+
+* Realm of the Beautiful
+* Art more generally
+* Fine Art more particularly
+
+::: {.notes}
+
+Science of sensation of feeling
+
+In Germany, "works of art being considered in light of the feelings which they were supposed to evoke."
+
+* Pleasure
+* Admiration
+* Fear
+* Pity
+
+What is wrong with this characterization?
+
+* Does not treat beauty more generally, but only artistic beauty.
+
+* What is Aesthetic then?
+
+The philosophy of Fine Art
+
+:::
 
 ## Reason and Judgment
 
@@ -51,73 +76,82 @@ For instance, consider the rise of abstract art, conceptual art, and digital art
 
 ![Stephen Snyder](./Screenshot 2025-10-27 101756.png)
 
----
+# Reading Chapter 1
 
-1. Critique of Aesthetic Judgment
+* What is aesthetic?
 
-  * Major points:
-    * aesthetic experience and judgments of the beautiful
-    * of the sublime
-    * and of artistic creation
+* What kind of discipline is it?
 
----
-
-2. Critique of Teleological Judgment
-
-  * appeal to ends
-  * purposes
-  * or goals (nature and sciences)
-
----
-
-1. Faculty or the Power of Judgment
-
-   * universals
-   * particulars
+* What are its questions? Methods?
 
 ::: {.notes}
 
-In the critique of pure reason, Kant discusses how we use our faculty of understanding to form concepts of universals from particulars.
-
-* faculty of understanding is that cognitive faculty that allows us to look at a particular object, and develop a universal category under which all objects of that kind can fall.
-
-* consider classes of objects: all dogs with spots, all tables, all beautiful things
-
-* consider particular objects: this dog with spots, this table, this beautiful thing
+Science of sensation or feeling but why?
 
 :::
 
 ---
 
-> The more distinctive role assigned to judgment in the Critique of Judgment is the reflecting role, that of “finding” the universal for the given particular (Introduction IV, 5:179). [@kant22]
+* Does not treat beauty in general, only artistic.
 
-* So the kind of judgment employed with developing universals from particulars is called reflective judgment.
+* What is general? What is artistic?
 
-* In the empirical sciences, this judgment is responsible for classifying natural things into genera and species.
+## The Philosophy of Art
 
-* This also applies to our use of imagination
+* Excludes questions about beauty of nature, beauty more generally.
+
+* Beauty of art then?
+
+* Artistic beauty stands higher than natural because of its connection to the mind.
+
+* Why? Can only mind perceive truth? As such, there is no truth in nature.
+
+> Mind, and mind only, is capable of truth, and comprehends in itself all that is, so that whatever is beautiful can only be really and truly beautiful as partaking in this higher element and as created thereby. [218]
+
+Therefore:
+
+> beauty of nature reveals itself as but a reflection of the beauty which belongs to the mind, as an imperfect, incomplete mode of being ... whose substantial element is contained in the mind itself. [218]
 
 ---
 
-::: {.r-fit-text}
+### What is the science of beauty then?
 
->  In order to decide whether or not something is
-beautiful, we do not relate the representation by
-means of understanding to the object for
-cognition, but rather relate it by means of the
-imagination (perhaps combined with the
-understanding) to the subject and its feeling of
-pleasure or displeasure. [@cahn20, p. 155]
+First consider whether art is:
+
+1. A necessity, practical (for morality and piety)
+2. Or only a luxury (entertainment)
+
+* One is a kind of reason
+* The other sensuality
+
+::: {.notes}
+
+What is wrong with this characterization?
+
+> nothing is gained for reason and duty by the attempt at mediation, because these principles, as essentially incapable of intermixture, can be parties to no such compromise, but demand in their manifestation the same purity which they have in themselves. [219]
 
 :::
 
 ---
 
-But reflective judgment is also responsible for:
+### Art as Necessity or Luxury
 
-* Aesthetic: the beautiful and the sublime
-* Teleological: purpose and function in nature
+* It seems that at best, it is pleasing amusement only
 
-# Aesthetics
+But,
 
-# Teleology
+::: {.r-fit-all}
+
+> The beauty of art presents itself to sense, to feeling, to perception, to imagination; its sphere is not that of thought, and the apprehension of its activity and its productions demand another organ than that of the scientific intelligence. [219]
+
+---
+
+#### The beauty of art lies in truth, which is different from pleasing amusement
+
+---
+
+and so,
+
+> the organ of artistic activity and enjoymnet --- is of necessity excluded from science. . . . seeing that art is what cheers and animates the dull and withered dryness of the idea, reconciles with reality its abstraction and its dissociation therefrom, and supplies out of the real world what is lacking to the notion, . . . [219]
+
+

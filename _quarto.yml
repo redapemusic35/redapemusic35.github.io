@@ -199,6 +199,13 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week14/summary.qmd
                text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week15/page.qmd
+           text: Discussion 15 - Hegel - Art is Done
+           contents:
+             - href: 2025-aesthetics/weeks/week15/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week15/summary.qmd
+               text: 💻 Notes and Summary
 
 
 
