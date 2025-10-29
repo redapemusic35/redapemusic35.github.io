@@ -89,6 +89,15 @@ website:
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week08/page.qmd
+           text: The Syntax of Classical Predicate Logic
+           contents:
+             - href: 2025-logic/weeks/week08-predicates/page.qmd
+               text: 👨‍🏫 Lecture Material/Predicate Logic Syntax
+             - href: 2025-logic/weeks/week08-predicates/summary.qmd
+               text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
 
       - section: "🗓️ Aesthetics"
         contents:

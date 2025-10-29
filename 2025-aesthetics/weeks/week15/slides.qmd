@@ -48,7 +48,11 @@ What is wrong with this characterization?
 
 * What is Aesthetic then?
 
-The philosophy of Fine Art
+The philosophy (love of wisdom) of Fine Art
+
+* So we might call this "the wisdom of Fine Art".
+
+But what is this wisdom?
 
 :::
 
@@ -69,7 +73,7 @@ For instance, consider the rise of abstract art, conceptual art, and digital art
 ---
 
 * Impressionism
-* Painting
+* Abstract Painting
 * Photography
 
 ---
@@ -102,11 +106,17 @@ Science of sensation or feeling but why?
 
 * Beauty of art then?
 
+::: {.notes}
+
 * Artistic beauty stands higher than natural because of its connection to the mind.
 
 * Why? Can only mind perceive truth? As such, there is no truth in nature.
 
 > Mind, and mind only, is capable of truth, and comprehends in itself all that is, so that whatever is beautiful can only be really and truly beautiful as partaking in this higher element and as created thereby. [218]
+
+:::
+
+---
 
 Therefore:
 
