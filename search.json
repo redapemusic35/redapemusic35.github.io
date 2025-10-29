@@ -1279,7 +1279,7 @@
     "href": "2025-aesthetics/weeks/week15/slides.html#the-philosophy-of-art",
     "title": "🗓️ Week 11Hegel - Art is Done",
     "section": "The Philosophy of Art",
-    "text": "The Philosophy of Art\n\nExcludes questions about beauty of nature, beauty more generally.\nBeauty of art then?\nArtistic beauty stands higher than natural because of its connection to the mind.\nWhy? Can only mind perceive truth? As such, there is no truth in nature.\n\n\nMind, and mind only, is capable of truth, and comprehends in itself all that is, so that whatever is beautiful can only be really and truly beautiful as partaking in this higher element and as created thereby. [218]\n\nTherefore:\n\nbeauty of nature reveals itself as but a reflection of the beauty which belongs to the mind, as an imperfect, incomplete mode of being … whose substantial element is contained in the mind itself. [218]"
+    "text": "The Philosophy of Art\n\nExcludes questions about beauty of nature, beauty more generally.\nBeauty of art then?\n\n\n\nArtistic beauty stands higher than natural because of its connection to the mind.\nWhy? Can only mind perceive truth? As such, there is no truth in nature.\n\n\nMind, and mind only, is capable of truth, and comprehends in itself all that is, so that whatever is beautiful can only be really and truly beautiful as partaking in this higher element and as created thereby. [218]"
   },
   {
     "objectID": "2025-aesthetics/weeks/week02/summary.html",
@@ -1994,193 +1994,239 @@
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/page.html",
-    "href": "2025-logic/weeks/week05/page.html",
+    "objectID": "2025-logic/weeks/week08-predicates/page.html",
+    "href": "2025-logic/weeks/week08-predicates/page.html",
     "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
     "section": "",
     "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
     "crumbs": [
       "🗓️ Logic",
-      "Week 05"
+      "The Syntax of Classical Predicate Logic",
+      "👨‍🏫 Lecture Material/Predicate Logic Syntax"
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/page.html#lecture-slides",
-    "href": "2025-logic/weeks/week05/page.html#lecture-slides",
+    "objectID": "2025-logic/weeks/week08-predicates/page.html#lecture-slides",
+    "href": "2025-logic/weeks/week08-predicates/page.html#lecture-slides",
     "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
     "section": "👨‍🏫 Lecture Slides",
     "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
     "crumbs": [
       "🗓️ Logic",
-      "Week 05"
+      "The Syntax of Classical Predicate Logic",
+      "👨‍🏫 Lecture Material/Predicate Logic Syntax"
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/page.html#coursework",
-    "href": "2025-logic/weeks/week05/page.html#coursework",
+    "objectID": "2025-logic/weeks/week08-predicates/page.html#coursework",
+    "href": "2025-logic/weeks/week08-predicates/page.html#coursework",
     "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
     "section": "✍️ Coursework",
     "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
     "crumbs": [
       "🗓️ Logic",
-      "Week 05"
+      "The Syntax of Classical Predicate Logic",
+      "👨‍🏫 Lecture Material/Predicate Logic Syntax"
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/page.html#recommended-reading",
-    "href": "2025-logic/weeks/week05/page.html#recommended-reading",
+    "objectID": "2025-logic/weeks/week08-predicates/page.html#recommended-reading",
+    "href": "2025-logic/weeks/week08-predicates/page.html#recommended-reading",
     "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
     "section": "📚 Recommended Reading",
     "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
     "crumbs": [
       "🗓️ Logic",
-      "Week 05"
+      "The Syntax of Classical Predicate Logic",
+      "👨‍🏫 Lecture Material/Predicate Logic Syntax"
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/page.html#communication",
-    "href": "2025-logic/weeks/week05/page.html#communication",
+    "objectID": "2025-logic/weeks/week08-predicates/page.html#communication",
+    "href": "2025-logic/weeks/week08-predicates/page.html#communication",
     "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
     "section": "📟 Communication",
     "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
     "crumbs": [
       "🗓️ Logic",
-      "Week 05"
+      "The Syntax of Classical Predicate Logic",
+      "👨‍🏫 Lecture Material/Predicate Logic Syntax"
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/page.html",
-    "href": "2025-logic/weeks/week02/page.html",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "",
-    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 02"
-    ]
+    "objectID": "2025-logic/weeks/week08-predicates/slides.html#some-exercises",
+    "href": "2025-logic/weeks/week08-predicates/slides.html#some-exercises",
+    "title": "🗓️ Week 08 Classical Predicate Logic",
+    "section": "Some Exercises",
+    "text": "Some Exercises\n\nBeth is fortunate. So is Carl. Therefore, both Carl and Beth are fortunate.\nTheft is not praiseworthy, but blameworthy. Hence theft is blameworthy.\nHealing is good. So something is good."
   },
   {
-    "objectID": "2025-logic/weeks/week02/page.html#lecture-slides",
-    "href": "2025-logic/weeks/week02/page.html#lecture-slides",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 02"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week02/page.html#coursework",
-    "href": "2025-logic/weeks/week02/page.html#coursework",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 02"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week02/page.html#recommended-reading",
-    "href": "2025-logic/weeks/week02/page.html#recommended-reading",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "📚 Recommended Reading",
-    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 02"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week02/page.html#communication",
-    "href": "2025-logic/weeks/week02/page.html#communication",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "📟 Communication",
-    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 02"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week07/page.html",
-    "href": "2025-logic/weeks/week07/page.html",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "",
-    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 07"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week07/page.html#lecture-slides",
-    "href": "2025-logic/weeks/week07/page.html#lecture-slides",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 07"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week07/page.html#coursework",
-    "href": "2025-logic/weeks/week07/page.html#coursework",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 07"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week07/page.html#recommended-reading",
-    "href": "2025-logic/weeks/week07/page.html#recommended-reading",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "📚 Recommended Reading",
-    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 07"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week07/page.html#communication",
-    "href": "2025-logic/weeks/week07/page.html#communication",
-    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
-    "section": "📟 Communication",
-    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
-    "crumbs": [
-      "🗓️ Logic",
-      "Week 07"
-    ]
-  },
-  {
-    "objectID": "2025-logic/weeks/week07/slides.html#proofs",
-    "href": "2025-logic/weeks/week07/slides.html#proofs",
+    "objectID": "2025-logic/weeks/week05/slides.html#our-terms",
+    "href": "2025-logic/weeks/week05/slides.html#our-terms",
     "title": "🗓️ Week 03 Introduction",
-    "section": "Proofs",
-    "text": "Proofs\n\nbreak down any valid sequent in propositional logic into a sequence of simple and (more or less) obviously valid patterns of reasoning. Such sequences, as exemplified by lines 1-8 above, are called proofs\n\n\nNatural Deduction Method\n\nTen distinct patterns of reasoning / rules of inference / inference rules\nThe proof technique is Sound\n\nIf we start with true assumptions on some valuation,\nwe shall always, no matter how many times we apply these rules, arrive at conclusions that are likewise true on that valuation.\n\nAnd complete\n\ncomplete, i.e., capable of providing a proof for every valid sequent of propositional logic. ## Modus Ponens\n\n\nGiven \\(\\phi\\rightarrow\\psi\\), and \\(\\phi\\), infer \\(\\psi\\)"
+    "section": "Our Terms",
+    "text": "Our Terms\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nSemantics\nStudy of Meaning\n\n\nTruth Conditions\nConditions on which a proposition is true or false\n\n\nTruth Value\nT or F, A kind of semantic property that chacterizes propositions\n\n\nPrinciple of Bivalence\nEvery proposition has exactly one of the two truth values, T or F\n\n\nAssertibility Conditions\nConditions under which a proposition can be asserted\n\n\nInterpretations\nAssociation of sentence letters with statements of natural language\n\n\nValuation\nA formula or set of formulas of propositional logic is an assignment of one and only one of the truth values T and F to each of the sentence letters occuring in that formula or any formula of that set"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Fall 2025 Courses",
-    "section": "",
-    "text": "📑 Introduction to Logic\n Logic, Fall 2025 \n\nThis course will begins with an informal system of logic and proceeds to classical propositional logic syntax, semantics and inference. It will then cover predicate logic semantics and inference.\n\n\n\n\n📑 Aesthetics\n Aesthetics, Fall 2025 \n\nThis course will explore enduring questions regarding beauty and, it’s place in art, philosophy and life; we will consider what an encounter with beauty is, we will consider the transformative power of beauty and art. We will ask about the relationships between art, art criticism, excellence in art and the human experience of beauty. We will consider how all of this works in modernity: a world of mass production, museums, commercial appropriation of art, and ubiquitous reproductions of works of art.\n\n\n\n\n\n‘Holmes wears a top hat’",
-    "crumbs": [
-      "🏠 Lecture Notes and Slides"
-    ]
+    "objectID": "2025-logic/weeks/week05/slides.html#when-an-argument-form-has-more-than-2-letters",
+    "href": "2025-logic/weeks/week05/slides.html#when-an-argument-form-has-more-than-2-letters",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "When an argument form has more than 2 letters",
+    "text": "When an argument form has more than 2 letters\n\nIf either the peasants or the slaves revolt and the queen hesitates, then the revolution will succeed.\n\n\nIf the peasants revolt but the slaves don’t, the revolution will not succeed, and if both the peasants and slaves revolt, the revolution will succeed."
   },
   {
-    "objectID": "2025-logic/index.html",
-    "href": "2025-logic/index.html",
-    "title": "PHIL104Q - Introduction to Logic",
-    "section": "",
-    "text": "Important📢 Important\n\n\n\n\n\n(01/16/2026)\n\n🗓️ Week 01 lecture material is now available!\n\n\n\n\n\n🧑🏻‍🏫 Our Team\n\nCourse ConvenorTeaching Staff\n\n\n Reynolds  Dr. Monty Reynolds Stetson University 📧 mreynolds1@stetson.edu ( at )\nOffice Hours:\n\nWhen: TTH 1-2pm or by appointment\nWhere: Elizabeth Hall 104\nHow to book: Drop in, email, or book via Microsoft Bookings\n\n\n\n Grey Smith  Student Peer Instructor 📧 asmith112@stetson.edu ( at )\n TA_NAME  PhD Candidate at PLACE  📧 EMAIL ( at )\n\n\n\n\nLearning Outcomes\nThrough this course students will:\n\nLearn basic logical concepts and principles of good reasoning.\nUnderstand logical form and truth functional logic.\nLearn techniques for translating sentences into logical notion and determining the validity of arguments.\nLearn truth tables and other means of determining the validity of arguments stated in sentential logical notation.\n\n\n\n\n📍 Lecture\nSee Class Times Below\n\n\n💻 Class Meeting Times\nAesthetics 343A\n\n📆 Mondays and Wednesdays\n⌚ 10:30am - 12:45pm"
+    "objectID": "2025-logic/weeks/week05/slides.html#type-of-set-consistent",
+    "href": "2025-logic/weeks/week05/slides.html#type-of-set-consistent",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "1. Type of set: Consistent",
+    "text": "1. Type of set: Consistent\n\nDefinition: There is at least one valuation on which all formulas in the set are true\nTruth Table Indication: Horizontal line on which all formulas in the set have ’T’s under their main operators"
+  },
+  {
+    "objectID": "2025-logic/weeks/week05/slides.html#type-of-set-inconsistent",
+    "href": "2025-logic/weeks/week05/slides.html#type-of-set-inconsistent",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "2. Type of set: Inconsistent",
+    "text": "2. Type of set: Inconsistent\n\nDefinition: There is no valuation on which all formulas in the set are true\nTruth Table Indication: There is no horizontal line on which all formulas in the set have ’T’s under their main operators"
+  },
+  {
+    "objectID": "2025-logic/weeks/week05/slides.html#logically-equivalent-formulas",
+    "href": "2025-logic/weeks/week05/slides.html#logically-equivalent-formulas",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Logically Equivalent Formulas",
+    "text": "Logically Equivalent Formulas\n\n\n\nP\nQ\n~\n(\nP\nv\nQ\n)\n~\nP\n&\n~\nQ\n\n\n\nT\nT\nF\n\nT\nT\nT\n\nF\n\nF\n\nF\n\n\n\nT\nF\nF\n\nT\nT\nF\n\nF\n\nF\n\nT\n\n\n\nF\nT\nF\n\nF\nT\nT\n\nT\n\nF\n\nF\n\n\n\nF\nF\nT\n\nF\nF\nF\n\nT\n\nT\n\nT"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#syntax",
+    "href": "2025-logic/weeks/week02/slides.html#syntax",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Syntax",
+    "text": "Syntax\n\n\n\n\n\nArgument Forms Informal and Formal Last Week, can you guess? This Week\n\n\n\n\nContent\nStructure\n\nSyntax  Semantics"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#sentences",
+    "href": "2025-logic/weeks/week02/slides.html#sentences",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Sentences",
+    "text": "Sentences\n\nThere are many types of sentences, e.g., imperatives\n\n\nCommandments"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#we-will-focus-on-declarative-sentences",
+    "href": "2025-logic/weeks/week02/slides.html#we-will-focus-on-declarative-sentences",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "We will focus on declarative sentences",
+    "text": "We will focus on declarative sentences"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#is-a-commandment-true-or-false",
+    "href": "2025-logic/weeks/week02/slides.html#is-a-commandment-true-or-false",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Is a commandment true or false?",
+    "text": "Is a commandment true or false?"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#the-most-famous-reindeer-of-all",
+    "href": "2025-logic/weeks/week02/slides.html#the-most-famous-reindeer-of-all",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "The Most Famous Reindeer of All",
+    "text": "The Most Famous Reindeer of All\n\nIf the fetus is a person, then abortion is murder.\nThe fetus is a person.\n\n\\(\\therefore\\)\n\nAbortion is murder."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#remember",
+    "href": "2025-logic/weeks/week02/slides.html#remember",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Remember?",
+    "text": "Remember?\nReplace the claims with sentence letters and ignore the connectives for now.\n\nLook only for true or false statements.\n\n\nIf the fetus is a person, then abortion is murder.\nThe fetus is a person.\n\n\\(\\therefore\\)\n\nAbortion is murder."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#valid-and-falacious-argument-forms",
+    "href": "2025-logic/weeks/week02/slides.html#valid-and-falacious-argument-forms",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Valid and Falacious Argument Forms",
+    "text": "Valid and Falacious Argument Forms\n\nModus Ponens\nAffirming the Consequent"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument",
+    "href": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Let’s identify the main components of this argument",
+    "text": "Let’s identify the main components of this argument\n\nIn Bernard Suits’ The Grasshopper and Return of the Grasshopper, game-play is claimed to be the ‘ideal of existence’ and the only activity that could sustain us through the ‘endless and endlessly boring summer’ of utopia. Christopher Yorke has challenged these claims by way of a constructive dilemma. If these games are sufficiently akin to the games we play, then they are not adequate to the task of rendering immortality tolerable. If these games are importantly different than the games we play, then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration. Against Yorke’s skepticism, I argue that the games that constitute the ideal of existence are intelligible to us because we already play what the Grasshopper calls ‘open games’. Steffen Borge concedes that utopian games are intelligible, but argues that such games would fail to ‘grab our minds and imagination’. In the second half of the paper, I contend, against Borge, that such open games are adequate to the task of sustaining the interest of an immortal community."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#but-this-looks-weird-and-not-helpful.",
+    "href": "2025-logic/weeks/week02/slides.html#but-this-looks-weird-and-not-helpful.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "But this looks weird and not helpful.",
+    "text": "But this looks weird and not helpful.\n\nP \\(\\rightarrow\\) Q\n\n\nJust like above, we replace the propositions with sentence letters."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#but-.-.-.",
+    "href": "2025-logic/weeks/week02/slides.html#but-.-.-.",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "But . . .,",
+    "text": "But . . .,\n\nIf these games are importantly different than the games we play, then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration.\n\n\nNo answers yet."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
+    "href": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "A new logical operator",
+    "text": "A new logical operator\n\n\n\nLogical Operator\nAlternative Symbol\n\n\n\n\nIt is not the case that\n\\(\\neg\\)\n\n\nand (conjunctive)\n\\(\\land\\)\n\n\nor (disjunctive)\n\\(\\lor\\)\n\n\nIf . . . then . . .\n\\(\\rightarrow\\)\n\n\nIf and only if, ‘IFF’\n‘\\(\\Leftrightarrow\\)’ or \\(\\equiv\\)"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#first",
+    "href": "2025-logic/weeks/week02/slides.html#first",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "First,",
+    "text": "First,\n\nP = These games are like the ones we play.\nQ = These games make immortality tolerable.\nR = Characterize a form of life that is different from our own."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#either-what",
+    "href": "2025-logic/weeks/week02/slides.html#either-what",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Either What?",
+    "text": "Either What?\n\nP \\(\\rightarrow\\) \\(\\neg\\) Q\n\\(\\neg\\) P \\(\\rightarrow\\) (\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R)"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#your-standard-modus-ponens",
+    "href": "2025-logic/weeks/week02/slides.html#your-standard-modus-ponens",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Your standard Modus Ponens",
+    "text": "Your standard Modus Ponens\nThe long way,\n\n\\(\\neg\\) P \\(\\rightarrow\\) (\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R)\n\nBecause we want to simplify premise 2,"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#consider-the-sequent",
+    "href": "2025-logic/weeks/week02/slides.html#consider-the-sequent",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Consider the sequent:",
+    "text": "Consider the sequent:\n\nTo save space, we often write an entire form on one line. [p. 23]\n\n\n\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R\n\\(\\neg\\) P\n\n\\(\\therefore\\) \\(\\neg\\) R\nBecomes,\n\n\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R, \\(\\neg\\) P \\(\\vdash\\) \\(\\neg\\) R"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#the-ontological-argument",
+    "href": "2025-logic/weeks/week02/slides.html#the-ontological-argument",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "The Ontological Argument",
+    "text": "The Ontological Argument\nLet’s identify the main components of this argument.\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#saint-anselm-of-cantebury",
+    "href": "2025-logic/weeks/week02/slides.html#saint-anselm-of-cantebury",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Saint Anselm of Cantebury",
+    "text": "Saint Anselm of Cantebury\n\n\n\n.\n\n\n\n\n\nItalian Monk.\nlived from 1033 AD to 1109 AD.\nWas exiled from both England and Rome for advocating Church independence from secular authorities.\nMost notable for his Ontological Argument."
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#formation-rules",
+    "href": "2025-logic/weeks/week02/slides.html#formation-rules",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "Formation Rules",
+    "text": "Formation Rules\nWe are going to be looking for:\n\nPropositions (Sentences/tf Statements)\nLogical Operators (Connect Propositions)\nScope (Which logical operators apply to which propositions)\n\n\n\nThe formulas of propositional logic have a grammar, and that grammar (or syntax) may be precisely articulated as formation rules. Formation rules define what counts as a formula by giving general directions for assembling formulas out of simple symbols, or characters. They are the rules of grammar for a formal language. In order to state the formation rules for propositional logic, we need first to define the character set for propositional logic—that is, the alphabet and punctuation marks from which the formulas of its language are constructed. We stipulate that a character for the language of propositional logic is anything belonging to one of the following four sets:"
+  },
+  {
+    "objectID": "2025-logic/weeks/week02/slides.html#so-what-might-we-do-next",
+    "href": "2025-logic/weeks/week02/slides.html#so-what-might-we-do-next",
+    "title": "🗓️ Week 03 Introduction",
+    "section": "So what might we do next?",
+    "text": "So what might we do next?\n\nWhat should we identify first?\n\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
   },
   {
     "objectID": "2025-logic/weeks/week07/summary.html",
@@ -2423,172 +2469,433 @@
     ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#syntax",
-    "href": "2025-logic/weeks/week02/slides.html#syntax",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Syntax",
-    "text": "Syntax\n\n\n\n\n\nArgument Forms Informal and Formal Last Week, can you guess? This Week\n\n\n\n\nContent\nStructure\n\nSyntax  Semantics"
+    "objectID": "2025-logic/index.html",
+    "href": "2025-logic/index.html",
+    "title": "PHIL104Q - Introduction to Logic",
+    "section": "",
+    "text": "Important📢 Important\n\n\n\n\n\n(01/16/2026)\n\n🗓️ Week 01 lecture material is now available!\n\n\n\n\n\n🧑🏻‍🏫 Our Team\n\nCourse ConvenorTeaching Staff\n\n\n Reynolds  Dr. Monty Reynolds Stetson University 📧 mreynolds1@stetson.edu ( at )\nOffice Hours:\n\nWhen: TTH 1-2pm or by appointment\nWhere: Elizabeth Hall 104\nHow to book: Drop in, email, or book via Microsoft Bookings\n\n\n\n Grey Smith  Student Peer Instructor 📧 asmith112@stetson.edu ( at )\n TA_NAME  PhD Candidate at PLACE  📧 EMAIL ( at )\n\n\n\n\nLearning Outcomes\nThrough this course students will:\n\nLearn basic logical concepts and principles of good reasoning.\nUnderstand logical form and truth functional logic.\nLearn techniques for translating sentences into logical notion and determining the validity of arguments.\nLearn truth tables and other means of determining the validity of arguments stated in sentential logical notation.\n\n\n\n\n📍 Lecture\nSee Class Times Below\n\n\n💻 Class Meeting Times\nAesthetics 343A\n\n📆 Mondays and Wednesdays\n⌚ 10:30am - 12:45pm"
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#sentences",
-    "href": "2025-logic/weeks/week02/slides.html#sentences",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Sentences",
-    "text": "Sentences\n\nThere are many types of sentences, e.g., imperatives\n\n\nCommandments"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fall 2025 Courses",
+    "section": "",
+    "text": "📑 Introduction to Logic\n Logic, Fall 2025 \n\nThis course will begins with an informal system of logic and proceeds to classical propositional logic syntax, semantics and inference. It will then cover predicate logic semantics and inference.\n\n\n\n\n📑 Aesthetics\n Aesthetics, Fall 2025 \n\nThis course will explore enduring questions regarding beauty and, it’s place in art, philosophy and life; we will consider what an encounter with beauty is, we will consider the transformative power of beauty and art. We will ask about the relationships between art, art criticism, excellence in art and the human experience of beauty. We will consider how all of this works in modernity: a world of mass production, museums, commercial appropriation of art, and ubiquitous reproductions of works of art.\n\n\n\n\n\n‘Holmes wears a top hat’",
+    "crumbs": [
+      "🏠 Lecture Notes and Slides"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#we-will-focus-on-declarative-sentences",
-    "href": "2025-logic/weeks/week02/slides.html#we-will-focus-on-declarative-sentences",
+    "objectID": "2025-logic/weeks/week07/slides.html#proofs",
+    "href": "2025-logic/weeks/week07/slides.html#proofs",
     "title": "🗓️ Week 03 Introduction",
-    "section": "We will focus on declarative sentences",
-    "text": "We will focus on declarative sentences"
+    "section": "Proofs",
+    "text": "Proofs\n\nbreak down any valid sequent in propositional logic into a sequence of simple and (more or less) obviously valid patterns of reasoning. Such sequences, as exemplified by lines 1-8 above, are called proofs\n\n\nNatural Deduction Method\n\nTen distinct patterns of reasoning / rules of inference / inference rules\nThe proof technique is Sound\n\nIf we start with true assumptions on some valuation,\nwe shall always, no matter how many times we apply these rules, arrive at conclusions that are likewise true on that valuation.\n\nAnd complete\n\ncomplete, i.e., capable of providing a proof for every valid sequent of propositional logic. ## Modus Ponens\n\n\nGiven \\(\\phi\\rightarrow\\psi\\), and \\(\\phi\\), infer \\(\\psi\\)"
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#is-a-commandment-true-or-false",
-    "href": "2025-logic/weeks/week02/slides.html#is-a-commandment-true-or-false",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Is a commandment true or false?",
-    "text": "Is a commandment true or false?"
+    "objectID": "2025-logic/weeks/week07/page.html",
+    "href": "2025-logic/weeks/week07/page.html",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "",
+    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 07"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#the-most-famous-reindeer-of-all",
-    "href": "2025-logic/weeks/week02/slides.html#the-most-famous-reindeer-of-all",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "The Most Famous Reindeer of All",
-    "text": "The Most Famous Reindeer of All\n\nIf the fetus is a person, then abortion is murder.\nThe fetus is a person.\n\n\\(\\therefore\\)\n\nAbortion is murder."
+    "objectID": "2025-logic/weeks/week07/page.html#lecture-slides",
+    "href": "2025-logic/weeks/week07/page.html#lecture-slides",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 07"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#remember",
-    "href": "2025-logic/weeks/week02/slides.html#remember",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Remember?",
-    "text": "Remember?\nReplace the claims with sentence letters and ignore the connectives for now.\n\nLook only for true or false statements.\n\n\nIf the fetus is a person, then abortion is murder.\nThe fetus is a person.\n\n\\(\\therefore\\)\n\nAbortion is murder."
+    "objectID": "2025-logic/weeks/week07/page.html#coursework",
+    "href": "2025-logic/weeks/week07/page.html#coursework",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 07"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#valid-and-falacious-argument-forms",
-    "href": "2025-logic/weeks/week02/slides.html#valid-and-falacious-argument-forms",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Valid and Falacious Argument Forms",
-    "text": "Valid and Falacious Argument Forms\n\nModus Ponens\nAffirming the Consequent"
+    "objectID": "2025-logic/weeks/week07/page.html#recommended-reading",
+    "href": "2025-logic/weeks/week07/page.html#recommended-reading",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📚 Recommended Reading",
+    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 07"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument",
-    "href": "2025-logic/weeks/week02/slides.html#lets-identify-the-main-components-of-this-argument",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Let’s identify the main components of this argument",
-    "text": "Let’s identify the main components of this argument\n\nIn Bernard Suits’ The Grasshopper and Return of the Grasshopper, game-play is claimed to be the ‘ideal of existence’ and the only activity that could sustain us through the ‘endless and endlessly boring summer’ of utopia. Christopher Yorke has challenged these claims by way of a constructive dilemma. If these games are sufficiently akin to the games we play, then they are not adequate to the task of rendering immortality tolerable. If these games are importantly different than the games we play, then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration. Against Yorke’s skepticism, I argue that the games that constitute the ideal of existence are intelligible to us because we already play what the Grasshopper calls ‘open games’. Steffen Borge concedes that utopian games are intelligible, but argues that such games would fail to ‘grab our minds and imagination’. In the second half of the paper, I contend, against Borge, that such open games are adequate to the task of sustaining the interest of an immortal community."
+    "objectID": "2025-logic/weeks/week07/page.html#communication",
+    "href": "2025-logic/weeks/week07/page.html#communication",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📟 Communication",
+    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 07"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#but-this-looks-weird-and-not-helpful.",
-    "href": "2025-logic/weeks/week02/slides.html#but-this-looks-weird-and-not-helpful.",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "But this looks weird and not helpful.",
-    "text": "But this looks weird and not helpful.\n\nP \\(\\rightarrow\\) Q\n\n\nJust like above, we replace the propositions with sentence letters."
+    "objectID": "2025-logic/weeks/week02/page.html",
+    "href": "2025-logic/weeks/week02/page.html",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "",
+    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 02"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#but-.-.-.",
-    "href": "2025-logic/weeks/week02/slides.html#but-.-.-.",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "But . . .,",
-    "text": "But . . .,\n\nIf these games are importantly different than the games we play, then, in being ‘unknown and unknowable’, they would characterize a form of life that is importantly different from our own and, so, would be inappropriate objects of social and political aspiration.\n\n\nNo answers yet."
+    "objectID": "2025-logic/weeks/week02/page.html#lecture-slides",
+    "href": "2025-logic/weeks/week02/page.html#lecture-slides",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 02"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
-    "href": "2025-logic/weeks/week02/slides.html#a-new-logical-operator",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "A new logical operator",
-    "text": "A new logical operator\n\n\n\nLogical Operator\nAlternative Symbol\n\n\n\n\nIt is not the case that\n\\(\\neg\\)\n\n\nand (conjunctive)\n\\(\\land\\)\n\n\nor (disjunctive)\n\\(\\lor\\)\n\n\nIf . . . then . . .\n\\(\\rightarrow\\)\n\n\nIf and only if, ‘IFF’\n‘\\(\\Leftrightarrow\\)’ or \\(\\equiv\\)"
+    "objectID": "2025-logic/weeks/week02/page.html#coursework",
+    "href": "2025-logic/weeks/week02/page.html#coursework",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 02"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#first",
-    "href": "2025-logic/weeks/week02/slides.html#first",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "First,",
-    "text": "First,\n\nP = These games are like the ones we play.\nQ = These games make immortality tolerable.\nR = Characterize a form of life that is different from our own."
+    "objectID": "2025-logic/weeks/week02/page.html#recommended-reading",
+    "href": "2025-logic/weeks/week02/page.html#recommended-reading",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📚 Recommended Reading",
+    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 02"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#either-what",
-    "href": "2025-logic/weeks/week02/slides.html#either-what",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Either What?",
-    "text": "Either What?\n\nP \\(\\rightarrow\\) \\(\\neg\\) Q\n\\(\\neg\\) P \\(\\rightarrow\\) (\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R)"
+    "objectID": "2025-logic/weeks/week02/page.html#communication",
+    "href": "2025-logic/weeks/week02/page.html#communication",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📟 Communication",
+    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 02"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#your-standard-modus-ponens",
-    "href": "2025-logic/weeks/week02/slides.html#your-standard-modus-ponens",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Your standard Modus Ponens",
-    "text": "Your standard Modus Ponens\nThe long way,\n\n\\(\\neg\\) P \\(\\rightarrow\\) (\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R)\n\nBecause we want to simplify premise 2,"
+    "objectID": "2025-logic/weeks/week05/page.html",
+    "href": "2025-logic/weeks/week05/page.html",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "",
+    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments, and how we will interact throughout this course.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 05"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#consider-the-sequent",
-    "href": "2025-logic/weeks/week02/slides.html#consider-the-sequent",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Consider the sequent:",
-    "text": "Consider the sequent:\n\nTo save space, we often write an entire form on one line. [p. 23]\n\n\n\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R\n\\(\\neg\\) P\n\n\\(\\therefore\\) \\(\\neg\\) R\nBecomes,\n\n\\(\\neg\\) P \\(\\rightarrow\\) \\(\\neg\\) R, \\(\\neg\\) P \\(\\vdash\\) \\(\\neg\\) R"
+    "objectID": "2025-logic/weeks/week05/page.html#lecture-slides",
+    "href": "2025-logic/weeks/week05/page.html#lecture-slides",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n🎥 Looking for lecture recordings? You can only find those on Moodle.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 05"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#the-ontological-argument",
-    "href": "2025-logic/weeks/week02/slides.html#the-ontological-argument",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "The Ontological Argument",
-    "text": "The Ontological Argument\nLet’s identify the main components of this argument.\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
+    "objectID": "2025-logic/weeks/week05/page.html#coursework",
+    "href": "2025-logic/weeks/week05/page.html#coursework",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n🚧 Come back after the lecture to read the coursework instructions for the week 🚧",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 05"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#saint-anselm-of-cantebury",
-    "href": "2025-logic/weeks/week02/slides.html#saint-anselm-of-cantebury",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Saint Anselm of Cantebury",
-    "text": "Saint Anselm of Cantebury\n\n\n\n.\n\n\n\n\n\nItalian Monk.\nlived from 1033 AD to 1109 AD.\nWas exiled from both England and Rome for advocating Church independence from secular authorities.\nMost notable for his Ontological Argument."
+    "objectID": "2025-logic/weeks/week05/page.html#recommended-reading",
+    "href": "2025-logic/weeks/week05/page.html#recommended-reading",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📚 Recommended Reading",
+    "text": "📚 Recommended Reading\n\nCheck the end of slides for the list of references cited in the lecture.",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 05"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#formation-rules",
-    "href": "2025-logic/weeks/week02/slides.html#formation-rules",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Formation Rules",
-    "text": "Formation Rules\nWe are going to be looking for:\n\nPropositions (Sentences/tf Statements)\nLogical Operators (Connect Propositions)\nScope (Which logical operators apply to which propositions)\n\n\n\nThe formulas of propositional logic have a grammar, and that grammar (or syntax) may be precisely articulated as formation rules. Formation rules define what counts as a formula by giving general directions for assembling formulas out of simple symbols, or characters. They are the rules of grammar for a formal language. In order to state the formation rules for propositional logic, we need first to define the character set for propositional logic—that is, the alphabet and punctuation marks from which the formulas of its language are constructed. We stipulate that a character for the language of propositional logic is anything belonging to one of the following four sets:"
+    "objectID": "2025-logic/weeks/week05/page.html#communication",
+    "href": "2025-logic/weeks/week05/page.html#communication",
+    "title": "🗓️ Week 02 - Argument Forms, Formalization, Formation Rules",
+    "section": "📟 Communication",
+    "text": "📟 Communication\n\nIf you feel like it, introduce your ‘selves’ in the #introductions channel in Discussions",
+    "crumbs": [
+      "🗓️ Logic",
+      "Week 05"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week02/slides.html#so-what-might-we-do-next",
-    "href": "2025-logic/weeks/week02/slides.html#so-what-might-we-do-next",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "So what might we do next?",
-    "text": "So what might we do next?\n\nWhat should we identify first?\n\n\nSo, then, no one who understands what God is can conceive that God does not exist; although he says these words in his heart, either without any, or with some, foreign signification. For; God is that than which a greater cannot be conceived. And he who thoroughly understands this assuredly understands that this being so truly exists, that not even in concept can it be nonexistent. Therefore, he who understands that God so exists cannot conceive that he does not exist."
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html",
+    "href": "2025-logic/weeks/week08-predicates/summary.html",
+    "title": "Classical Propositional Logic",
+    "section": "",
+    "text": "See? Hard\n\n\n\n\n\n\nSee? Easy\n\n\n\n\n\n\n\n\n\n\nnegation  negated negation  conjunction  negated conjunction  disjunction  negated disjunction  conditional  negated conditional  biconditional  negated bi-conditional\n\n\n\n\n\nConsider the following proposition:",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/slides.html#our-terms",
-    "href": "2025-logic/weeks/week05/slides.html#our-terms",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Our Terms",
-    "text": "Our Terms\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nSemantics\nStudy of Meaning\n\n\nTruth Conditions\nConditions on which a proposition is true or false\n\n\nTruth Value\nT or F, A kind of semantic property that chacterizes propositions\n\n\nPrinciple of Bivalence\nEvery proposition has exactly one of the two truth values, T or F\n\n\nAssertibility Conditions\nConditions under which a proposition can be asserted\n\n\nInterpretations\nAssociation of sentence letters with statements of natural language\n\n\nValuation\nA formula or set of formulas of propositional logic is an assignment of one and only one of the truth values T and F to each of the sentence letters occuring in that formula or any formula of that set"
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#valuation-rules-hard",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#valuation-rules-hard",
+    "title": "Classical Propositional Logic",
+    "section": "",
+    "text": "See? Hard\n\n\n\n\n\n\nSee? Easy",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/slides.html#when-an-argument-form-has-more-than-2-letters",
-    "href": "2025-logic/weeks/week05/slides.html#when-an-argument-form-has-more-than-2-letters",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "When an argument form has more than 2 letters",
-    "text": "When an argument form has more than 2 letters\n\nIf either the peasants or the slaves revolt and the queen hesitates, then the revolution will succeed.\n\n\nIf the peasants revolt but the slaves don’t, the revolution will not succeed, and if both the peasants and slaves revolt, the revolution will succeed."
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#valuation-rules-easy",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#valuation-rules-easy",
+    "title": "Classical Propositional Logic",
+    "section": "",
+    "text": "negation  negated negation  conjunction  negated conjunction  disjunction  negated disjunction  conditional  negated conditional  biconditional  negated bi-conditional",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/slides.html#type-of-set-consistent",
-    "href": "2025-logic/weeks/week05/slides.html#type-of-set-consistent",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "1. Type of set: Consistent",
-    "text": "1. Type of set: Consistent\n\nDefinition: There is at least one valuation on which all formulas in the set are true\nTruth Table Indication: Horizontal line on which all formulas in the set have ’T’s under their main operators"
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#whats-the-point-in-all-of-this",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#whats-the-point-in-all-of-this",
+    "title": "Classical Propositional Logic",
+    "section": "",
+    "text": "Consider the following proposition:",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/slides.html#type-of-set-inconsistent",
-    "href": "2025-logic/weeks/week05/slides.html#type-of-set-inconsistent",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "2. Type of set: Inconsistent",
-    "text": "2. Type of set: Inconsistent\n\nDefinition: There is no valuation on which all formulas in the set are true\nTruth Table Indication: There is no horizontal line on which all formulas in the set have ’T’s under their main operators"
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#we-have",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#we-have",
+    "title": "Classical Propositional Logic",
+    "section": "We have",
+    "text": "We have\nA number of formulas that together form the proposition below. (Formula is a fancy way of saying ‘claim’)\nClaim / Formula: P \\(\\rightarrow\\) (Q & (R \\(\\lor\\) S))",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
   },
   {
-    "objectID": "2025-logic/weeks/week05/slides.html#logically-equivalent-formulas",
-    "href": "2025-logic/weeks/week05/slides.html#logically-equivalent-formulas",
-    "title": "🗓️ Week 03 Introduction",
-    "section": "Logically Equivalent Formulas",
-    "text": "Logically Equivalent Formulas\n\n\n\nP\nQ\n~\n(\nP\nv\nQ\n)\n~\nP\n&\n~\nQ\n\n\n\nT\nT\nF\n\nT\nT\nT\n\nF\n\nF\n\nF\n\n\n\nT\nF\nF\n\nT\nT\nF\n\nF\n\nF\n\nT\n\n\n\nF\nT\nF\n\nF\nT\nT\n\nT\n\nF\n\nF\n\n\n\nF\nF\nT\n\nF\nF\nF\n\nT\n\nT\n\nT"
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#this-claim-formula-is-made-up-of-the-following-claims-formulas",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#this-claim-formula-is-made-up-of-the-following-claims-formulas",
+    "title": "Classical Propositional Logic",
+    "section": "This claim / formula is made up of the following claims / formulas:",
+    "text": "This claim / formula is made up of the following claims / formulas:\n\nThe claim that: ‘Jim stole the cookie’; ‘P’\nThe claim that: ‘Jim is guilty’; ‘Q’\nThe claim that: ‘Jim deserves life in prison’; ‘R’\nThe claim that: ‘Jim deserves death’; ‘S’",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#any-one-of-these-can-be-true",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#any-one-of-these-can-be-true",
+    "title": "Classical Propositional Logic",
+    "section": "Any one of these can be true,",
+    "text": "Any one of these can be true,\nOr . . . they can all be true. What we ultimately want to know, is whether together, they make a true proposition, that if:\n\nJim stole the cookie,\n\nThen\n\nJim is guilty,\n\nand",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#he-either",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#he-either",
+    "title": "Classical Propositional Logic",
+    "section": "He either",
+    "text": "He either\n\ndeserves life in prison,",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#but-there-are-many-other-claims-as-well-.-.-.",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#but-there-are-many-other-claims-as-well-.-.-.",
+    "title": "Classical Propositional Logic",
+    "section": "But there are many other claims as well . . .",
+    "text": "But there are many other claims as well . . .\n\nIf Jim stole the cookie, then he is guilty.\n\nThis claim is an independent one.\n\nJim is guilty and deserves either life in prison, or death\nHe deserves life in prison or he deserves death\n\nThese are all independent claims\n\nWhat we want to know, is whether any of them acts as a logical contradiction, or fail in some other way when combined with the others. Consider the two claims below:\n\n‘The boy is tall’\n‘The boy is not tall’",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#semantic-properties-we-can-test-for",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#semantic-properties-we-can-test-for",
+    "title": "Classical Propositional Logic",
+    "section": "4 Semantic properties we can test for",
+    "text": "4 Semantic properties we can test for\n\n\n\nSemantic Properties\n\n\n\n\nValid: The formula or sequent (argument), is true on all valuations. No counter examples (open paths)\nContingent: True on at least one, but not all valuations. (At least one open path, but not all)\nInconsistent: True on no valuations. All paths are closed.\nConsistent: At least one valuation where all formulas are true. (Open paths show valuations that make the formula or set of formulas true)\n\n\n\n\n\n\n\n\n\n\n\nType of Formula\nDefinition\nTruth Tree Result\n\n\n\n\nValid Sequent\nThere are no counter examples\nNo Open Paths\n\n\nInvalid Sequent\nThere is at least one valuation where the sequent is not true\nAt least one open path\n\n\nValid Formula\nThe formula is true on all its valuations (T under main operator)\nAll the paths are closed\n\n\nInvalid\nThere is at least one valuation on which the formula is False\nOpen paths display valuations on which formula is false\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nType of Formula\nDefinition\nTruth Tree Result\n\n\n\n\nContingent\nTrue on at least one, but not all valuations\nAt least one open path, but not all\n\n\nInconsistent\nNot true on any valuations\nAll paths are closed\n\n\nConsistent\nAt least one valuation where all formulas are true\nOpen paths show valuations that make the formula or set of formulas true",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#this-is-an-argument",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#this-is-an-argument",
+    "title": "Classical Propositional Logic",
+    "section": "This is an argument",
+    "text": "This is an argument",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#jim-is-guilty-and-deserves-life-in-prison-or-death",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#jim-is-guilty-and-deserves-life-in-prison-or-death",
+    "title": "Classical Propositional Logic",
+    "section": "Jim is guilty and deserves life in prison or death",
+    "text": "Jim is guilty and deserves life in prison or death\nIf Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.\nJim did steal the cookie.\nTherefore, Jim is guilty and either he deserves life in prison or he deserves death.\n\nP \\(\\rightarrow\\) (Q & (R \\(\\lor\\) S))\nP\nTherefore,\n(Q & (R \\(\\lor\\) S))",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.",
+    "title": "Classical Propositional Logic",
+    "section": "However, we are only looking at a formula, a single claim. Not an argument.",
+    "text": "However, we are only looking at a formula, a single claim. Not an argument.\n\nAn argument has a premise\nAnd an argument has a conclusion\nOurs is a single claim",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#is-it-possible-for-.-.-.",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#is-it-possible-for-.-.-.",
+    "title": "Classical Propositional Logic",
+    "section": "Is it possible for . . .",
+    "text": "Is it possible for . . .\n\nThe claim that: ‘Jim stole the cookie’; ‘P’\nThe claim that: ‘Jim is guilty’; ‘Q’\nThe claim that: ‘Jim deserves life in prison’; ‘R’\nThe claim that: ‘Jim deserves death’; ‘S’\n\nTo all be true at the same time?",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#will-our-paths-close-like-this",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#will-our-paths-close-like-this",
+    "title": "Classical Propositional Logic",
+    "section": "Will our paths close like this?",
+    "text": "Will our paths close like this?",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#then-look-at-the-main-operator-.-.-.",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#then-look-at-the-main-operator-.-.-.",
+    "title": "Classical Propositional Logic",
+    "section": "Then look at the main operator . . .",
+    "text": "Then look at the main operator . . .\nP \\(\\rightarrow\\) (Q & (R \\(\\lor\\) S))",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#this-is-what-we-are-paying-attention-to-.-.-.",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#this-is-what-we-are-paying-attention-to-.-.-.",
+    "title": "Classical Propositional Logic",
+    "section": "This is what we are paying attention to . . .",
+    "text": "This is what we are paying attention to . . .",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#in-other-words-.-.-.",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#in-other-words-.-.-.",
+    "title": "Classical Propositional Logic",
+    "section": "In other words . . .",
+    "text": "In other words . . .",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#this-means-that",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#this-means-that",
+    "title": "Classical Propositional Logic",
+    "section": "This means that",
+    "text": "This means that\n\n\n\n~ P\nQ\nR\nS\n\n\n\n\nT\nT\nT\nT\n\n\n\nor\n\n\n\nP\nQ\nR\nS\n\n\n\n\nF\nT\nT\nT",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
+  },
+  {
+    "objectID": "2025-logic/weeks/week08-predicates/summary.html#or",
+    "href": "2025-logic/weeks/week08-predicates/summary.html#or",
+    "title": "Classical Propositional Logic",
+    "section": "Or",
+    "text": "Or",
+    "crumbs": [
+      "🗓️ Logic",
+      "The Syntax of Classical Predicate Logic",
+      "💻 Notes and Summary"
+    ]
   },
   {
     "objectID": "2025-logic/weeks/week04/slides.html#semantics",

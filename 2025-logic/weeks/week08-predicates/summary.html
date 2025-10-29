@@ -21,27 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,8 +31,8 @@ div.csl-indent {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../2025-aesthetics/weeks/week08/page.html" rel="next">
-<link href="../../../2025-aesthetics/weeks/week07/page.html" rel="prev">
+<link href="../../../2025-aesthetics/weeks/week03/page.html" rel="next">
+<link href="../../../2025-logic/weeks/week08-predicates/page.html" rel="prev">
 <link href="../../../figures/icons/course_favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -92,17 +72,52 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../css/custom_style.css">
 <link rel="stylesheet" href="../../../css/syllabus.css">
 <meta property="og:title" content="Fall 2025">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://redapemusic35.github.io/figures/logic/v-rules-1.png">
 <meta property="og:site_name" content="Fall 2025">
+<meta property="og:image:height" content="1738">
+<meta property="og:image:width" content="1142">
 <meta name="twitter:title" content="Fall 2025">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://redapemusic35.github.io/figures/logic/v-rules-1.png">
 <meta name="twitter:creator" content="@<twitter-handle>">
 <meta name="twitter:site" content="\@<twitter-handle>">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="1738">
+<meta name="twitter:image-width" content="1142">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -133,7 +148,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-aesthetics/weeks/week03/page.html">🗓️ Aesthetics</a></li><li class="breadcrumb-item"><a href="../../../2025-aesthetics/weeks/week07/page.html">Discussion 07</a></li><li class="breadcrumb-item"><a href="../../../2025-aesthetics/weeks/week07/summary.html">💻 Notes and Summary</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week08/page.qmd">The Syntax of Classical Predicate Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week08-predicates/summary.html">💻 Notes and Summary</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -305,11 +320,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="../../../2025-logic/weeks/week08/page.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Syntax of Classical Predicate Logic</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../2025-logic/weeks/week08-predicates/page.html" class="sidebar-item-text sidebar-link">
@@ -318,7 +333,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../2025-logic/weeks/week08-predicates/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2025-logic/weeks/week08-predicates/summary.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -431,11 +446,11 @@ div.csl-indent {
       <div class="sidebar-item-container"> 
             <a href="../../../2025-aesthetics/weeks/week07/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Discussion 07</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../2025-aesthetics/weeks/week07/page.html" class="sidebar-item-text sidebar-link">
@@ -444,7 +459,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../2025-aesthetics/weeks/week07/summary.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../2025-aesthetics/weeks/week07/summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -648,14 +663,72 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#saint-bonaventure" id="toc-saint-bonaventure" class="nav-link active" data-scroll-target="#saint-bonaventure">Saint Bonaventure</a></li>
+  <li><a href="#classical-propositional-logic" id="toc-classical-propositional-logic" class="nav-link active" data-scroll-target="#classical-propositional-logic">Classical Propositional Logic</a>
+  <ul class="collapse">
+  <li><a href="#valuation-rules-hard" id="toc-valuation-rules-hard" class="nav-link" data-scroll-target="#valuation-rules-hard">Valuation Rules Hard</a></li>
+  <li><a href="#valuation-rules-easy" id="toc-valuation-rules-easy" class="nav-link" data-scroll-target="#valuation-rules-easy">Valuation Rules Easy</a></li>
+  <li><a href="#whats-the-point-in-all-of-this" id="toc-whats-the-point-in-all-of-this" class="nav-link" data-scroll-target="#whats-the-point-in-all-of-this">What’s the point in all of this?</a></li>
+  </ul></li>
+  <li><a href="#p-rightarrow-q-r-lor-s" id="toc-p-rightarrow-q-r-lor-s" class="nav-link" data-scroll-target="#p-rightarrow-q-r-lor-s">P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</a>
+  <ul class="collapse">
+  <li><a href="#we-have" id="toc-we-have" class="nav-link" data-scroll-target="#we-have">We have</a></li>
+  <li><a href="#this-claim-formula-is-made-up-of-the-following-claims-formulas" id="toc-this-claim-formula-is-made-up-of-the-following-claims-formulas" class="nav-link" data-scroll-target="#this-claim-formula-is-made-up-of-the-following-claims-formulas">This claim / formula is made up of the following claims / formulas:</a></li>
+  <li><a href="#any-one-of-these-can-be-true" id="toc-any-one-of-these-can-be-true" class="nav-link" data-scroll-target="#any-one-of-these-can-be-true">Any one of these can be true,</a></li>
+  <li><a href="#he-either" id="toc-he-either" class="nav-link" data-scroll-target="#he-either">He either</a></li>
+  </ul></li>
+  <li><a href="#or-he-deserves-death" id="toc-or-he-deserves-death" class="nav-link" data-scroll-target="#or-he-deserves-death">Or He Deserves Death</a>
+  <ul class="collapse">
+  <li><a href="#but-there-are-many-other-claims-as-well-.-.-." id="toc-but-there-are-many-other-claims-as-well-.-.-." class="nav-link" data-scroll-target="#but-there-are-many-other-claims-as-well-.-.-.">But there are many other claims as well . . .</a></li>
+  </ul></li>
+  <li><a href="#some-possible-formulas" id="toc-some-possible-formulas" class="nav-link" data-scroll-target="#some-possible-formulas">Some possible formulas</a></li>
+  <li><a href="#lets-do-some-more" id="toc-lets-do-some-more" class="nav-link" data-scroll-target="#lets-do-some-more">Lets do some more</a>
+  <ul class="collapse">
+  <li><a href="#semantic-properties-we-can-test-for" id="toc-semantic-properties-we-can-test-for" class="nav-link" data-scroll-target="#semantic-properties-we-can-test-for">4 Semantic properties we can test for</a></li>
+  </ul></li>
+  <li><a href="#this-does-not-apply-here.-here-is-why-.-.-." id="toc-this-does-not-apply-here.-here-is-why-.-.-." class="nav-link" data-scroll-target="#this-does-not-apply-here.-here-is-why-.-.-.">This does not apply here. Here is why . . .</a>
+  <ul class="collapse">
+  <li><a href="#this-is-an-argument" id="toc-this-is-an-argument" class="nav-link" data-scroll-target="#this-is-an-argument">This is an argument</a></li>
+  <li><a href="#jim-is-guilty-and-deserves-life-in-prison-or-death" id="toc-jim-is-guilty-and-deserves-life-in-prison-or-death" class="nav-link" data-scroll-target="#jim-is-guilty-and-deserves-life-in-prison-or-death">Jim is guilty and deserves life in prison or death</a></li>
+  <li><a href="#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." id="toc-however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." class="nav-link" data-scroll-target="#however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.">However, we are only looking at a formula, a single claim. Not an argument.</a></li>
+  </ul></li>
+  <li><a href="#second-test" id="toc-second-test" class="nav-link" data-scroll-target="#second-test">Second test</a></li>
+  <li><a href="#in-other-words" id="toc-in-other-words" class="nav-link" data-scroll-target="#in-other-words">In other words</a></li>
+  <li><a href="#consistency" id="toc-consistency" class="nav-link" data-scroll-target="#consistency">Consistency</a>
+  <ul class="collapse">
+  <li><a href="#is-it-possible-for-.-.-." id="toc-is-it-possible-for-.-.-." class="nav-link" data-scroll-target="#is-it-possible-for-.-.-.">Is it possible for . . .</a></li>
+  </ul></li>
+  <li><a href="#this-depends-on-the-logical-operators-.-.-." id="toc-this-depends-on-the-logical-operators-.-.-." class="nav-link" data-scroll-target="#this-depends-on-the-logical-operators-.-.-.">This depends on the logical operators . . .</a>
+  <ul class="collapse">
+  <li><a href="#will-our-paths-close-like-this" id="toc-will-our-paths-close-like-this" class="nav-link" data-scroll-target="#will-our-paths-close-like-this">Will our paths close like this?</a></li>
+  </ul></li>
+  <li><a href="#first-we-start-with-the-formula" id="toc-first-we-start-with-the-formula" class="nav-link" data-scroll-target="#first-we-start-with-the-formula">First we start with the formula</a>
+  <ul class="collapse">
+  <li><a href="#then-look-at-the-main-operator-.-.-." id="toc-then-look-at-the-main-operator-.-.-." class="nav-link" data-scroll-target="#then-look-at-the-main-operator-.-.-.">Then look at the main operator . . .</a></li>
+  </ul></li>
+  <li><a href="#what-does-the-valuation-rule-for-rightarrow-say" id="toc-what-does-the-valuation-rule-for-rightarrow-say" class="nav-link" data-scroll-target="#what-does-the-valuation-rule-for-rightarrow-say">What does the valuation rule for ‘<span class="math inline">\(\rightarrow\)</span>’ say?</a>
+  <ul class="collapse">
+  <li><a href="#this-is-what-we-are-paying-attention-to-.-.-." id="toc-this-is-what-we-are-paying-attention-to-.-.-." class="nav-link" data-scroll-target="#this-is-what-we-are-paying-attention-to-.-.-.">This is what we are paying attention to . . .</a></li>
+  <li><a href="#in-other-words-.-.-." id="toc-in-other-words-.-.-." class="nav-link" data-scroll-target="#in-other-words-.-.-.">In other words . . .</a></li>
+  </ul></li>
+  <li><a href="#so-step-1-.-.-." id="toc-so-step-1-.-.-." class="nav-link" data-scroll-target="#so-step-1-.-.-.">So step 1 . . .</a></li>
+  <li><a href="#step-2-.-.-." id="toc-step-2-.-.-." class="nav-link" data-scroll-target="#step-2-.-.-.">Step 2 . . .</a></li>
+  <li><a href="#see-all-the-open-paths" id="toc-see-all-the-open-paths" class="nav-link" data-scroll-target="#see-all-the-open-paths">See all the open paths?</a>
+  <ul class="collapse">
+  <li><a href="#this-means-that" id="toc-this-means-that" class="nav-link" data-scroll-target="#this-means-that">This means that</a></li>
+  </ul></li>
+  <li><a href="#or-.-.-." id="toc-or-.-.-." class="nav-link" data-scroll-target="#or-.-.-.">Or . . .</a></li>
+  <li><a href="#is-true-if" id="toc-is-true-if" class="nav-link" data-scroll-target="#is-true-if">Is true if:</a>
+  <ul class="collapse">
+  <li><a href="#or" id="toc-or" class="nav-link" data-scroll-target="#or">Or</a></li>
+  </ul></li>
+  <li><a href="#death" id="toc-death" class="nav-link" data-scroll-target="#death">Death</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-aesthetics/weeks/week03/page.html">🗓️ Aesthetics</a></li><li class="breadcrumb-item"><a href="../../../2025-aesthetics/weeks/week07/page.html">Discussion 07</a></li><li class="breadcrumb-item"><a href="../../../2025-aesthetics/weeks/week07/summary.html">💻 Notes and Summary</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week08/page.qmd">The Syntax of Classical Predicate Logic</a></li><li class="breadcrumb-item"><a href="../../../2025-logic/weeks/week08-predicates/summary.html">💻 Notes and Summary</a></li></ol></nav>
 <div class="quarto-title">
 </div>
 
@@ -679,84 +752,440 @@ div.csl-indent {
 </header>
 
 
-<section id="saint-bonaventure" class="level1">
-<h1>Saint Bonaventure</h1>
-<p>As the following quote shows, Bonaventure was not only committed to theology, but philosophy which according to him, was to better understand the beliefs he held. It is important to note, that philosophy was important even for what he considered matters of faith, which at times, is thought to be immune from the critical reflections that philosophy enables.</p>
-<blockquote class="blockquote">
-<p>And so, if the writings of the philosophers are sometimes of much value in understanding truth and refuting errors, we are not departing from the purity of faith if we at times study them, especially since there are many questions of faith which cannot be settled without recourse to them. (trans. Monti 1994: 53)</p>
-</blockquote>
-<p>From 1243 to 1248, Bonaventure studied theology at the university of Paris. During the course of his studies, he worked with the Fransiscans, a group of Catholic organizations founded by St.&nbsp;Fransis of Assisi, named for the town in Italy where he was born in the year 1209. At the University of Paris, Bonaventure became a <em>Formed Bachelor</em> which meant that he would take on the academic roles of lecturing, getting involved in <em>the</em> disputes, a class of philosophical questions rooted in theology, and preaching. While a formed bachelor, not yet a master, the university’s masters and its students when on strike, leading to them becoming expelled. During this conflict, Bonaventure would be elected to the Fransiscan Chair in theology though he would only teach at the Fransiscan convent which was not recognized by the University.</p>
-<p>There would be some controversy surrounding this since, though the duties Bonaventure performed where those of a Master, he was not recognized as one until 1256 by order of Pope Alexander IV. During this time however, Bonaventure was a prolific scholar producing many texts including his <em>Reduction of Arts to Theology</em> which is a reflection on theological sermons as a genre of art.</p>
-<blockquote class="blockquote">
-<p>The same mode of reasoning is found in On Retracing the Arts to Theology. Here “reduction” consists in developing analogies that move the mind from the liberal arts to theology and back again. Bonaventure argues for each point by combining one claim based on reason with another based on revelation, as though they were wall and buttress of the cathedral of theology. Philosophical reasoning, then, is an absolutely integral part of Bonaventure’s faith-based theology.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>(https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu)</p>
-</blockquote>
-<p>There are objects we access through our senses. Importantly for Bonaventure, these objects always point towards their source of being, God. But it is not merely the objects in themselves, but rather our apprehension of their “weight, number, and measure” <a href="https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu">Stanford Encyclopedia of Philosophy</a>, that causes us to contemplate their “measure, beauty, and order” and to <em>delight</em> in this aspect of all that is created.</p>
-<blockquote class="blockquote">
-<p>The world as it is revealed to us through the senses provides the means for our re-entering ourselves and ascending to higher things. Furthermore, the senses themselves are equally signs of higher things.</p>
-</blockquote>
-<p>What is important about works of art, whether involving the manipulation of materials such as painting or sculpting, or of the manipulation of words such as speech, is that these act on our <em>spiritual senses</em>. What is created, is a likeness of that object through our faculty of reason.</p>
-<blockquote class="blockquote">
-<p>Each sensible object generates a likeness of itself in the medium through which it is perceived, and that likeness in turn generates another likeness successively in the sense organ, causing the sense power to apprehend the sensible object.</p>
-</blockquote>
-<p>This is a common understanding, notably evoking a common debate among philosophers. The debate between empiricists and rationalists, is whether, and to what degree do we have a connection to the outside world. For instance, consider this reflection by the philosopher Bertrand Russell:</p>
-<blockquote class="blockquote">
-<p>To the eye it is oblong, brown and shiny, to the touch it is smooth and cool and hard; when I tap it, it gives out a wooden sound. Anyone else who sees and feels and hears the table will agree with this description, so that it might seem that no difficulty would arise.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-</blockquote>
-<p>Russell then concludes that all truly have access to is not the table itself, but instead a collection of unique and disconnected perceptions. We see the shape, we touch coolness, we hear the hollow sound, but we do not perceive the table..</p>
-<blockquote class="blockquote">
-<p>it becomes evident that the real table, if there is one, is not the same as what we immediately experience by sight or touch or hearing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-</blockquote>
-<p>For Bonaventure, the resulting object as created by God, is perceived by us through God’s divine light. In other words, when we perceive objects, and delight in them as created objects, we join in union with God, and are able to perceive his creation.</p>
-<blockquote class="blockquote">
-<p>exercising their powers of intellect and will, intellectual creatures discover the highest and most perfect object of their powers in the Divine Source of their being, since God is the First or Highest Truth and the First or Chief Good. Accordingly, intellectual creatures have God as their ultimate object, whereas all creatures have God as their Cause. Consequently, intellectual creatures show themselves to be “images” and “likenesses” of God, while they show that all creatures are “shadows” and “vestiges” of God.</p>
-</blockquote>
-<p>All at once then, Bonaventure’s project is epistmelogical and metaphysical. It is meant to explain how we know things, and what the nature of those things are.</p>
-<blockquote class="blockquote">
-<p>The resolution of all our items of simple apprehension into the concept of being is metaphysically and epistemologically crucial: metaphysically, it opens up a route of argumentation that leads to the existence of God; epistemologically, such a resolution means that behind all, even the most determinate and specific, conceptions of things lies a transcendental awareness of being that informs all of our knowledge.</p>
-</blockquote>
-<p>As such, this is two parts of Bonaventure’s project, but there is a third part as well. The moral project has to do with how we behave. For Bonaventure, this is also guided by the <em>light of God’s divine illumination</em>. Here, it is important to focus on the non-physical aspects of our existence, namely our relationships with one another.</p>
-<p>How do we develop this?</p>
-<blockquote class="blockquote">
-<p>Therefore, considering the illumination of mechanical skill as regards the production of the work, we shall see therein the Word begotten and made incarnate, that is, the Divinity and the Humanity and the integrity of all faith.</p>
-</blockquote>
-<p>As the following quote shows, Bonaventure was not only committed to theology, but philosophy which according to him, was to better understand the beliefs he held. It is important to note, that philosophy was important even for what he considered matters of faith, which at times, is thought to be immune from the critical reflections that philosophy enables.</p>
-<blockquote class="blockquote">
-<p>And so, if the writings of the philosophers are sometimes of much value in understanding truth and refuting errors, we are not departing from the purity of faith if we at times study them, especially since there are many questions of faith which cannot be settled without recourse to them. (trans. Monti 1994: 53)</p>
-</blockquote>
-<p>From 1243 to 1248, Bonaventure studied theology at the university of Paris. During the course of his studies, he worked with the Fransiscans, a group of Catholic organizations founded by St.&nbsp;Fransis of Assisi, named for the town in Italy where he was born in the year 1209. At the University of Paris, Bonaventure became a <em>Formed Bachelor</em> which meant that he would take on the academic roles of lecturing, getting involved in <em>the</em> disputes, a class of philosophical questions rooted in theology, and preaching. While a formed bachelor, not yet a master, the university’s masters and its students when on strike, leading to them becoming expelled. During this conflict, Bonaventure would be elected to the Fransiscan Chair in theology though he would only teach at the Fransiscan convent which was not recognized by the University.</p>
-<p>There would be some controversy surrounding this since, though the duties Bonaventure performed where those of a Master, he was not recognized as one until 1256 by order of Pope Alexander IV. During this time however, Bonaventure was a prolific scholar producing many texts including his <em>Reduction of Arts to Theology</em> which is a reflection on theological sermons as a genre of art.</p>
-<blockquote class="blockquote">
-<p>The same mode of reasoning is found in On Retracing the Arts to Theology. Here “reduction” consists in developing analogies that move the mind from the liberal arts to theology and back again. Bonaventure argues for each point by combining one claim based on reason with another based on revelation, as though they were wall and buttress of the cathedral of theology. Philosophical reasoning, then, is an absolutely integral part of Bonaventure’s faith-based theology.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>(https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu)</p>
-</blockquote>
-<p>There are objects we access through our senses. Importantly for Bonaventure, these objects always point towards their source of being, God. But it is not merely the objects in themselves, but rather our apprehension of their “weight, number, and measure” <a href="https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu">Stanford Encyclopedia of Philosophy</a>, that causes us to contemplate their “measure, beauty, and order” and to <em>delight</em> in this aspect of all that is created.</p>
-<blockquote class="blockquote">
-<p>The world as it is revealed to us through the senses provides the means for our re-entering ourselves and ascending to higher things. Furthermore, the senses themselves are equally signs of higher things.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>exercising their powers of intellect and will, intellectual creatures discover the highest and most perfect object of their powers in the Divine Source of their being, since God is the First or Highest Truth and the First or Chief Good. Accordingly, intellectual creatures have God as their ultimate object, whereas all creatures have God as their Cause. Consequently, intellectual creatures show themselves to be “images” and “likenesses” of God, while they show that all creatures are “shadows” and “vestiges” of God.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>The resolution of all our items of simple apprehension into the concept of being is metaphysically and epistemologically crucial: metaphysically, it opens up a route of argumentation that leads to the existence of God; epistemologically, such a resolution means that behind all, even the most determinate and specific, conceptions of things lies a transcendental awareness of being that informs all of our knowledge.</p>
-</blockquote>
-
+<section id="classical-propositional-logic" class="level1">
+<h1>Classical Propositional Logic</h1>
+<section id="valuation-rules-hard" class="level2">
+<h2 class="anchored" data-anchor-id="valuation-rules-hard">Valuation Rules Hard</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/v-rules-1.png" class="img-fluid figure-img"></p>
+<figcaption>See? Hard</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/v-rules-2.png" class="img-fluid figure-img"></p>
+<figcaption>See? Easy</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="valuation-rules-easy" class="level2">
+<h2 class="anchored" data-anchor-id="valuation-rules-easy">Valuation Rules Easy</h2>
+<div class="columns">
+<div class="column" style="width:40%;height:100%">
+<p><img src="./../../../figures/logic/truth-chart.png"></p>
+</div><div class="column" style="width:40%;font-size:0.85em;margin-left:3%;">
+<p><span class="tag" style="background-color:var(--quarto-hl-st-color)">negation</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated negation</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">conjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated conjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">disjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated disjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">conditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated conditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">biconditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated bi-conditional</span></p>
+</div>
+</div>
+</section>
+<section id="whats-the-point-in-all-of-this" class="level2">
+<h2 class="anchored" data-anchor-id="whats-the-point-in-all-of-this">What’s the point in all of this?</h2>
+<p>Consider the following proposition:</p>
+</section>
+</section>
+<section id="p-rightarrow-q-r-lor-s" class="level1 center middle">
+<h1 class="center middle">P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</h1>
+<p>If Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.</p>
+<section id="we-have" class="level2">
+<h2 class="anchored" data-anchor-id="we-have">We have</h2>
+<p>A number of formulas that together form the proposition below. (Formula is a fancy way of saying ‘claim’)</p>
+<p>Claim / Formula: P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+</section>
+<section id="this-claim-formula-is-made-up-of-the-following-claims-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="this-claim-formula-is-made-up-of-the-following-claims-formulas">This claim / formula is made up of the following claims / formulas:</h2>
+<ul>
+<li><p>The claim that: ‘Jim stole the cookie’; ‘P’</p></li>
+<li><p>The claim that: ‘Jim is guilty’; ‘Q’</p></li>
+<li><p>The claim that: ‘Jim deserves life in prison’; ‘R’</p></li>
+<li><p>The claim that: ‘Jim deserves death’; ‘S’</p></li>
+</ul>
+</section>
+<section id="any-one-of-these-can-be-true" class="level2">
+<h2 class="anchored" data-anchor-id="any-one-of-these-can-be-true">Any one of these can be true,</h2>
+<p>Or . . . they can all be true. What we ultimately want to know, is whether together, they make a true proposition, that if:</p>
+<ul>
+<li>Jim stole the cookie,</li>
+</ul>
+<p>Then</p>
+<ul>
+<li>Jim is guilty,</li>
+</ul>
+<p>and</p>
+</section>
+<section id="he-either" class="level2">
+<h2 class="anchored" data-anchor-id="he-either">He either</h2>
+<ul>
+<li>deserves life in prison,</li>
+</ul>
+</section>
+</section>
+<section id="or-he-deserves-death" class="level1 center middle">
+<h1 class="center middle">Or He Deserves Death</h1>
+<div style="width:360px;max-width:100%;">
+<div style="height:0;padding-bottom:56.11%;position:relative;">
+<iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" src="https://imgflip.com/embed/a6yfpe">
+</iframe>
+</div>
+<p>
+<a href="https://imgflip.com/gif/a6yfpe">via Imgflip</a>
+</p>
+</div>
+<section id="but-there-are-many-other-claims-as-well-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="but-there-are-many-other-claims-as-well-.-.-.">But there are many other claims as well . . .</h2>
+<ul>
+<li>If Jim stole the cookie, then he is guilty.</li>
+</ul>
+<p>This claim is an independent one.</p>
+<ul>
+<li><p>Jim is guilty and deserves either life in prison, or death</p></li>
+<li><p>He deserves life in prison or he deserves death</p></li>
+</ul>
+<p>These are all independent claims</p>
+<hr>
+<p>What we want to know, is whether any of them acts as a logical contradiction, or fail in some other way when combined with the others. Consider the two claims below:</p>
+<ul>
+<li><p>‘The boy is tall’</p></li>
+<li><p>‘The boy is not tall’</p></li>
+</ul>
+</section>
+</section>
+<section id="some-possible-formulas" class="level1">
+<h1>Some possible formulas</h1>
+<p>Together we have:</p>
+<ul>
+<li>‘The boy is tall and the boy is not tall’</li>
+</ul>
+<p>A contradiction</p>
+<p>Or</p>
+<ul>
+<li>‘The boy is tall or the boy is not tall’</li>
+</ul>
+<p>Not a contradiction</p>
+</section>
+<section id="lets-do-some-more" class="level1">
+<h1>Lets do some more</h1>
+<ul>
+<li><p>‘If the boy is tall, then the boy is not tall’</p></li>
+<li><p>‘The boy is tall if and only if he is not tall’</p></li>
+<li><p>‘It is not the case that the boy is tall’ (‘The boy is not tall’)</p></li>
+</ul>
+<section id="semantic-properties-we-can-test-for" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-properties-we-can-test-for">4 Semantic properties we can test for</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/4-semantic-properties.png" class="img-fluid figure-img"></p>
+<figcaption>Semantic Properties</figcaption>
+</figure>
+</div>
+<hr>
+<ol type="1">
+<li><p>Valid: The formula or sequent (argument), is true on all valuations. No counter examples (open paths)</p></li>
+<li><p>Contingent: True on at least one, but not all valuations. (At least one open path, but not all)</p></li>
+<li><p>Inconsistent: True on no valuations. All paths are closed.</p></li>
+<li><p>Consistent: At least one valuation where all formulas are true. (Open paths show valuations that make the formula or set of formulas true)</p></li>
+</ol>
+<hr>
+<div style="font-size: 70%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of Formula</th>
+<th>Definition</th>
+<th>Truth Tree Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Valid Sequent</td>
+<td>There are no counter examples</td>
+<td>No Open Paths</td>
+</tr>
+<tr class="even">
+<td>Invalid Sequent</td>
+<td>There is at least one valuation where the sequent is not true</td>
+<td>At least one open path</td>
+</tr>
+<tr class="odd">
+<td>Valid Formula</td>
+<td>The formula is true on all its valuations (T under main operator)</td>
+<td>All the paths are closed</td>
+</tr>
+<tr class="even">
+<td>Invalid</td>
+<td>There is at least one valuation on which the formula is False</td>
+<td>Open paths display valuations on which formula is false</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<div style="font-size: 70%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of Formula</th>
+<th>Definition</th>
+<th>Truth Tree Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contingent</td>
+<td>True on at least one, but not all valuations</td>
+<td>At least one open path, but not all</td>
+</tr>
+<tr class="even">
+<td>Inconsistent</td>
+<td>Not true on any valuations</td>
+<td>All paths are closed</td>
+</tr>
+<tr class="odd">
+<td>Consistent</td>
+<td>At least one valuation where all formulas are true</td>
+<td>Open paths show valuations that make the formula or set of formulas true</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="this-does-not-apply-here.-here-is-why-.-.-." class="level1">
+<h1>This does not apply here. Here is why . . .</h1>
+<section id="this-is-an-argument" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-an-argument">This is an argument</h2>
+</section>
+<section id="jim-is-guilty-and-deserves-life-in-prison-or-death" class="level2">
+<h2 class="anchored" data-anchor-id="jim-is-guilty-and-deserves-life-in-prison-or-death">Jim is guilty and deserves life in prison or death</h2>
+<p>If Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.</p>
+<p>Jim did steal the cookie.</p>
+<p>Therefore, Jim is guilty and either he deserves life in prison or he deserves death.</p>
+<hr>
+<p>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+<p>P</p>
+<p>Therefore,</p>
+<p>(Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+</section>
+<section id="however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." class="level2">
+<h2 class="anchored" data-anchor-id="however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument.">However, we are only looking at a formula, a single claim. Not an argument.</h2>
+<ul>
+<li><p>An argument has a premise</p></li>
+<li><p>And an argument has a conclusion</p></li>
+<li><p>Ours is a single claim</p></li>
+</ul>
+</section>
+</section>
+<section id="second-test" class="level1">
+<h1>Second test</h1>
+<ol start="2" type="1">
+<li>Determine whether a formula (not an argument/sequent), is consistent.</li>
+</ol>
+<hr>
+<p><strong><em>Brief Foray into Consistency . . .</em></strong></p>
+<p><img src="./../../../figures/logic/consistency.png" class="img-fluid"></p>
+<ul>
+<li>In everyday language, consistency means reliable.
+<ul>
+<li>An athlete who is consistent, is one who performs consistently well.</li>
+<li>An inconsistent athlete is one who performs well sometimes.</li>
+</ul></li>
+<li>In logic, a formula is consistent if it is logically possible for it to be true under all its formulations.
+<ul>
+<li>It does not entail a logical contradiction.</li>
+<li>‘The boy is tall’ and ‘the boy is short’ would entail a logical contradiction. (T &amp; ~T)</li>
+</ul></li>
+</ul>
+</section>
+<section id="in-other-words" class="level1">
+<h1>In other words</h1>
+<p>Since we have a formula only, not an argument, we want to know three things.</p>
+<ol type="1">
+<li><p>Is it consistent?</p></li>
+<li><p>Is it valid?</p></li>
+<li><p>Is it contingent?</p></li>
+</ol>
+</section>
+<section id="consistency" class="level1">
+<h1>Consistency</h1>
+<p>Construct a truth tree starting with the formula. If all the paths close, then the formula is inconsistent.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./../../../figures/logic/consistency.png" class="img-fluid figure-img"></p>
+<figcaption>Inconsistent Formula</figcaption>
+</figure>
+</div>
+<section id="is-it-possible-for-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="is-it-possible-for-.-.-.">Is it possible for . . .</h2>
+<ul>
+<li><p>The claim that: ‘Jim stole the cookie’; ‘P’</p></li>
+<li><p>The claim that: ‘Jim is guilty’; ‘Q’</p></li>
+<li><p>The claim that: ‘Jim deserves life in prison’; ‘R’</p></li>
+<li><p>The claim that: ‘Jim deserves death’; ‘S’</p></li>
+</ul>
+<p>To all be true at the same time?</p>
+</section>
+</section>
+<section id="this-depends-on-the-logical-operators-.-.-." class="level1">
+<h1>This depends on the logical operators . . .</h1>
+<ul>
+<li><p>If Jim stole the cookie(?)</p></li>
+<li><p>Then is he guilty?</p></li>
+<li><p>And . . .(?)</p></li>
+</ul>
+<hr>
+<section id="will-our-paths-close-like-this" class="level2">
+<h2 class="anchored" data-anchor-id="will-our-paths-close-like-this">Will our paths close like this?</h2>
+<p><img src="./../../../figures/logic/closed-paths.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="first-we-start-with-the-formula" class="level1">
+<h1>First we start with the formula</h1>
+<p><img src="./../../../figures/logic/jim-claim.png" class="img-fluid"></p>
+<section id="then-look-at-the-main-operator-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="then-look-at-the-main-operator-.-.-.">Then look at the main operator . . .</h2>
+<p>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
+</section>
+</section>
+<section id="what-does-the-valuation-rule-for-rightarrow-say" class="level1">
+<h1>What does the valuation rule for ‘<span class="math inline">\(\rightarrow\)</span>’ say?</h1>
+<p><img src="./../../../figures/logic/v-for-arrow.png" class="img-fluid"></p>
+<section id="this-is-what-we-are-paying-attention-to-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="this-is-what-we-are-paying-attention-to-.-.-.">This is what we are paying attention to . . .</h2>
+<p><img src="./../../../figures/logic/v-rules-important.png" class="img-fluid"></p>
+</section>
+<section id="in-other-words-.-.-." class="level2">
+<h2 class="anchored" data-anchor-id="in-other-words-.-.-.">In other words . . .</h2>
+<p><img src="./../../../figures/logic/v-arrow-picture.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="so-step-1-.-.-." class="level1">
+<h1>So step 1 . . .</h1>
+<p><img src="./../../../figures/logic/using-v-rule-arrow.png" class="img-fluid"></p>
+</section>
+<section id="step-2-.-.-." class="level1">
+<h1>Step 2 . . .</h1>
+<p><img src="./../../../figures/logic/using-conj-v.png" class="img-fluid"></p>
+</section>
+<section id="see-all-the-open-paths" class="level1">
+<h1>See all the open paths?</h1>
+<p><img src="./../../../figures/logic/open-paths.png" class="img-fluid"></p>
+<section id="this-means-that" class="level2">
+<h2 class="anchored" data-anchor-id="this-means-that">This means that</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>~ P</th>
+<th>Q</th>
+<th>R</th>
+<th>S</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<p>or</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>P</th>
+<th>Q</th>
+<th>R</th>
+<th>S</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="or-.-.-." class="level1">
+<h1>Or . . .</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>~P</th>
+<th><span class="math inline">\(\rightarrow\)</span></th>
+<th>(</th>
+<th>Q</th>
+<th>&amp;</th>
+<th>( R</th>
+<th><span class="math inline">\(\lor\)</span></th>
+<th>S )</th>
+<th>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>T</td>
+<td></td>
+<td></td>
+<td>T</td>
+<td></td>
+<td>T</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, the claim:</p>
+<ul>
+<li>If Jim stole the cookie then he is guilty and deserves life in prison or death</li>
+</ul>
+</section>
+<section id="is-true-if" class="level1">
+<h1>Is true if:</h1>
+<ul>
+<li><p>it is true that because Jim stole the cookie</p></li>
+<li><p>that he deserves either</p>
+<ul>
+<li>life in prison</li>
+</ul></li>
+</ul>
+<section id="or" class="level2">
+<h2 class="anchored" data-anchor-id="or">Or</h2>
+</section>
+</section>
+<section id="death" class="level1">
+<h1>Death</h1>
+<div style="width:360px;max-width:100%;">
+<div style="height:0;padding-bottom:56.11%;position:relative;">
+<iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" src="https://imgflip.com/embed/a6yfpe">
+</iframe>
+</div>
+<p>
+<a href="https://imgflip.com/gif/a6yfpe">via Imgflip</a>
+</p>
+</div>
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-russ12" class="csl-entry" role="listitem">
-Russell, Bertrand. 1912. <em>The <span>Problems</span> of <span>Philosophy</span></em>. <span>Henry Holt and Company</span>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Stanford Encyclopedia of Philosophy, bottom of section 2<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><span class="citation" data-cites="russ12">Russell (<a href="#ref-russ12" role="doc-biblioref">1912</a>)</span>, 8<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><span class="citation" data-cites="russ12">Russell (<a href="#ref-russ12" role="doc-biblioref">1912</a>)</span>, 11<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Stanford Encyclopedia of Philosophy, bottom of section 2<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1166,13 +1595,13 @@ Russell, Bertrand. 1912. <em>The <span>Problems</span> of <span>Philosophy</span
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../2025-aesthetics/weeks/week07/page.html" class="pagination-link" aria-label="Discussion 07">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Discussion 07</span>
+      <a href="../../../2025-logic/weeks/week08-predicates/page.html" class="pagination-link" aria-label="👨‍🏫 Lecture Material/Predicate Logic Syntax">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">👨‍🏫 Lecture Material/Predicate Logic Syntax</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../2025-aesthetics/weeks/week08/page.html" class="pagination-link" aria-label="Discussion 08">
-        <span class="nav-page-text">Discussion 08</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../2025-aesthetics/weeks/week03/page.html" class="pagination-link" aria-label="Discussion 02">
+        <span class="nav-page-text">Discussion 02</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
