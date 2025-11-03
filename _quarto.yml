@@ -89,7 +89,7 @@ website:
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week08/page.qmd
+         - href: 2025-logic/weeks/week08-predicates/page.qmd
            text: The Syntax of Classical Predicate Logic
            contents:
              - href: 2025-logic/weeks/week08-predicates/page.qmd
@@ -214,6 +214,13 @@ website:
              - href: 2025-aesthetics/weeks/week15/page.qmd
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week15/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week16/page.qmd
+           text: Discussion 15 - Heiddegger - The Origin of the Work of Art
+           contents:
+             - href: 2025-aesthetics/weeks/week16/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week16/summary.qmd
                text: 💻 Notes and Summary
 
 
