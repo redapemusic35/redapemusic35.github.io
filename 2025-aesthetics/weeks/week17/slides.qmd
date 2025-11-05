@@ -1,6 +1,6 @@
 ---
-subtitle: "PHIL343A -- Heiddegger, The Origin of the Work of Art"
-title: "<font style='font-size:1em;'>🗓️ Week 11<br/>The Thingly Nature of Art</font>"
+subtitle: "PHIL343A -- The Art of Video Games"
+title: "<font style='font-size:1em;'>🗓️ Week 11<br/>The Art of Video Games</font>"
 author: Prof. [Reynolds](#)
 institute: '[Stetson University](#)'
 date: 02 September 2026
@@ -22,58 +22,10 @@ format:
     preview-links: auto
     logo: /figures/icons/course_favicon.png
     css: /css/styles_slides.css
-    footer: 'PHIL343A -- Aesthetics Heidegger'
----
-
+    footer: 'PHIL343A -- Aesthetics Tavinor'
 ---
 
 # The Thingly Nature of Art
-
-![A Stop sign against the backdrop of the California coast](../../../figures/aesthetics-course/stop-sign-along-country-road_Getty-680x402.jpg)
-
-::: {.notes}
-
-Some objects are things.
-
-When looking at objects that are things, we can play a fun game with ourselves: art or not?
-
-:::
-
----
-
-> Our aim is to arrive at the immediate and full reality of the work of art, for only in this way shall we discover real art also within it. [398]
-
-::: {.notes}
-
-We can begin with understanding what a thing is by focusing on its function, its practical use.
-
-* What is a mere thing?
-
-There are three considerations here:
-
-Practical Use,
-
-Historical Constitution, they establish a sense of history and time giving them cultural significance.
-
-Thereby, they build our world around us.
-
-What is time without its passage?
-
-:::
-
-## Mere Things
-
-* A block of granite for instance
-
-* A stop sign? Is this a mere thing? No.
-
-::: {.notes}
-
-A stop sign is practically useful.
-
-:::
-
----
 
 ![A Pair of Shoes 1886](../../../figures/aesthetics-course/van-gogh-peasant-shoes.png)
 
@@ -152,7 +104,7 @@ For each ship to exist in this game, there first needs to be material mined from
 
 :::
 
-## Artistic Representation, Injustice, and Exploitation
+## Artistic Evils
 
 > But because of the interactive nature of videogame fictions – the player takes a part in the moral situations presented there, and whether or not the evil occurs is often up to them – the potential of games for the exploration of moral issues seems somehow more vivid: and perhaps more dangerous, where the game does not provide opportunities to put the content in a thoughtful or realistic context.
 
@@ -179,3 +131,32 @@ We believe that murder is wrong, that people should not be treated as means to a
 ##  Gilmore rejects this arguing that
 
 > imaginative activity has an epistemic or practical role like that of beliefs and perceptions, where the function is to aid in, e.g., planning for the future, or discovering some truth about the actual world, our evaluative commitments, or what is metaphysically possible. [@gilm20, 132]
+
+## Artistic Functions
+
+> My explanation was that the kinds of reasons that we countenance as justifying our emotions, imaginings, and desires depend on the *functions* of the practices in which those mental representations are elicited. [@gilm20, 201]
+
+::: {.notes}
+
+* Entertainment
+* Absorption
+* Vicarious Experience
+* Distraction
+
+Back to an earlier question, how do we qualify artistic achievement?
+
+:::
+
+---
+
+> However, when we evaluate a work of art in light of its acheievement of its ends, taht evaluation is typically not based on merely the discharging of those ends, without regard to how that happens to occurr. Our interest is rather in the ends as *realized* by the means: that is, how the material or structural medium of the work discharges a function. [@gilm20, 205]
+
+---
+
+> This model has been argued to make  sense of the distinction between ‘punk’ and ‘real punk’ in that the conditions to qualify as  punk tend to be descriptive, but an artist and their work must embody the values of punk to  qualify as ‘real punk’ (Liao, Meskin, Knobe 2020). [@malo23]
+
+::: {.notes}
+
+* Real punk or country music then, is music through which an artist and their work embodies the values of punk. [@malo23]
+
+:::

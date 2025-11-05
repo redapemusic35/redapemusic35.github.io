@@ -222,6 +222,13 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week16/summary.qmd
                text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week17/page.qmd
+           text: Discussion 17 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week17/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week17/summary.qmd
+               text: 💻 Notes and Summary
 
 
 
