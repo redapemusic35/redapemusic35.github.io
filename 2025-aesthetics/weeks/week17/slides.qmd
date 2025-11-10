@@ -110,7 +110,7 @@ For each ship to exist in this game, there first needs to be material mined from
 
 ::: {.notes}
 
-But what happens when developers imbibe there creations with data, and create meaning that we would normally otherwise find reprehensible.
+But what happens when developers imbibe their creations with data, and create meaning that the audience would otherwise find reprehensible?
 
 For instance, while it is typically obvious that violence is wrong, what is equally worrisome, are the depictions of women and other minorities that we see in GTA San Andreas.
 
@@ -160,3 +160,7 @@ Back to an earlier question, how do we qualify artistic achievement?
 * Real punk or country music then, is music through which an artist and their work embodies the values of punk. [@malo23]
 
 :::
+
+# What are Video Games? What is Art?
+
+
