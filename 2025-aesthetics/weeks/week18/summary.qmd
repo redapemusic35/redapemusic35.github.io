@@ -1,27 +1,52 @@
-# A Treatise of Human Nature
+# Is Star Citizen a Video Game?
 
-* Rooted in his *A Treatise of Human Nature* (1739-40)
+## Fiction Functions
 
-* Praise and Blame
+> Fictions have often been thought to provide opportunities for moral reflection or learning, and there is a large literature devoted to how (or indeed if) they can do this. But because of the interactive nature of videogame *fictions* - the player takes a part in the moral situations presented there, and whether or not the evil occurs is often up to them - the potential for th exploration of moral issues seems somehow more vivid: and perhaps more dangerous, where the game does not provide opportunities to put the content in a thoughtful or realistic context. [@tavi09, 9]
 
-* A science of human nature
+What should be explored?
 
-Notable influences:
+* Definition of art, videogames
+* What do artworks consist of (ontology), distinctions between other forms of art and videogames
+* Their ability to express and the contents of these expressions, what are the effects of videogames in employing narratives, fictions and visual art?
+* Our perceptions of their expressions, their appeal to our emotions
+* The content and context of these expressions (narrative and interpretation), to our cognitions
+* Those faculties which are involved in our appreciation of artworks, cognitive, emotional.
+* Their moral significance
+* Blame
+* What is important about video games
+* Are video games art?
 
-* Joseph Addison
+## So what makes something a videogame?
 
-* Francis Hutcheson
+> X is a videogame if it is an artifact in a visual digital medium, is intended as an object of entertainment, and is intended to provide such entertainment through the employment of one or both of the following modes of engagement: rule and objective gameplay or interactive fiction. [@tavi09, 26]
 
-* Shaftesbury (Anthony Ashley Cooper).
 
->  So Hume’s reflections on aesthetics occupy a pivotal niche between the appearance of fine art theory and Kant’s defense of an independent aesthetic judgment in the Critique of Judgment – a defense clearly influenced by Kant’s reading of Hume’s essays and An Enquiry Concerning the Principles of Morals. [SEP](https://plato.stanford.edu/entries/hume-aesthetics/)
+1. Must be an artifact in a visual digital medium.
+2. Is intended as an object of entertainment
+3. Is intended to provide entertainment through:
+   1. rule and objective gameplay
+   2. interactive fiction
 
-Hume retains the idea that the values within the scope of criticism are essentially pleasures of the human imagination.
+## Some Definitions
 
-In regards to the *fine arts*, these are reserved as a pleasure for those who can afford luxury.
+By understanding what art is, we can understand our attempt to define videogames.
 
-* They consist of sensory and cognitive pleasures
+### What is a definition and what kinds are there?
 
-From the older tradition, elegantly expounded by Addison in numerous essays written between 1709 and 1715, Hume retains the idea that the values within the scope of criticism are essentially pleasures of the human imagination.
+#### Nominal: chart of the conceptual relations of words.
 
-But what are the values that are the subject of aesthetic judgment?
+Consider variations of videogames, computer game, electronic game, console, PC, handheld etc. But this does not capture all of what we think of as a videogame.
+
+#### Empirical or Essential
+
+*Necessary and sufficient* conditions.
+
+* Attempts to explain, clarify, or revise the "conceptual status of a  term.
+* Attempts to capture the material "nature" of the object of definition.
+
+### Narratological
+
+### Ludological
+
+### Interactive Fiction
