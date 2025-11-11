@@ -89,13 +89,23 @@ website:
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week08/page.qmd
-           text: The Syntax of Classical Predicate Logic
+         - href: 2025-logic/weeks/week08-predicates/page.qmd
+           text: Week 07
            contents:
              - href: 2025-logic/weeks/week08-predicates/page.qmd
-               text: 👨‍🏫 Lecture Material/Predicate Logic Syntax
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
              - href: 2025-logic/weeks/week08-predicates/summary.qmd
                text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+
+
+      - section: "🗓️ Aesthetics"
+        contents:
+          #        - href: 2025-aesthetics/weeks/week01/page.qmd
+          # text: Discussion 01
+          # contents:
+          #   - href: 2025-aesthetics/weeks/week02/page.qmd
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
 
@@ -176,15 +186,6 @@ website:
          - href: 2025-aesthetics/weeks/week10/page.qmd
            text: Discussion 10
            contents:
-             - href: 2025-aesthetics/weeks/week10/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week10/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week11/page.qmd
-           text: Discussion 11
-           contents:
-             - href: 2025-aesthetics/weeks/week11/page.qmd
-               text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week11/summary.qmd
                text: 💻 Notes and Summarya
          - href: 2025-aesthetics/weeks/week12/page.qmd
@@ -208,13 +209,6 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week14/summary.qmd
                text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week15/page.qmd
-           text: Discussion 15 - Hegel - Art is Done
-           contents:
-             - href: 2025-aesthetics/weeks/week15/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week15/summary.qmd
-               text: 💻 Notes and Summary
 
 
 
@@ -230,7 +224,7 @@ website:
 
 
 
-bibliography: ./Un-Duplicates.bib
+bibliography: references/Un-Duplicates.bib
 csl: references/chicago-author-date.csl
 
 
