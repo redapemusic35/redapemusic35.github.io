@@ -90,7 +90,6 @@ website:
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-logic/weeks/week08-predicates/page.qmd
-           text: Week 07
            contents:
              - href: 2025-logic/weeks/week08-predicates/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
@@ -209,13 +208,34 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week14/summary.qmd
                text: 💻 Notes and Summary
-
-
-
-
-
-
-
+         - href: 2025-aesthetics/weeks/week15/page.qmd
+           text: Discussion 15 - Hegel - Art is Done
+           contents:
+             - href: 2025-aesthetics/weeks/week15/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week15/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week16/page.qmd
+           text: Discussion 15 - Heiddegger - The Origin of the Work of Art
+           contents:
+             - href: 2025-aesthetics/weeks/week16/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week16/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week17/page.qmd
+           text: Discussion 17 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week17/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week17/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week18/page.qmd
+           text: Discussion 18 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week18/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week18/summary.qmd
+               text: 💻 Notes and Summary
   navbar:
     background: primary
   page-footer:
