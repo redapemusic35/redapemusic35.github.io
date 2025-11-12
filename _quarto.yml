@@ -90,12 +90,21 @@ website:
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
          - href: 2025-logic/weeks/week08-predicates/page.qmd
-           text: The Syntax of Classical Predicate Logic
            contents:
              - href: 2025-logic/weeks/week08-predicates/page.qmd
-               text: 👨‍🏫 Lecture Material/Predicate Logic Syntax
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
              - href: 2025-logic/weeks/week08-predicates/summary.qmd
                text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+
+
+      - section: "🗓️ Aesthetics"
+        contents:
+          #        - href: 2025-aesthetics/weeks/week01/page.qmd
+          # text: Discussion 01
+          # contents:
+          #   - href: 2025-aesthetics/weeks/week02/page.qmd
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
 
@@ -176,15 +185,6 @@ website:
          - href: 2025-aesthetics/weeks/week10/page.qmd
            text: Discussion 10
            contents:
-             - href: 2025-aesthetics/weeks/week10/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week10/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week11/page.qmd
-           text: Discussion 11
-           contents:
-             - href: 2025-aesthetics/weeks/week11/page.qmd
-               text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week11/summary.qmd
                text: 💻 Notes and Summarya
          - href: 2025-aesthetics/weeks/week12/page.qmd
@@ -243,13 +243,6 @@ website:
                text: 👨‍🏫 Lecture Material
              - href: 2025-aesthetics/weeks/week18/summary.qmd
                text: 💻 Notes and Summary
-
-
-
-
-
-
-
   navbar:
     background: primary
   page-footer:
@@ -258,7 +251,7 @@ website:
 
 
 
-bibliography: ./Un-Duplicates.bib
+bibliography: references/Un-Duplicates.bib
 csl: references/chicago-author-date.csl
 
 
