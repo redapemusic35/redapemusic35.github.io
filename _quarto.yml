@@ -4,7 +4,8 @@ project:
   output-dir: _output
   render:
     - "./index.qmd"
-    - "2026_law/*"
+    - "./2025-aesthetics/*"
+#    - "2025-logic/*"
 
 website:
   title: "Philosophy of Law, Spring 2026"
@@ -21,261 +22,146 @@ website:
   sidebar:
     style: docked
     contents:
-      - section: "The Cave of Wonder"
+      - section: "🗓️ Logic"
         contents:
-          - href: 2026_law/weeks/week01-intro/page.qmd
-            text: Course Introduction
-            contents:
-              - href: 2026_law/weeks/week01-intro/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week01-intro/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week01-intro/appendix.qmd
-                text: "Appendix"
-
-      - section: "The Halls of Justice – Philosophy of Law"
+         - href: 2025-logic/weeks/week01/page.qmd
+           text: Week 01
+           contents:
+             - href: 2025-logic/weeks/week01/page.qmd
+               text: 👨‍🏫 Lecture Material
+            #  - href: 2023/weeks/week01/lab.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week02/page.qmd
+           text: Week 02
+           contents:
+             - href: 2025-logic/weeks/week02/page.qmd
+               text: 👨‍🏫 Lecture Material
+            #  - href: 2023/weeks/week01/lab.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week03/page.qmd
+           text: Week 03
+           contents:
+             - href: 2025-logic/weeks/week03/page.qmd
+               text: 👨‍🏫 Lecture Material
+            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week04/page.qmd
+           text: Week 04
+           contents:
+             - href: 2025-logic/weeks/week04/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+             - href: 2025-logic/weeks/week04/summary.qmd
+               text: 💻 Study Guide
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week05/page.qmd
+           text: Week 05
+           contents:
+             - href: 2025-logic/weeks/week05/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
+            #    text: 💻 Lab Roadmap
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week06/page.qmd
+           text: Week 06
+           contents:
+             - href: 2025-logic/weeks/week06/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+             - href: 2025-logic/weeks/week06/summary.qmd
+               text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week07/page.qmd
+           text: Week 07
+           contents:
+             - href: 2025-logic/weeks/week07/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+             - href: 2025-logic/weeks/week07/summary.qmd
+               text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+         - href: 2025-logic/weeks/week08-predicates/page.qmd
+           contents:
+             - href: 2025-logic/weeks/week08-predicates/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+             - href: 2025-logic/weeks/week08-predicates/summary.qmd
+               text: 💻 Notes and Summary
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
+      - section: "🗓️ Aesthetics"
         contents:
-          - href: 2026_law/weeks/week01-intro/page.qmd
-            text: Course Introduction
-            contents:
-              - href: 2026_law/weeks/week01-intro/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week01-intro/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week01-intro/appendix.qmd
-                text: "Appendix"
+         - href: 2025-aesthetics/weeks/week12/page.qmd
+           text: Discussion 12
+           contents:
+             - href: 2025-aesthetics/weeks/week12/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week12/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week13/page.qmd
+           text: Discussion 13 - Kant on the Critique of the Power of Judgment
+           contents:
+             - href: 2025-aesthetics/weeks/week13/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week13/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week14/page.qmd
+           text: Discussion 14 - David Hume - On Tragedy
+           contents:
+             - href: 2025-aesthetics/weeks/week14/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week14/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week15/page.qmd
+           text: Discussion 15 - Hegel - Art is Done
+           contents:
+             - href: 2025-aesthetics/weeks/week15/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week15/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week16/page.qmd
+           text: Discussion 15 - Heiddegger - The Origin of the Work of Art
+           contents:
+             - href: 2025-aesthetics/weeks/week16/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week16/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week17/page.qmd
+           text: Discussion 17 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week17/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week17/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week18/page.qmd
+           text: Discussion 18 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week18/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week18/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week19/page.qmd
+           text: Discussion 19 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week19/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week19/summary.qmd
+               text: 💻 Notes and Summary
+         - href: 2025-aesthetics/weeks/week20/page.qmd
+           text: Discussion 20 - Tavinor's - The Art of Video Games
+           contents:
+             - href: 2025-aesthetics/weeks/week20/page.qmd
+               text: 👨‍🏫 Lecture Material
+             - href: 2025-aesthetics/weeks/week20/summary.qmd
+               text: 💻 Notes and Summary
 
-          - href: 2026_law/weeks/week02-fuller/page.qmd
-            text: Fuller – *The Case of the Spelunkean Explorers*
-            contents:
-              - href: 2026_law/weeks/week02-fuller/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week02-fuller/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week02-fuller/appendix.qmd
-                text: "Appendix"
 
-          - href: 2026_law/weeks/week03-kretzmann/page.qmd
-            text: Kretzmann – *Lex Iniusta Non Est Lex*
-            contents:
-              - href: 2026_law/weeks/week03-kretzmann/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week03-kretzmann/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week03-kretzmann/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week04-bentham/page.qmd
-            text: Bentham – *Principles of Morals and Legislation*
-            contents:
-              - href: 2026_law/weeks/week04-bentham/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week04-bentham/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week04-bentham/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week05-hart-primary/page.qmd
-            text: Hart – *Law as the Union of Primary and Secondary Rules*
-            contents:
-              - href: 2026_law/weeks/week05-hart-primary/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week05-hart-primary/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week05-hart-primary/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week06-dworkin-rules/page.qmd
-            text: Dworkin – *The Model of Rules*
-            contents:
-              - href: 2026_law/weeks/week06-dworkin-rules/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week06-dworkin-rules/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week06-dworkin-rules/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week07-dworkin-integrity/page.qmd
-            text: Dworkin – *Integrity in Law*
-            contents:
-              - href: 2026_law/weeks/week07-dworkin-integrity/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week07-dworkin-integrity/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week07-dworkin-integrity/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week08-holmes-frank/page.qmd
-            text: Holmes & Frank – *Legal Realism*
-            contents:
-              - href: 2026_law/weeks/week08-holmes-frank/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week08-holmes-frank/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week08-holmes-frank/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week09-cls/page.qmd
-            text: Critical Legal Studies
-            contents:
-              - href: 2026_law/weeks/week09-cls/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week09-cls/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week09-cls/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week10-crito/page.qmd
-            text: Plato – *Crito*
-            contents:
-              - href: 2026_law/weeks/week10-crito/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week10-crito/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week10-crito/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week11-review-exam1/page.qmd
-            text: Review & Exam 1 Prep
-            contents:
-              - href: 2026_law/weeks/week11-review-exam1/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week11-review-exam1/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week11-review-exam1/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week12-hart-retribution/page.qmd
-            text: Hart – *Postscript Responsibility and Retribution*
-            contents:
-              - href: 2026_law/weeks/week12-hart-retribution/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week12-hart-retribution/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week12-hart-retribution/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week13-duff/page.qmd
-            text: Duff – *Choice, Character, and Action*
-            contents:
-              - href: 2026_law/weeks/week13-duff/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week13-duff/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week13-duff/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week14-parker/page.qmd
-            text: Parker – *Blame, Punishment and the Role of Result*
-            contents:
-              - href: 2026_law/weeks/week14-parker/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week14-parker/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week14-parker/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week15-self-defense/page.qmd
-            text: Self-Defense
-            contents:
-              - href: 2026_law/weeks/week15-self-defense/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week15-self-defense/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week15-self-defense/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week16-liability/page.qmd
-            text: Excuse, Justification, Subjective/Objective Liability
-            contents:
-              - href: 2026_law/weeks/week16-liability/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week16-liability/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week16-liability/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week17-mill/page.qmd
-            text: Mill – *On Liberty*
-            contents:
-              - href: 2026_law/weeks/week17-mill/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week17-mill/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week17-mill/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week18-paternalism/page.qmd
-            text: Dworkin – *Paternalism* & Griswold v. Connecticut
-            contents:
-              - href: 2026_law/weeks/week18-paternalism/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week18-paternalism/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week18-paternalism/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week19-devlin/page.qmd
-            text: Devlin – *Morals and the Criminal Law*
-            contents:
-              - href: 2026_law/weeks/week19-devlin/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week19-devlin/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week19-devlin/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week20-terrorism/page.qmd
-            text: The Moral Significance of Terrorism
-            contents:
-              - href: 2026_law/weeks/week20-terrorism/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week20-terrorism/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week20-terrorism/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week21-dershowitz/page.qmd
-            text: Dershowitz – *Should the Ticking Bomb Terrorist be Tortured?*
-            contents:
-              - href: 2026_law/weeks/week21-dershowitz/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week21-dershowitz/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week21-dershowitz/appendix.qmd
-                text: "Appendix"
-              - href: 2026_law/paper-guidelines.qmd
-                text: "**Paper Due**"
-
-          - href: 2026_law/weeks/week22-bork/page.qmd
-            text: Bork – *The Original Understanding*
-            contents:
-              - href: 2026_law/weeks/week22-bork/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week22-bork/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week22-bork/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week23-student-choice/page.qmd
-            text: Student-Chosen Topic (TBD)
-            contents:
-              - href: 2026_law/weeks/week23-student-choice/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week23-student-choice/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week23-student-choice/appendix.qmd
-                text: "Appendix"
-
-          - href: 2026_law/weeks/week24-review-final/page.qmd
-            text: Review & Final Exam Prep
-            contents:
-              - href: 2026_law/weeks/week24-review-final/page.qmd
-                text: "Discussion Material"
-              - href: 2026_law/weeks/week24-review-final/summary.qmd
-                text: "Recap and Summary"
-              - href: 2026_law/weeks/week24-review-final/appendix.qmd
-                text: "Appendix"
   navbar:
     background: primary
 
@@ -283,13 +169,7 @@ website:
     background: light
     left: "Copyright 2025, Montaque Reynolds"
 
-<<<<<<< HEAD
 bibliography: ./Un-Duplicates.bib
-=======
-
-
-bibliography: references/Un-Duplicates.bib
->>>>>>> bb6e63bee5486ec270e31cf9c61cd9ac25077f05
 csl: references/chicago-author-date.csl
 
 format:
