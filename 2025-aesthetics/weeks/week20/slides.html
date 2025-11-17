@@ -12,7 +12,7 @@
 
   <meta name="author" content="Prof.&nbsp;Reynolds">
   <meta name="dcterms.date" content="14 March 2023">
-  <title>Fall 2025 – 🗓️ Week 03  Introduction</title>
+  <title>Philosophy of Law, Spring 2026 – 🗓️ Week 11 The Art of Video Games</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -48,7 +48,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -125,11 +124,11 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="🗓️ Week 03 Introduction – Fall 2025">
-<meta property="og:description" content="PHIL104Q – Classical Propositional Logic, (Semantics)">
-<meta property="og:site_name" content="Fall 2025">
-<meta name="twitter:title" content="🗓️ Week 03 Introduction – Fall 2025">
-<meta name="twitter:description" content="PHIL104Q – Classical Propositional Logic, (Semantics)">
+<meta property="og:title" content="🗓️ Week 11The Art of Video Games – Philosophy of Law, Spring 2026">
+<meta property="og:description" content="PHIL343A – Video Games and Fiction">
+<meta property="og:site_name" content="Philosophy of Law, Spring 2026">
+<meta name="twitter:title" content="🗓️ Week 11The Art of Video Games – Philosophy of Law, Spring 2026">
+<meta name="twitter:description" content="PHIL343A – Video Games and Fiction">
 <meta name="twitter:creator" content="@<twitter-handle>">
 <meta name="twitter:site" content="\@<twitter-handle>">
 <meta name="twitter:card" content="summary">
@@ -139,8 +138,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block">
-  <h1 class="title"><font style="font-size:1em;">🗓️ Week 03<br> Introduction</font></h1>
-  <p class="subtitle">PHIL104Q – Classical Propositional Logic, (Semantics)</p>
+  <h1 class="title"><font style="font-size:1em;">🗓️ Week 11<br>The Art of Video Games</font></h1>
+  <p class="subtitle">PHIL343A – Video Games and Fiction</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -153,473 +152,42 @@ Prof.&nbsp;<a href="#/">Reynolds</a>
     </div>
 </div>
 
-  <p class="date">Sep 02 2026</p>
+  <p class="date">02 Sep 2026</p>
 </section>
 <section>
-<section id="classical-propositional-logic" class="title-slide slide level1">
-<h1>Classical Propositional Logic</h1>
+<section id="recap" class="title-slide slide level1">
+<h1>Recap</h1>
 
 </section>
-<section id="valuation-rules" class="slide level2">
-<h2>Valuation Rules</h2>
-
-<img data-src="./../../../figures/logic/v-rules-1.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Valuation Rules</p></section>
-<section class="slide level2">
-
-
-<img data-src="./../../../figures/logic/v-rules-2.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Valuation Rules</p></section>
-<section class="slide level2">
-
-<div class="columns">
-<div class="column" style="width:40%;height:100%">
-<p><img src="./../../../figures/logic/truth-chart.png"></p>
-</div><div class="column" style="width:40%;font-size:0.85em;margin-left:3%;">
-<p><span class="tag" style="background-color:var(--quarto-hl-st-color)">negation</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated negation</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">conjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated conjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">disjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated disjunction</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">conditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated conditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-st-color)">biconditional</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">negated bi-conditional</span></p>
-</div></div>
-</section>
-<section id="whats-the-point-in-all-of-this" class="slide level2">
-<h2>What’s the point in all of this?</h2>
-<p>Consider the following proposition:</p>
-</section></section>
-<section>
-<section id="p-rightarrow-q-r-lor-s" class="title-slide slide level1 center middle">
-<h1>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</h1>
-<p>If Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.</p>
-</section>
-<section id="we-have" class="slide level2">
-<h2>We have</h2>
-<p>A number of formulas that together form the proposition below. (Formula is a fancy way of saying ‘claim’)</p>
-<p>Claim / Formula: P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
-</section>
-<section id="this-claim-formula-is-made-up-of-the-following-claims-formulas" class="slide level2">
-<h2>This claim / formula is made up of the following claims / formulas:</h2>
-<ul>
-<li class="fragment"><p>The claim that: ‘Jim stole the cookie’; ‘P’</p></li>
-<li class="fragment"><p>The claim that: ‘Jim is guilty’; ‘Q’</p></li>
-<li class="fragment"><p>The claim that: ‘Jim deserves life in prison’; ‘R’</p></li>
-<li class="fragment"><p>The claim that: ‘Jim deserves death’; ‘S’</p></li>
-</ul>
-</section>
-<section id="any-one-of-these-can-be-true" class="slide level2">
-<h2>Any one of these can be true,</h2>
-<p>Or . . . they can all be true. What we ultimately want to know, is whether together, they make a true proposition, that if:</p>
-<ul>
-<li class="fragment">Jim stole the cookie,</li>
-</ul>
-<p>Then</p>
-<ul>
-<li class="fragment">Jim is guilty,</li>
-</ul>
-<p>and</p>
-</section>
-<section id="he-either" class="slide level2">
-<h2>He either</h2>
-<ul>
-<li class="fragment">deserves life in prison,</li>
-</ul>
-</section></section>
-<section>
-<section id="or-he-deserves-death" class="title-slide slide level1 center middle">
-<h1>Or He Deserves Death</h1>
-<div style="width:360px;max-width:100%;">
-<div style="height:0;padding-bottom:56.11%;position:relative;">
-<iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" src="https://imgflip.com/embed/a6yfpe">
-</iframe>
-</div>
-<p>
-<a href="https://imgflip.com/gif/a6yfpe">via Imgflip</a>
-</p>
-</div>
-</section>
-<section id="but-there-are-many-other-claims-as-well-.-.-." class="slide level2">
-<h2>But there are many other claims as well . . .</h2>
-<ul>
-<li class="fragment">If Jim stole the cookie, then he is guilty.</li>
-</ul>
-<p>This claim is an independent one.</p>
-<ul>
-<li class="fragment"><p>Jim is guilty and deserves either life in prison, or death</p></li>
-<li class="fragment"><p>He deserves life in prison or he deserves death</p></li>
-</ul>
-<p>These are all independent claims</p>
-</section>
-<section class="slide level2">
-
-<p>What we want to know, is whether any of them acts as a logical contradiction, or fail in some other way when combined with the others. Consider the two claims below:</p>
-<ul>
-<li class="fragment"><p>‘The boy is tall’</p></li>
-<li class="fragment"><p>‘The boy is not tall’</p></li>
-</ul>
-</section></section>
-<section id="some-possible-formulas" class="title-slide slide level1">
-<h1>Some possible formulas</h1>
-<p>Together we have:</p>
-<ul>
-<li class="fragment">‘The boy is tall and the boy is not tall’</li>
-</ul>
-<p>A contradiction</p>
-<p>Or</p>
-<ul>
-<li class="fragment">‘The boy is tall or the boy is not tall’</li>
-</ul>
-<p>Not a contradiction</p>
-</section>
-
-<section>
-<section id="lets-do-some-more" class="title-slide slide level1">
-<h1>Lets do some more</h1>
-<ul>
-<li class="fragment"><p>‘If the boy is tall, then the boy is not tall’</p></li>
-<li class="fragment"><p>‘The boy is tall if and only if he is not tall’</p></li>
-<li class="fragment"><p>‘It is not the case that the boy is tall’ (‘The boy is not tall’)</p></li>
-</ul>
-</section>
-<section id="semantic-properties-we-can-test-for" class="slide level2">
-<h2>4 Semantic properties we can test for</h2>
-
-<img data-src="./../../../figures/logic/4-semantic-properties.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Semantic Properties</p></section>
-<section class="slide level2 scrollable">
-
-<ol type="1">
-<li class="fragment"><p>Valid: The formula or sequent (argument), is true on all valuations. No counter examples (open paths)</p></li>
-<li class="fragment"><p>Contingent: True on at least one, but not all valuations. (At least one open path, but not all)</p></li>
-<li class="fragment"><p>Inconsistent: True on no valuations. All paths are closed.</p></li>
-<li class="fragment"><p>Consistent: At least one valuation where all formulas are true. (Open paths show valuations that make the formula or set of formulas true)</p></li>
-</ol>
-</section>
-<section class="slide level2">
-
-<div style="font-size: 70%;">
+<section id="what-we-are-not-reading-after-all" class="slide level2">
+<h2>What we are not reading after all</h2>
 <table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Type of Formula</th>
-<th>Definition</th>
-<th>Truth Tree Result</th>
+<th>Author</th>
+<th>Title</th>
+<th>Page</th>
+<th>Source</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Valid Sequent</td>
-<td>There are no counter examples</td>
-<td>No Open Paths</td>
+<td>David Lewis’s</td>
+<td>Truth in Fiction</td>
+<td>handout</td>
+<td></td>
 </tr>
 <tr class="even">
-<td>Invalid Sequent</td>
-<td>There is at least one valuation where the sequent is not true</td>
-<td>At least one open path</td>
-</tr>
-<tr class="odd">
-<td>Valid Formula</td>
-<td>The formula is true on all its valuations (T under main operator)</td>
-<td>All the paths are closed</td>
-</tr>
-<tr class="even">
-<td>Invalid</td>
-<td>There is at least one valuation on which the formula is False</td>
-<td>Open paths display valuations on which formula is false</td>
+<td>David Hume’s</td>
+<td>Of Tragedy</td>
+<td></td>
+<td>Aesthetics</td>
 </tr>
 </tbody>
 </table>
-</div>
-</section>
-<section class="slide level2">
-
-<div style="font-size: 70%;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Type of Formula</th>
-<th>Definition</th>
-<th>Truth Tree Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Contingent</td>
-<td>True on at least one, but not all valuations</td>
-<td>At least one open path, but not all</td>
-</tr>
-<tr class="even">
-<td>Inconsistent</td>
-<td>Not true on any valuations</td>
-<td>All paths are closed</td>
-</tr>
-<tr class="odd">
-<td>Consistent</td>
-<td>At least one valuation where all formulas are true</td>
-<td>Open paths show valuations that make the formula or set of formulas true</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section></section>
-<section>
-<section id="this-does-not-apply-here.-here-is-why-.-.-." class="title-slide slide level1">
-<h1>This does not apply here. Here is why . . .</h1>
-
-</section>
-<section id="this-is-an-argument" class="slide level2">
-<h2>This is an argument</h2>
-</section>
-<section id="jim-is-guilty-and-deserves-life-in-prison-or-death" class="slide level2">
-<h2>Jim is guilty and deserves life in prison or death</h2>
-<p>If Jim stole the cookie, then Jim is guilty and either he deserves life in prison or he deserves death.</p>
-<p>Jim did steal the cookie.</p>
-<p>Therefore, Jim is guilty and either he deserves life in prison or he deserves death.</p>
-</section>
-<section class="slide level2">
-
-<p>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
-<p>P</p>
-<p>Therefore,</p>
-<p>(Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
-</section>
-<section id="however-we-are-only-looking-at-a-formula-a-single-claim.-not-an-argument." class="slide level2">
-<h2>However, we are only looking at a formula, a single claim. Not an argument.</h2>
-<ul>
-<li class="fragment"><p>An argument has a premise</p></li>
-<li class="fragment"><p>And an argument has a conclusion</p></li>
-<li class="fragment"><p>Ours is a single claim</p></li>
-</ul>
-</section></section>
-<section>
-<section id="second-test" class="title-slide slide level1 scrollable">
-<h1>Second test</h1>
-<ol start="2" type="1">
-<li class="fragment">Determine whether a formula (not an argument/sequent), is consistent.</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<p><strong><em>Brief Foray into Consistency . . .</em></strong></p>
-
-<img data-src="./../../../figures/logic/consistency.png" class="img-fluid r-stretch"><ul>
-<li class="fragment">In everyday language, consistency means reliable.
-<ul>
-<li class="fragment">An athlete who is consistent, is one who performs consistently well.</li>
-<li class="fragment">An inconsistent athlete is one who performs well sometimes.</li>
-</ul></li>
-<li class="fragment">In logic, a formula is consistent if it is logically possible for it to be true under all its formulations.
-<ul>
-<li class="fragment">It does not entail a logical contradiction.</li>
-<li class="fragment">‘The boy is tall’ and ‘the boy is short’ would entail a logical contradiction. (T &amp; ~T)</li>
-</ul></li>
-</ul>
-</section></section>
-<section id="in-other-words" class="title-slide slide level1 scrollable">
-<h1>In other words</h1>
-<p>Since we have a formula only, not an argument, we want to know three things.</p>
-<ol type="1">
-<li class="fragment"><p>Is it consistent?</p></li>
-<li class="fragment"><p>Is it valid?</p></li>
-<li class="fragment"><p>Is it contingent?</p></li>
-</ol>
-</section>
-
-<section>
-<section id="consistency" class="title-slide slide level1">
-<h1>Consistency</h1>
-<p>Construct a truth tree starting with the formula. If all the paths close, then the formula is inconsistent.</p>
-
-<img data-src="./../../../figures/logic/consistency.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Inconsistent Formula</p></section>
-<section id="is-it-possible-for-.-.-." class="slide level2">
-<h2>Is it possible for . . .</h2>
-<ul>
-<li class="fragment"><p>The claim that: ‘Jim stole the cookie’; ‘P’</p></li>
-<li class="fragment"><p>The claim that: ‘Jim is guilty’; ‘Q’</p></li>
-<li class="fragment"><p>The claim that: ‘Jim deserves life in prison’; ‘R’</p></li>
-<li class="fragment"><p>The claim that: ‘Jim deserves death’; ‘S’</p></li>
-</ul>
-<p>To all be true at the same time?</p>
-</section></section>
-<section>
-<section id="this-depends-on-the-logical-operators-.-.-." class="title-slide slide level1">
-<h1>This depends on the logical operators . . .</h1>
-<ul>
-<li class="fragment"><p>If Jim stole the cookie(?)</p></li>
-<li class="fragment"><p>Then is he guilty?</p></li>
-<li class="fragment"><p>And . . .(?)</p></li>
-</ul>
-</section>
-<section id="will-our-paths-close-like-this" class="slide level2">
-<h2>Will our paths close like this?</h2>
-
-<img data-src="./../../../figures/logic/closed-paths.png" class="img-fluid r-stretch"></section></section>
-<section>
-<section id="first-we-start-with-the-formula" class="title-slide slide level1">
-<h1>First we start with the formula</h1>
-
-<img data-src="./../../../figures/logic/jim-claim.png" class="img-fluid r-stretch"></section>
-<section id="then-look-at-the-main-operator-.-.-." class="slide level2">
-<h2>Then look at the main operator . . .</h2>
-<p>P <span class="math inline">\(\rightarrow\)</span> (Q &amp; (R <span class="math inline">\(\lor\)</span> S))</p>
-</section></section>
-<section>
-<section id="what-does-the-valuation-rule-for-rightarrow-say" class="title-slide slide level1">
-<h1>What does the valuation rule for ‘<span class="math inline">\(\rightarrow\)</span>’ say?</h1>
-
-<img data-src="./../../../figures/logic/v-for-arrow.png" class="img-fluid r-stretch"></section>
-<section id="this-is-what-we-are-paying-attention-to-.-.-." class="slide level2">
-<h2>This is what we are paying attention to . . .</h2>
-
-<img data-src="./../../../figures/logic/v-rules-important.png" class="img-fluid r-stretch"></section>
-<section id="in-other-words-.-.-." class="slide level2">
-<h2>In other words . . .</h2>
-
-<img data-src="./../../../figures/logic/v-arrow-picture.png" class="img-fluid r-stretch"></section></section>
-<section id="so-step-1-.-.-." class="title-slide slide level1">
-<h1>So step 1 . . .</h1>
-
-<img data-src="./../../../figures/logic/using-v-rule-arrow.png" class="img-fluid r-stretch"></section>
-
-<section id="step-2-.-.-." class="title-slide slide level1">
-<h1>Step 2 . . .</h1>
-
-<img data-src="./../../../figures/logic/using-conj-v.png" class="img-fluid r-stretch"></section>
-
-<section>
-<section id="see-all-the-open-paths" class="title-slide slide level1">
-<h1>See all the open paths?</h1>
-
-<img data-src="./../../../figures/logic/open-paths.png" class="img-fluid r-stretch"></section>
-<section id="this-means-that" class="slide level2">
-<h2>This means that</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>~ P</th>
-<th>Q</th>
-<th>R</th>
-<th>S</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td>T</td>
-<td>T</td>
-</tr>
-</tbody>
-</table>
-<p>or</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>P</th>
-<th>Q</th>
-<th>R</th>
-<th>S</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>F</td>
-<td>T</td>
-<td>T</td>
-<td>T</td>
-</tr>
-</tbody>
-</table>
-</section></section>
-<section id="or-.-.-.j" class="title-slide slide level1">
-<h1>Or . . .j</h1>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>~P</th>
-<th><span class="math inline">\(\rightarrow\)</span></th>
-<th>(</th>
-<th>Q</th>
-<th>&amp;</th>
-<th>( R</th>
-<th><span class="math inline">\(\lor\)</span></th>
-<th>S )</th>
-<th>)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>T</td>
-<td>T</td>
-<td></td>
-<td></td>
-<td>T</td>
-<td></td>
-<td>T</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Therefore, the claim:</p>
-<ul>
-<li class="fragment">If Jim stole the cookie then he is guilty and deserves life in prison or death</li>
-</ul>
-</section>
-
-<section>
-<section id="is-true-if" class="title-slide slide level1">
-<h1>Is true if:</h1>
-<ul>
-<li class="fragment"><p>it is true that because Jim stole the cookie</p></li>
-<li class="fragment"><p>that he deserves either</p>
-<ul>
-<li class="fragment">life in prison</li>
-</ul></li>
-</ul>
-</section>
-<section id="or" class="slide level2">
-<h2>Or</h2>
-</section></section>
-<section id="death" class="title-slide slide level1">
-<h1>Death</h1>
-<div style="width:360px;max-width:100%;">
-<div style="height:0;padding-bottom:56.11%;position:relative;">
-<iframe width="360" height="202" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" src="https://imgflip.com/embed/a6yfpe">
-</iframe>
-</div>
-<p>
-<a href="https://imgflip.com/gif/a6yfpe">via Imgflip</a>
-</p>
-</div>
-</section>
-
-<section>
-<section id="inference" class="title-slide slide level1">
-<h1>Inference</h1>
-<p>I was supposed to be sent away But they forgot to come and get me I was a functioning alcoholic ’Til nobody noticed my new aesthetic All of this to say I hope you’re okay But you’re the reason And no one here’s to blame But what about your quiet treason?</p>
-<p>[Chorus: Taylor Swift] And for a fortnight there, we were forever Run into you sometimes, ask about the weather Now you’re in my backyard, turned into good neighbors Your wife waters flowers, I wanna kill her</p>
-<p>[Verse 2: Taylor Swift, Taylor Swift &amp; Post Malone, Post Malone] All my mornings are Mondays stuck in an endless February I took the miracle move-on drug, the effects were temporary And I love you, it’s ruining my life I love you, it’s ruining my life I touched you for only a fortnight I touched you, but I touched you</p>
-<p>[Chorus: Taylor Swift, Taylor Swift &amp; Post Malone] And for a fortnight there, we were forever Run into you sometimes, ask about the weather Now you’re in my backyard, turned into good neighbors Your wife waters flowers, I wanna kill her And for a fortnight there, we were together Run into you sometimes, comment on my sweater Now you’re at the mailbox, turned into good neighbors My husband is cheating, I wanna kill him</p>
-<p>You might also like euphoria Kendrick Lamar meet the grahams Kendrick Lamar Houdini Eminem</p>
-<p>[Bridge: Taylor Swift, Post Malone, Taylor Swift &amp; Post Malone] I love you, it’s ruining my life I love you, it’s ruining my life I touched you for only a fortnight I touched you, I touched you I love you, it’s ruining my life I love you, it’s ruining my life I touched you for only a fortnight I touched you, I touched you</p>
-<p>[Outro: Post Malone, Post Malone &amp; Taylor Swift, Taylor Swift] Thought of callin’ ya, but you won’t pick up ’Nother fortnight lost in America Move to Florida, buy the car you want But it won’t start up ’til you touch, touch, touch me Thought of calling ya, but you won’t pick up ’Nother fortnight lost in America Move to Florida, buy the car you want But it won’t start up ’til I touch, touch, touch you</p>
-</section>
-<section id="lets-imagine-that-this-is-an-argument" class="slide level2">
-<h2>Let’s Imagine that this is an Argument</h2>
-<blockquote>
-<p>I was supposed to be sent away But they forgot to come and get me I was a functioning alcoholic ’Til nobody noticed my new aesthetic All of this to say I hope you’re okay But you’re the reason And no one here’s to blame But what about your quiet treason?</p>
-</blockquote>
 <aside class="notes">
-<p>We first want to ask ourselves what is the conclusion?</p>
-<p>There are several ways to do this. First, we attempt to recognize those sentences which most closely proximate a claim.</p>
-<ul>
-<li><p>Then we want to order these according to premises and conclusions.</p></li>
-<li><p>And also there are subconclusions.</p></li>
-<li><p>These are conclusions that act as premises for more fundamental conclusions.</p></li>
-</ul>
+<p>First, we will not be reading Lewis’s “Truth in Fiction”. I think this is for the best since it is a very interesting but technical piece.</p>
+<p>We are also not reading Hume’s “Of Tragedy” because its relevance has already passed us by.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -632,36 +200,41 @@ Prof.&nbsp;<a href="#/">Reynolds</a>
           display:block!important;
       }</style></aside>
 </section>
-<section id="maybe-this-will-help" class="slide level2">
-<h2>Maybe this will help</h2>
-<p>[Chorus: Taylor Swift]</p>
-<blockquote>
-<p>And for a fortnight there, we were forever Run into you sometimes, ask about the weather Now you’re in my backyard, turned into good neighbors Your wife waters flowers, I wanna kill her</p>
-</blockquote>
-</section>
-<section class="slide level2">
-
-<p>I was supposed to be sent away</p>
-<p>But they forgot to come and get me</p>
-<p>I was a functioning alcoholic</p>
-<p>’Til nobody noticed my new aesthetic</p>
-<p>All of this to say I hope you’re okay</p>
-<p>But you’re the reason</p>
-<p>And no one here’s to blame</p>
-<p>But what about your quiet treason?</p>
-<aside class="notes">
+<section id="weve-already-covered" class="slide level2">
+<h2>We’ve already covered</h2>
 <ul>
-<li><p>Beginning with one or two or three premises, we draw a subconclusion, which functions as a stopping point on the way to the main conclusion that the argument aims to establish.</p></li>
-<li><p>The argument is difficult to understand all at once, but it becomes easy if analyzed into small steps. For example, from the premises:</p></li>
+<li class="fragment">Grant Tavinor’s “Games and Fiction” from his “The Art of Video Games”.</li>
 </ul>
-<p>I was supposed to be sent away [but I was not sent away]</p>
-<p>But they forgot to come and get me [I was not sent away because no one came to get me]</p>
-<p>I was a functioning alcoholic [Either I am no longer an alcoholic, or I am no longer functioning]</p>
-<p>’Til nobody noticed my new aesthetic [The reason I am no longer an alcoholic is because no one noticed by new aesthetic. I am no longer functioning because I am unnoticed.]</p>
-<p>All of this to say I hope you’re okay A[?]</p>
-<p>But you’re the reason</p>
-<p>And no one here’s to blame</p>
-<p>But what about your quiet treason?</p>
+</section>
+<section id="going-forward" class="slide level2">
+<h2>Going Forward</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Author</th>
+<th>Title</th>
+<th>Page</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tavinor’s</td>
+<td>Stepping into Fictional Worlds</td>
+<td>ch.&nbsp;4, page 62</td>
+<td>Art</td>
+</tr>
+<tr class="even">
+<td>Jerrod Levison’s</td>
+<td>What a Music Work Is</td>
+<td>page 513</td>
+<td>Aesthetics</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Today we will cover Grant Tavinor’s “Stepping into Fictional Worlds”, chapter 4, page 62 of “Art”.</p>
+<p>We will also introduce Jerrod Levinson’s “What a Musical Work Is” from Aesthetics: A contemporary anthology. page 513</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -673,14 +246,129 @@ Prof.&nbsp;<a href="#/">Reynolds</a>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-
-
+</section>
+<section id="next-week" class="slide level2">
+<h2>Next Week:</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Author</th>
+<th>Title</th>
+<th>Page</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Peter Kivy</td>
+<td>Emotions in the Music</td>
+<td>page 663</td>
+<td>Aesthetics</td>
+</tr>
+<tr class="even">
+<td>Kendall Walton’s</td>
+<td>Fearing Fictions</td>
+<td>page 691</td>
+<td>Aesthetics</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>We will be reading Peter Kivy’s “Emotions in the Music” on page 663 of Aesthetics</p>
+<p>And</p>
+<p>Walton’s, “Fearing Fictions” page 691 of Aesthetics</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
+<section id="tavinor-games-and-fiction" class="title-slide slide level1">
+<h1>Tavinor, Games and Fiction</h1>
+
+</section>
+
+<section>
+<section id="tavinor-stepping-into-fictional-worlds" class="title-slide slide level1">
+<h1>Tavinor, Stepping into Fictional Worlds</h1>
+<aside class="notes">
+<p>We become a player-character. The player character is a player’s epistemic and behavioral proxy. It allows them to discover facts about the fictional world</p>
+<p>It allows them to act in the fictional world</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<p>Modal Proxy</p>
+<ul>
+<li class="fragment">vision</li>
+<li class="fragment">hearing</li>
+<li class="fragment">taste</li>
+<li class="fragment">smell</li>
+<li class="fragment">touch</li>
+</ul>
+<aside class="notes">
+<p>Makes it a visuospatial Fiction as a ground to fictive epistemic behavioral engagement</p>
+<p>Begins with visuospatial,</p>
+<p>Wire-frame vector graphics</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+
+<img data-src="./../../../figures/aesthetics-course/3dmv-curves-wire-orange.jpg" class="img-fluid r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="./../../../figures/aesthetics-course/3dmv-suzanne.jpg" class="img-fluid r-stretch"></section>
+<section id="epistemic" class="slide level2">
+<h2>Epistemic</h2>
+</section></section>
+<section id="levinson-what-a-musical-work-is" class="title-slide slide level1">
+<h1>Levinson, What a Musical Work Is</h1>
+
+</section>
+
+<section id="lewis-truth-in-fiction-kivy-emotions-in-the-music" class="title-slide slide level1">
+<h1><del>Lewis, Truth in Fiction</del> (Kivy, Emotions in the music)</h1>
+
+</section>
+
+<section id="walton-fearing-fictions" class="title-slide slide level1">
+<h1>Walton, Fearing Fictions</h1>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../../figures/icons/course_favicon.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>PHIL104Q – Introduction to Logic</p>
+<p>PHIL343A – Aesthetics Tavinor</p>
 </div>
 </div></div>
 
@@ -801,7 +489,7 @@ Prof.&nbsp;<a href="#/">Reynolds</a>
         showNotes: false,
 
         // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
+        autoPlayMedia: true,
 
         // Global override for preloading lazy-loaded iframes (null/true/false)
         preloadIframes: null,
