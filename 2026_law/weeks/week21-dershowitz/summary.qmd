@@ -1,0 +1,59 @@
+# Saint Bonaventure
+
+As the following quote shows, Bonaventure was not only committed to theology, but philosophy which according to him, was to better understand the beliefs he held. It is important to note, that philosophy was important even for what he considered matters of faith, which at times, is thought to be immune from the critical reflections that philosophy enables.
+
+> And so, if the writings of the philosophers are sometimes of much value in understanding truth and refuting errors, we are not departing from the purity of faith if we at times study them, especially since there are many questions of faith which cannot be settled without recourse to them. (trans. Monti 1994: 53)
+
+From 1243 to 1248, Bonaventure studied theology at the university of Paris. During the course of his studies, he worked with the Fransiscans, a group of Catholic organizations founded by St. Fransis of Assisi, named for the town in Italy where he was born in the year 1209. At the University of Paris, Bonaventure became a *Formed Bachelor* which meant that he would take on the academic roles of lecturing, getting involved in *the* disputes, a class of philosophical questions rooted in theology, and preaching. While a formed bachelor, not yet a master, the university's masters and its students when on strike, leading to them becoming expelled. During this conflict, Bonaventure would be elected to the Fransiscan Chair in theology though he would only teach at the Fransiscan convent which was not recognized by the University.
+
+There would be some controversy surrounding this since, though the duties Bonaventure performed where those of a Master, he was not recognized as one until 1256 by order of Pope Alexander IV. During this time however, Bonaventure was a prolific scholar producing many texts including his *Reduction of Arts to Theology* which is a reflection on theological sermons as a genre of art.
+
+>  The same mode of reasoning is found in On Retracing the Arts to Theology. Here “reduction” consists in developing analogies that move the mind from the liberal arts to theology and back again. Bonaventure argues for each point by combining one claim based on reason with another based on revelation, as though they were wall and buttress of the cathedral of theology. Philosophical reasoning, then, is an absolutely integral part of Bonaventure’s faith-based theology.^[Stanford Encyclopedia of Philosophy, bottom of section 2](https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu)
+
+There are objects we access through our senses. Importantly for Bonaventure, these objects always point towards their source of being, God. But it is not merely the objects in themselves, but rather our apprehension of their "weight, number, and measure" [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu), that causes us to contemplate their "measure, beauty, and order" and to *delight* in this aspect of all that is created.
+
+> The world as it is revealed to us through the senses provides the means for our re-entering ourselves and ascending to higher things. Furthermore, the senses themselves are equally signs of higher things.
+
+What is important about works of art, whether involving the manipulation of materials such as painting or sculpting, or of the manipulation of words such as speech, is that these act on our *spiritual senses*. What is created, is a likeness of that object through our faculty of reason.
+
+>  Each sensible object generates a likeness of itself in the medium through which it is perceived, and that likeness in turn generates another likeness successively in the sense organ, causing the sense power to apprehend the sensible object.
+
+This is a common understanding, notably evoking a common debate among philosophers. The debate between empiricists and rationalists, is whether, and to what degree do we have a connection to the outside world. For instance, consider this reflection by the philosopher Bertrand Russell:
+
+> To the eye it is oblong, brown and shiny, to the touch it is smooth and cool and hard; when I tap it, it gives out a wooden sound. Anyone else who sees and feels and hears the table will agree with this description, so that it might seem that no difficulty would arise.^[@russ12, 8]
+
+Russell then concludes that all truly have access to is not the table itself, but instead a collection of unique and disconnected perceptions. We see the shape, we touch coolness, we hear the hollow sound, but we do not perceive the table..
+
+> it becomes evident that the real table, if there is one, is not the same as what we immediately experience by sight or touch or hearing.^[@russ12, 11]
+
+For Bonaventure, the resulting object as created by God, is perceived by us through God's divine light. In other words, when we perceive objects, and delight in them as created objects, we join in union with God, and are able to perceive his creation.
+
+>  exercising their powers of intellect and will, intellectual creatures discover the highest and most perfect object of their powers in the Divine Source of their being, since God is the First or Highest Truth and the First or Chief Good. Accordingly, intellectual creatures have God as their ultimate object, whereas all creatures have God as their Cause. Consequently, intellectual creatures show themselves to be “images” and “likenesses” of God, while they show that all creatures are “shadows” and “vestiges” of God.
+
+All at once then, Bonaventure's project is epistmelogical and metaphysical. It is meant to explain how we know things, and what the nature of those things are.
+
+> The resolution of all our items of simple apprehension into the concept of being is metaphysically and epistemologically crucial: metaphysically, it opens up a route of argumentation that leads to the existence of God; epistemologically, such a resolution means that behind all, even the most determinate and specific, conceptions of things lies a transcendental awareness of being that informs all of our knowledge.
+
+As such, this is two parts of Bonaventure's project, but there is a third part as well. The moral project has to do with how we behave. For Bonaventure, this is also guided by the *light of God's divine illumination*. Here, it is important to focus on the non-physical aspects of our existence, namely our relationships with one another.
+
+How do we develop this?
+
+> Therefore, considering the illumination of mechanical skill as regards the production of the work, we shall see therein the Word begotten and made incarnate, that is, the Divinity and the Humanity and the integrity of all faith.
+
+As the following quote shows, Bonaventure was not only committed to theology, but philosophy which according to him, was to better understand the beliefs he held. It is important to note, that philosophy was important even for what he considered matters of faith, which at times, is thought to be immune from the critical reflections that philosophy enables.
+
+> And so, if the writings of the philosophers are sometimes of much value in understanding truth and refuting errors, we are not departing from the purity of faith if we at times study them, especially since there are many questions of faith which cannot be settled without recourse to them. (trans. Monti 1994: 53)
+
+From 1243 to 1248, Bonaventure studied theology at the university of Paris. During the course of his studies, he worked with the Fransiscans, a group of Catholic organizations founded by St. Fransis of Assisi, named for the town in Italy where he was born in the year 1209. At the University of Paris, Bonaventure became a *Formed Bachelor* which meant that he would take on the academic roles of lecturing, getting involved in *the* disputes, a class of philosophical questions rooted in theology, and preaching. While a formed bachelor, not yet a master, the university's masters and its students when on strike, leading to them becoming expelled. During this conflict, Bonaventure would be elected to the Fransiscan Chair in theology though he would only teach at the Fransiscan convent which was not recognized by the University.
+
+There would be some controversy surrounding this since, though the duties Bonaventure performed where those of a Master, he was not recognized as one until 1256 by order of Pope Alexander IV. During this time however, Bonaventure was a prolific scholar producing many texts including his *Reduction of Arts to Theology* which is a reflection on theological sermons as a genre of art.
+
+>  The same mode of reasoning is found in On Retracing the Arts to Theology. Here “reduction” consists in developing analogies that move the mind from the liberal arts to theology and back again. Bonaventure argues for each point by combining one claim based on reason with another based on revelation, as though they were wall and buttress of the cathedral of theology. Philosophical reasoning, then, is an absolutely integral part of Bonaventure’s faith-based theology.^[Stanford Encyclopedia of Philosophy, bottom of section 2](https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu)
+
+There are objects we access through our senses. Importantly for Bonaventure, these objects always point towards their source of being, God. But it is not merely the objects in themselves, but rather our apprehension of their "weight, number, and measure" [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu), that causes us to contemplate their "measure, beauty, and order" and to *delight* in this aspect of all that is created.
+
+> The world as it is revealed to us through the senses provides the means for our re-entering ourselves and ascending to higher things. Furthermore, the senses themselves are equally signs of higher things.
+
+>  exercising their powers of intellect and will, intellectual creatures discover the highest and most perfect object of their powers in the Divine Source of their being, since God is the First or Highest Truth and the First or Chief Good. Accordingly, intellectual creatures have God as their ultimate object, whereas all creatures have God as their Cause. Consequently, intellectual creatures show themselves to be “images” and “likenesses” of God, while they show that all creatures are “shadows” and “vestiges” of God.
+
+> The resolution of all our items of simple apprehension into the concept of being is metaphysically and epistemologically crucial: metaphysically, it opens up a route of argumentation that leads to the existence of God; epistemologically, such a resolution means that behind all, even the most determinate and specific, conceptions of things lies a transcendental awareness of being that informs all of our knowledge.
