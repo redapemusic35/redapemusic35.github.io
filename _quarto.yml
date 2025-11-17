@@ -276,7 +276,6 @@ website:
                 text: "Recap and Summary"
               - href: 2026_law/weeks/week24-review-final/appendix.qmd
                 text: "Appendix"
-
   navbar:
     background: primary
 
@@ -284,7 +283,13 @@ website:
     background: light
     left: "Copyright 2025, Montaque Reynolds"
 
+<<<<<<< HEAD
 bibliography: ./Un-Duplicates.bib
+=======
+
+
+bibliography: references/Un-Duplicates.bib
+>>>>>>> bb6e63bee5486ec270e31cf9c61cd9ac25077f05
 csl: references/chicago-author-date.csl
 
 format:
