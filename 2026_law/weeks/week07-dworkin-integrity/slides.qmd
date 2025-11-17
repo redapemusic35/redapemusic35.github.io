@@ -1,0 +1,44 @@
+---
+subtitle: "PHIL343A -- Aesthetics"
+title: "<font style='font-size:1em;'>🗓️ Week 05<br/> Aristotle's Poetics</font>"
+author: Prof. [Reynolds](#)
+institute: '[Stetson University](#)'
+date: 02 September 2026
+date-meta: 14 March 2023
+date-format: "DD MMM YYYY"
+toc: false
+toc-depth: 1
+toc-title: "The Art of Imitation:"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs:
+    theme: moon
+    fig-responsive: true
+    slide-number: true
+    incremental: true
+    mouse-wheel: false
+    auto-play-media: true
+    preview-links: auto
+    logo: /figures/icons/course_favicon.png
+    css: /css/styles_slides.css
+    footer: 'PHIL343A -- Aesthetics Aristotle'
+---
+
+As the following quote shows, Bonaventure was not only committed to theology, but philosophy which according to him, was to better understand the beliefs he held. It is important to note, that philosophy was important even for what he considered matters of faith, which at times, is thought to be immune from the critical reflections that philosophy enables.
+
+> And so, if the writings of the philosophers are sometimes of much value in understanding truth and refuting errors, we are not departing from the purity of faith if we at times study them, especially since there are many questions of faith which cannot be settled without recourse to them. (trans. Monti 1994: 53)
+
+From 1243 to 1248, Bonaventure studied theology at the university of Paris. During the course of his studies, he worked with the Fransiscans, a group of Catholic organizations founded by St. Fransis of Assisi, named for the town in Italy where he was born in the year 1209. At the University of Paris, Bonaventure became a *Formed Bachelor* which meant that he would take on the academic roles of lecturing, getting involved in *the* disputes, a class of philosophical questions rooted in theology, and preaching. While a formed bachelor, not yet a master, the university's masters and its students when on strike, leading to them becoming expelled. During this conflict, Bonaventure would be elected to the Fransiscan Chair in theology though he would only teach at the Fransiscan convent which was not recognized by the University.
+
+There would be some controversy surrounding this since, though the duties Bonaventure performed where those of a Master, he was not recognized as one until 1256 by order of Pope Alexander IV. During this time however, Bonaventure was a prolific scholar producing many texts including his *Reduction of Arts to Theology* which is a reflection on theological sermons as a genre of art.
+
+>  The same mode of reasoning is found in On Retracing the Arts to Theology. Here “reduction” consists in developing analogies that move the mind from the liberal arts to theology and back again. Bonaventure argues for each point by combining one claim based on reason with another based on revelation, as though they were wall and buttress of the cathedral of theology. Philosophical reasoning, then, is an absolutely integral part of Bonaventure’s faith-based theology.^[Stanford Encyclopedia of Philosophy, bottom of section 2](https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu)
+
+There are objects we access through our senses. Importantly for Bonaventure, these objects always point towards their source of being, God. But it is not merely the objects in themselves, but rather our apprehension of their "weight, number, and measure" [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/bonaventure/#BonaIlluArgu), that causes us to contemplate their "measure, beauty, and order" and to *delight* in this aspect of all that is created.
+
+> The world as it is revealed to us through the senses provides the means for our re-entering ourselves and ascending to higher things. Furthermore, the senses themselves are equally signs of higher things.
+
+>  exercising their powers of intellect and will, intellectual creatures discover the highest and most perfect object of their powers in the Divine Source of their being, since God is the First or Highest Truth and the First or Chief Good. Accordingly, intellectual creatures have God as their ultimate object, whereas all creatures have God as their Cause. Consequently, intellectual creatures show themselves to be “images” and “likenesses” of God, while they show that all creatures are “shadows” and “vestiges” of God.
+
+> The resolution of all our items of simple apprehension into the concept of being is metaphysically and epistemologically crucial: metaphysically, it opens up a route of argumentation that leads to the existence of God; epistemologically, such a resolution means that behind all, even the most determinate and specific, conceptions of things lies a transcendental awareness of being that informs all of our knowledge.
