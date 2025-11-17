@@ -19,8 +19,17 @@ What should be explored?
 
 ## So what makes something a videogame?
 
+### Two versions of the cluster account
+
+#### Cluster account of art objects
+
+> A cluster account is true of a concept just in case there are properties whose instantiation by an object counts as a matter of conceptual necessity toward its falling under the concept. [@gaut00; @cahn20, 462]
+
+#### Cluster account of videogames
+
 > X is a videogame if it is an artifact in a visual digital medium, is intended as an object of entertainment, and is intended to provide such entertainment through the employment of one or both of the following modes of engagement: rule and objective gameplay or interactive fiction. [@tavi09, 26]
 
+The following are three clusters of properties something must have to be a videogame.
 
 1. Must be an artifact in a visual digital medium.
 2. Is intended as an object of entertainment
@@ -36,12 +45,15 @@ By understanding what art is, we can understand our attempt to define videogames
 
 #### Nominal: chart of the conceptual relations of words.
 
-Consider variations of videogames, computer game, electronic game, console, PC, handheld etc. But this does not capture all of what we think of as a videogame.
+Consider variations of videogames, computer game, electronic game, console, PC, handheld etc. But this does not capture all of what we think of as a videogame. 
+
+* Some things are a videogame because they can be played on a computer 
+* while other items are a videogame because they are an electronic game. 
+* But some electronic games cannot be played on a computer.
 
 #### Empirical or Essential
 
-*Necessary and sufficient* conditions.
-
+* Necessary and sufficient* conditions.
 * Attempts to explain, clarify, or revise the "conceptual status of a  term.
 * Attempts to capture the material "nature" of the object of definition.
 
