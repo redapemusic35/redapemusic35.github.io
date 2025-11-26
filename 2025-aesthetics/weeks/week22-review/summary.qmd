@@ -1,0 +1,797 @@
+# Star Citizen and a Pre-Modern Pursuit of the Aesthetic
+
+Star Citizen is a mass multiplayer online game set 900 years in the future. As a narrative, it explores concepts such as exploration and colonization. Although human societies are not in a position within this imagined future to colonize other alien civilizations, there are similar themes explored through the various narrative arcs such as indentured servitude, civil rights, the reach of law. Unlike other games which emphasize their pursuit of such themes, these themes are merely hinted at. 
+
+The center of focus for Star Citizen's developers and audience, is pursuit and definition of agency. Star Citizen is largely an open world game, more akin to the Sims than it is to Mass Effect. The game play it embodies is merely a suggestion. 
+
+The draw for engagement is not a given narrative vision, but rather that it provides a space where a community of players can design and define their own ideal game play. Star Citizen's developers do not invite their community to come and be entertained, nor is the community invited to come and witness the expression of a given narrative. Rather, the community is invited to come and create a shared narrative, to participate through active contribution rather than passive consummation.
+
+## Art as a Video Game
+
+* The artistic and technical sophistication of video games have grown immensely in the last decade.
+
+But here we should focus on the technical growth of video games, and contrast this against the artistic growth.
+
+### *Elder Scrolls: Oblivion*, 2006, *sandbox* game.
+
+* fictional environment
+* emphasized agency of the player
+* choose to engage in game's narrative
+* or to explore dungeons and go on quests
+* or refrain from engagement in the game's narrative
+* Explores agency
+
+Even in refraining from engagement in the game's narrative, game play, exploring and other basic engagement is emotionally, and aesthetically, rewarding. This kind of engagement is a recent development in video games, although perhaps not as recent in games more generally, if we consider text based games in Dos, or Dungeons and Dragons.
+
+### Grand Theft Auto: *San Andreas*
+
+* Sandbox
+* Replaces dungeon exploration and grand quests with criminal activities
+* Also explores agency
+
+### *Portal*
+
+* Game play
+* Progression
+* Goal
+
+# The Arts, and Art Criticism: A survey
+
+Like Plato, Shaftesbury did not make a clear distinction between artistic and moral beauty. Francis Hutcheson, a pupil of Shaftesbury followed this lead, but makes a distinction between the moral sense and the sense of beauty. Hume adopts this distinction, and from this, we get the aesthetic tastes of the Scottish enlightenment, with its focus on the conflation of the moral and aesthetic sense of perception.
+
+Kant, a part of a separate direction in art criticism, would also place psychological claims into his aesthetic explorations. He makes a four-fold division 'of the faculties of the mind' [@kris20, 13].
+
+These would include:
+
+|faculty of reason| domain of the faculty|
+|---|---|
+|judgment| reason |
+|aesthetic| beauty and the arts |
+|truth| metaphysics, epistemology |
+|goodness | ethics, morals |
+
+This takes us into the modern system of art. According to @shap20, a part of the modern critiques of art, there is a stress on the cognitive values. We can see this in Hegel, and unlike Kant, emphasizes its role in 'the development of mind and reason' [@shap20, 200]. Heiddegger, under Hegel's influence, would expand on this to argue that art reveals truth and thereby is the way in which we are introduced to the world.
+
+Finally, we finish where we began, what place do new and emerging artforms fit into art criticism? Tavinor leads the way.
+
+### Natural beauty vs human ordered design
+
+* Little distinction between artistic and moral beauty
+
+* Consider the difference between Garden vs. forest?
+
+* What is it? (Unity of design)
+
+* Three degrees of beauty
+
+#### 1. Natural
+
+These have no forming action, intelligence, or power (presumably to create?)
+
+#### 2. Design
+
+Is an effect of some cognitive process. He calls this double beauty, but why? a) it is an effect of the mind, and b) the mind itself. What does it mean to say of the mind itself?
+
+---
+
+* Force of love? Power of enjoyment (can animals enjoy what is beautiful?)
+
+* Several kinds of virtues
+  * The power of enjoyment
+  * The power to create what is beautiful
+
+---
+
+> Therefore whatever beauty appears in our second order of forms, or whatever is derived or produced from thence, all this is eminently, principally, and originally in this last order of supreme and sovereign beauty. [99]
+
+#### 3. Beauty that creates more beauty
+
+Why is this third degree important? 
+
+1. We are notable designers and creators of what is beautiful.
+
+2. These objects contain all the beauty that exists in our minds. (Sense our sense and ability to enjoy is a part of the power that manifests in our ability to create beauty).
+
+3. Therefore what is produced contains all this other beauty.
+
+4. Therefore we are original beauty (natural)
+
+#### What is the Sublime?
+
+* First, what is mere figure?
+
+#### Symmetrical vs non-uniform
+
+* What about actions?
+
+::: {.notes}
+
+Natural beauty in figures and in actions. For instance, an action that includes grace and harmony. We can focus on those actions that cause strong sentiments. What kinds of sentiments do these actions, figures, cause?
+
+:::
+
+---
+
+There is agreement in judgment of actions, but not beauty.
+
+> But now we found perpetual variance among mankind, whose differences were chiefly founded on this disagreement in opinion; “The one affirming, the other denying that this, or that, was fit or decent.”
+
+* Beautiful action
+
+* Beautiful figure
+
+---
+
+But we typically call beautiful actions *good*, but we do not say this about figures.
+
+> We seek the right and wrong in things; we examine what is honourable, what shameful; and having at last determined, we dare not stand to our own judgment, and are ashamed to own there is really a shameful and an honourable.
+
+#### But is this an objection?
+
+> All is opinion. ’Tis opinion which makes beauty, and unmakes it. The graceful or
+ungraceful in things, the decorum arid its contrary, the amiable and unamiable, vice, virtue, honour, shame, all this is founded in opinion only.
+
+---
+
+* But what about shame and regret? Do these sentiments exist in response to art or only actions?
+  
+> > As this variety of taste is obvious to the most
+careless enquirer; so will it be found, on examina-
+tion, to be still greater in reality than in appear-
+ance. The sentiments of men often differ with
+regard to beauty and deformity of all kinds, even
+while their general discourse is the same. There
+are certain terms in every language, which import
+blame, and others praise; and all men, who use
+the same tongue, must agree in their application of them.
+
+* Is beauty the same cause of both negative sentiment, disgust for instance, and positive ones, say satisfaction or admiration?
+
+---
+
+No, it seems that beauty exists in the eye of the beholder:
+
+> And if we have not idly spent our hours, nor ranged in vain through these deserted regions, it should appear from our strict search that there is nothing so divine as beauty, which belonging not to body, nor having any principle or existence except in mind and reason, is alone discovered and acquired by this diviner part, when it inspects itself, the only object worthy of itself. [103]
+
+---
+
+Or in the eye of the creator:
+
+> And if we have not idly spent our hours, nor ranged in vain through these deserted regions, it should appear from our strict search that there is nothing so divine as beauty, which belonging not to body, nor having any principle or existence except in mind and reason, is alone discovered and acquired by this diviner part, when it inspects itself, the only object worthy of itself. [103]
+
+## Hutcheson and Hume
+
+* Hutcheson, Moral sense vs sense that perceives beauty
+* Hume would go on to adopt similar languge
+ 
+# Kant, Imagination and the Judgment of Beauty
+
+1. What is an aesthetic judgment?
+2. What is a cognitive judgment?
+
+Consider:
+
+1. Understanding and Cognition
+2. Pleasure and Imagination
+3. 2 aligns with taste and judgments of taste are aesthetic.
+
+Why? Two Concepts:
+
+## The Quality of Beauty in two arguments
+
+### First
+
+> **Taste** is the faculty of judging an object or kind or representation through a satisfaction or dissatisfaction **without any interest**. The object of such a satisfaction is called beautiful. [159]
+
+1. Analytic of the Beautiful 
+2. Definition of the Beautiful
+3. Universal beauty which is not conceptual
+4. Beauty and the representation of purpose (conceptual)
+5. Satisfying Objects
+
+---
+
+6. Beauty is conceptless and universal. (p. 159)
+7. The beautiful, the agreeable (subjective aesthetic judgment) and the good. (p. 159)
+8. Universal satisfaction of taste can be subjective (p. 160)
+9. Pleasure does not proceed aesthetic judgment (p. 162)
+
+## 10. 
+
+> When we call something beautiful, the pleasure we feel is expected of everyone else in the judgment of taste as necessary, just as if it were to be regarded as a property of the object that is determined in it in accordance with concepts; but beauty is nothing by itself, without relation to the feeling of the subject. [p. 163]
+
+# Second
+
+> That is beautiful which pleases universally without a concept. [164]
+
+## The Sublime
+
+1. Judgments based on reflection
+2. Quantify, quality, and modality
+3. Perceptions and Conceptions
+4. Normativity and Judgments of taste
+5. Common human understanding (sensus communis)
+6. Intellect and Beauty
+
+---
+
+7. Art
+8. Art and Beauty
+9. Art and nature
+10. Artistic Talent
+11. The nature of artistic talent
+12. Judging someone to be artistically talented
+
+## Analytic of the Beautiful
+
+> But if the question is whether something is beautiful, one does not want to know whether there is anything that is, or that could be at stake for us, or for someone else, in the existence of the thing, but rather how we judge it in the mere contemplation (intuition or reflection). [156]
+
+---
+
+Judging that something is beautiful is objective.
+
+1. Judgment of Taste
+2. Non-subjective judgments
+
+# Hume
+
+* Rooted in his *A Treatise of Human Nature* (1739-40)
+
+* Praise and Blame
+
+* A science of human nature
+
+Notable influences:
+
+* Joseph Addison
+
+* Francis Hutcheson
+
+* Shaftesbury (Anthony Ashley Cooper).
+
+>  So Hume’s reflections on aesthetics occupy a pivotal niche between the appearance of fine art theory and Kant’s defense of an independent aesthetic judgment in the Critique of Judgment – a defense clearly influenced by Kant’s reading of Hume’s essays and An Enquiry Concerning the Principles of Morals. [SEP](https://plato.stanford.edu/entries/hume-aesthetics/)
+
+Hume retains the idea that the values within the scope of criticism are essentially pleasures of the human imagination.
+
+In regards to the *fine arts*, these are reserved as a pleasure for those who can afford luxury.
+
+* They consist of sensory and cognitive pleasures
+
+From the older tradition, elegantly expounded by Addison in numerous essays written between 1709 and 1715, Hume retains the idea that the values within the scope of criticism are essentially pleasures of the human imagination.
+
+But what are the values that are the subject of aesthetic judgment?
+
+# Hegel
+
+What is Aesthetics?
+
+* Realm of the Beautiful
+* Art more generally
+* Fine Art more particularly
+
+::: {.notes}
+
+Science of sensation of feeling
+
+In Germany, "works of art being considered in light of the feelings which they were supposed to evoke."
+
+* Pleasure
+* Admiration
+* Fear
+* Pity
+
+What is wrong with this characterization?
+
+* Does not treat beauty more generally, but only artistic beauty.
+
+* What is Aesthetic then?
+
+The philosophy (love of wisdom) of Fine Art
+
+* So we might call this "the wisdom of Fine Art".
+
+But what is this wisdom?
+
+:::
+
+## Reason and Judgment
+
+* Cultural
+* Social
+* Technological changes in 20th century
+
+::: {.notes}
+
+There were many cultural, social and technological changes in the 20th century that influenced how art was made and perceived.
+
+For instance, consider the rise of abstract art, conceptual art, and digital art.
+
+:::
+
+---
+
+* Impressionism
+* Abstract Painting
+* Photography
+
+---
+
+![Stephen Snyder](./Screenshot 2025-10-27 101756.png)
+
+# Reading Chapter 1
+
+* What is aesthetic?
+
+* What kind of discipline is it?
+
+* What are its questions? Methods?
+
+::: {.notes}
+
+Science of sensation or feeling but why?
+
+:::
+
+---
+
+* Does not treat beauty in general, only artistic.
+
+* What is general? What is artistic?
+
+## The Philosophy of Art
+
+* Excludes questions about beauty of nature, beauty more generally.
+
+* Beauty of art then?
+
+::: {.notes}
+
+* Artistic beauty stands higher than natural because of its connection to the mind.
+
+* Why? Can only mind perceive truth? As such, there is no truth in nature.
+
+> Mind, and mind only, is capable of truth, and comprehends in itself all that is, so that whatever is beautiful can only be really and truly beautiful as partaking in this higher element and as created thereby. [218]
+
+:::
+
+---
+
+Therefore:
+
+> beauty of nature reveals itself as but a reflection of the beauty which belongs to the mind, as an imperfect, incomplete mode of being ... whose substantial element is contained in the mind itself. [218]
+
+---
+
+### What is the science of beauty then?
+
+First consider whether art is:
+
+1. A necessity, practical (for morality and piety)
+2. Or only a luxury (entertainment)
+
+* One is a kind of reason
+* The other sensuality
+
+::: {.notes}
+
+What is wrong with this characterization?
+
+> nothing is gained for reason and duty by the attempt at mediation, because these principles, as essentially incapable of intermixture, can be parties to no such compromise, but demand in their manifestation the same purity which they have in themselves. [219]
+
+:::
+
+---
+
+### Art as Necessity or Luxury
+
+* It seems that at best, it is pleasing amusement only
+
+But,
+
+::: {.r-fit-all}
+
+> The beauty of art presents itself to sense, to feeling, to perception, to imagination; its sphere is not that of thought, and the apprehension of its activity and its productions demand another organ than that of the scientific intelligence. [219]
+
+---
+
+#### The beauty of art lies in truth, which is different from pleasing amusement
+
+---
+
+and so,
+
+> the organ of artistic activity and enjoymnet --- is of necessity excluded from science. . . . seeing that art is what cheers and animates the dull and withered dryness of the idea, reconciles with reality its abstraction and its dissociation therefrom, and supplies out of the real world what is lacking to the notion, . . . [219]
+
+# Heiddegger, The Thingly Nature of Art
+
+![A Stop sign against the backdrop of the California coast](../../../figures/aesthetics-course/stop-sign-along-country-road_Getty-680x402.jpg)
+
+::: {.notes}
+
+Some objects are things.
+
+When looking at objects that are things, we can play a fun game with ourselves: art or not?
+
+:::
+
+---
+
+> Our aim is to arrive at the immediate and full reality of the work of art, for only in this way shall we discover real art also within it. [398]
+
+::: {.notes}
+
+We can begin with understanding what a thing is by focusing on its function, its practical use.
+
+* What is a mere thing?
+
+There are three considerations here:
+
+Practical Use,
+
+Historical Constitution, they establish a sense of history and time giving them cultural significance.
+
+Thereby, they build our world around us.
+
+What is time without its passage?
+
+:::
+
+## Mere Things
+
+* A block of granite for instance
+
+* A stop sign? Is this a mere thing? No.
+
+::: {.notes}
+
+A stop sign is practically useful.
+
+:::
+
+---
+
+![A Pair of Shoes 1886](../../../figures/aesthetics-course/van-gogh-peasant-shoes.png)
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7CS9enzcXL4?si=UdtvzMB7yHN8HmUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+# What is Artistic Achievement?
+
+::: {.notes}
+
+* When does a work succeed as art?
+
+* and correspondingly, when does it fail?
+
+* By understanding this, when does a game succeed as a game? But more importantly, when does it become art?
+
+:::
+
+## What is Artistic Sophistication?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZaqpcybxUqs?si=xO0WcMRZMinYSsh0&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+::: {.notes}
+
+Is it a form of artistic achievement?
+
+Is it merely an accounting of the increasingly technological sophistication of modern games?
+
+:::
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wA82CD9YFG0?si=FVWnR25QYQpROrtk&amp;start=490" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<iframe src="https://evemaps.dotlan.net/" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+
+::: {.notes}
+
+> Map Beta is three-dimensional. Stars are shown as colored dots - the shades of which can be changed to represent different sorts of data:
+
+* security status,
+* services,
+* sovereignty,
+* number of pilots in space
+
+> and many others. Lines show the jump gate connections between stars, with the path from your current location to the selected system shown as a dotted line.
+
+:::
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1NzZoy0aZ0?si=eJZqXN1cNB4jb7AK&amp;start=521" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+::: {.notes}
+
+What is important here is the quantification of data. Each pixel is embueded with large quantifies of information that have significance and represent meaning beyond the game itself.
+
+Each aspect of data here represents not only an artifact created by a game developer, but those artifacts that are created by the players themselves.
+
+For each ship to exist in this game, there first needs to be material mined from asteroids, then refined. The refined materials are then made into base components like different kinds of metal.
+
+:::
+
+---
+
+::: {.r-fit-text}
+
+> In the EVE universe, the vast majority of items are manufactured by player characters and traded in a relatively free way in the marketplace. Students of economics will note that these markets are neither perfect nor efficient in the technical senses; volumes of many items are low enough that the market can be (and is) manipulated, and the supply of materials and modules is partly provided by loot drops in missions, which can be adjusted without warning by the game developers. Similarly, the developers may adjust the requirements for a manufacturing process, or increase the availability of ore, or otherwise mess in the sandbox.
+
+> Nonetheless, manufacturing and selling items can provide interest and ISK profit for the careful and canny player. The player must be aware, however, that there are plenty of items that destroy value - that is, there are a great number of Tech 1 items, modules especially, that are worth less than the cost of manufacture. Many more items can be sold at a profit, but only in a limited volume in certain markets. Manufacture in these cases may simply be an alternative to hauling stuff between markets.
+
+:::
+
+## Artistic Representation, Injustice, and Exploitation
+
+> But because of the interactive nature of videogame fictions – the player takes a part in the moral situations presented there, and whether or not the evil occurs is often up to them – the potential of games for the exploration of moral issues seems somehow more vivid: and perhaps more dangerous, where the game does not provide opportunities to put the content in a thoughtful or realistic context.
+
+::: {.notes}
+
+But what happens when developers imbibe there creations with data, and create meaning that we would normally otherwise find reprehensible.
+
+For instance, while it is typically obvious that violence is wrong, what is equally worrisome, are the depictions of women and other minorities that we see in GTA San Andreas.
+
+:::
+
+---
+
+> Here one's emotional response to some object (an event, person, state of affairs, etc) can properly be held to such evaluations as that it is misdirected, unjustified, abnormal, or somehow an emotion one ought not to have, in general or in the particular case.
+
+::: {.notes}
+
+Therefore, is it possible to enjoy fictions like those found in GTA. We might think not since our enjoyment of them would represent a conflict in interests.
+
+We believe that murder is wrong, that people should not be treated as means to an end, but as an end in themselves etc.
+
+:::
+
+##  Gilmore rejects this arguing that
+
+> imaginative activity has an epistemic or practical role like that of beliefs and perceptions, where the function is to aid in, e.g., planning for the future, or discovering some truth about the actual world, our evaluative commitments, or what is metaphysically possible. [@gilm20, 132]
+
+## Artistic Functions
+
+> My explanation was that the kinds of reasons that we countenance as justifying our emotions, imaginings, and desires depend on the *functions* of the practices in which those mental representations are elicited. [@gilm20, 201]
+
+::: {.notes}
+
+* Entertainment
+* Absorption
+* Vicarious Experience
+* Distraction
+
+Back to an earlier question, how do we qualify artistic achievement?
+
+:::
+
+---
+
+> However, when we evaluate a work of art in light of its acheievement of its ends, taht evaluation is typically not based on merely the discharging of those ends, without regard to how that happens to occurr. Our interest is rather in the ends as *realized* by the means: that is, how the material or structural medium of the work discharges a function. [@gilm20, 205]
+
+---
+
+> This model has been argued to make  sense of the distinction between ‘punk’ and ‘real punk’ in that the conditions to qualify as  punk tend to be descriptive, but an artist and their work must embody the values of punk to  qualify as ‘real punk’ (Liao, Meskin, Knobe 2020). [@malo23]
+
+::: {.notes}
+
+* Real punk or country music then, is music through which an artist and their work embodies the values of punk. [@malo23]
+
+:::
+
+# What are Video Games? What is Art?
+
+Attempts to Define Art
+
+## Essentialist Definitions
+
+* Representation or mimesis
+* Mirror of Reality
+* Functionalism
+* Institutional
+* Historical
+* Cluster or Family Resemblance
+
+---
+
+> Though a large proportion of artworks do involve representation, it quickly becomes clear that this definition is prone to examples of artworks that do not-pure orchestral music and some abstract art, for example-and objects such as billboard advertisements that do involve representation but which are nevertheless not artworks. [@tavi09, 16]
+
+::: {.notes}
+
+Consider the project of philosophy to create definitions for complex phenomena. At the center of this project is first being able to articulate what specifically this project is, namely what is a defnition and what purposes does it serve?
+
+:::
+
+---
+
+> The thought that "art" cannot be defined is not of course a new one: it was the central calim of several aestheticisans in the 1950s who drew in varying ways on Wittgenstein's notion of family resemblance to support their case. [@gaut00]
+
+::: {.notes}
+
+Berys Gaut gives this project what he calls a logical form that he takes from Wittgenstein:
+
+:::
+
+## Cluster account of the meaning of proper names
+
+> By 'Moses' I understand the man who did what the Bible relates of Moses, or at any rate a good deal of it. [@cahn20, 462]
+
+::: {.notes }
+
+What makes this account true?
+
+Such an account is true just in case there are properties whose instantiation by an object counts as a matter of conceeptual necessity toward its falling under the concept. [@cahn20, 462]
+
+:::
+
+---
+
+> Such definitions attempt to explain, clarify, or even revise the conceptual status of a term in common usage and come in the form of a condition or set of conditions that are necessary and sufficient for *x* to be *y*. [@tavi09, 15]
+
+
+::: {.notes}
+
+Tavinor refers to these as "necessary and sufficient conditions".
+
+Water is defined as H20 becassue water must possess two hydrogen atoms and one oxygen atom to be water, and anything that possesses these atoms is water.
+
+:::
+
+## Some Definitions
+
+* Narratology (Janet Murray 1998; Poole 2000)
+* Ludology
+* Interactive Fiction
+
+# Tavinor, Video Games and Fiction
+
+<iframe width="1100" height="600" src="https://www.youtube.com/embed/HFMv_hqinvc?si=tN65b3S3ez29IdRf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<embed src="https://robertsspaceindustries.com/en/pledge/ships?sortField=price&sortDirection=desc" style="width:1100px; height: 600px;">
+
+---
+
+![Star Citizen Ship Sale](../../../figures/aesthetics-course/star-hanger.png){fig-align="center" width="80%}
+
+# Fiction
+
+Fictional qualities can include things like:
+
+* physics
+* abilities
+* skills
+* equipment
+
+::: {.notes}
+
+But does it include things like obligations, responsibilities, and moral duties?
+
+What about tax obligatons? If I own a virtual item in Star Citizen, am I obligated to pay taxes on it?
+
+What about financial transactions involving virtual currency? Are these fictional or real?
+
+What about large scale economic activities within a game's virtual economy, or conflicts?
+
+Are the conflicts in a game virtual, fictional, or actual?
+
+:::
+
+## The fiction of Video Games
+
+* Depict a given world
+* Events occur in this world and
+* Characters act in this world
+
+::: {.notes}
+
+But do players act in fictional worlds or do only characters act?
+
+:::
+
+---
+
+Consider subject, predicate, and object relationships among words in a sentence.
+
+::: {.notes}
+
+The obvious attempt is to express a given meaning, and we do this through language.
+
+What is the intended purpose of the expression however?
+
+:::
+
+---
+
+>  It is not the media or tational form – in both cases, written biography – that makes one fiction and the other non-fiction, because they share a representational form; rather,it is a fact about their intended function that distinguishes them, a fact which surely has to do with what the author had in mind when writing the text: the fictional work is written to be used as a prop for the imagination. [@tavi09, 38]
+
+---
+
+> When we think about the imagination, examples like the following naturally come to mind: Fred finds himself, in a an idle moment, along with his thoughts. Feeling unsuccessful an dunappreciated, he embarks on a daydream in which he is rich and famous. [@walt90, 13]
+
+::: {.notes}
+
+Both are reasons to imagine
+
+1. Spontaneous and Deligberate Imaginings
+2. Occurrent and Nonoccurrent Imaginings
+3. Solitary and Social Imaginings
+4. Imagining and Entertaining
+
+:::
+
+# Recap
+
+## What we are not reading after all
+
+| Author | Title | Page | Source |
+|---|---|---|---|
+| David Lewis's | Truth in Fiction | handout |  |
+| David Hume's | Of Tragedy |  | Aesthetics |
+
+::: {.notes}
+
+First, we will not be reading Lewis's "Truth in Fiction". I think this is for the best since it is a very interesting but technical piece.
+
+We are also not reading Hume's "Of Tragedy" because its relevance has already passed us by.
+
+:::
+
+## We've already covered
+
+* Grant Tavinor's "Games and Fiction" from his "The Art of Video Games".
+
+## Going Forward
+
+| Author | Title | Page | Source |
+|---|---|---|---|
+| Tavinor's | Stepping into Fictional Worlds | ch. 4, page 62 | Art |
+| Jerrod Levison's | What a Music Work Is | page 513 | Aesthetics |
+
+::: {.notes}
+
+Today we will cover Grant Tavinor's "Stepping into Fictional Worlds", chapter 4, page 62 of "Art".
+
+We will also introduce Jerrod Levinson's "What a Musical Work Is" from Aesthetics: A contemporary anthology. page 513
+
+:::
+
+# Tavinor, Games and Fiction
+
+## Tavinor, Stepping into Fictional Worlds
+
+::: {.notes}
+
+We become a player-character. The player character is a player's epistemic and behavioral proxy. It allows them to discover facts about the fictional world
+
+It allows them to act in the fictional world
+
+:::
+
+---
+
+Modal Proxy
+
+* vision
+* hearing
+* taste
+* smell
+* touch
+
+::: {.notes}
+
+Makes it a visuospatial Fiction as a ground to fictive epistemic behavioral engagement
+
+Begins with visuospatial,
+
+Wire-frame vector graphics
+
+:::
+
+
