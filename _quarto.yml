@@ -170,7 +170,7 @@ website:
     background: light
     left: "Copyright 2025, Montaque Reynolds"
 
-bibliography: /home/mreynolds/Sync/My-Library.bib
+bibliography: ./My-Library.bib
 csl: references/chicago-author-date.csl
 
 format:
