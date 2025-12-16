@@ -1,0 +1,70 @@
+---
+title: "PHIL104Q - Introduction to Logic"
+subtitle: "Academic Year: 2025/26"
+format: html
+---
+
+::: {.callout-important collapse=false}
+## 📢 Important
+
+(01/16/2026)
+
+- [🗓️ Week 01 lecture material](./2026_logic/weeks/week01/page.qmd) is now available!
+
+:::
+
+
+# 🧑🏻‍🏫 Our Team
+
+::: {.panel-tabset}
+## Course Convenor
+
+![](/figures/people/professor_octopus.png){fig-align="left" fig-alt="Photo of Dr. Reynolds" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}
+**[Reynolds](#)** <br/>
+ Dr. Monty Reynolds<br/>
+[Stetson University](#)</a><br/>
+📧 [mreynolds1@stetson.edu](mailto:)
+
+Office Hours:
+
+- When: TTH 1-2pm or by appointment
+- Where: Elizabeth Hall 104
+- How to book: Drop in, email, or book via [Microsoft Bookings](https://outlook.office.com/bookwithme/user/59570715559b43fdabc651a89a3ed839@stetson.edu?anonymous&ismsaljsauthenabled&ep=plink)
+
+## Teaching Staff
+
+![](/figures/people/ta_octopunian.png){fig-align="left" fig-alt="Photo of Grey Smith" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}
+**[Grey Smith](#)** <br/>
+Student Peer Instructor<br>
+📧 [asmith112@stetson.edu](mailto:)
+
+~~[](/figures/people/ta_octopunian2.png){fig-align="left" fig-alt="Photo of TA_NAME" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}~~
+~~**[TA_NAME](#)** <br/>~~
+~~PhD Candidate at PLACE <br>~~
+~~📧 [EMAIL](mailto:)~~
+
+
+:::
+
+### Learning Outcomes
+
+Through this course students will:
+
+1. Learn basic logical concepts and principles of good reasoning.
+
+2. Understand logical form and truth functional logic.
+
+3. Learn techniques for translating sentences into logical notion and determining the validity of arguments.
+
+4. Learn truth tables and other means of determining the validity of arguments stated in sentential logical notation.
+
+# 📍 Lecture
+
+See Class Times Below
+
+# 💻 Class Meeting Times
+
+**Aesthetics 343A**
+
+- 📆 Mondays and Wednesdays
+- ⌚ 10:30am - 12:45pm

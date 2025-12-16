@@ -1,14 +1,13 @@
 project:
   type: "website"
-  title: "Fall 2025 Courses"
+  title: "Introduction to Logic, Spring 2026"
   output-dir: _output
   render:
     - "./index.qmd"
-    - "./2025-aesthetics/*"
-#    - "2025-logic/*"
+    - "./2026_logic/*"
 
 website:
-  title: "Philosophy of Law, Spring 2026"
+  title: "Logic, Fall 2025"
   page-navigation: true
   reader-mode: true
   open-graph: true
@@ -24,143 +23,87 @@ website:
     contents:
       - section: "🗓️ Logic"
         contents:
-         - href: 2025-logic/weeks/week01/page.qmd
+         - href: 2026_logic/weeks/week01/page.qmd
            text: Week 01
            contents:
-             - href: 2025-logic/weeks/week01/page.qmd
+             - href: 2026_logic/weeks/week01/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week02/page.qmd
+         - href: 2026_logic/weeks/week02/page.qmd
            text: Week 02
            contents:
-             - href: 2025-logic/weeks/week02/page.qmd
+             - href: 2026_logic/weeks/week02/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week03/page.qmd
+         - href: 2026_logic/weeks/week03/page.qmd
            text: Week 03
            contents:
-             - href: 2025-logic/weeks/week03/page.qmd
+             - href: 2026_logic/weeks/week03/page.qmd
                text: 👨‍🏫 Lecture Material
-            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
+            #  - href: 2026_aesthetics/weeks/week06/summary.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week04/page.qmd
+         - href: 2026_logic/weeks/week04/page.qmd
            text: Week 04
            contents:
-             - href: 2025-logic/weeks/week04/page.qmd
+             - href: 2026_logic/weeks/week04/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-             - href: 2025-logic/weeks/week04/summary.qmd
+             - href: 2026_logic/weeks/week04/summary.qmd
                text: 💻 Study Guide
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week05/page.qmd
+         - href: 2026_logic/weeks/week05/page.qmd
            text: Week 05
            contents:
-             - href: 2025-logic/weeks/week05/page.qmd
+             - href: 2026_logic/weeks/week05/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-            #  - href: 2025-aesthetics/weeks/week06/summary.qmd
+            #  - href: 2026_aesthetics/weeks/week06/summary.qmd
             #    text: 💻 Lab Roadmap
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week06/page.qmd
+         - href: 2026_logic/weeks/week06/page.qmd
            text: Week 06
            contents:
-             - href: 2025-logic/weeks/week06/page.qmd
+             - href: 2026_logic/weeks/week06/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-             - href: 2025-logic/weeks/week06/summary.qmd
+             - href: 2026_logic/weeks/week06/summary.qmd
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week07/page.qmd
+         - href: 2026_logic/weeks/week07/page.qmd
            text: Week 07
            contents:
-             - href: 2025-logic/weeks/week07/page.qmd
+             - href: 2026_logic/weeks/week07/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-             - href: 2025-logic/weeks/week07/summary.qmd
+             - href: 2026_logic/weeks/week07/summary.qmd
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-         - href: 2025-logic/weeks/week08-predicates/page.qmd
+         - href: 2026_logic/weeks/week08-predicates/page.qmd
+           text: Week 08
            contents:
-             - href: 2025-logic/weeks/week08-predicates/page.qmd
+             - href: 2026_logic/weeks/week08-predicates/page.qmd
                text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
-             - href: 2025-logic/weeks/week08-predicates/summary.qmd
+             - href: 2026_logic/weeks/week08-predicates/summary.qmd
                text: 💻 Notes and Summary
             #  - href: 2023/weeks/week01/appendix.qmd
             #    text: 🔖 Appendix
-      - section: "🗓️ Aesthetics"
-        contents:
-         - href: 2025-aesthetics/weeks/week12/page.qmd
-           text: Discussion 12
+         - href: 2026_logic/weeks/week16_final-review/page.qmd
+           text: Final Review
            contents:
-             - href: 2025-aesthetics/weeks/week12/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week12/summary.qmd
+             - href: 2026_logic/weeks/week16_final-review/page.qmd
+               text: 👨‍🏫 Lecture Material/Propositional Logic Semantics
+             - href: 2026_logic/weeks/week16_final-review/summary.qmd
                text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week13/page.qmd
-           text: Discussion 13 - Kant on the Critique of the Power of Judgment
-           contents:
-             - href: 2025-aesthetics/weeks/week13/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week13/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week14/page.qmd
-           text: Discussion 14 - David Hume - On Tragedy
-           contents:
-             - href: 2025-aesthetics/weeks/week14/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week14/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week15/page.qmd
-           text: Discussion 15 - Hegel - Art is Done
-           contents:
-             - href: 2025-aesthetics/weeks/week15/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week15/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week16/page.qmd
-           text: Discussion 15 - Heiddegger - The Origin of the Work of Art
-           contents:
-             - href: 2025-aesthetics/weeks/week16/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week16/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week17/page.qmd
-           text: Discussion 17 - Tavinor's - The Art of Video Games
-           contents:
-             - href: 2025-aesthetics/weeks/week17/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week17/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week18/page.qmd
-           text: Discussion 18 - Tavinor's - The Art of Video Games
-           contents:
-             - href: 2025-aesthetics/weeks/week18/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week18/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week19/page.qmd
-           text: Discussion 19 - Tavinor's - The Art of Video Games
-           contents:
-             - href: 2025-aesthetics/weeks/week19/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week19/summary.qmd
-               text: 💻 Notes and Summary
-         - href: 2025-aesthetics/weeks/week20/page.qmd
-           text: Discussion 20 - Tavinor's - The Art of Video Games
-           contents:
-             - href: 2025-aesthetics/weeks/week20/page.qmd
-               text: 👨‍🏫 Lecture Material
-             - href: 2025-aesthetics/weeks/week20/summary.qmd
-               text: 💻 Notes and Summary
-
+            #  - href: 2023/weeks/week01/appendix.qmd
+            #    text: 🔖 Appendix
 
   navbar:
     background: primary
@@ -189,6 +132,15 @@ format:
       - css/custom_style.css
       - css/syllabus.css
     toc: true
-
-margin-header: |
-  ![](/figures/logos/logo-x2.png)
+    html:
+    html-math-method: mathjax
+    include-in-header:
+      text: |
+        <script>
+          window.MathJax = {
+            loader: { load: ['[tex]/bussproofs'] },
+            tex: { packages: {'[+]': ['bussproofs']} }
+          };
+        </script>
+    margin-header: |
+      ![](/figures/logos/logo-x2.png)

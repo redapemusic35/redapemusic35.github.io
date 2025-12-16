@@ -1,45 +1,17 @@
 ---
-title: "Fall 2025 Courses"
+title: "Logic, Spring 2026"
 format:
   html:
     include-before-body: helpers/remove-nav.html
     include-after-body: helpers/remove-title.html
 ---
 
-::::::{.columns}
-
-:::::{.column width="50%"}
-
 # 📑 Introduction to Logic
 
-<a href="2025-logic/index.qmd">
-    <button class="button-61">Logic, Fall 2025</button>
+<a href="./2026_logic/index.qmd">
+    <button class="button-61">Logic, Spring 2026</button>
 </a>
-
-:::{style="text-align: center"}
 
 This course will begins with an informal system of logic and proceeds to classical propositional logic syntax, semantics and inference. It will then cover predicate logic semantics and inference.
 
-:::
-:::::
-
-:::::{.column width=50%}
-
-# 📑 Aesthetics
-
-<a href="2025-aesthetics/index.qmd">
-    <button class="button-61">Aesthetics, Fall 2025</button>
-</a>
-
-:::{style="text-align: center"}
-
-This course will explore enduring questions regarding beauty and, it’s place in art, philosophy and life; we will consider what an encounter with beauty is, we will consider the transformative power of beauty and art. We will ask about the relationships between art, art criticism, excellence in art and the human experience of beauty. We will consider how all of this works in modernity: a world of mass production, museums, commercial appropriation of art, and ubiquitous reproductions of works of art.
-
-:::
-:::::
-
 !['Holmes wears a top hat'](./2025-logic/holmes.jpg)
-
-::::::
-
------------------

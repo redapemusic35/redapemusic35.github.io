@@ -1,0 +1,119 @@
+---
+subtitle: "PHIL104Q -- Introduction to Logic"
+title: "<font style='font-size:1em;'>🗓️ Week 01/02<br/> Introduction</font>"
+author: Prof. [Reynolds](#)
+institute: '[Stetson University](#)'
+date: 02 September 2026
+date-meta: 14 March 2023
+date-format: "DD MMM YYYY"
+toc: false
+toc-depth: 1
+toc-title: "Argument Forms, Formalization, Formation Rules:"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs:
+    theme: moon
+    fig-responsive: true
+    slide-number: true
+    mouse-wheel: false
+    preview-links: auto
+    logo: /figures/icons/course_favicon.png
+    css: /css/styles_slides.css
+    footer: 'PHIL104Q -- Introduction to Logic'
+---
+
+| Unit | Topic | Pages |
+|---|---|---|
+|1 | What is deductive logic? | 1-8 |
+|2 | Validity and soundness | 9-19 |
+| 3 | Forms of inference | 20 |
+| 4 | Proofs | 28 |
+
+---
+
+| 5 | The counterexample method | 39 |
+
+6 Logical validity 44
+
+7 Propositions and forms 52
+
+Interlude: From informal to formal logic 59
+
+8 Three connectives 61
+
+9 PL syntax 72
+
+10 PL semantics 81
+
+11 ‘P’s, ‘Q’s, ‘α’s, ‘β’s – and form again 94
+
+12 Truth functions 104
+
+13 Expressive adequacy 113
+
+14 Tautologies 120
+
+15 Tautological entailment 127
+
+16 More about tautological entailment 137
+
+17 Explosion and absurdity 145
+
+18 The truth-functional conditional 148
+
+19 ‘If’s and ‘→’s 162  Interlude: Why natural deduction? 172
+
+20 PL proofs: conjunction and negation 174
+
+21 PL proofs: disjunction 191
+
+22 PL proofs: conditionals 203
+
+23 PL proofs: theorems 211
+
+24 PL proofs: metatheory 216  Interlude: Formalizing general propositions 228
+
+25 Names and predicates 230
+
+26 Quantifiers in ordinary language 240  v vi Contents
+
+27 Quantifier-variable notation 249
+
+28 QL languages 258
+
+29 Simple translations 271
+
+30 More on translations 282  Interlude: Arguing in QL 290
+
+31 Informal quantifier rules 293
+
+32 QL proofs 299
+
+33 More QL proofs 315
+
+34 Empty domains? 329
+
+35 Q-valuations 333
+
+36 Q-validity 346
+
+37 QL proofs: metatheory 354  Interlude: Extending QL 359
+
+38 Identity 361
+
+39 QL= languages 367
+
+40 Definite descriptions 375
+
+41 QL= proofs 382
+
+42 Functions 391
+
+Appendix : Soundness and completeness 402
+
+The Greek alphabet 412
+
+Further reading 413
+
+Index

@@ -1,0 +1,124 @@
+---
+subtitle: "PHIL104Q -- Classical Propositional Logic, (Syntax)"
+title: "<font style='font-size:1em;'>🗓️ Week 03<br/> Introduction</font>"
+author: Prof. [Reynolds](#)
+institute: '[Stetson University](#)'
+date: 02 September 2026
+date-meta: 14 March 2023
+date-format: "MMM DD YYYY"
+toc: false
+toc-depth: 1
+toc-title: "Argument Forms, Formalization, Formation Rules:"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs:
+    theme: moon
+    html-math-method: mathjax
+    fig-responsive: true
+    slide-number: true
+    incremental: true
+    scrollable: true
+    mouse-wheel: false
+    preview-links: auto
+    logo: /figures/icons/course_favicon.png
+    css: /css/styles_slides.css
+    footer: 'PHIL104Q -- Introduction to Logic'
+    include-in-header:
+      - text: |
+          <script>
+          window.MathJax = {
+            loader: {load: ['[tex]/bussproofs']},
+            tex: {packages: {'[+]': ['bussproofs', '[tableaux]/prooftrees']}}
+          };
+          </script>
+code-annotations: below
+---
+
+# Classical Propositional Logic
+
+## Syntax {.smaller}
+
+* Explain notions like
+  * itemize
+  * deduction, deductive validity;
+  * logical consistency;
+  * induction, inference to best explanation.
+* Introduce tests for validity, provide tools for fallacy-spotting, etc.
+* Familiarize you with logical symbolism -- i.e. give a ‘reading knowledge’ of some of the languages of logic.
+
+# Test Done
+
+\begin{prooftree}
+  \AxiomC{$A \to B$}
+  \AxiomC{$A$}
+  \BinaryInfC{$B$}
+  \AxiomC{$B \to C$}
+  \BinaryInfC{$C$}
+  \RightLabel{($\to$-E)}
+  \UnaryInfC{$D$}
+  \AxiomC{$A \to B$}
+\end{prooftree}
+
+## Style
+
+\begin{prooftree}
+\rootAtTop
+\AxiomC{A}
+\AxiomC{F}
+\BinaryInfC{P}
+\AxiomC{Q}
+\AxiomC{$\lnot R$}
+\BinaryInfC{$Q \vee \lnot R$}
+\BinaryInfC{$P \vee (Q \vee \lnot R)$}
+\end{prooftree}
+
+## Natural Deduction Example
+
+$$\begin{prooftree}
+  \AxiomC{$A \to B$}
+  \AxiomC{$A$}
+  \BinaryInfC{$B$}
+\end{prooftree}
+$$
+
+## Test
+
+\begin{prooftree}
+  \AxiomC{$A \to B$}
+  \AxiomC{$A$}
+  \BinaryInfC{$B$}
+  \AxiomC{$B \to C$}
+  \BinaryInfC{$C$}
+  \RightLabel{($\to$-E)}
+  \UnaryInfC{$D$}
+  \AxiomC{$A \to B$}
+\end{prooftree}
+
+# Blah
+
+Prove $P \vee (Q \vee \lnot R) \vdash \lnot P$
+
+\begin{prooftree}
+\rootAtTop
+\AxiomC{A}
+\AxiomC{F}
+\BinaryInfC{P}
+\AxiomC{Q}
+\AxiomC{$\lnot R$}
+\BinaryInfC{$Q \vee \lnot R$}
+\BinaryInfC{$P \vee (Q \vee \lnot R)$}
+\end{prooftree}
+
+
+---
+
+\begin{prooftree}
+  \AxiomC{$P \vee (Q \vee \lnot R)$}
+  \AxiomC{$P \rightarrow \lnot R$}
+  \BinaryInfC{$P \vee (Q \vee \lnot R)$}
+  \AxiomC{$P \rightarrow \lnot R$}
+  \UnaryInfC{$Q \rightarrow \lnot R$}
+\end{prooftree}
+
+
