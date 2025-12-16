@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Monty Reynolds">
 
-<title>Logic, Spring 2026 – Logic, Fall 2025</title>
+<title>summary – Logic, Fall 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./figures/icons/course_favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c05fab078b4efa7a09a92b01ef785e7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../2026_logic/weeks/week05/page.html" rel="next">
+<link href="../../../2026_logic/weeks/week04/page.html" rel="prev">
+<link href="../../../figures/icons/course_favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c05fab078b4efa7a09a92b01ef785e7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,18 +78,51 @@ ul.task-list li input[type="checkbox"] {
   };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="css/custom_style.css">
-<link rel="stylesheet" href="css/syllabus.css">
-<meta property="og:title" content="Logic, Spring 2026 – Logic, Fall 2025">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://redapemusic35.github.io/2025-logic/holmes.jpg">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../css/custom_style.css">
+<link rel="stylesheet" href="../../../css/syllabus.css">
+<meta property="og:title" content="Logic, Fall 2025">
+<meta property="og:image" content="https://redapemusic35.github.io/figures/people/professor_octopus.png">
 <meta property="og:site_name" content="Logic, Fall 2025">
-<meta name="twitter:title" content="Logic, Spring 2026 – Logic, Fall 2025">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://redapemusic35.github.io/2025-logic/holmes.jpg">
+<meta property="og:image:alt" content="Photo of Professor Octopian">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1024">
+<meta name="twitter:title" content="Logic, Fall 2025">
+<meta name="twitter:image" content="https://redapemusic35.github.io/figures/people/professor_octopus.png">
 <meta name="twitter:creator" content="@<twitter-handle>">
 <meta name="twitter:site" content="\@<twitter-handle>">
+<meta name="twitter:image:alt" content="Photo of Professor Octopian">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1024">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -98,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Logic, Fall 2025</span>
     </a>
   </div>
@@ -117,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Logic, Spring 2026</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2026_logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2026_logic/weeks/week04/page.html">Week 04</a></li><li class="breadcrumb-item"><a href="../../../2026_logic/weeks/week04/summary.html">💻 Study Guide</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -140,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week01/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week01/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 01</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -149,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week01/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week01/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material</span></a>
   </div>
 </li>
@@ -157,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week02/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week02/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 02</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -166,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week02/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week02/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material</span></a>
   </div>
 </li>
@@ -174,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 03</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -183,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week03/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material</span></a>
   </div>
 </li>
@@ -191,22 +226,22 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week04/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week04/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 04</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week04/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week04/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material/Propositional Logic Semantics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week04/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week04/summary.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">💻 Study Guide</span></a>
   </div>
 </li>
@@ -214,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week05/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week05/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 05</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -223,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week05/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week05/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material/Propositional Logic Semantics</span></a>
   </div>
 </li>
@@ -231,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week06/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week06/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 06</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -240,13 +275,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week06/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week06/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material/Propositional Logic Semantics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week06/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week06/summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -254,7 +289,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week07/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week07/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 07</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -263,13 +298,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week07/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week07/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material/Propositional Logic Semantics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week07/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week07/summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -277,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week08-predicates/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week08-predicates/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 08</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -286,13 +321,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week08-predicates/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week08-predicates/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material/Propositional Logic Semantics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week08-predicates/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week08-predicates/summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -300,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./2026_logic/weeks/week16_final-review/page.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../2026_logic/weeks/week16_final-review/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Final Review</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -309,13 +344,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week16_final-review/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week16_final-review/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">👨‍🏫 Lecture Material/Propositional Logic Semantics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026_logic/weeks/week16_final-review/summary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../2026_logic/weeks/week16_final-review/summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">💻 Notes and Summary</span></a>
   </div>
 </li>
@@ -329,35 +364,39 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="./figures/logos/logo-x2.png" class="img-fluid"></p>
+<p><img src="../../../figures/logos/logo-x2.png" class="img-fluid"></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction-to-logic" id="toc-introduction-to-logic" class="nav-link active" data-scroll-target="#introduction-to-logic">📑 Introduction to Logic</a></li>
+  <li><a href="#classical-propositional-logic" id="toc-classical-propositional-logic" class="nav-link active" data-scroll-target="#classical-propositional-logic">Classical Propositional Logic</a>
+  <ul class="collapse">
+  <li><a href="#syntax" id="toc-syntax" class="nav-link" data-scroll-target="#syntax">Syntax</a></li>
+  <li><a href="#sentences" id="toc-sentences" class="nav-link" data-scroll-target="#sentences">Sentences</a></li>
+  <li><a href="#classify-the-following-as-valid-or-invalid" id="toc-classify-the-following-as-valid-or-invalid" class="nav-link" data-scroll-target="#classify-the-following-as-valid-or-invalid">Classify the following as valid or invalid</a></li>
+  <li><a href="#relevance" id="toc-relevance" class="nav-link" data-scroll-target="#relevance">Relevance</a></li>
+  <li><a href="#argument-indicators" id="toc-argument-indicators" class="nav-link" data-scroll-target="#argument-indicators">Argument Indicators</a></li>
+  </ul></li>
+  <li><a href="#chapter-2" id="toc-chapter-2" class="nav-link" data-scroll-target="#chapter-2">Chapter 2</a>
+  <ul class="collapse">
+  <li><a href="#classical-propositional-logic-syntax" id="toc-classical-propositional-logic-syntax" class="nav-link" data-scroll-target="#classical-propositional-logic-syntax">Classical Propositional Logic: Syntax</a></li>
+  <li><a href="#argument-forms" id="toc-argument-forms" class="nav-link" data-scroll-target="#argument-forms">Argument Forms</a></li>
+  <li><a href="#some-valid-argument-forms" id="toc-some-valid-argument-forms" class="nav-link" data-scroll-target="#some-valid-argument-forms">Some Valid Argument Forms</a></li>
+  <li><a href="#some-terms-from-chapter-2" id="toc-some-terms-from-chapter-2" class="nav-link" data-scroll-target="#some-terms-from-chapter-2">Some Terms from Chapter 2</a></li>
+  <li><a href="#formation-rules-for-propositional-logic" id="toc-formation-rules-for-propositional-logic" class="nav-link" data-scroll-target="#formation-rules-for-propositional-logic">FORMATION RULES FOR PROPOSITIONAL LOGIC</a></li>
+  <li><a href="#what-are-the-valuation-rules" id="toc-what-are-the-valuation-rules" class="nav-link" data-scroll-target="#what-are-the-valuation-rules">What are the valuation rules?</a></li>
+  <li><a href="#better" id="toc-better" class="nav-link" data-scroll-target="#better">Better</a></li>
+  <li><a href="#some-more-definitions" id="toc-some-more-definitions" class="nav-link" data-scroll-target="#some-more-definitions">Some More Definitions</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<script type="text/javascript">
-    var collection = document.getElementsByClassName("navbar-title");
-    collection[0].innerHTML = "FALL 2025/26 COURSES";
 
-    var elem = document.getElementById("quarto-sidebar");
-    elem.parentNode.removeChild(elem);
-
-    var elem = document.getElementById("quarto-margin-sidebar");
-    elem.parentNode.removeChild(elem);
-
-    var elem = document.getElementById("quarto-search");
-    elem.parentNode.removeChild(elem);
-</script>
-
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../2026_logic/weeks/week01/page.html">🗓️ Logic</a></li><li class="breadcrumb-item"><a href="../../../2026_logic/weeks/week04/page.html">Week 04</a></li><li class="breadcrumb-item"><a href="../../../2026_logic/weeks/week04/summary.html">💻 Study Guide</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Logic, Spring 2026</h1>
 </div>
 
 
@@ -380,25 +419,316 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction-to-logic" class="level1">
-<h1>📑 Introduction to Logic</h1>
-<p><a href="./2026_logic/index.html"> <button class="button-61">Logic, Spring 2026</button> </a></p>
-<p>This course will begins with an informal system of logic and proceeds to classical propositional logic syntax, semantics and inference. It will then cover predicate logic semantics and inference.</p>
+<section id="classical-propositional-logic" class="level1">
+<h1>Classical Propositional Logic</h1>
+<section id="syntax" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="syntax">Syntax</h2>
+<div class="columns">
+<div class="column" style="display:inline-block;width:40%;height:60%;border-radius:1em;margin:1%;padding:1.5%;background-color:#f5f5f5">
+<figure class="figure">
+<img src="../../../figures/people/professor_octopus.png" alt="Photo of Professor Octopian" role="presentation" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;font-size:1em;" class="img-responsive atto_image_button_text-bottom figure-img">
+<figcaption>
+<strong>Argument Forms&nbsp;<span><a href="#" target="_blank" class="external">Informal and Formal</a></span></strong> <br>Last Week, can you guess? <br>This Week
+</figcaption>
+</figure>
+</div><div class="column" style="width:50%;font-size:0.85em;margin-left:3%;">
+<ul>
+<li>Content</li>
+<li>Structure</li>
+</ul>
+<p><span class="tag" style="background-color:var(--quarto-hl-st-color)">Syntax</span> <br> <span class="tag" style="background-color:var(--quarto-hl-fu-color)">Semantics</span></p>
+</div>
+</div>
+</section>
+<section id="sentences" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="sentences">Sentences</h2>
+<blockquote class="blockquote">
+<p>I was a ghost, I was alone 어두워진 앞길 속에 (hah)</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Given the throne, I didn’t know how to believe</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I was the queen that I’m meant to be</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I lived two lives, tried to play both sides</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>But I couldn’t find my own place</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Called a problem child ’cause I got too wild</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>But now that’s how I’m getting paid 끝없이 on stage</p>
+</blockquote>
+</section>
+<section id="classify-the-following-as-valid-or-invalid" class="level2">
+<h2 class="anchored" data-anchor-id="classify-the-following-as-valid-or-invalid">Classify the following as valid or invalid</h2>
+<p>What is the conclusion? What are the supporting premises?</p>
+<blockquote class="blockquote">
+<p>I was a ghost, I was alone 어두워진 앞길 속에 (hah) (?)</p>
+</blockquote>
+<ol type="1">
+<li><p>Is it valid?</p></li>
+<li><p>Is it sound?</p></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 36%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>I was a ghost</th>
+<th>I was alone 어두워진 앞길 속에 (hah)</th>
+<th>Given the throne I didn’t know how to believe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>True</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="relevance" class="level2">
+<h2 class="anchored" data-anchor-id="relevance">Relevance</h2>
+<ul>
+<li><p>Logical truth, a statement true in all possible situations.</p></li>
+<li><p>A set of propositions (or a single proposition) is inconsistent if there is no possible situation in which they are all true (or in which it is true).</p></li>
+<li><p>Look for logical operators, terms representing logical relationships between propositions, except in the case of negations.</p></li>
+<li><p>Some are contingent, true in some possible situations but false in others.</p></li>
+</ul>
+</section>
+<section id="argument-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="argument-indicators">Argument Indicators</h2>
+<p>Words or phrases taht signal the presence of an argument.</p>
+<ul>
+<li><p>Premise Indicators</p>
+<ul>
+<li>since, because, for, as shown by, given that, may be inferred from, follows from, inasmuch as, in view of the fact that, seeing that, for the reason that, etc.</li>
+</ul></li>
+<li><p>Conclusion Indicators</p>
+<ul>
+<li>therefore, thus, hence, so, consequently, it follows that, we may infer that, entails that, which implies that, accordingly, as a result, etc.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="chapter-2" class="level1">
+<h1>Chapter 2</h1>
+<section id="classical-propositional-logic-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="classical-propositional-logic-syntax">Classical Propositional Logic: Syntax</h2>
+<p>In this chapter, we cover syntax, which is its grammar and rules for constructing sentences.</p>
+</section>
+<section id="argument-forms" class="level2">
+<h2 class="anchored" data-anchor-id="argument-forms">Argument Forms</h2>
+<ul>
+<li><p>Informal Logic: Studying arguments as they occur in natural language</p></li>
+<li><p>Formal Logic: Argument forms</p></li>
+</ul>
+</section>
+<section id="some-valid-argument-forms" class="level2">
+<h2 class="anchored" data-anchor-id="some-valid-argument-forms">Some Valid Argument Forms</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong><em>Modus Ponens</em></strong></p>
+<p>P1. P <span class="math inline">\(\rightarrow\)</span> Q.</p>
+<p>P2. P.</p>
+<p>C. <span class="math inline">\(\therefore\)</span> Q.</p>
+<p><strong><em>Modus Tollens</em></strong></p>
+<p>P1. P <span class="math inline">\(\rightarrow\)</span> Q.</p>
+<p>P2. ~Q.</p>
+<p>C. <span class="math inline">\(\therefore\)</span> ~P.</p>
+</div><div class="column" style="width:60%;">
+<p><strong><em>Hypothetical Syllogism</em></strong></p>
+<p>P1. P <span class="math inline">\(\rightarrow\)</span> Q.</p>
+<p>P2. Q <span class="math inline">\(\rightarrow\)</span> R.</p>
+<p>C. P <span class="math inline">\(\rightarrow\)</span> R</p>
+<p><strong><em>Disjunctive Syllogism</em></strong></p>
+<p>P1. P <span class="math inline">\(\lor\)</span> Q.</p>
+<p>P2. ~P. [or ~Q.]</p>
+<p>C. <span class="math inline">\(\therefore\)</span> Q. [∴ P.]</p>
+</div>
+</div>
+<p><strong><em>Constructive Dilemma</em></strong></p>
+<p>P1. P <span class="math inline">\(\lor\)</span> Q.</p>
+<p>P2. P <span class="math inline">\(\lor\)</span> R.</p>
+<p>P3. Q <span class="math inline">\(\rightarrow\)</span> S.</p>
+<p>C. <span class="math inline">\(\therefore\)</span> R <span class="math inline">\(\lor\)</span> S</p>
+</section>
+<section id="some-terms-from-chapter-2" class="level2">
+<h2 class="anchored" data-anchor-id="some-terms-from-chapter-2">Some Terms from Chapter 2</h2>
+<p>Turnstile</p>
+<p>Sequent</p>
+<p>Propositional Logic</p>
+<p>Negation Operator</p>
+<p>Disjunct</p>
+<p>Scope Ambiguity</p>
+<p>Automic Formulas</p>
+</section>
+<section id="formation-rules-for-propositional-logic" class="level2">
+<h2 class="anchored" data-anchor-id="formation-rules-for-propositional-logic">FORMATION RULES FOR PROPOSITIONAL LOGIC</h2>
+<p>1 Any sentence letter, with or without a sequence of numerals as a subscript, is a formula.</p>
+<p>2 If <span class="math inline">\(\phi\)</span> is a formula, then so is ~<span class="math inline">\(\phi\)</span>.</p>
+<p>3 If <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\psi\)</span> are formulas, then so are (<span class="math inline">\(\phi\)</span> &amp; <span class="math inline">\(\psi\)</span>), (<span class="math inline">\(\phi\)</span> <span class="math inline">\(\lor\)</span> <span class="math inline">\(\psi\)</span>), (<span class="math inline">\(\phi\)</span> <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\psi\)</span>) and (<span class="math inline">\(\phi\)</span> <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(\psi\)</span>).</p>
+<ol start="16" type="A">
+<li>~(P) (~P) <sub>(</sub>P): These are not formulas!</li>
+</ol>
+<hr>
+<p>What is classical logic? What is the principle of bivalence?</p>
+<p><strong><em>DEFINITION:</em></strong> A <strong>valuation</strong> of a formula or set of formulas of propositional logic is an assigment of one and only one of the truth values T and F to each of the sentence letters occuring in that formula or in any formula of that set.</p>
+</section>
+<section id="what-are-the-valuation-rules" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-the-valuation-rules">What are the valuation rules?</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./2025-logic/holmes.jpg" class="img-fluid figure-img"></p>
-<figcaption>‘Holmes wears a top hat’</figcaption>
+<p><img src="../../../figures/logic/v-rules-truth-tables.png" class="img-fluid figure-img"></p>
+<figcaption>Valuation Rules</figcaption>
 </figure>
 </div>
+</section>
+<section id="better" class="level2">
+<h2 class="anchored" data-anchor-id="better">Better</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img src="../../../figures/logic/v-rule-not-p.png" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<p><img src="../../../figures/logic/v-rule-p-and-q.png" class="img-fluid"></p>
+</div>
+</div>
+<hr>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img src="../../../figures/logic/v-rule-p-or-q.png" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<p><img src="../../../figures/logic/v-rule-p-then-q.png" class="img-fluid"></p>
+</div>
+</div>
+<hr>
+<p><img src="../../../figures/logic/v-rule-piffq.png" class="img-fluid"></p>
+</section>
+<section id="some-more-definitions" class="level2">
+<h2 class="anchored" data-anchor-id="some-more-definitions">Some More Definitions</h2>
+<p>DEFINITION: A counterexample to a sequent or argument form is a valuation on which its premises are true and its conclusion is not true.</p>
+<p>DEFINITION: A sequent or argument form is valid iff there is no valuation on which its premises are true and its conclusion is not true.</p>
+<p>DEFINITION: A sequent or argument form is invalid iff there is at least one valuation on which its premises are true and its conclusion is not true.</p>
+<p>DEFINITION: A valid formula is a formula true on all its valuations.</p>
+<p>DEFINITION: A tautology is a formula whose truth table displays a column consisting entirely of ’T’s under its main operator.</p>
+<p>DEFINITION: A formula is inconsistent iff there is no valuation on which it is true.</p>
+<p>DEFINITION: A set of formulas is inconsistent iff there is no valuation on which all the formulas in the set are true.</p>
+<p>DEFINITION: A formula is consistent iff it is true on at least one valuation.</p>
+<p>DEFINITION: A set of formulas is consistent iff there is at least one valuation on which all the formulas in the set are true.</p>
+<p>DEFINITION: A formula is contingent iff it is true on some of its valuations and not true on others.</p>
+<p>DEFINITION: Two formulas are logically equivalent iff they have the same truth value on every valuation of both.</p>
+<hr>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of formula</th>
+<th>Definition</th>
+<th>Truth Table Indication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Valid (Tautologous)</td>
+<td>True on all Valutions</td>
+<td>Column under main operator contains only ’T’s</td>
+</tr>
+<tr class="even">
+<td>Contingent</td>
+<td>True on at least one valuation</td>
+<td>Column under main operator contains both ’T’s and ’F’s</td>
+</tr>
+<tr class="odd">
+<td>Inconsistent</td>
+<td>True on no valuations</td>
+<td>Column under main operator contains only ’F’s</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type of set</th>
+<th>Definition</th>
+<th>Truth Table Indication</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Consistent</td>
+<td>There is at least one valuation on which all formulas in the set are true</td>
+<td>There is at least on Horizontal line on which all formulas in the set have ’T’s under their main operators</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Inconsistent</td>
+<td>There is no valuation on which all formulas in the set are true</td>
+<td>There is no horizontal line on which all formulas in the set have ’T’s under their main operators</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
+</section>
 
 </main> <!-- /main -->
-<script type="text/javascript">
-    var elem = document.getElementById("title-block-headder");
-    elem.parentNode.removeChild(elem);
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -806,6 +1136,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../2026_logic/weeks/week04/page.html" class="pagination-link" aria-label="Week 04">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 04</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../2026_logic/weeks/week05/page.html" class="pagination-link" aria-label="Week 05">
+        <span class="nav-page-text">Week 05</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
