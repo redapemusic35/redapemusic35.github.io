@@ -1,0 +1,305 @@
+{
+  "index.qmd": {
+    "index.html": "285ffca3"
+  },
+  "2023/index.qmd": {
+    "index.html": "04bd1d16"
+  },
+  "2023/weeks/week01/page.qmd": {
+    "page.html": "5bf4303f"
+  },
+  "2023/weeks/week01/slides.qmd": {
+    "slides.html": "1428a1db"
+  },
+  "2026/index.qmd": {
+    "index.html": "25652b34"
+  },
+  "2026/weeks/week01/page.qmd": {
+    "page.html": "f21c6b0f"
+  },
+  "2026/weeks/week01/slides.qmd": {
+    "slides.html": "47f43d85"
+  },
+  "2026/weeks/week02/slides.qmd": {
+    "slides.html": "ef14cc9d"
+  },
+  "2026/weeks/week03/page.qmd": {
+    "page.html": "0be2b6bc"
+  },
+  "2026/weeks/week03/slides.qmd": {
+    "slides.html": "d89e1645"
+  },
+  "2026/weeks/week02/page.qmd": {
+    "page.html": "45b9afd1"
+  },
+  "aesthetics-2026/weeks/week02/slides.qmd": {
+    "slides.html": "501ff38c"
+  },
+  "aesthetics-2026/weeks/week03/slides.qmd": {
+    "slides.html": "1062ec3e"
+  },
+  "aesthetics-2026/weeks/week03/page.qmd": {
+    "page.html": "38b057da"
+  },
+  "aesthetics-2026/weeks/week01/slides.qmd": {
+    "slides.html": "11a83511"
+  },
+  "aesthetics-2026/weeks/week01/page.qmd": {
+    "page.html": "695cfda0"
+  },
+  "aesthetics-2026/index.qmd": {
+    "index.html": "8ed6a0c1"
+  },
+  "aesthetics-2026/weeks/week02/page.qmd": {
+    "page.html": "a666c39d"
+  },
+  "2025-logic/weeks/week02/slides.qmd": {
+    "slides.html": "d29421c9"
+  },
+  "2025-logic/weeks/week03/slides.qmd": {
+    "slides.html": "433e835f"
+  },
+  "2025-logic/weeks/week03/page.qmd": {
+    "page.html": "e94bd097"
+  },
+  "2025-logic/weeks/week01/slides.qmd": {
+    "slides.html": "75c5b2a4"
+  },
+  "2025-aesthetics/weeks/week02/slides.qmd": {
+    "slides.html": "9c1dd86a"
+  },
+  "2025-aesthetics/weeks/week03/slides.qmd": {
+    "slides.html": "b86cec29"
+  },
+  "2025-aesthetics/weeks/week03/page.qmd": {
+    "page.html": "43569cb2"
+  },
+  "2025-aesthetics/weeks/week01/slides.qmd": {
+    "slides.html": "257e1351"
+  },
+  "2025-aesthetics/weeks/week01/page.qmd": {
+    "page.html": "457cdf27"
+  },
+  "2025-aesthetics/index.qmd": {
+    "index.html": "8661957b"
+  },
+  "2025-logic/index.qmd": {
+    "index.html": "3a5e04a3"
+  },
+  "2025-aesthetics/weeks/week02/page.qmd": {
+    "page.html": "ba5472e5"
+  },
+  "2025-logic/weeks/week02/page.qmd": {
+    "page.html": "640de956"
+  },
+  "2025-logic/weeks/week01/page.qmd": {
+    "page.html": "7ead591e"
+  },
+  "2025-aesthetics/weeks/week04/slides.qmd": {
+    "slides.html": "4648344e"
+  },
+  "2025-aesthetics/weeks/week04/page.qmd": {
+    "page.html": "16792422"
+  },
+  "2025-aesthetics/weeks/week05/slides.qmd": {
+    "slides.html": "2c1c05af"
+  },
+  "2025-aesthetics/weeks/week05/page.qmd": {
+    "page.html": "595a5da0"
+  },
+  "2025-logic/weeks/week04/slides.qmd": {
+    "slides.html": "db1c2acb"
+  },
+  "2025-logic/weeks/week04/page.qmd": {
+    "page.html": "a615cedf"
+  },
+  "2025-logic/weeks/week05/slides.qmd": {
+    "slides.html": "b41ea2da"
+  },
+  "2025-logic/weeks/week05/page.qmd": {
+    "page.html": "629eb8a1"
+  },
+  "2025-aesthetics/weeks/week06/slides.qmd": {
+    "slides.html": "7b05bf8e"
+  },
+  "2025-aesthetics/weeks/week06/page.qmd": {
+    "page.html": "0d2effbb"
+  },
+  "2025-aesthetics/weeks/week06/summary.qmd": {
+    "summary.html": "7e835460"
+  },
+  "2025-aesthetics/weeks/week05/summary.qmd": {
+    "summary.html": "d07d2cbc"
+  },
+  "2025-logic/weeks/week06/slides.qmd": {
+    "slides.html": "9016ab7a"
+  },
+  "2025-logic/weeks/week06/page.qmd": {
+    "page.html": "371f05c9"
+  },
+  "2025-logic/weeks/week06/summary.qmd": {
+    "summary.html": "8b19b379"
+  },
+  "2025-aesthetics/weeks/week07/summary.qmd": {
+    "summary.html": "f056d3b2"
+  },
+  "2025-aesthetics/weeks/week07/slides.qmd": {
+    "slides.html": "255bd4da"
+  },
+  "2025-aesthetics/weeks/week07/page.qmd": {
+    "page.html": "aa1bc69d"
+  },
+  "2025-aesthetics/weeks/week08/summary.qmd": {
+    "summary.html": "3280cca9"
+  },
+  "2025-aesthetics/weeks/week08/slides.qmd": {
+    "slides.html": "57a83996"
+  },
+  "2025-aesthetics/weeks/week08/page.qmd": {
+    "page.html": "e4a47962"
+  },
+  "2025-aesthetics/weeks/week09/summary.qmd": {
+    "summary.html": "99838c43"
+  },
+  "2025-aesthetics/weeks/week09/slides.qmd": {
+    "slides.html": "633f2b62"
+  },
+  "2025-aesthetics/weeks/week09/page.qmd": {
+    "page.html": "d62fadfe"
+  },
+  "2026_intro/index.qmd": {
+    "index.html": "e102f932"
+  },
+  "2026_intro/weeks/week02/slides.qmd": {
+    "slides.html": "3f9fb6bc"
+  },
+  "2026_intro/weeks/week02/page.qmd": {
+    "page.html": "7bed8e0a"
+  },
+  "2026_intro/weeks/week06/summary.qmd": {
+    "summary.html": "b55fb279"
+  },
+  "2026_intro/weeks/week06/slides.qmd": {
+    "slides.html": "c409c9eb"
+  },
+  "2026_intro/weeks/week06/page.qmd": {
+    "page.html": "44ddbf0f"
+  },
+  "2026_intro/weeks/week03/slides.qmd": {
+    "slides.html": "7b6c5891"
+  },
+  "2026_intro/weeks/week03/page.qmd": {
+    "page.html": "d781c317"
+  },
+  "2026_intro/weeks/week08/summary.qmd": {
+    "summary.html": "5afc9e78"
+  },
+  "2026_intro/weeks/week08/slides.qmd": {
+    "slides.html": "43a8c40d"
+  },
+  "2026_intro/weeks/week08/page.qmd": {
+    "page.html": "21f28ba3"
+  },
+  "2026_intro/weeks/week07/summary.qmd": {
+    "summary.html": "05c9a383"
+  },
+  "2026_intro/weeks/week07/slides.qmd": {
+    "slides.html": "4fb1e628"
+  },
+  "2026_intro/weeks/week07/page.qmd": {
+    "page.html": "8da49817"
+  },
+  "2026_intro/weeks/week01/slides.qmd": {
+    "slides.html": "958dc32d"
+  },
+  "2026_intro/weeks/week01/page.qmd": {
+    "page.html": "1c614e9f"
+  },
+  "2026_intro/weeks/week04/slides.qmd": {
+    "slides.html": "4247bc94"
+  },
+  "2026_intro/weeks/week04/page.qmd": {
+    "page.html": "db1e4015"
+  },
+  "2026_intro/weeks/week05/summary.qmd": {
+    "summary.html": "67819a3a"
+  },
+  "2026_intro/weeks/week05/slides.qmd": {
+    "slides.html": "ee810bd0"
+  },
+  "2026_intro/weeks/week05/page.qmd": {
+    "page.html": "7e1684c0"
+  },
+  "2026_intro/weeks/week09/summary.qmd": {
+    "summary.html": "190b902a"
+  },
+  "2026_intro/weeks/week09/slides.qmd": {
+    "slides.html": "e3da917d"
+  },
+  "2026_intro/weeks/week09/page.qmd": {
+    "page.html": "4ab280dc"
+  },
+  "2026_intro/weeks/week12/summary.qmd": {
+    "summary.html": "763aa74c"
+  },
+  "2026_intro/weeks/week12/slides.qmd": {
+    "slides.html": "024be95a"
+  },
+  "2026_intro/weeks/week12/page.qmd": {
+    "page.html": "d3c921ea"
+  },
+  "2026_intro/weeks/week15/summary.qmd": {
+    "summary.html": "d51f2783"
+  },
+  "2026_intro/weeks/week15/slides.qmd": {
+    "slides.html": "6f3bcd27"
+  },
+  "2026_intro/weeks/week15/page.qmd": {
+    "page.html": "83fa2a19"
+  },
+  "2026_intro/weeks/week10/summary.qmd": {
+    "summary.html": "c0a06dee"
+  },
+  "2026_intro/weeks/week10/slides.qmd": {
+    "slides.html": "b10b850a"
+  },
+  "2026_intro/weeks/week10/page.qmd": {
+    "page.html": "790a5295"
+  },
+  "2026_intro/weeks/week13/summary.qmd": {
+    "summary.html": "a3127594"
+  },
+  "2026_intro/weeks/week13/slides.qmd": {
+    "slides.html": "57a36d0d"
+  },
+  "2026_intro/weeks/week13/page.qmd": {
+    "page.html": "f33420b2"
+  },
+  "2026_intro/weeks/week14/summary.qmd": {
+    "summary.html": "8e3b76d1"
+  },
+  "2026_intro/weeks/week14/slides.qmd": {
+    "slides.html": "3d6a6ce9"
+  },
+  "2026_intro/weeks/week14/page.qmd": {
+    "page.html": "965f0f64"
+  },
+  "2026_intro/weeks/week11/summary.qmd": {
+    "summary.html": "6a39151f"
+  },
+  "2026_intro/weeks/week11/slides.qmd": {
+    "slides.html": "908cc4da"
+  },
+  "2026_intro/weeks/week11/page.qmd": {
+    "page.html": "fa65ee8f"
+  },
+  "2026_intro/weeks/week16/summary.qmd": {
+    "summary.html": "17a1bc24"
+  },
+  "2026_intro/weeks/week16/slides.qmd": {
+    "slides.html": "1a1bb417"
+  },
+  "2026_intro/weeks/week16/page.qmd": {
+    "page.html": "44315d82"
+  }
+}
